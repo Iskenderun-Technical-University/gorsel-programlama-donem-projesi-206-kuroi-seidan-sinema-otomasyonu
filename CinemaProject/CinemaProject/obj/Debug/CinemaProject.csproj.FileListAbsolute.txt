@@ -1,0 +1,10 @@
+C:\Users\asus\OneDrive\Belgeler\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\bin\Debug\CinemaProject.exe.config
+C:\Users\asus\OneDrive\Belgeler\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\bin\Debug\CinemaProject.exe
+C:\Users\asus\OneDrive\Belgeler\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\bin\Debug\CinemaProject.pdb
+C:\Users\asus\OneDrive\Belgeler\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.csproj.AssemblyReference.cache
+C:\Users\asus\OneDrive\Belgeler\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\asus\OneDrive\Belgeler\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.Properties.Resources.resources
+C:\Users\asus\OneDrive\Belgeler\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.csproj.GenerateResource.cache
+C:\Users\asus\OneDrive\Belgeler\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.csproj.CoreCompileInputs.cache
+C:\Users\asus\OneDrive\Belgeler\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.exe
+C:\Users\asus\OneDrive\Belgeler\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.pdb
