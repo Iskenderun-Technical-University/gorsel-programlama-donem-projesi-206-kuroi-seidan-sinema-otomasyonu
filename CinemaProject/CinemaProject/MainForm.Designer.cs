@@ -73,7 +73,7 @@
             this.guna2ImageButton6.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton6.ImageRotate = 0F;
             this.guna2ImageButton6.ImageSize = new System.Drawing.Size(150, 140);
-            this.guna2ImageButton6.Location = new System.Drawing.Point(912, 463);
+            this.guna2ImageButton6.Location = new System.Drawing.Point(912, 457);
             this.guna2ImageButton6.Name = "guna2ImageButton6";
             this.guna2ImageButton6.PressedState.ImageSize = new System.Drawing.Size(150, 140);
             this.guna2ImageButton6.Size = new System.Drawing.Size(193, 161);
@@ -87,7 +87,7 @@
             this.guna2ImageButton5.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton5.ImageRotate = 0F;
             this.guna2ImageButton5.ImageSize = new System.Drawing.Size(150, 140);
-            this.guna2ImageButton5.Location = new System.Drawing.Point(535, 164);
+            this.guna2ImageButton5.Location = new System.Drawing.Point(535, 158);
             this.guna2ImageButton5.Name = "guna2ImageButton5";
             this.guna2ImageButton5.PressedState.ImageSize = new System.Drawing.Size(150, 140);
             this.guna2ImageButton5.Size = new System.Drawing.Size(193, 161);
@@ -105,7 +105,7 @@
             this.guna2GradientCircleButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2GradientCircleButton1.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(12, 630);
+            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(12, 624);
             this.guna2GradientCircleButton1.Name = "guna2GradientCircleButton1";
             this.guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2GradientCircleButton1.Size = new System.Drawing.Size(109, 84);
@@ -127,7 +127,7 @@
             this.GroupBox1.CustomBorderColor = System.Drawing.Color.Brown;
             this.GroupBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.GroupBox1.Location = new System.Drawing.Point(127, 428);
+            this.GroupBox1.Location = new System.Drawing.Point(127, 422);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Size = new System.Drawing.Size(395, 249);
             this.GroupBox1.TabIndex = 50;
@@ -289,7 +289,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(1242, 66);
+            this.label2.Location = new System.Drawing.Point(1242, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(26, 20);
             this.label2.TabIndex = 49;
@@ -301,7 +301,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(1161, 66);
+            this.label1.Location = new System.Drawing.Point(1161, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 20);
             this.label1.TabIndex = 48;
@@ -314,7 +314,7 @@
             this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.Black;
             this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(1191, 61);
+            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(1191, 55);
             this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
             this.guna2ToggleSwitch1.Size = new System.Drawing.Size(50, 29);
             this.guna2ToggleSwitch1.TabIndex = 47;
@@ -331,7 +331,7 @@
             this.guna2ImageButton4.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton4.ImageRotate = 0F;
             this.guna2ImageButton4.ImageSize = new System.Drawing.Size(175, 165);
-            this.guna2ImageButton4.Location = new System.Drawing.Point(912, 164);
+            this.guna2ImageButton4.Location = new System.Drawing.Point(912, 158);
             this.guna2ImageButton4.Name = "guna2ImageButton4";
             this.guna2ImageButton4.PressedState.ImageSize = new System.Drawing.Size(175, 165);
             this.guna2ImageButton4.Size = new System.Drawing.Size(193, 161);
@@ -345,7 +345,7 @@
             this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton3.ImageRotate = 0F;
             this.guna2ImageButton3.ImageSize = new System.Drawing.Size(150, 140);
-            this.guna2ImageButton3.Location = new System.Drawing.Point(535, 463);
+            this.guna2ImageButton3.Location = new System.Drawing.Point(535, 457);
             this.guna2ImageButton3.Name = "guna2ImageButton3";
             this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(150, 140);
             this.guna2ImageButton3.Size = new System.Drawing.Size(193, 161);
@@ -359,7 +359,7 @@
             this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton2.ImageRotate = 0F;
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(220, 120);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(176, 164);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(176, 158);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
             this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(220, 120);
             this.guna2ImageButton2.Size = new System.Drawing.Size(241, 161);
