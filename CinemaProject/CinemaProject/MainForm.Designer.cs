@@ -1,6 +1,14 @@
 ﻿namespace CinemaProject
 {
+<<<<<<< HEAD
     partial class MainForm
+=======
+<<<<<<<< HEAD:CinemaProject/CinemaProject/MainScreen.Designer.cs
+    partial class MainScreen
+========
+    partial class MainForm
+>>>>>>>> main:CinemaProject/CinemaProject/MainForm.Designer.cs
+>>>>>>> main
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +37,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2ImageButton6 = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -495,6 +504,14 @@
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch2;
+=======
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Form1";
+        }
+
+        #endregion
+>>>>>>> main
     }
 }
 

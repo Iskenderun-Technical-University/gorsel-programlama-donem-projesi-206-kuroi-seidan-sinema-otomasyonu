@@ -16,5 +16,15 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
+
+        private void SnacksShop_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,6 +1,10 @@
 ﻿namespace CinemaProject
 {
+<<<<<<<< HEAD:CinemaProject/CinemaProject/MainScreen.Designer.cs
     partial class MainScreen
+========
+    partial class MainForm
+>>>>>>>> main:CinemaProject/CinemaProject/MainForm.Designer.cs
     {
         /// <summary>
         /// Required designer variable.

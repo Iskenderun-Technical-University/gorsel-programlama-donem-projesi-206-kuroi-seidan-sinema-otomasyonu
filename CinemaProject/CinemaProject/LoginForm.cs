@@ -16,5 +16,17 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
+        public static SnacksShop snacks = new SnacksShop();
+        private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
+        {
+            
+           this.Hide();
+           snacks.Show();
+        }
     }
 }

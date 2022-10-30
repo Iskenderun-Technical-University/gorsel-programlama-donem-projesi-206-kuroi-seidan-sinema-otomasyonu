@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace CinemaProject
 {
+<<<<<<< HEAD
     public partial class MainForm : Form
     {
         public MainForm()
@@ -26,5 +27,19 @@ namespace CinemaProject
         {
 
         }
+=======
+<<<<<<<< HEAD:CinemaProject/CinemaProject/MainScreen.cs
+    public partial class MainScreen : Form
+    {
+        public MainScreen()
+========
+    public partial class MainForm : Form
+    {
+        public MainForm()
+>>>>>>>> main:CinemaProject/CinemaProject/MainForm.cs
+        {
+            InitializeComponent();
+        }
+>>>>>>> main
     }
 }
