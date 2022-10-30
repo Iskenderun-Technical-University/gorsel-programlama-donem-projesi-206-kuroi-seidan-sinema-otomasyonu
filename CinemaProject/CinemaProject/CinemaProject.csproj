@@ -105,11 +105,19 @@
     <Compile Include="Ticket.Designer.cs">
       <DependentUpon>Ticket.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <EmbeddedResource Include="EditSnacksMenu.resx">
+      <DependentUpon>EditSnacksMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+=======
     <EmbeddedResource Include="AddMovies.resx">
       <DependentUpon>AddMovies.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+>>>>>>> main
     </EmbeddedResource>
     <EmbeddedResource Include="MovieDetails.resx">
       <DependentUpon>MovieDetails.cs</DependentUpon>
@@ -124,8 +132,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+<<<<<<< HEAD
+    <EmbeddedResource Include="Ticket.resx">
+      <DependentUpon>Ticket.cs</DependentUpon>
+=======
     <EmbeddedResource Include="SnacksShop.resx">
       <DependentUpon>SnacksShop.cs</DependentUpon>
+>>>>>>> main
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -142,7 +155,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <None Include="Resources\1200px-Font_Awesome_5_solid_times.svg.png" />
+=======
     <None Include="Resources\10_1_2022_11_14_00_PM-removebg-preview.png" />
+>>>>>>> main
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

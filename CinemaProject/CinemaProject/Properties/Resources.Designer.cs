@@ -22,7 +22,11 @@ namespace CinemaProject.Properties {
 <<<<<<< HEAD
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
 =======
+<<<<<<< HEAD
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+=======
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+>>>>>>> main
 >>>>>>> main
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -68,6 +72,11 @@ namespace CinemaProject.Properties {
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
 <<<<<<< HEAD
+        internal static System.Drawing.Bitmap _1200px_Font_Awesome_5_solid_times_svg {
+            get {
+                object obj = ResourceManager.GetObject("1200px-Font_Awesome_5_solid_times.svg", resourceCulture);
+=======
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap _10_1_2022_11_14_00_PM_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("10_1_2022_11_14_00_PM-removebg-preview", resourceCulture);
@@ -85,6 +94,7 @@ namespace CinemaProject.Properties {
         internal static System.Drawing.Bitmap staircase_construction_plan___Copy___Copy {
             get {
                 object obj = ResourceManager.GetObject("staircase_construction_plan - Copy - Copy", resourceCulture);
+>>>>>>> main
 >>>>>>> main
                 return ((System.Drawing.Bitmap)(obj));
             }

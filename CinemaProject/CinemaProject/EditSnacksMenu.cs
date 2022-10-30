@@ -16,5 +16,20 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EditSnacksMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ImageButton1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
