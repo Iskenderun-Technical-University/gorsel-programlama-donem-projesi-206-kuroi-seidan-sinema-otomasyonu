@@ -1,4 +1,5 @@
-﻿namespace CinemaProject
+﻿
+namespace CinemaProject
 {
     partial class LoginForm
     {
@@ -157,7 +158,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BackgroundImage = global::CinemaProject.Properties.Resources._10_1_2022_11_14_00_PM_removebg_preview;
             this.ClientSize = new System.Drawing.Size(721, 364);
             this.Controls.Add(this.guna2GradientCircleButton1);
             this.Controls.Add(this.guna2GradientCircleButton2);
@@ -170,7 +170,7 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
-            this.TransparencyKey = System.Drawing.Color.Black;
+            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -52,3 +52,21 @@ C:\Users\dell\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-o
 C:\Users\dell\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.AddMovies.resources
 C:\Users\dell\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.SnacksShop.resources
 >>>>>>> main
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.csproj.AssemblyReference.cache
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.EditSnacksMenu.resources
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.MainForm.resources
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.AddMovies.resources
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.LoginForm.resources
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.MovieDetails.resources
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.Ticket.resources
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.SnacksShop.resources
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.csproj.GenerateResource.cache
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.exe
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.pdb
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.Properties.Resources.resources
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.csproj.CoreCompileInputs.cache
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CinemaProject.exe.config
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CinemaProject.exe
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CinemaProject.pdb
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\Guna.UI2.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.csproj.CopyComplete

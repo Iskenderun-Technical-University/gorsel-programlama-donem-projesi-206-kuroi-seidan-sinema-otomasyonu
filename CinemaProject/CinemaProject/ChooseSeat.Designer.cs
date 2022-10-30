@@ -258,7 +258,6 @@ namespace CinemaProject
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::CinemaProject.Properties.Resources.staircase_construction_plan___Copy;
             this.pictureBox2.Location = new System.Drawing.Point(389, 45);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(79, 302);
@@ -269,7 +268,6 @@ namespace CinemaProject
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::CinemaProject.Properties.Resources.staircase_construction_plan___Copy___Copy;
             this.pictureBox1.Location = new System.Drawing.Point(830, -2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(87, 349);
@@ -329,10 +327,8 @@ namespace CinemaProject
             // 
             // E12
             // 
-            this.E12.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.E12.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E12.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E12.Image = ((System.Drawing.Image)(resources.GetObject("E12.Image")));
             this.E12.ImageOffset = new System.Drawing.Point(0, 0);
             this.E12.ImageRotate = 0F;
             this.E12.Location = new System.Drawing.Point(32, 35);
@@ -343,10 +339,8 @@ namespace CinemaProject
             // 
             // E11
             // 
-            this.E11.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.E11.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E11.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E11.Image = ((System.Drawing.Image)(resources.GetObject("E11.Image")));
             this.E11.ImageOffset = new System.Drawing.Point(0, 0);
             this.E11.ImageRotate = 0F;
             this.E11.Location = new System.Drawing.Point(92, 35);
@@ -357,10 +351,8 @@ namespace CinemaProject
             // 
             // E10
             // 
-            this.E10.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.E10.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E10.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E10.Image = ((System.Drawing.Image)(resources.GetObject("E10.Image")));
             this.E10.ImageOffset = new System.Drawing.Point(0, 0);
             this.E10.ImageRotate = 0F;
             this.E10.Location = new System.Drawing.Point(152, 35);
@@ -371,10 +363,8 @@ namespace CinemaProject
             // 
             // E9
             // 
-            this.E9.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.E9.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E9.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E9.Image = ((System.Drawing.Image)(resources.GetObject("E9.Image")));
             this.E9.ImageOffset = new System.Drawing.Point(0, 0);
             this.E9.ImageRotate = 0F;
             this.E9.Location = new System.Drawing.Point(209, 35);
@@ -385,10 +375,8 @@ namespace CinemaProject
             // 
             // E8
             // 
-            this.E8.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.E8.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E8.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E8.Image = ((System.Drawing.Image)(resources.GetObject("E8.Image")));
             this.E8.ImageOffset = new System.Drawing.Point(0, 0);
             this.E8.ImageRotate = 0F;
             this.E8.Location = new System.Drawing.Point(267, 35);
@@ -399,10 +387,8 @@ namespace CinemaProject
             // 
             // E7
             // 
-            this.E7.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             this.E7.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E7.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E7.Image = ((System.Drawing.Image)(resources.GetObject("E7.Image")));
             this.E7.ImageOffset = new System.Drawing.Point(0, 0);
             this.E7.ImageRotate = 0F;
             this.E7.Location = new System.Drawing.Point(326, 35);
@@ -413,10 +399,8 @@ namespace CinemaProject
             // 
             // E6
             // 
-            this.E6.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             this.E6.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E6.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E6.Image = ((System.Drawing.Image)(resources.GetObject("E6.Image")));
             this.E6.ImageOffset = new System.Drawing.Point(0, 0);
             this.E6.ImageRotate = 0F;
             this.E6.Location = new System.Drawing.Point(465, 35);
@@ -428,10 +412,8 @@ namespace CinemaProject
             // 
             // E5
             // 
-            this.E5.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
             this.E5.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E5.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E5.Image = ((System.Drawing.Image)(resources.GetObject("E5.Image")));
             this.E5.ImageOffset = new System.Drawing.Point(0, 0);
             this.E5.ImageRotate = 0F;
             this.E5.Location = new System.Drawing.Point(526, 35);
@@ -443,10 +425,8 @@ namespace CinemaProject
             // 
             // E4
             // 
-            this.E4.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
             this.E4.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E4.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E4.Image = ((System.Drawing.Image)(resources.GetObject("E4.Image")));
             this.E4.ImageOffset = new System.Drawing.Point(0, 0);
             this.E4.ImageRotate = 0F;
             this.E4.Location = new System.Drawing.Point(585, 35);
@@ -457,10 +437,8 @@ namespace CinemaProject
             // 
             // E3
             // 
-            this.E3.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image11")));
             this.E3.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E3.Image = ((System.Drawing.Image)(resources.GetObject("E3.Image")));
             this.E3.ImageOffset = new System.Drawing.Point(0, 0);
             this.E3.ImageRotate = 0F;
             this.E3.Location = new System.Drawing.Point(644, 35);
@@ -471,10 +449,8 @@ namespace CinemaProject
             // 
             // E2
             // 
-            this.E2.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image12")));
             this.E2.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E2.Image = ((System.Drawing.Image)(resources.GetObject("E2.Image")));
             this.E2.ImageOffset = new System.Drawing.Point(0, 0);
             this.E2.ImageRotate = 0F;
             this.E2.Location = new System.Drawing.Point(701, 35);
@@ -485,10 +461,8 @@ namespace CinemaProject
             // 
             // E1
             // 
-            this.E1.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image13")));
             this.E1.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E1.Image = ((System.Drawing.Image)(resources.GetObject("E1.Image")));
             this.E1.ImageOffset = new System.Drawing.Point(0, 0);
             this.E1.ImageRotate = 0F;
             this.E1.Location = new System.Drawing.Point(760, 35);
@@ -499,10 +473,8 @@ namespace CinemaProject
             // 
             // D12
             // 
-            this.D12.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image14")));
             this.D12.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D12.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D12.Image = ((System.Drawing.Image)(resources.GetObject("D12.Image")));
             this.D12.ImageOffset = new System.Drawing.Point(0, 0);
             this.D12.ImageRotate = 0F;
             this.D12.Location = new System.Drawing.Point(32, 95);
@@ -513,10 +485,8 @@ namespace CinemaProject
             // 
             // D11
             // 
-            this.D11.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image15")));
             this.D11.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D11.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D11.Image = ((System.Drawing.Image)(resources.GetObject("D11.Image")));
             this.D11.ImageOffset = new System.Drawing.Point(0, 0);
             this.D11.ImageRotate = 0F;
             this.D11.Location = new System.Drawing.Point(92, 95);
@@ -527,10 +497,8 @@ namespace CinemaProject
             // 
             // D10
             // 
-            this.D10.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image16")));
             this.D10.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D10.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D10.Image = ((System.Drawing.Image)(resources.GetObject("D10.Image")));
             this.D10.ImageOffset = new System.Drawing.Point(0, 0);
             this.D10.ImageRotate = 0F;
             this.D10.Location = new System.Drawing.Point(152, 95);
@@ -541,10 +509,8 @@ namespace CinemaProject
             // 
             // D9
             // 
-            this.D9.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image17")));
             this.D9.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D9.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D9.Image = ((System.Drawing.Image)(resources.GetObject("D9.Image")));
             this.D9.ImageOffset = new System.Drawing.Point(0, 0);
             this.D9.ImageRotate = 0F;
             this.D9.Location = new System.Drawing.Point(209, 95);
@@ -555,10 +521,8 @@ namespace CinemaProject
             // 
             // D8
             // 
-            this.D8.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image18")));
             this.D8.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D8.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D8.Image = ((System.Drawing.Image)(resources.GetObject("D8.Image")));
             this.D8.ImageOffset = new System.Drawing.Point(0, 0);
             this.D8.ImageRotate = 0F;
             this.D8.Location = new System.Drawing.Point(267, 95);
@@ -569,10 +533,8 @@ namespace CinemaProject
             // 
             // D7
             // 
-            this.D7.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image19")));
             this.D7.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D7.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D7.Image = ((System.Drawing.Image)(resources.GetObject("D7.Image")));
             this.D7.ImageOffset = new System.Drawing.Point(0, 0);
             this.D7.ImageRotate = 0F;
             this.D7.Location = new System.Drawing.Point(326, 95);
@@ -583,10 +545,8 @@ namespace CinemaProject
             // 
             // D6
             // 
-            this.D6.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image20")));
             this.D6.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D6.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D6.Image = ((System.Drawing.Image)(resources.GetObject("D6.Image")));
             this.D6.ImageOffset = new System.Drawing.Point(0, 0);
             this.D6.ImageRotate = 0F;
             this.D6.Location = new System.Drawing.Point(465, 95);
@@ -597,10 +557,8 @@ namespace CinemaProject
             // 
             // D5
             // 
-            this.D5.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image21")));
             this.D5.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D5.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D5.Image = ((System.Drawing.Image)(resources.GetObject("D5.Image")));
             this.D5.ImageOffset = new System.Drawing.Point(0, 0);
             this.D5.ImageRotate = 0F;
             this.D5.Location = new System.Drawing.Point(526, 95);
@@ -611,10 +569,8 @@ namespace CinemaProject
             // 
             // D4
             // 
-            this.D4.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image22")));
             this.D4.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D4.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D4.Image = ((System.Drawing.Image)(resources.GetObject("D4.Image")));
             this.D4.ImageOffset = new System.Drawing.Point(0, 0);
             this.D4.ImageRotate = 0F;
             this.D4.Location = new System.Drawing.Point(585, 95);
@@ -625,10 +581,8 @@ namespace CinemaProject
             // 
             // D3
             // 
-            this.D3.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image23")));
             this.D3.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D3.Image = ((System.Drawing.Image)(resources.GetObject("D3.Image")));
             this.D3.ImageOffset = new System.Drawing.Point(0, 0);
             this.D3.ImageRotate = 0F;
             this.D3.Location = new System.Drawing.Point(644, 95);
@@ -639,10 +593,8 @@ namespace CinemaProject
             // 
             // D2
             // 
-            this.D2.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image24")));
             this.D2.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D2.Image = ((System.Drawing.Image)(resources.GetObject("D2.Image")));
             this.D2.ImageOffset = new System.Drawing.Point(0, 0);
             this.D2.ImageRotate = 0F;
             this.D2.Location = new System.Drawing.Point(701, 95);
@@ -653,10 +605,8 @@ namespace CinemaProject
             // 
             // D1
             // 
-            this.D1.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image25")));
             this.D1.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D1.Image = ((System.Drawing.Image)(resources.GetObject("D1.Image")));
             this.D1.ImageOffset = new System.Drawing.Point(0, 0);
             this.D1.ImageRotate = 0F;
             this.D1.Location = new System.Drawing.Point(760, 95);
@@ -667,10 +617,8 @@ namespace CinemaProject
             // 
             // C12
             // 
-            this.C12.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image26")));
             this.C12.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C12.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C12.Image = ((System.Drawing.Image)(resources.GetObject("C12.Image")));
             this.C12.ImageOffset = new System.Drawing.Point(0, 0);
             this.C12.ImageRotate = 0F;
             this.C12.Location = new System.Drawing.Point(32, 154);
@@ -681,10 +629,8 @@ namespace CinemaProject
             // 
             // C11
             // 
-            this.C11.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image27")));
             this.C11.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C11.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C11.Image = ((System.Drawing.Image)(resources.GetObject("C11.Image")));
             this.C11.ImageOffset = new System.Drawing.Point(0, 0);
             this.C11.ImageRotate = 0F;
             this.C11.Location = new System.Drawing.Point(92, 154);
@@ -695,10 +641,8 @@ namespace CinemaProject
             // 
             // C10
             // 
-            this.C10.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image28")));
             this.C10.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C10.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C10.Image = ((System.Drawing.Image)(resources.GetObject("C10.Image")));
             this.C10.ImageOffset = new System.Drawing.Point(0, 0);
             this.C10.ImageRotate = 0F;
             this.C10.Location = new System.Drawing.Point(152, 154);
@@ -709,10 +653,8 @@ namespace CinemaProject
             // 
             // C9
             // 
-            this.C9.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image29")));
             this.C9.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C9.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C9.Image = ((System.Drawing.Image)(resources.GetObject("C9.Image")));
             this.C9.ImageOffset = new System.Drawing.Point(0, 0);
             this.C9.ImageRotate = 0F;
             this.C9.Location = new System.Drawing.Point(209, 154);
@@ -723,10 +665,8 @@ namespace CinemaProject
             // 
             // C8
             // 
-            this.C8.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image30")));
             this.C8.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C8.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C8.Image = ((System.Drawing.Image)(resources.GetObject("C8.Image")));
             this.C8.ImageOffset = new System.Drawing.Point(0, 0);
             this.C8.ImageRotate = 0F;
             this.C8.Location = new System.Drawing.Point(267, 154);
@@ -737,10 +677,8 @@ namespace CinemaProject
             // 
             // C7
             // 
-            this.C7.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image31")));
             this.C7.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C7.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C7.Image = ((System.Drawing.Image)(resources.GetObject("C7.Image")));
             this.C7.ImageOffset = new System.Drawing.Point(0, 0);
             this.C7.ImageRotate = 0F;
             this.C7.Location = new System.Drawing.Point(326, 154);
@@ -751,10 +689,8 @@ namespace CinemaProject
             // 
             // C6
             // 
-            this.C6.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image32")));
             this.C6.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C6.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C6.Image = ((System.Drawing.Image)(resources.GetObject("C6.Image")));
             this.C6.ImageOffset = new System.Drawing.Point(0, 0);
             this.C6.ImageRotate = 0F;
             this.C6.Location = new System.Drawing.Point(465, 154);
@@ -765,10 +701,8 @@ namespace CinemaProject
             // 
             // C5
             // 
-            this.C5.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image33")));
             this.C5.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C5.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C5.Image = ((System.Drawing.Image)(resources.GetObject("C5.Image")));
             this.C5.ImageOffset = new System.Drawing.Point(0, 0);
             this.C5.ImageRotate = 0F;
             this.C5.Location = new System.Drawing.Point(526, 154);
@@ -779,10 +713,8 @@ namespace CinemaProject
             // 
             // C4
             // 
-            this.C4.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image34")));
             this.C4.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C4.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C4.Image = ((System.Drawing.Image)(resources.GetObject("C4.Image")));
             this.C4.ImageOffset = new System.Drawing.Point(0, 0);
             this.C4.ImageRotate = 0F;
             this.C4.Location = new System.Drawing.Point(585, 154);
@@ -793,7 +725,6 @@ namespace CinemaProject
             // 
             // C3
             // 
-            this.C3.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image35")));
             this.C3.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
             this.C3.Image = ((System.Drawing.Image)(resources.GetObject("C3.Image")));
@@ -807,10 +738,8 @@ namespace CinemaProject
             // 
             // C2
             // 
-            this.C2.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image36")));
             this.C2.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C2.Image = ((System.Drawing.Image)(resources.GetObject("C2.Image")));
             this.C2.ImageOffset = new System.Drawing.Point(0, 0);
             this.C2.ImageRotate = 0F;
             this.C2.Location = new System.Drawing.Point(701, 154);
@@ -821,10 +750,8 @@ namespace CinemaProject
             // 
             // C1
             // 
-            this.C1.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image37")));
             this.C1.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C1.Image = ((System.Drawing.Image)(resources.GetObject("C1.Image")));
             this.C1.ImageOffset = new System.Drawing.Point(0, 0);
             this.C1.ImageRotate = 0F;
             this.C1.Location = new System.Drawing.Point(760, 154);
@@ -835,10 +762,8 @@ namespace CinemaProject
             // 
             // B12
             // 
-            this.B12.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image38")));
             this.B12.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B12.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B12.Image = ((System.Drawing.Image)(resources.GetObject("B12.Image")));
             this.B12.ImageOffset = new System.Drawing.Point(0, 0);
             this.B12.ImageRotate = 0F;
             this.B12.Location = new System.Drawing.Point(32, 213);
@@ -849,10 +774,8 @@ namespace CinemaProject
             // 
             // B11
             // 
-            this.B11.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image39")));
             this.B11.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B11.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B11.Image = ((System.Drawing.Image)(resources.GetObject("B11.Image")));
             this.B11.ImageOffset = new System.Drawing.Point(0, 0);
             this.B11.ImageRotate = 0F;
             this.B11.Location = new System.Drawing.Point(92, 213);
@@ -863,10 +786,8 @@ namespace CinemaProject
             // 
             // B10
             // 
-            this.B10.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image40")));
             this.B10.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B10.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B10.Image = ((System.Drawing.Image)(resources.GetObject("B10.Image")));
             this.B10.ImageOffset = new System.Drawing.Point(0, 0);
             this.B10.ImageRotate = 0F;
             this.B10.Location = new System.Drawing.Point(152, 213);
@@ -877,10 +798,8 @@ namespace CinemaProject
             // 
             // B9
             // 
-            this.B9.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image41")));
             this.B9.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B9.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B9.Image = ((System.Drawing.Image)(resources.GetObject("B9.Image")));
             this.B9.ImageOffset = new System.Drawing.Point(0, 0);
             this.B9.ImageRotate = 0F;
             this.B9.Location = new System.Drawing.Point(209, 213);
@@ -891,10 +810,8 @@ namespace CinemaProject
             // 
             // B8
             // 
-            this.B8.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image42")));
             this.B8.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B8.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B8.Image = ((System.Drawing.Image)(resources.GetObject("B8.Image")));
             this.B8.ImageOffset = new System.Drawing.Point(0, 0);
             this.B8.ImageRotate = 0F;
             this.B8.Location = new System.Drawing.Point(267, 213);
@@ -905,10 +822,8 @@ namespace CinemaProject
             // 
             // B7
             // 
-            this.B7.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image43")));
             this.B7.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B7.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B7.Image = ((System.Drawing.Image)(resources.GetObject("B7.Image")));
             this.B7.ImageOffset = new System.Drawing.Point(0, 0);
             this.B7.ImageRotate = 0F;
             this.B7.Location = new System.Drawing.Point(326, 213);
@@ -919,10 +834,8 @@ namespace CinemaProject
             // 
             // B6
             // 
-            this.B6.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image44")));
             this.B6.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B6.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B6.Image = ((System.Drawing.Image)(resources.GetObject("B6.Image")));
             this.B6.ImageOffset = new System.Drawing.Point(0, 0);
             this.B6.ImageRotate = 0F;
             this.B6.Location = new System.Drawing.Point(465, 213);
@@ -933,10 +846,8 @@ namespace CinemaProject
             // 
             // B5
             // 
-            this.B5.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image45")));
             this.B5.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B5.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B5.Image = ((System.Drawing.Image)(resources.GetObject("B5.Image")));
             this.B5.ImageOffset = new System.Drawing.Point(0, 0);
             this.B5.ImageRotate = 0F;
             this.B5.Location = new System.Drawing.Point(526, 213);
@@ -947,10 +858,8 @@ namespace CinemaProject
             // 
             // B4
             // 
-            this.B4.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image46")));
             this.B4.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B4.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B4.Image = ((System.Drawing.Image)(resources.GetObject("B4.Image")));
             this.B4.ImageOffset = new System.Drawing.Point(0, 0);
             this.B4.ImageRotate = 0F;
             this.B4.Location = new System.Drawing.Point(585, 213);
@@ -961,10 +870,8 @@ namespace CinemaProject
             // 
             // B3
             // 
-            this.B3.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image47")));
             this.B3.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B3.Image = ((System.Drawing.Image)(resources.GetObject("B3.Image")));
             this.B3.ImageOffset = new System.Drawing.Point(0, 0);
             this.B3.ImageRotate = 0F;
             this.B3.Location = new System.Drawing.Point(644, 213);
@@ -975,10 +882,8 @@ namespace CinemaProject
             // 
             // B2
             // 
-            this.B2.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image48")));
             this.B2.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B2.Image = ((System.Drawing.Image)(resources.GetObject("B2.Image")));
             this.B2.ImageOffset = new System.Drawing.Point(0, 0);
             this.B2.ImageRotate = 0F;
             this.B2.Location = new System.Drawing.Point(701, 213);
@@ -989,10 +894,8 @@ namespace CinemaProject
             // 
             // B1
             // 
-            this.B1.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image49")));
             this.B1.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B1.Image = ((System.Drawing.Image)(resources.GetObject("B1.Image")));
             this.B1.ImageOffset = new System.Drawing.Point(0, 0);
             this.B1.ImageRotate = 0F;
             this.B1.Location = new System.Drawing.Point(760, 213);
@@ -1003,10 +906,8 @@ namespace CinemaProject
             // 
             // A12
             // 
-            this.A12.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image50")));
             this.A12.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A12.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A12.Image = ((System.Drawing.Image)(resources.GetObject("A12.Image")));
             this.A12.ImageOffset = new System.Drawing.Point(0, 0);
             this.A12.ImageRotate = 0F;
             this.A12.Location = new System.Drawing.Point(32, 272);
@@ -1017,10 +918,8 @@ namespace CinemaProject
             // 
             // A11
             // 
-            this.A11.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image51")));
             this.A11.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A11.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A11.Image = ((System.Drawing.Image)(resources.GetObject("A11.Image")));
             this.A11.ImageOffset = new System.Drawing.Point(0, 0);
             this.A11.ImageRotate = 0F;
             this.A11.Location = new System.Drawing.Point(92, 272);
@@ -1031,10 +930,8 @@ namespace CinemaProject
             // 
             // A10
             // 
-            this.A10.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image52")));
             this.A10.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A10.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A10.Image = ((System.Drawing.Image)(resources.GetObject("A10.Image")));
             this.A10.ImageOffset = new System.Drawing.Point(0, 0);
             this.A10.ImageRotate = 0F;
             this.A10.Location = new System.Drawing.Point(152, 272);
@@ -1045,10 +942,8 @@ namespace CinemaProject
             // 
             // A9
             // 
-            this.A9.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image53")));
             this.A9.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A9.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A9.Image = ((System.Drawing.Image)(resources.GetObject("A9.Image")));
             this.A9.ImageOffset = new System.Drawing.Point(0, 0);
             this.A9.ImageRotate = 0F;
             this.A9.Location = new System.Drawing.Point(209, 272);
@@ -1059,10 +954,8 @@ namespace CinemaProject
             // 
             // A8
             // 
-            this.A8.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image54")));
             this.A8.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A8.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A8.Image = ((System.Drawing.Image)(resources.GetObject("A8.Image")));
             this.A8.ImageOffset = new System.Drawing.Point(0, 0);
             this.A8.ImageRotate = 0F;
             this.A8.Location = new System.Drawing.Point(267, 272);
@@ -1073,10 +966,8 @@ namespace CinemaProject
             // 
             // A7
             // 
-            this.A7.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image55")));
             this.A7.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A7.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A7.Image = ((System.Drawing.Image)(resources.GetObject("A7.Image")));
             this.A7.ImageOffset = new System.Drawing.Point(0, 0);
             this.A7.ImageRotate = 0F;
             this.A7.Location = new System.Drawing.Point(326, 272);
@@ -1087,10 +978,8 @@ namespace CinemaProject
             // 
             // A6
             // 
-            this.A6.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image56")));
             this.A6.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A6.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A6.Image = ((System.Drawing.Image)(resources.GetObject("A6.Image")));
             this.A6.ImageOffset = new System.Drawing.Point(0, 0);
             this.A6.ImageRotate = 0F;
             this.A6.Location = new System.Drawing.Point(465, 272);
@@ -1101,10 +990,8 @@ namespace CinemaProject
             // 
             // A5
             // 
-            this.A5.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image57")));
             this.A5.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A5.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A5.Image = ((System.Drawing.Image)(resources.GetObject("A5.Image")));
             this.A5.ImageOffset = new System.Drawing.Point(0, 0);
             this.A5.ImageRotate = 0F;
             this.A5.Location = new System.Drawing.Point(526, 272);
@@ -1115,10 +1002,8 @@ namespace CinemaProject
             // 
             // A4
             // 
-            this.A4.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image58")));
             this.A4.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A4.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A4.Image = ((System.Drawing.Image)(resources.GetObject("A4.Image")));
             this.A4.ImageOffset = new System.Drawing.Point(0, 0);
             this.A4.ImageRotate = 0F;
             this.A4.Location = new System.Drawing.Point(585, 272);
@@ -1129,10 +1014,8 @@ namespace CinemaProject
             // 
             // A3
             // 
-            this.A3.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image59")));
             this.A3.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A3.Image = ((System.Drawing.Image)(resources.GetObject("A3.Image")));
             this.A3.ImageOffset = new System.Drawing.Point(0, 0);
             this.A3.ImageRotate = 0F;
             this.A3.Location = new System.Drawing.Point(644, 272);
@@ -1143,10 +1026,8 @@ namespace CinemaProject
             // 
             // A2
             // 
-            this.A2.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image60")));
             this.A2.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A2.Image = ((System.Drawing.Image)(resources.GetObject("A2.Image")));
             this.A2.ImageOffset = new System.Drawing.Point(0, 0);
             this.A2.ImageRotate = 0F;
             this.A2.Location = new System.Drawing.Point(701, 272);
@@ -1157,10 +1038,8 @@ namespace CinemaProject
             // 
             // A1
             // 
-            this.A1.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image61")));
             this.A1.CheckedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A1.Image = ((System.Drawing.Image)(resources.GetObject("A1.Image")));
             this.A1.ImageOffset = new System.Drawing.Point(0, 0);
             this.A1.ImageRotate = 0F;
             this.A1.Location = new System.Drawing.Point(760, 272);
@@ -1225,7 +1104,6 @@ namespace CinemaProject
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);

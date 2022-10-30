@@ -101,7 +101,6 @@ namespace CinemaProject
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(213, 36);
             this.guna2ComboBox1.TabIndex = 60;
-            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -111,7 +110,6 @@ namespace CinemaProject
             this.label7.Size = new System.Drawing.Size(10, 13);
             this.label7.TabIndex = 59;
             this.label7.Text = "-";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // radioButton2
             // 
@@ -124,7 +122,6 @@ namespace CinemaProject
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Female";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -137,7 +134,6 @@ namespace CinemaProject
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Male";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // guna2TextBox4
             // 
@@ -157,7 +153,6 @@ namespace CinemaProject
             this.guna2TextBox4.SelectedText = "";
             this.guna2TextBox4.Size = new System.Drawing.Size(220, 40);
             this.guna2TextBox4.TabIndex = 56;
-            this.guna2TextBox4.TextChanged += new System.EventHandler(this.guna2TextBox4_TextChanged);
             // 
             // guna2TextBox1
             // 
@@ -177,7 +172,6 @@ namespace CinemaProject
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(213, 40);
             this.guna2TextBox1.TabIndex = 55;
-            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // label4
             // 
@@ -188,7 +182,6 @@ namespace CinemaProject
             this.label4.Size = new System.Drawing.Size(65, 21);
             this.label4.TabIndex = 54;
             this.label4.Text = "Gender:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -199,7 +192,6 @@ namespace CinemaProject
             this.label3.Size = new System.Drawing.Size(121, 21);
             this.label3.TabIndex = 53;
             this.label3.Text = "Phone Number:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // guna2NumericUpDown4
             // 
@@ -330,7 +322,6 @@ namespace CinemaProject
             this.label12.Size = new System.Drawing.Size(95, 21);
             this.label12.TabIndex = 73;
             this.label12.Text = "Ticket Type:";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label1
             // 
@@ -341,7 +332,6 @@ namespace CinemaProject
             this.label1.Size = new System.Drawing.Size(130, 21);
             this.label1.TabIndex = 72;
             this.label1.Text = "Costumer Name:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // listBox1
             // 
@@ -427,7 +417,6 @@ namespace CinemaProject
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
@@ -490,7 +479,6 @@ namespace CinemaProject
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ticket";
             this.Text = "Ticket";
-            this.Load += new System.EventHandler(this.Ticket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown2)).EndInit();

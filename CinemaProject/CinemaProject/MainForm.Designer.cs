@@ -1,14 +1,7 @@
-﻿namespace CinemaProject
+﻿
+namespace CinemaProject
 {
-<<<<<<< HEAD
     partial class MainForm
-=======
-<<<<<<<< HEAD:CinemaProject/CinemaProject/MainScreen.Designer.cs
-    partial class MainScreen
-========
-    partial class MainForm
->>>>>>>> main:CinemaProject/CinemaProject/MainForm.Designer.cs
->>>>>>> main
     {
         /// <summary>
         /// Required designer variable.
@@ -37,7 +30,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2ImageButton6 = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -78,7 +70,6 @@
             // 
             this.guna2ImageButton6.CheckedState.ImageSize = new System.Drawing.Size(160, 150);
             this.guna2ImageButton6.HoverState.ImageSize = new System.Drawing.Size(160, 150);
-            this.guna2ImageButton6.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton6.Image")));
             this.guna2ImageButton6.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton6.ImageRotate = 0F;
             this.guna2ImageButton6.ImageSize = new System.Drawing.Size(150, 140);
@@ -92,7 +83,6 @@
             // 
             this.guna2ImageButton5.CheckedState.ImageSize = new System.Drawing.Size(160, 150);
             this.guna2ImageButton5.HoverState.ImageSize = new System.Drawing.Size(160, 150);
-            this.guna2ImageButton5.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton5.Image")));
             this.guna2ImageButton5.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton5.ImageRotate = 0F;
             this.guna2ImageButton5.ImageSize = new System.Drawing.Size(150, 140);
@@ -336,7 +326,6 @@
             // 
             this.guna2ImageButton4.CheckedState.ImageSize = new System.Drawing.Size(185, 175);
             this.guna2ImageButton4.HoverState.ImageSize = new System.Drawing.Size(185, 175);
-            this.guna2ImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton4.Image")));
             this.guna2ImageButton4.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton4.ImageRotate = 0F;
             this.guna2ImageButton4.ImageSize = new System.Drawing.Size(175, 165);
@@ -350,7 +339,6 @@
             // 
             this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(160, 150);
             this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(160, 150);
-            this.guna2ImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.Image")));
             this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton3.ImageRotate = 0F;
             this.guna2ImageButton3.ImageSize = new System.Drawing.Size(150, 140);
@@ -364,7 +352,6 @@
             // 
             this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(230, 130);
             this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(230, 130);
-            this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
             this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton2.ImageRotate = 0F;
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(220, 120);
@@ -408,7 +395,6 @@
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
@@ -467,7 +453,6 @@
             this.Location = new System.Drawing.Point(1280, 720);
             this.Name = "MainForm";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
@@ -476,7 +461,6 @@
             this.PerformLayout();
 
         }
-
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
@@ -504,14 +488,6 @@
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch2;
-=======
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
         }
-
-        #endregion
->>>>>>> main
     }
-}
 

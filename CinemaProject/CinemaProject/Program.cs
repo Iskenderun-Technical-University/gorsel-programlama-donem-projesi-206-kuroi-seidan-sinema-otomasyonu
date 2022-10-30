@@ -16,15 +16,7 @@ namespace CinemaProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            Application.Run(new EditSnacksMenu());
-=======
-<<<<<<< HEAD
             Application.Run(new LoginForm());
-=======
-            Application.Run(new MainForm());
->>>>>>> main
->>>>>>> main
         }
     }
 }

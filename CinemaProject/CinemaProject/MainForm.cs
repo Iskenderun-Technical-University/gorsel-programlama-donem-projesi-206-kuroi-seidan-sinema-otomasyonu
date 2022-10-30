@@ -10,36 +10,11 @@ using System.Windows.Forms;
 
 namespace CinemaProject
 {
-<<<<<<< HEAD
     public partial class MainForm : Form
     {
         public MainForm()
         {
             InitializeComponent();
         }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void GroupBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-=======
-<<<<<<<< HEAD:CinemaProject/CinemaProject/MainScreen.cs
-    public partial class MainScreen : Form
-    {
-        public MainScreen()
-========
-    public partial class MainForm : Form
-    {
-        public MainForm()
->>>>>>>> main:CinemaProject/CinemaProject/MainForm.cs
-        {
-            InitializeComponent();
-        }
->>>>>>> main
     }
 }

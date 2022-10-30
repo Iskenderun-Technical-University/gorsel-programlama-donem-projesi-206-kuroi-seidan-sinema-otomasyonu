@@ -82,7 +82,6 @@ namespace CinemaProject
             // 
             this.guna2ImageButton4.CheckedState.ImageSize = new System.Drawing.Size(180, 155);
             this.guna2ImageButton4.HoverState.ImageSize = new System.Drawing.Size(180, 155);
-            this.guna2ImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton4.Image")));
             this.guna2ImageButton4.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton4.ImageRotate = 0F;
             this.guna2ImageButton4.ImageSize = new System.Drawing.Size(157, 143);
@@ -96,7 +95,6 @@ namespace CinemaProject
             // 
             this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(195, 171);
             this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(195, 171);
-            this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
             this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton2.ImageRotate = 0F;
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(173, 157);
@@ -184,7 +182,6 @@ namespace CinemaProject
             // 
             this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(180, 155);
             this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(180, 155);
-            this.guna2ImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.Image")));
             this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton3.ImageRotate = 0F;
             this.guna2ImageButton3.ImageSize = new System.Drawing.Size(160, 145);
@@ -370,7 +367,6 @@ namespace CinemaProject
             this.PerformLayout();
 
         }
-
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
