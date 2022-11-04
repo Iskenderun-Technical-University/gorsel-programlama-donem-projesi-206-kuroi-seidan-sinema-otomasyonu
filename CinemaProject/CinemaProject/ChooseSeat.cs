@@ -16,5 +16,71 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
+
+        void Seats(Guna.UI2.WinForms.Guna2ImageButton x)
+        {
+           if (x.Image != x.PressedState.Image) x.Image = x.PressedState.Image;
+            else x.Image = x.CheckedState.Image;
+        }
+
+        private void E1_Click(object sender, EventArgs e) {Seats(E1);}
+
+        private void E2_Click(object sender, EventArgs e) {Seats(E2);}
+
+        private void E3_Click(object sender, EventArgs e) {Seats(E3);}
+
+        private void E4_Click(object sender, EventArgs e) {Seats(E4);}
+
+        private void E5_Click(object sender, EventArgs e) {Seats(E5);}
+
+        private void E6_Click(object sender, EventArgs e) {Seats(E6);}
+
+        private void D1_Click(object sender, EventArgs e) {Seats(D1);}
+
+        private void D2_Click(object sender, EventArgs e) {Seats(D2);}
+
+        private void D3_Click(object sender, EventArgs e) {Seats(D3);}
+
+        private void D4_Click(object sender, EventArgs e) {Seats(D4);}
+
+        private void D5_Click(object sender, EventArgs e) {Seats(D5);}
+
+        private void D6_Click(object sender, EventArgs e) {Seats(D6);}
+
+        private void C1_Click(object sender, EventArgs e) {Seats(C1);}
+
+        private void C2_Click(object sender, EventArgs e) {Seats(C2);}
+
+        private void C3_Click(object sender, EventArgs e) {Seats(C3);}
+
+        private void C4_Click(object sender, EventArgs e) {Seats(C4);}
+
+        private void C5_Click(object sender, EventArgs e) {Seats(C5);}
+
+        private void C6_Click(object sender, EventArgs e) {Seats(C6);}
+
+        private void B1_Click(object sender, EventArgs e) {Seats(B1);}
+
+        private void B2_Click(object sender, EventArgs e) {Seats(B2);}
+
+        private void B3_Click(object sender, EventArgs e) {Seats(B3);}
+
+        private void B4_Click(object sender, EventArgs e) {Seats(B4);}
+
+        private void B5_Click(object sender, EventArgs e) {Seats(B5);}
+
+        private void B6_Click(object sender, EventArgs e) {Seats(B6);}
+
+        private void A1_Click(object sender, EventArgs e) {Seats(A1);}
+
+        private void A2_Click(object sender, EventArgs e) {Seats(A2);}
+
+        private void A3_Click(object sender, EventArgs e) {Seats(A3);}
+
+        private void A4_Click(object sender, EventArgs e) {Seats(A4);}
+
+        private void A5_Click(object sender, EventArgs e) {Seats(A5);}
+
+        private void A6_Click(object sender, EventArgs e) {Seats(A6);}
     }
 }
