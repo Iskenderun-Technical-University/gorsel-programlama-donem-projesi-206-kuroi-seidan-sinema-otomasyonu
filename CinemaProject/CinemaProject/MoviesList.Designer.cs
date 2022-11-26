@@ -51,6 +51,7 @@ namespace CinemaProject
             this.MovieName2 = new System.Windows.Forms.Label();
             this.MovieName1 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.MoviePic10 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.MoviePic9 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.MoviePic8 = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -61,7 +62,6 @@ namespace CinemaProject
             this.MoviePic3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.MoviePic1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.MoviePic2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GroupBox1.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -107,7 +107,6 @@ namespace CinemaProject
             this.guna2GroupBox1.Size = new System.Drawing.Size(300, 200);
             this.guna2GroupBox1.TabIndex = 92;
             this.guna2GroupBox1.Text = "Search By Genres:-";
-            this.guna2GroupBox1.Visible = false;
             // 
             // guna2GradientButton1
             // 
@@ -125,6 +124,7 @@ namespace CinemaProject
             this.guna2GradientButton1.Size = new System.Drawing.Size(100, 42);
             this.guna2GradientButton1.TabIndex = 2;
             this.guna2GradientButton1.Text = "Search";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // guna2ComboBox1
             // 
@@ -180,6 +180,7 @@ namespace CinemaProject
             // 
             this.PreviousBtn.CheckedState.ImageSize = new System.Drawing.Size(45, 65);
             this.PreviousBtn.HoverState.ImageSize = new System.Drawing.Size(50, 70);
+            this.PreviousBtn.Image = ((System.Drawing.Image)(resources.GetObject("PreviousBtn.Image")));
             this.PreviousBtn.ImageOffset = new System.Drawing.Point(0, 0);
             this.PreviousBtn.ImageRotate = 0F;
             this.PreviousBtn.ImageSize = new System.Drawing.Size(45, 65);
@@ -193,6 +194,7 @@ namespace CinemaProject
             // 
             this.NextBtn.CheckedState.ImageSize = new System.Drawing.Size(45, 65);
             this.NextBtn.HoverState.ImageSize = new System.Drawing.Size(50, 70);
+            this.NextBtn.Image = ((System.Drawing.Image)(resources.GetObject("NextBtn.Image")));
             this.NextBtn.ImageOffset = new System.Drawing.Point(0, 0);
             this.NextBtn.ImageRotate = 0F;
             this.NextBtn.ImageSize = new System.Drawing.Size(45, 65);
@@ -315,6 +317,22 @@ namespace CinemaProject
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1280, 48);
             this.guna2CustomGradientPanel1.TabIndex = 71;
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
+            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1228, 3);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 50);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(47, 43);
+            this.guna2ImageButton1.TabIndex = 0;
+            this.guna2ImageButton1.UseTransparentBackground = true;
             // 
             // MoviePic10
             // 
@@ -456,22 +474,6 @@ namespace CinemaProject
             this.MoviePic2.Size = new System.Drawing.Size(195, 265);
             this.MoviePic2.TabIndex = 87;
             // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1228, 3);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(47, 43);
-            this.guna2ImageButton1.TabIndex = 0;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            // 
             // MoviesList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -506,6 +508,7 @@ namespace CinemaProject
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MoviesList";
             this.Text = "MoviesList";
+            this.Load += new System.EventHandler(this.MoviesList_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             this.guna2CustomGradientPanel1.ResumeLayout(false);

@@ -47,6 +47,7 @@ namespace CinemaProject
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2ToggleSwitch2 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.descriptionRichTextBox = new System.Windows.Forms.RichTextBox();
             this.genresTextBox = new System.Windows.Forms.TextBox();
             this.movieNameTextBox = new System.Windows.Forms.TextBox();
@@ -57,7 +58,6 @@ namespace CinemaProject
             this.showDaysTextBox = new System.Windows.Forms.TextBox();
             this.showHoursTextBox = new System.Windows.Forms.TextBox();
             this.moviePicturePictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             genresLabel = new System.Windows.Forms.Label();
             descriptionLabel = new System.Windows.Forms.Label();
             movieNameLabel = new System.Windows.Forms.Label();
@@ -278,6 +278,22 @@ namespace CinemaProject
             this.guna2ToggleSwitch2.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch2.UncheckedState.InnerColor = System.Drawing.Color.White;
             // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(37, 48);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(37, 48);
+            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(33, 43);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(981, 4);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(33, 43);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(40, 36);
+            this.guna2ImageButton1.TabIndex = 0;
+            this.guna2ImageButton1.UseTransparentBackground = true;
+            // 
             // descriptionRichTextBox
             // 
             this.descriptionRichTextBox.BackColor = System.Drawing.Color.White;
@@ -389,22 +405,6 @@ namespace CinemaProject
             this.moviePicturePictureBox.TabIndex = 63;
             this.moviePicturePictureBox.TabStop = false;
             // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(37, 48);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(37, 48);
-            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(33, 43);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(981, 4);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(33, 43);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(40, 36);
-            this.guna2ImageButton1.TabIndex = 0;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            // 
             // MovieDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
@@ -439,7 +439,7 @@ namespace CinemaProject
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MovieDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MovieDetails";
+            this.Text = " ";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moviePicturePictureBox)).EndInit();

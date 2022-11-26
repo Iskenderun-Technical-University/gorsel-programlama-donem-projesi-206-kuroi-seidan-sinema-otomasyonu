@@ -17,6 +17,12 @@ namespace CinemaProject
             InitializeComponent();
         }
         public static SnacksShop snacks = new SnacksShop();
+        public static MainForm mainForm = new MainForm();
+        public static MoviesList moviesList = new MoviesList();
+        public static Ticket ticket = new Ticket();
+        public static EditSnacksMenu editSnacks = new EditSnacksMenu();
+        public static AddMovies addMovies = new AddMovies();
+
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -24,9 +30,8 @@ namespace CinemaProject
 
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
-            
            this.Hide();
-           snacks.Show();
+           mainForm.Show();
         }
     }
 }

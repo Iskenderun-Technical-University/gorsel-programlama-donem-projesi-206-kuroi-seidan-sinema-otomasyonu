@@ -30,10 +30,7 @@ namespace CinemaProject
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.guna2ImageButton6 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton5 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -48,14 +45,16 @@ namespace CinemaProject
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2ToggleSwitch2 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.guna2ImageButton6 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton5 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.GroupBox1.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -65,32 +64,6 @@ namespace CinemaProject
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // guna2ImageButton6
-            // 
-            this.guna2ImageButton6.CheckedState.ImageSize = new System.Drawing.Size(160, 150);
-            this.guna2ImageButton6.HoverState.ImageSize = new System.Drawing.Size(160, 150);
-            this.guna2ImageButton6.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton6.ImageRotate = 0F;
-            this.guna2ImageButton6.ImageSize = new System.Drawing.Size(150, 140);
-            this.guna2ImageButton6.Location = new System.Drawing.Point(912, 457);
-            this.guna2ImageButton6.Name = "guna2ImageButton6";
-            this.guna2ImageButton6.PressedState.ImageSize = new System.Drawing.Size(150, 140);
-            this.guna2ImageButton6.Size = new System.Drawing.Size(193, 161);
-            this.guna2ImageButton6.TabIndex = 53;
-            // 
-            // guna2ImageButton5
-            // 
-            this.guna2ImageButton5.CheckedState.ImageSize = new System.Drawing.Size(160, 150);
-            this.guna2ImageButton5.HoverState.ImageSize = new System.Drawing.Size(160, 150);
-            this.guna2ImageButton5.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton5.ImageRotate = 0F;
-            this.guna2ImageButton5.ImageSize = new System.Drawing.Size(150, 140);
-            this.guna2ImageButton5.Location = new System.Drawing.Point(535, 158);
-            this.guna2ImageButton5.Name = "guna2ImageButton5";
-            this.guna2ImageButton5.PressedState.ImageSize = new System.Drawing.Size(150, 140);
-            this.guna2ImageButton5.Size = new System.Drawing.Size(193, 161);
-            this.guna2ImageButton5.TabIndex = 52;
             // 
             // guna2GradientCircleButton1
             // 
@@ -322,45 +295,6 @@ namespace CinemaProject
             this.guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.White;
             // 
-            // guna2ImageButton4
-            // 
-            this.guna2ImageButton4.CheckedState.ImageSize = new System.Drawing.Size(185, 175);
-            this.guna2ImageButton4.HoverState.ImageSize = new System.Drawing.Size(185, 175);
-            this.guna2ImageButton4.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton4.ImageRotate = 0F;
-            this.guna2ImageButton4.ImageSize = new System.Drawing.Size(175, 165);
-            this.guna2ImageButton4.Location = new System.Drawing.Point(912, 158);
-            this.guna2ImageButton4.Name = "guna2ImageButton4";
-            this.guna2ImageButton4.PressedState.ImageSize = new System.Drawing.Size(175, 165);
-            this.guna2ImageButton4.Size = new System.Drawing.Size(193, 161);
-            this.guna2ImageButton4.TabIndex = 46;
-            // 
-            // guna2ImageButton3
-            // 
-            this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(160, 150);
-            this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(160, 150);
-            this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton3.ImageRotate = 0F;
-            this.guna2ImageButton3.ImageSize = new System.Drawing.Size(150, 140);
-            this.guna2ImageButton3.Location = new System.Drawing.Point(535, 457);
-            this.guna2ImageButton3.Name = "guna2ImageButton3";
-            this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(150, 140);
-            this.guna2ImageButton3.Size = new System.Drawing.Size(193, 161);
-            this.guna2ImageButton3.TabIndex = 45;
-            // 
-            // guna2ImageButton2
-            // 
-            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(230, 130);
-            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(230, 130);
-            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton2.ImageRotate = 0F;
-            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(220, 120);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(176, 158);
-            this.guna2ImageButton2.Name = "guna2ImageButton2";
-            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(220, 120);
-            this.guna2ImageButton2.Size = new System.Drawing.Size(241, 161);
-            this.guna2ImageButton2.TabIndex = 44;
-            // 
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.Controls.Add(this.label3);
@@ -395,6 +329,7 @@ namespace CinemaProject
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
+            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
@@ -432,6 +367,81 @@ namespace CinemaProject
             this.guna2ToggleSwitch2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2ToggleSwitch2.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch2.UncheckedState.InnerColor = System.Drawing.Color.White;
+            // 
+            // guna2ImageButton6
+            // 
+            this.guna2ImageButton6.CheckedState.ImageSize = new System.Drawing.Size(160, 150);
+            this.guna2ImageButton6.HoverState.ImageSize = new System.Drawing.Size(180, 170);
+            this.guna2ImageButton6.Image = global::CinemaProject.Properties.Resources._10_23_2022_5_24_41_PM;
+            this.guna2ImageButton6.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton6.ImageRotate = 0F;
+            this.guna2ImageButton6.ImageSize = new System.Drawing.Size(170, 160);
+            this.guna2ImageButton6.Location = new System.Drawing.Point(912, 457);
+            this.guna2ImageButton6.Name = "guna2ImageButton6";
+            this.guna2ImageButton6.PressedState.ImageSize = new System.Drawing.Size(170, 160);
+            this.guna2ImageButton6.Size = new System.Drawing.Size(193, 161);
+            this.guna2ImageButton6.TabIndex = 53;
+            this.guna2ImageButton6.Click += new System.EventHandler(this.guna2ImageButton6_Click);
+            // 
+            // guna2ImageButton5
+            // 
+            this.guna2ImageButton5.CheckedState.ImageSize = new System.Drawing.Size(160, 150);
+            this.guna2ImageButton5.HoverState.ImageSize = new System.Drawing.Size(160, 150);
+            this.guna2ImageButton5.Image = global::CinemaProject.Properties.Resources._2198002;
+            this.guna2ImageButton5.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton5.ImageRotate = 0F;
+            this.guna2ImageButton5.ImageSize = new System.Drawing.Size(150, 140);
+            this.guna2ImageButton5.Location = new System.Drawing.Point(535, 158);
+            this.guna2ImageButton5.Name = "guna2ImageButton5";
+            this.guna2ImageButton5.PressedState.ImageSize = new System.Drawing.Size(150, 140);
+            this.guna2ImageButton5.Size = new System.Drawing.Size(193, 161);
+            this.guna2ImageButton5.TabIndex = 52;
+            this.guna2ImageButton5.Click += new System.EventHandler(this.guna2ImageButton5_Click);
+            // 
+            // guna2ImageButton4
+            // 
+            this.guna2ImageButton4.CheckedState.ImageSize = new System.Drawing.Size(185, 175);
+            this.guna2ImageButton4.HoverState.ImageSize = new System.Drawing.Size(185, 175);
+            this.guna2ImageButton4.Image = global::CinemaProject.Properties.Resources.cinema;
+            this.guna2ImageButton4.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton4.ImageRotate = 0F;
+            this.guna2ImageButton4.ImageSize = new System.Drawing.Size(175, 165);
+            this.guna2ImageButton4.Location = new System.Drawing.Point(912, 158);
+            this.guna2ImageButton4.Name = "guna2ImageButton4";
+            this.guna2ImageButton4.PressedState.ImageSize = new System.Drawing.Size(175, 165);
+            this.guna2ImageButton4.Size = new System.Drawing.Size(193, 161);
+            this.guna2ImageButton4.TabIndex = 46;
+            this.guna2ImageButton4.Click += new System.EventHandler(this.guna2ImageButton4_Click);
+            // 
+            // guna2ImageButton3
+            // 
+            this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(160, 150);
+            this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(160, 150);
+            this.guna2ImageButton3.Image = global::CinemaProject.Properties.Resources._10_1_2022_3_39_37_AM_removebg_preview;
+            this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton3.ImageRotate = 0F;
+            this.guna2ImageButton3.ImageSize = new System.Drawing.Size(150, 140);
+            this.guna2ImageButton3.Location = new System.Drawing.Point(535, 457);
+            this.guna2ImageButton3.Name = "guna2ImageButton3";
+            this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(150, 140);
+            this.guna2ImageButton3.Size = new System.Drawing.Size(193, 161);
+            this.guna2ImageButton3.TabIndex = 45;
+            this.guna2ImageButton3.Click += new System.EventHandler(this.guna2ImageButton3_Click);
+            // 
+            // guna2ImageButton2
+            // 
+            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(230, 130);
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(230, 130);
+            this.guna2ImageButton2.Image = global::CinemaProject.Properties.Resources.ticket_logo;
+            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton2.ImageRotate = 0F;
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(220, 120);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(176, 158);
+            this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(220, 120);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(241, 161);
+            this.guna2ImageButton2.TabIndex = 44;
+            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
             // MainForm
             // 

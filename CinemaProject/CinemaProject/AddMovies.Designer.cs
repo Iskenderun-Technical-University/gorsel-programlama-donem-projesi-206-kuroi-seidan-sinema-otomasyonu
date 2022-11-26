@@ -30,25 +30,24 @@ namespace CinemaProject
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddMovies));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.label12 = new System.Windows.Forms.Label();
+            this.imdbRate = new System.Windows.Forms.Label();
             this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.GenresList = new System.Windows.Forms.CheckedListBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.DaysList = new System.Windows.Forms.CheckedListBox();
+            this.HoursList = new System.Windows.Forms.CheckedListBox();
+            this.Description = new System.Windows.Forms.RichTextBox();
+            this.Date = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Length = new Guna.UI2.WinForms.Guna2TextBox();
+            this.AgeRate = new Guna.UI2.WinForms.Guna2TextBox();
+            this.MovieName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -56,9 +55,9 @@ namespace CinemaProject
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -69,15 +68,15 @@ namespace CinemaProject
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // label12
+            // imdbRate
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(869, 359);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(19, 21);
-            this.label12.TabIndex = 65;
-            this.label12.Text = "0";
+            this.imdbRate.AutoSize = true;
+            this.imdbRate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.imdbRate.Location = new System.Drawing.Point(869, 359);
+            this.imdbRate.Name = "imdbRate";
+            this.imdbRate.Size = new System.Drawing.Size(19, 21);
+            this.imdbRate.TabIndex = 65;
+            this.imdbRate.Text = "0";
             // 
             // guna2RatingStar1
             // 
@@ -86,13 +85,14 @@ namespace CinemaProject
             this.guna2RatingStar1.RatingColor = System.Drawing.Color.Gold;
             this.guna2RatingStar1.Size = new System.Drawing.Size(200, 43);
             this.guna2RatingStar1.TabIndex = 64;
+            this.guna2RatingStar1.ValueChanged += new System.EventHandler(this.guna2RatingStar1_ValueChanged);
             // 
-            // checkedListBox3
+            // GenresList
             // 
-            this.checkedListBox3.BackColor = System.Drawing.Color.White;
-            this.checkedListBox3.Font = new System.Drawing.Font("Segoe UI", 11.278F);
-            this.checkedListBox3.FormattingEnabled = true;
-            this.checkedListBox3.Items.AddRange(new object[] {
+            this.GenresList.BackColor = System.Drawing.Color.White;
+            this.GenresList.Font = new System.Drawing.Font("Segoe UI", 11.278F);
+            this.GenresList.FormattingEnabled = true;
+            this.GenresList.Items.AddRange(new object[] {
             "Action",
             "Adventure",
             "Comedy",
@@ -106,10 +106,10 @@ namespace CinemaProject
             "Sports",
             "Thriller",
             "Western"});
-            this.checkedListBox3.Location = new System.Drawing.Point(663, 507);
-            this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(200, 165);
-            this.checkedListBox3.TabIndex = 63;
+            this.GenresList.Location = new System.Drawing.Point(663, 507);
+            this.GenresList.Name = "GenresList";
+            this.GenresList.Size = new System.Drawing.Size(200, 165);
+            this.GenresList.TabIndex = 63;
             // 
             // label11
             // 
@@ -131,12 +131,12 @@ namespace CinemaProject
             this.label10.TabIndex = 61;
             this.label10.Text = "Show Days";
             // 
-            // checkedListBox2
+            // DaysList
             // 
-            this.checkedListBox2.BackColor = System.Drawing.Color.White;
-            this.checkedListBox2.Font = new System.Drawing.Font("Segoe UI", 11.278F);
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
+            this.DaysList.BackColor = System.Drawing.Color.White;
+            this.DaysList.Font = new System.Drawing.Font("Segoe UI", 11.278F);
+            this.DaysList.FormattingEnabled = true;
+            this.DaysList.Items.AddRange(new object[] {
             "Saturday",
             "Sunday",
             "Monday",
@@ -144,17 +144,17 @@ namespace CinemaProject
             "Wednesday",
             "Thursday",
             "Friday"});
-            this.checkedListBox2.Location = new System.Drawing.Point(154, 478);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(170, 165);
-            this.checkedListBox2.TabIndex = 60;
+            this.DaysList.Location = new System.Drawing.Point(154, 479);
+            this.DaysList.Name = "DaysList";
+            this.DaysList.Size = new System.Drawing.Size(170, 165);
+            this.DaysList.TabIndex = 60;
             // 
-            // checkedListBox1
+            // HoursList
             // 
-            this.checkedListBox1.BackColor = System.Drawing.Color.White;
-            this.checkedListBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.HoursList.BackColor = System.Drawing.Color.White;
+            this.HoursList.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.HoursList.FormattingEnabled = true;
+            this.HoursList.Items.AddRange(new object[] {
             "10:15AM",
             "10:45AM",
             "12:00PM",
@@ -169,33 +169,33 @@ namespace CinemaProject
             "08:45PM",
             "10:00PM",
             "10:30PM"});
-            this.checkedListBox1.Location = new System.Drawing.Point(324, 479);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(170, 164);
-            this.checkedListBox1.TabIndex = 59;
+            this.HoursList.Location = new System.Drawing.Point(324, 479);
+            this.HoursList.Name = "HoursList";
+            this.HoursList.Size = new System.Drawing.Size(170, 164);
+            this.HoursList.TabIndex = 59;
             // 
-            // richTextBox1
+            // Description
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(154, 274);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(342, 148);
-            this.richTextBox1.TabIndex = 55;
-            this.richTextBox1.Text = "";
+            this.Description.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Description.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Description.Location = new System.Drawing.Point(154, 274);
+            this.Description.Name = "Description";
+            this.Description.Size = new System.Drawing.Size(342, 148);
+            this.Description.TabIndex = 55;
+            this.Description.Text = "";
             // 
-            // guna2DateTimePicker1
+            // Date
             // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(663, 426);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(2077, 11, 16, 23, 59, 59, 999);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1900, 4, 30, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 43);
-            this.guna2DateTimePicker1.TabIndex = 58;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2022, 10, 1, 4, 25, 4, 299);
+            this.Date.Checked = true;
+            this.Date.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.Date.Location = new System.Drawing.Point(663, 426);
+            this.Date.MaxDate = new System.DateTime(2077, 11, 16, 23, 59, 59, 999);
+            this.Date.MinDate = new System.DateTime(1900, 4, 30, 0, 0, 0, 0);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(200, 43);
+            this.Date.TabIndex = 58;
+            this.Date.Value = new System.DateTime(2022, 10, 1, 4, 25, 4, 299);
             // 
             // guna2GradientButton3
             // 
@@ -246,6 +246,7 @@ namespace CinemaProject
             this.guna2GradientButton1.Size = new System.Drawing.Size(149, 45);
             this.guna2GradientButton1.TabIndex = 54;
             this.guna2GradientButton1.Text = "Upload Picture";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // label9
             // 
@@ -267,65 +268,65 @@ namespace CinemaProject
             this.label8.TabIndex = 52;
             this.label8.Text = "Genres:";
             // 
-            // guna2TextBox4
+            // Length
             // 
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.Gray;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(663, 274);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(200, 43);
-            this.guna2TextBox4.TabIndex = 51;
+            this.Length.BorderColor = System.Drawing.Color.Gray;
+            this.Length.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Length.DefaultText = "";
+            this.Length.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Length.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Length.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Length.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Length.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Length.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Length.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Length.Location = new System.Drawing.Point(663, 274);
+            this.Length.Name = "Length";
+            this.Length.PasswordChar = '\0';
+            this.Length.PlaceholderText = "";
+            this.Length.SelectedText = "";
+            this.Length.Size = new System.Drawing.Size(200, 43);
+            this.Length.TabIndex = 51;
             // 
-            // guna2TextBox3
+            // AgeRate
             // 
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.Gray;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(663, 199);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(200, 43);
-            this.guna2TextBox3.TabIndex = 50;
+            this.AgeRate.BorderColor = System.Drawing.Color.Gray;
+            this.AgeRate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AgeRate.DefaultText = "";
+            this.AgeRate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.AgeRate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.AgeRate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AgeRate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AgeRate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AgeRate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AgeRate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AgeRate.Location = new System.Drawing.Point(663, 199);
+            this.AgeRate.Name = "AgeRate";
+            this.AgeRate.PasswordChar = '\0';
+            this.AgeRate.PlaceholderText = "";
+            this.AgeRate.SelectedText = "";
+            this.AgeRate.Size = new System.Drawing.Size(200, 43);
+            this.AgeRate.TabIndex = 50;
             // 
-            // guna2TextBox1
+            // MovieName
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Gray;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(154, 199);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(340, 43);
-            this.guna2TextBox1.TabIndex = 49;
+            this.MovieName.BorderColor = System.Drawing.Color.Gray;
+            this.MovieName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.MovieName.DefaultText = "";
+            this.MovieName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.MovieName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.MovieName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MovieName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MovieName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MovieName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.MovieName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MovieName.Location = new System.Drawing.Point(154, 199);
+            this.MovieName.Name = "MovieName";
+            this.MovieName.PasswordChar = '\0';
+            this.MovieName.PlaceholderText = "";
+            this.MovieName.SelectedText = "";
+            this.MovieName.Size = new System.Drawing.Size(340, 43);
+            this.MovieName.TabIndex = 49;
             // 
             // label7
             // 
@@ -397,11 +398,31 @@ namespace CinemaProject
             this.label1.TabIndex = 41;
             this.label1.Text = "Movie Name:";
             // 
+            // guna2GradientButton2
+            // 
+            this.guna2GradientButton2.BorderRadius = 2;
+            this.guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Brown;
+            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton2.Location = new System.Drawing.Point(1105, 650);
+            this.guna2GradientButton2.Name = "guna2GradientButton2";
+            this.guna2GradientButton2.Size = new System.Drawing.Size(149, 58);
+            this.guna2GradientButton2.TabIndex = 66;
+            this.guna2GradientButton2.Text = "Add The Movie To Calendar";
+            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
+            // 
             // guna2ImageButton1
             // 
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
+            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
@@ -421,47 +442,29 @@ namespace CinemaProject
             this.pictureBox1.TabIndex = 48;
             this.pictureBox1.TabStop = false;
             // 
-            // guna2GradientButton2
-            // 
-            this.guna2GradientButton2.BorderRadius = 2;
-            this.guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Brown;
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(1105, 650);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.Size = new System.Drawing.Size(149, 58);
-            this.guna2GradientButton2.TabIndex = 66;
-            this.guna2GradientButton2.Text = "Add The Movie To Calendar";
-            // 
             // AddMovies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.guna2GradientButton2);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.imdbRate);
             this.Controls.Add(this.guna2RatingStar1);
-            this.Controls.Add(this.checkedListBox3);
+            this.Controls.Add(this.GenresList);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.checkedListBox2);
-            this.Controls.Add(this.checkedListBox1);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.DaysList);
+            this.Controls.Add(this.HoursList);
+            this.Controls.Add(this.Description);
+            this.Controls.Add(this.Date);
             this.Controls.Add(this.guna2GradientButton3);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.guna2TextBox4);
-            this.Controls.Add(this.guna2TextBox3);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.Length);
+            this.Controls.Add(this.AgeRate);
+            this.Controls.Add(this.MovieName);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -483,24 +486,24 @@ namespace CinemaProject
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label imdbRate;
         private Guna.UI2.WinForms.Guna2RatingStar guna2RatingStar1;
-        private System.Windows.Forms.CheckedListBox checkedListBox3;
+        private System.Windows.Forms.CheckedListBox GenresList;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.CheckedListBox checkedListBox2;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private System.Windows.Forms.CheckedListBox DaysList;
+        private System.Windows.Forms.CheckedListBox HoursList;
+        private System.Windows.Forms.RichTextBox Description;
+        private Guna.UI2.WinForms.Guna2DateTimePicker Date;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox Length;
+        private Guna.UI2.WinForms.Guna2TextBox AgeRate;
+        private Guna.UI2.WinForms.Guna2TextBox MovieName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;

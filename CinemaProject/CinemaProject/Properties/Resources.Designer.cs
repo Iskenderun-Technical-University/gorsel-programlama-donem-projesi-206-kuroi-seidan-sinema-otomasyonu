@@ -83,9 +83,39 @@ namespace CinemaProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _10_23_2022_5_24_41_PM {
+            get {
+                object obj = ResourceManager.GetObject("10_23_2022 5_24_41 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1051948 {
+            get {
+                object obj = ResourceManager.GetObject("1051948", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1200px_Font_Awesome_5_solid_times_svg {
             get {
                 object obj = ResourceManager.GetObject("1200px-Font_Awesome_5_solid_times.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _150_1506427_popcorn_icon_gloucester_road_tube_station_hd_png_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("150-1506427_popcorn-icon-gloucester-road-tube-station-hd-png-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +146,16 @@ namespace CinemaProject.Properties {
         internal static System.Drawing.Bitmap _2666565_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("2666565-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _820603 {
+            get {
+                object obj = ResourceManager.GetObject("820603", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

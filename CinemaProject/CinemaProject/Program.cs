@@ -16,7 +16,7 @@ namespace CinemaProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChooseSeat());
+            Application.Run(new LoginForm());
         }
     }
 }

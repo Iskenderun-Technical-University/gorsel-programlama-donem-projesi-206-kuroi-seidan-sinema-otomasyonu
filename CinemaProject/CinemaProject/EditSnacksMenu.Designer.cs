@@ -37,14 +37,24 @@ namespace CinemaProject
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2ToggleSwitch2 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             movieNameLabel = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // movieNameLabel
+            // 
+            movieNameLabel.AutoSize = true;
+            movieNameLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            movieNameLabel.Location = new System.Drawing.Point(15, 102);
+            movieNameLabel.Name = "movieNameLabel";
+            movieNameLabel.Size = new System.Drawing.Size(156, 25);
+            movieNameLabel.TabIndex = 45;
+            movieNameLabel.Text = "Category Name:";
             // 
             // listBox3
             // 
@@ -105,16 +115,6 @@ namespace CinemaProject
             this.listBox1.Size = new System.Drawing.Size(264, 242);
             this.listBox1.TabIndex = 47;
             // 
-            // movieNameLabel
-            // 
-            movieNameLabel.AutoSize = true;
-            movieNameLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            movieNameLabel.Location = new System.Drawing.Point(15, 102);
-            movieNameLabel.Name = "movieNameLabel";
-            movieNameLabel.Size = new System.Drawing.Size(156, 25);
-            movieNameLabel.TabIndex = 45;
-            movieNameLabel.Text = "Category Name:";
-            // 
             // guna2ComboBox1
             // 
             this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
@@ -148,6 +148,23 @@ namespace CinemaProject
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1030, 44);
             this.guna2CustomGradientPanel1.TabIndex = 50;
             // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(37, 48);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(37, 48);
+            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(33, 43);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(987, 5);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(33, 43);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(40, 36);
+            this.guna2ImageButton1.TabIndex = 44;
+            this.guna2ImageButton1.UseTransparentBackground = true;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click_1);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -156,7 +173,7 @@ namespace CinemaProject
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(150, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 19);
+            this.label3.Size = new System.Drawing.Size(92, 19);
             this.label3.TabIndex = 43;
             this.label3.Text = "Editing Mode";
             // 
@@ -168,7 +185,7 @@ namespace CinemaProject
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(11, 14);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 19);
+            this.label4.Size = new System.Drawing.Size(82, 19);
             this.label4.TabIndex = 42;
             this.label4.Text = "Show Mode";
             // 
@@ -187,22 +204,6 @@ namespace CinemaProject
             this.guna2ToggleSwitch2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2ToggleSwitch2.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch2.UncheckedState.InnerColor = System.Drawing.Color.White;
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(37, 48);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(37, 48);
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(33, 43);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(987, 5);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(33, 43);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(40, 36);
-            this.guna2ImageButton1.TabIndex = 44;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click_1);
             // 
             // guna2BorderlessForm1
             // 
