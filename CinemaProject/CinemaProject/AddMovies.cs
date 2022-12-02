@@ -74,5 +74,10 @@ namespace CinemaProject
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void AddMovies_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

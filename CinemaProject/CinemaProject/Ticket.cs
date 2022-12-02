@@ -21,5 +21,20 @@ namespace CinemaProject
         {
             Application.Exit();
         }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
