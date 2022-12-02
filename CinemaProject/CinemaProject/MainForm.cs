@@ -100,7 +100,29 @@ namespace CinemaProject
                 LoginForm.addMovies.label9.Text = "Film resmi";
                 LoginForm.addMovies.guna2GradientButton2.Text = "Filmi Ekle";
                 /////////////////////////////////////////////////////////////////
+                //Translate For The Main Form 
+                LoginForm.mainForm.label4.Text = "Mustari UI";
+                LoginForm.mainForm.label3.Text = "Personal UI";
+                LoginForm.mainForm.label8.Text = "Eski sifre giriniz";
+                LoginForm.mainForm.label7.Text = "yeni sifre giriniz";
+                LoginForm.mainForm.label6.Text = "yeni sifre tekrar giriniz";
+                LoginForm.mainForm.guna2GradientButton1.Text = "degstir";
+                LoginForm.mainForm.guna2GradientCircleButton1.Text = "Hesap sifresi degstir";
+                GroupBox1.Text = "Hesap sifresi degstir";
+                /////////////////////////////////////////////////////////////////
+
+
             }
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
+        {
+            GroupBox1.Visible = guna2GradientCircleButton1.Checked;
         }
     }
 }

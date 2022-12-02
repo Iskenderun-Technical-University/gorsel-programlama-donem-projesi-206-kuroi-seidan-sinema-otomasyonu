@@ -68,6 +68,7 @@ namespace CinemaProject
             // guna2GradientCircleButton1
             // 
             this.guna2GradientCircleButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientCircleButton1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.guna2GradientCircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientCircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientCircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -83,6 +84,7 @@ namespace CinemaProject
             this.guna2GradientCircleButton1.Size = new System.Drawing.Size(109, 84);
             this.guna2GradientCircleButton1.TabIndex = 51;
             this.guna2GradientCircleButton1.Text = "Change Account Password";
+            this.guna2GradientCircleButton1.Click += new System.EventHandler(this.guna2GradientCircleButton1_Click);
             // 
             // GroupBox1
             // 
@@ -340,6 +342,7 @@ namespace CinemaProject
             this.guna2ImageButton1.Size = new System.Drawing.Size(47, 43);
             this.guna2ImageButton1.TabIndex = 0;
             this.guna2ImageButton1.UseTransparentBackground = true;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // label4
             // 
@@ -499,8 +502,8 @@ namespace CinemaProject
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
-        private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch2;
-        }
+        public System.Windows.Forms.Label label4;
+    }
     }
 
