@@ -462,6 +462,7 @@ namespace CinemaProject
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(1280, 720);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();

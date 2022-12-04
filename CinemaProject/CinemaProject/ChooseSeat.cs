@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace CinemaProject
 {
@@ -16,6 +17,9 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
+
+        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
+        SqlConnection con = new SqlConnection(Sqlcon);
 
         void Seats(Guna.UI2.WinForms.Guna2ImageButton x)
         {
@@ -82,5 +86,19 @@ namespace CinemaProject
         private void A5_Click(object sender, EventArgs e) {Seats(A5);}
 
         private void A6_Click(object sender, EventArgs e) {Seats(A6);}
+
+        private void ChooseSeat_Load(object sender, EventArgs e)
+        {
+            string query = "select MovieName from MoviesTbl where ShowDays like'%"+DateTime.Now.ToString("dddd")+"%'";
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            sda.Fill(dt);
+            for(int i = 0; i < dt.Rows.Count; i++)
+            {
+                guna2ComboBox2.Items.Add(dt.Rows[i][0].ToString());
+            }
+            con.Close();
+        }
     }
 }

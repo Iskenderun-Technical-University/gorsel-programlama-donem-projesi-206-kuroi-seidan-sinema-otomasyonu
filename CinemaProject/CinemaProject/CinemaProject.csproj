@@ -221,6 +221,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>ProjectDB.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\next1.png" />
     <None Include="Resources\820603.png" />
     <None Include="Resources\150-1506427_popcorn-icon-gloucester-road-tube-station-hd-png-removebg-preview.png" />
     <None Include="Resources\1051948.png" />

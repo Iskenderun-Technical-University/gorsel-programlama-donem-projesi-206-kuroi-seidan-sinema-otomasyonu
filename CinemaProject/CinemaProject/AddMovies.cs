@@ -62,17 +62,35 @@ namespace CinemaProject
                 FileStream stream = new FileStream(imgloc, FileMode.Open, FileAccess.Read);
                 BinaryReader brs = new BinaryReader(stream);
                 images = brs.ReadBytes((int)stream.Length);
-                string query = "insert into MoviesTbl (MovieName,MoviePicture,Description,Genres,IMDbRating,Length,AgeRating,ShowDays,ShowHours,ReleaseDate) values ('" + MovieName.Text + "','" + images + "','" + Description.Text + "','" + genres + "','" + imdbRate.Text + "','" + Length.Text + "','" + AgeRate.Text + "','" + days + "','" + hours + "',@date)";
+                string query = "insert into MoviesTbl (MovieName,MoviePicture,Description,Genres,IMDbRating,Length,AgeRating,ShowDays,ShowHours,ReleaseDate) values (@name,@pic,@desc,@genres,@rate,@length,@age,@days,@hours,@date)";
                 con.Open();
                 cmd = new SqlCommand(query, con);
+                cmd.Parameters.Add(new SqlParameter("@name", MovieName.Text));
+                cmd.Parameters.Add(new SqlParameter("@pic", images));
+                cmd.Parameters.Add(new SqlParameter("@desc", Description.Text));
+                cmd.Parameters.Add(new SqlParameter("@genres", genres));
+                cmd.Parameters.Add(new SqlParameter("@rate", Convert.ToSingle(imdbRate.Text)));
+                cmd.Parameters.Add(new SqlParameter("@length", Length.Text));
+                cmd.Parameters.Add(new SqlParameter("@age", AgeRate.Text));
+                cmd.Parameters.Add(new SqlParameter("@days", days));
+                cmd.Parameters.Add(new SqlParameter("@hours", hours));
                 cmd.Parameters.Add(new SqlParameter("@date", Date.Value));
+
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Successful!!");
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.Message);
             }
+            finally { con.Close(); }
+        }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm.mainForm.Show();
         }
     }
 }

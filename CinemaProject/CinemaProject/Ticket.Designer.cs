@@ -417,6 +417,7 @@ namespace CinemaProject
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
+            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
@@ -445,11 +446,13 @@ namespace CinemaProject
             this.guna2GradientCircleButton2.Size = new System.Drawing.Size(100, 100);
             this.guna2GradientCircleButton2.TabIndex = 77;
             this.guna2GradientCircleButton2.Text = "Choose The Seat";
+            this.guna2GradientCircleButton2.Click += new System.EventHandler(this.guna2GradientCircleButton2_Click);
             // 
             // Ticket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.guna2GradientCircleButton2);
             this.Controls.Add(this.guna2CustomGradientPanel1);

@@ -22,6 +22,8 @@ namespace CinemaProject
         public static Ticket ticket = new Ticket();
         public static EditSnacksMenu editSnacks = new EditSnacksMenu();
         public static AddMovies addMovies = new AddMovies();
+        public static MovieDetails movieDetails = new MovieDetails();
+        public static ChooseSeat seat = new ChooseSeat();
 
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
