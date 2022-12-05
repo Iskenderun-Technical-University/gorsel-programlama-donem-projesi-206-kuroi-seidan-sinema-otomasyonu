@@ -32,9 +32,6 @@ namespace CinemaProject
             this.components = new System.ComponentModel.Container();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.guna2RadioButton2 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2RadioButton1 = new Guna.UI2.WinForms.Guna2RadioButton();
@@ -50,10 +47,10 @@ namespace CinemaProject
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,46 +78,6 @@ namespace CinemaProject
             this.guna2GradientButton1.TabIndex = 74;
             this.guna2GradientButton1.Text = "Add to Order";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(1232, 62);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(26, 20);
-            this.label6.TabIndex = 73;
-            this.label6.Text = "TR";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(1151, 62);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 20);
-            this.label7.TabIndex = 72;
-            this.label7.Text = "EN";
-            // 
-            // guna2ToggleSwitch1
-            // 
-            this.guna2ToggleSwitch1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.Black;
-            this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(1181, 57);
-            this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
-            this.guna2ToggleSwitch1.Size = new System.Drawing.Size(50, 29);
-            this.guna2ToggleSwitch1.TabIndex = 71;
-            this.guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.White;
-            // 
             // guna2RadioButton2
             // 
             this.guna2RadioButton2.AutoSize = true;
@@ -142,13 +99,13 @@ namespace CinemaProject
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(894, 584);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 21);
+            this.label5.Size = new System.Drawing.Size(115, 24);
             this.label5.TabIndex = 69;
             this.label5.Text = "Payment Method:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // guna2RadioButton1
             // 
@@ -191,13 +148,13 @@ namespace CinemaProject
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(939, 530);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 21);
+            this.label2.Size = new System.Drawing.Size(81, 21);
             this.label2.TabIndex = 65;
             this.label2.Text = "Total Price:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // guna2GradientButton2
             // 
@@ -225,7 +182,7 @@ namespace CinemaProject
             this.listBox3.ItemHeight = 30;
             this.listBox3.Location = new System.Drawing.Point(914, 198);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(317, 302);
+            this.listBox3.Size = new System.Drawing.Size(317, 272);
             this.listBox3.TabIndex = 63;
             // 
             // guna2TextBox1
@@ -249,13 +206,13 @@ namespace CinemaProject
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(886, 109);
+            this.label1.Location = new System.Drawing.Point(843, 109);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 25);
+            this.label1.Size = new System.Drawing.Size(177, 33);
             this.label1.TabIndex = 61;
             this.label1.Text = "Ticket Number:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // guna2Separator1
             // 
@@ -279,7 +236,7 @@ namespace CinemaProject
             "3"});
             this.listBox2.Location = new System.Drawing.Point(717, 142);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(120, 482);
+            this.listBox2.Size = new System.Drawing.Size(120, 452);
             this.listBox2.TabIndex = 60;
             // 
             // listBox1
@@ -296,7 +253,7 @@ namespace CinemaProject
             "dsfg"});
             this.listBox1.Location = new System.Drawing.Point(311, 142);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(406, 482);
+            this.listBox1.Size = new System.Drawing.Size(406, 452);
             this.listBox1.TabIndex = 59;
             // 
             // guna2GradientButton3
@@ -328,8 +285,24 @@ namespace CinemaProject
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Brown;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1264, 48);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1259, 48);
             this.guna2CustomGradientPanel1.TabIndex = 53;
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
+            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1212, 3);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 50);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(47, 43);
+            this.guna2ImageButton1.TabIndex = 0;
+            this.guna2ImageButton1.UseTransparentBackground = true;
             // 
             // guna2ImageButton4
             // 
@@ -373,31 +346,12 @@ namespace CinemaProject
             this.guna2ImageButton2.Size = new System.Drawing.Size(184, 156);
             this.guna2ImageButton2.TabIndex = 54;
             // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1212, 3);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(47, 43);
-            this.guna2ImageButton1.TabIndex = 0;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            // 
             // SnacksShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1259, 689);
             this.Controls.Add(this.guna2GradientButton1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.guna2ToggleSwitch1);
             this.Controls.Add(this.guna2RadioButton2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.guna2RadioButton1);
@@ -428,28 +382,25 @@ namespace CinemaProject
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        public Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton2;
-        private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private System.Windows.Forms.ListBox listBox3;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton4;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton3;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        public Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label5;
+        public Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
+        public Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton2;
+        public Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        public Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
     }
 }

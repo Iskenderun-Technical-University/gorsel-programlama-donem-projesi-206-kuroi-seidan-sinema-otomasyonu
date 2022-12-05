@@ -152,7 +152,7 @@ namespace CinemaProject
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(59, 153);
+            this.label5.Location = new System.Drawing.Point(65, 158);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(101, 33);
             this.label5.TabIndex = 6;
@@ -220,42 +220,42 @@ namespace CinemaProject
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(13, 117);
+            this.label6.Location = new System.Drawing.Point(7, 117);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(182, 20);
+            this.label6.Size = new System.Drawing.Size(188, 20);
             this.label6.TabIndex = 2;
             this.label6.Text = "Enter The Password Again:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(21, 84);
+            this.label7.Location = new System.Drawing.Point(3, 84);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(173, 20);
+            this.label7.Size = new System.Drawing.Size(191, 20);
             this.label7.TabIndex = 1;
             this.label7.Text = "Enter The New Password:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F);
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(27, 50);
+            this.label8.Location = new System.Drawing.Point(3, 50);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(168, 20);
+            this.label8.Size = new System.Drawing.Size(192, 20);
             this.label8.TabIndex = 0;
             this.label8.Text = "Enter The Old Password:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
             // 
@@ -346,15 +346,15 @@ namespace CinemaProject
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(19, 19);
+            this.label4.Location = new System.Drawing.Point(0, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 19);
+            this.label4.Size = new System.Drawing.Size(106, 19);
             this.label4.TabIndex = 39;
             this.label4.Text = "Costumer UI";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // guna2ToggleSwitch2
             // 

@@ -16,7 +16,7 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
-
+        static int CostNum = 0;
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -24,6 +24,8 @@ namespace CinemaProject
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            LoginForm.mainForm.Show();
 
         }
 
@@ -36,5 +38,27 @@ namespace CinemaProject
         {
 
         }
+
+        private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add(Cost.Text);
+            listBox2.Items.Add(Type.Text);
+
+        }
+
+        private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
+        {
+            CostNum = Convert.ToInt32(StanderdTicket.Value + StudentTicket.Value + EliteTicket.Value + VIPTicket.Value);
+            if (listBox1.Items.Count != CostNum) {
+                MessageBox.Show("Please Add All The Costumer Data.");
+            }
+            else
+            {
+                //this.Hide();
+                //LoginForm.seat.Show();
+            }
+        }
+
+        
     }
 }

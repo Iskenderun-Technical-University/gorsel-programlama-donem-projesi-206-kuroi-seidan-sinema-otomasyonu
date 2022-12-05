@@ -79,5 +79,15 @@ namespace CinemaProject
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
