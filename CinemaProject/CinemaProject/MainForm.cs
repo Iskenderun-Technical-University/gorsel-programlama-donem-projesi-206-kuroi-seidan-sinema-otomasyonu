@@ -124,11 +124,11 @@ namespace CinemaProject
                 LoginForm.snacks.guna2GradientButton3.Text = "Ana Sayfaya Dön";
                 LoginForm.snacks.label1.Text = "Bilet Numarasi:";
                 LoginForm.snacks.label2.Text = "Toplam Fiyat:";
-                LoginForm.snacks.label5.Text = "Ödeme Yöntemi:";
+                /*LoginForm.snacks.label5.Text = "Ödeme Yöntemi:";
                 LoginForm.snacks.guna2RadioButton1.Text = "Nakit";
                 LoginForm.snacks.guna2RadioButton2.Text = "Kredi Card";
                 LoginForm.snacks.guna2GradientButton2.Text = "Siparişi bitir";
-                LoginForm.snacks.guna2GradientButton1.Text = "Siparişe ekle";
+                LoginForm.snacks.guna2GradientButton1.Text = "Siparişe ekle";*/
 
 
 

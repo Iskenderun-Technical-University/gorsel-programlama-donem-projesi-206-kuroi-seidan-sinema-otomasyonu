@@ -33,16 +33,11 @@ namespace CinemaProject
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-=======
             this.username = new Guna.UI2.WinForms.Guna2TextBox();
-            this.password = new Guna.UI2.WinForms.Guna2TextBox();
->>>>>>> Amal
             this.guna2GradientCircleButton2 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -58,11 +53,7 @@ namespace CinemaProject
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
             this.label2.Location = new System.Drawing.Point(7, 104);
-=======
-            this.label2.Location = new System.Drawing.Point(6, 95);
->>>>>>> Amal
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 27);
             this.label2.TabIndex = 2;
@@ -83,31 +74,8 @@ namespace CinemaProject
             // 
             // username
             // 
-<<<<<<< HEAD
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(106, 104);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(211, 29);
-            this.guna2TextBox1.TabIndex = 4;
-            // 
-=======
             this.username.BackColor = System.Drawing.Color.Transparent;
-            this.username.BorderRadius = 5;
+            this.username.BorderColor = System.Drawing.Color.DimGray;
             this.username.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.username.DefaultText = "";
             this.username.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -115,39 +83,18 @@ namespace CinemaProject
             this.username.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.username.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.username.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.username.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.username.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.username.ForeColor = System.Drawing.Color.Black;
             this.username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.username.Location = new System.Drawing.Point(109, 95);
+            this.username.Location = new System.Drawing.Point(106, 104);
+            this.username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.username.Name = "username";
             this.username.PasswordChar = '\0';
             this.username.PlaceholderText = "";
             this.username.SelectedText = "";
-            this.username.Size = new System.Drawing.Size(200, 36);
+            this.username.Size = new System.Drawing.Size(211, 29);
             this.username.TabIndex = 4;
             // 
-            // password
-            // 
-            this.password.BackColor = System.Drawing.Color.Transparent;
-            this.password.BorderRadius = 5;
-            this.password.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.password.DefaultText = "";
-            this.password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.password.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.password.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.password.Location = new System.Drawing.Point(109, 159);
-            this.password.Name = "password";
-            this.password.PasswordChar = '●';
-            this.password.PlaceholderText = "";
-            this.password.SelectedText = "";
-            this.password.Size = new System.Drawing.Size(200, 36);
-            this.password.TabIndex = 5;
-            this.password.UseSystemPasswordChar = true;
-            // 
->>>>>>> Amal
             // guna2GradientCircleButton2
             // 
             this.guna2GradientCircleButton2.BackColor = System.Drawing.Color.Transparent;
@@ -198,7 +145,7 @@ namespace CinemaProject
             this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.IndianRed;
             this.guna2CheckBox1.Location = new System.Drawing.Point(106, 191);
             this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(101, 17);
+            this.guna2CheckBox1.Size = new System.Drawing.Size(102, 17);
             this.guna2CheckBox1.TabIndex = 9;
             this.guna2CheckBox1.Text = "Show Password";
             this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -208,15 +155,15 @@ namespace CinemaProject
             this.guna2CheckBox1.UseVisualStyleBackColor = false;
             this.guna2CheckBox1.CheckedChanged += new System.EventHandler(this.guna2CheckBox1_CheckedChanged);
             // 
-            // textBox1
+            // password
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(106, 156);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(211, 29);
-            this.textBox1.TabIndex = 10;
-            this.textBox1.UseSystemPasswordChar = true;
+            this.password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.password.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password.Location = new System.Drawing.Point(106, 156);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(211, 29);
+            this.password.TabIndex = 10;
+            this.password.UseSystemPasswordChar = true;
             // 
             // LoginForm
             // 
@@ -226,27 +173,22 @@ namespace CinemaProject
             this.BackgroundImage = global::CinemaProject.Properties.Resources._10_1_2022_11_14_00_PM_removebg_preview;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(727, 325);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.password);
             this.Controls.Add(this.guna2CheckBox1);
             this.Controls.Add(this.guna2GradientCircleButton1);
             this.Controls.Add(this.guna2GradientCircleButton2);
-<<<<<<< HEAD
-            this.Controls.Add(this.guna2TextBox1);
-=======
-            this.Controls.Add(this.password);
             this.Controls.Add(this.username);
->>>>>>> Amal
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
             this.TransparencyKey = System.Drawing.Color.Black;
-            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -255,15 +197,10 @@ namespace CinemaProject
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton1;
         private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton2;
-<<<<<<< HEAD
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-=======
-        private Guna.UI2.WinForms.Guna2TextBox password;
         private Guna.UI2.WinForms.Guna2TextBox username;
->>>>>>> Amal
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox password;
     }
 }

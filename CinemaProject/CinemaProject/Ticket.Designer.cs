@@ -86,7 +86,6 @@ namespace CinemaProject
             this.guna2GradientCircleButton1.Size = new System.Drawing.Size(70, 70);
             this.guna2GradientCircleButton1.TabIndex = 61;
             this.guna2GradientCircleButton1.Text = "Add";
-            this.guna2GradientCircleButton1.Click += new System.EventHandler(this.guna2GradientCircleButton1_Click);
             // 
             // Type
             // 
@@ -140,7 +139,6 @@ namespace CinemaProject
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Male";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // guna2TextBox4
             // 
@@ -185,11 +183,7 @@ namespace CinemaProject
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label4.Location = new System.Drawing.Point(812, 207);
             this.label4.Name = "label4";
-<<<<<<< HEAD
-            this.label4.Size = new System.Drawing.Size(69, 21);
-=======
             this.label4.Size = new System.Drawing.Size(133, 40);
->>>>>>> Amal
             this.label4.TabIndex = 54;
             this.label4.Text = "Gender:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -199,11 +193,7 @@ namespace CinemaProject
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label3.Location = new System.Drawing.Point(816, 144);
             this.label3.Name = "label3";
-<<<<<<< HEAD
-            this.label3.Size = new System.Drawing.Size(125, 21);
-=======
             this.label3.Size = new System.Drawing.Size(129, 40);
->>>>>>> Amal
             this.label3.TabIndex = 53;
             this.label3.Text = "Phone Number:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -226,11 +216,7 @@ namespace CinemaProject
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label13.Location = new System.Drawing.Point(83, 259);
             this.label13.Name = "label13";
-<<<<<<< HEAD
-            this.label13.Size = new System.Drawing.Size(120, 21);
-=======
             this.label13.Size = new System.Drawing.Size(140, 36);
->>>>>>> Amal
             this.label13.TabIndex = 70;
             this.label13.Text = "Student Ticket:";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -286,11 +272,7 @@ namespace CinemaProject
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label5.Location = new System.Drawing.Point(87, 206);
             this.label5.Name = "label5";
-<<<<<<< HEAD
-            this.label5.Size = new System.Drawing.Size(128, 21);
-=======
             this.label5.Size = new System.Drawing.Size(131, 33);
->>>>>>> Amal
             this.label5.TabIndex = 65;
             this.label5.Text = "Standard Ticket:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -335,18 +317,13 @@ namespace CinemaProject
             this.guna2GradientButton3.Size = new System.Drawing.Size(132, 55);
             this.guna2GradientButton3.TabIndex = 62;
             this.guna2GradientButton3.Text = "Back To Main Menu";
-            this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
             // 
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label12.Location = new System.Drawing.Point(373, 207);
             this.label12.Name = "label12";
-<<<<<<< HEAD
-            this.label12.Size = new System.Drawing.Size(97, 21);
-=======
             this.label12.Size = new System.Drawing.Size(173, 36);
->>>>>>> Amal
             this.label12.TabIndex = 73;
             this.label12.Text = "Ticket Type:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -356,11 +333,7 @@ namespace CinemaProject
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label1.Location = new System.Drawing.Point(369, 144);
             this.label1.Name = "label1";
-<<<<<<< HEAD
-            this.label1.Size = new System.Drawing.Size(132, 21);
-=======
             this.label1.Size = new System.Drawing.Size(177, 40);
->>>>>>> Amal
             this.label1.TabIndex = 72;
             this.label1.Text = "Costumer Name:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -422,7 +395,6 @@ namespace CinemaProject
             this.label9.Size = new System.Drawing.Size(289, 20);
             this.label9.TabIndex = 0;
             this.label9.Text = "1- Standard Ticket: The Movie Entry Ticket.";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // guna2BorderlessForm1
             // 
@@ -449,11 +421,7 @@ namespace CinemaProject
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
-<<<<<<< HEAD
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-=======
             this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
->>>>>>> Amal
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
@@ -483,8 +451,6 @@ namespace CinemaProject
             this.guna2GradientCircleButton2.TabIndex = 77;
             this.guna2GradientCircleButton2.Text = "Choose The Seat";
             this.guna2GradientCircleButton2.Click += new System.EventHandler(this.guna2GradientCircleButton2_Click);
-<<<<<<< HEAD
-=======
             // 
             // listBox2
             // 
@@ -495,19 +461,14 @@ namespace CinemaProject
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(373, 298);
             this.listBox2.TabIndex = 78;
->>>>>>> Amal
             // 
             // Ticket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1280, 720);
-=======
-            this.ClientSize = new System.Drawing.Size(1280, 740);
             this.Controls.Add(this.listBox2);
->>>>>>> Amal
             this.Controls.Add(this.guna2GradientCircleButton2);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.guna2GroupBox1);

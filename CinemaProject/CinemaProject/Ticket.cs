@@ -22,13 +22,11 @@ namespace CinemaProject
             Application.Exit();
         }
 
-<<<<<<< HEAD
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
             this.Hide();
             LoginForm.seat.Show();
         }
-=======
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -53,7 +51,7 @@ namespace CinemaProject
 
         }
 
-        private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
+        /*private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
             CostNum = Convert.ToInt32(StanderdTicket.Value + StudentTicket.Value + EliteTicket.Value + VIPTicket.Value);
             if (listBox1.Items.Count != CostNum) {
@@ -64,9 +62,6 @@ namespace CinemaProject
                 //this.Hide();
                 //LoginForm.seat.Show();
             }
-        }
-
-        
->>>>>>> Amal
+        }*/
     }
 }

@@ -92,20 +92,5 @@ namespace CinemaProject
             this.Hide();
             LoginForm.mainForm.Show();
         }
-
-        private void AddMovies_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2GradientButton3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -153,6 +153,7 @@
     </Compile>
     <EmbeddedResource Include="Ticket.resx">
       <DependentUpon>Ticket.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="SnacksShop.resx">
       <DependentUpon>SnacksShop.cs</DependentUpon>

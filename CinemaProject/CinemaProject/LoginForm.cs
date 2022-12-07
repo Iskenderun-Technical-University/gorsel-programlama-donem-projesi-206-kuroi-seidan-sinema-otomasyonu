@@ -20,6 +20,7 @@ namespace CinemaProject
         }
        // static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
         static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
+        //static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True;Connect Timeout=30";
         SqlConnection con = new SqlConnection(sqlcon);
         SqlCommand cmd;
 
@@ -29,15 +30,9 @@ namespace CinemaProject
         public static Ticket ticket = new Ticket();
         public static EditSnacksMenu editSnacks = new EditSnacksMenu();
         public static AddMovies addMovies = new AddMovies();
-<<<<<<< HEAD
         public static MovieDetails movieDetails = new MovieDetails();
         public static ChooseSeat seat = new ChooseSeat();
-=======
-        public static ChooseSeat seat= new ChooseSeat();
 
-        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True;Connect Timeout=30";
-        SqlConnection con = new SqlConnection(Sqlcon);
->>>>>>> Salsabil
 
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
@@ -56,7 +51,6 @@ namespace CinemaProject
         }
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             /*   string query = "select * from LoginTbl where UserName='"+guna2TextBox1.Text+"' and Password='"+guna2TextBox2.Text+"'";
                  sda = new SqlDataAdapter(query,con);
                  DataTable dt = new DataTable();
@@ -73,9 +67,7 @@ namespace CinemaProject
              }*/
             this.Hide();
            mainForm.Show();
-=======
-            this.Hide();
-            mainForm.Show();
+
             /*if (Login())
             {
                 
@@ -84,16 +76,10 @@ namespace CinemaProject
            
         }
 
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
->>>>>>> Amal
-        }
-
         private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (guna2CheckBox1.Checked == true) textBox1.UseSystemPasswordChar = false;
-            else textBox1.UseSystemPasswordChar = true;
+            if (guna2CheckBox1.Checked == true) password.UseSystemPasswordChar = false;
+            else password.UseSystemPasswordChar = true;
         }
     }
 }

@@ -17,17 +17,11 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
-
-        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
-        SqlConnection con = new SqlConnection(Sqlcon);
-
-=======
+        //static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
         static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True;Connect Timeout=30";
         SqlConnection con = new SqlConnection(Sqlcon);
         SqlDataAdapter sda;
         SqlCommand cmd;
->>>>>>> Salsabil
         void Seats(Guna.UI2.WinForms.Guna2ImageButton x)
         {
            if (x.Image != x.PressedState.Image) x.Image = x.PressedState.Image;
@@ -96,8 +90,7 @@ namespace CinemaProject
 
         private void ChooseSeat_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            string query = "select MovieName from MoviesTbl where ShowDays like'%"+DateTime.Now.ToString("dddd")+"%'";
+            /*string query = "select MovieName from MoviesTbl where ShowDays like'%"+DateTime.Now.ToString("dddd")+"%'";
             DataTable dt = new DataTable();
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
@@ -105,8 +98,7 @@ namespace CinemaProject
             for(int i = 0; i < dt.Rows.Count; i++)
             {
                 guna2ComboBox2.Items.Add(dt.Rows[i][0].ToString());
-            }
-=======
+            }*/
             string query = "select MovieName from MoviesTbl where ShowDays Like '%"+DateTime.Now.ToString("dddd")+"%'";
             con.Open();
             DataTable dt = new DataTable();
@@ -121,7 +113,6 @@ namespace CinemaProject
                 }
             }
             else MessageBox.Show("No Data Found");
->>>>>>> Salsabil
             con.Close();
         }
     }
