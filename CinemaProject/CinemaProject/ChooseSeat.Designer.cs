@@ -144,7 +144,7 @@ namespace CinemaProject
             this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label14.Location = new System.Drawing.Point(849, 137);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(144, 21);
+            this.label14.Size = new System.Drawing.Size(150, 21);
             this.label14.TabIndex = 83;
             this.label14.Text = "Choose The Movie:";
             // 

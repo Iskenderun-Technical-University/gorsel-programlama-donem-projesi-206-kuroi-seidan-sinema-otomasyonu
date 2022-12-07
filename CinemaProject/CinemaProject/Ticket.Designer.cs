@@ -107,7 +107,7 @@ namespace CinemaProject
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(773, 159);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(10, 13);
+            this.label7.Size = new System.Drawing.Size(11, 13);
             this.label7.TabIndex = 59;
             this.label7.Text = "-";
             // 
@@ -179,7 +179,7 @@ namespace CinemaProject
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label4.Location = new System.Drawing.Point(880, 222);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 21);
+            this.label4.Size = new System.Drawing.Size(69, 21);
             this.label4.TabIndex = 54;
             this.label4.Text = "Gender:";
             // 
@@ -189,7 +189,7 @@ namespace CinemaProject
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label3.Location = new System.Drawing.Point(824, 151);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 21);
+            this.label3.Size = new System.Drawing.Size(125, 21);
             this.label3.TabIndex = 53;
             this.label3.Text = "Phone Number:";
             // 
@@ -212,7 +212,7 @@ namespace CinemaProject
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label13.Location = new System.Drawing.Point(96, 265);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(116, 21);
+            this.label13.Size = new System.Drawing.Size(120, 21);
             this.label13.TabIndex = 70;
             this.label13.Text = "Student Ticket:";
             // 
@@ -268,7 +268,7 @@ namespace CinemaProject
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label5.Location = new System.Drawing.Point(92, 206);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 21);
+            this.label5.Size = new System.Drawing.Size(128, 21);
             this.label5.TabIndex = 65;
             this.label5.Text = "Standard Ticket:";
             // 
@@ -319,7 +319,7 @@ namespace CinemaProject
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label12.Location = new System.Drawing.Point(453, 213);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(95, 21);
+            this.label12.Size = new System.Drawing.Size(97, 21);
             this.label12.TabIndex = 73;
             this.label12.Text = "Ticket Type:";
             // 
@@ -329,7 +329,7 @@ namespace CinemaProject
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label1.Location = new System.Drawing.Point(416, 151);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 21);
+            this.label1.Size = new System.Drawing.Size(132, 21);
             this.label1.TabIndex = 72;
             this.label1.Text = "Costumer Name:";
             // 
