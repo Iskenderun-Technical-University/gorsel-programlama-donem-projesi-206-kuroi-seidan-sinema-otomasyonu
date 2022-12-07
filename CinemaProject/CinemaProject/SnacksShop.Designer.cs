@@ -51,8 +51,11 @@ namespace CinemaProject
             this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
+<<<<<<< HEAD
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.listBox4 = new System.Windows.Forms.ListBox();
+=======
+>>>>>>> Amal
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,7 +82,10 @@ namespace CinemaProject
             this.guna2GradientButton1.Size = new System.Drawing.Size(118, 53);
             this.guna2GradientButton1.TabIndex = 74;
             this.guna2GradientButton1.Text = "Add to Order";
+<<<<<<< HEAD
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+=======
+>>>>>>> Amal
             // 
             // guna2RadioButton2
             // 
@@ -102,13 +108,13 @@ namespace CinemaProject
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(894, 584);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 21);
+            this.label5.Size = new System.Drawing.Size(115, 24);
             this.label5.TabIndex = 69;
             this.label5.Text = "Payment Method:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // guna2RadioButton1
             // 
@@ -151,13 +157,13 @@ namespace CinemaProject
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(939, 530);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 21);
+            this.label2.Size = new System.Drawing.Size(81, 21);
             this.label2.TabIndex = 65;
             this.label2.Text = "Total Price:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // guna2GradientButton2
             // 
@@ -185,7 +191,11 @@ namespace CinemaProject
             this.listBox3.ItemHeight = 30;
             this.listBox3.Location = new System.Drawing.Point(914, 198);
             this.listBox3.Name = "listBox3";
+<<<<<<< HEAD
             this.listBox3.Size = new System.Drawing.Size(266, 302);
+=======
+            this.listBox3.Size = new System.Drawing.Size(317, 272);
+>>>>>>> Amal
             this.listBox3.TabIndex = 63;
             this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
@@ -210,13 +220,13 @@ namespace CinemaProject
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(886, 109);
+            this.label1.Location = new System.Drawing.Point(843, 109);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 25);
+            this.label1.Size = new System.Drawing.Size(177, 33);
             this.label1.TabIndex = 61;
             this.label1.Text = "Ticket Number:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // guna2Separator1
             // 
@@ -240,7 +250,7 @@ namespace CinemaProject
             "3"});
             this.listBox2.Location = new System.Drawing.Point(717, 142);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(120, 482);
+            this.listBox2.Size = new System.Drawing.Size(120, 452);
             this.listBox2.TabIndex = 60;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
@@ -258,7 +268,7 @@ namespace CinemaProject
             "dsfg"});
             this.listBox1.Location = new System.Drawing.Point(311, 142);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(406, 482);
+            this.listBox1.Size = new System.Drawing.Size(406, 452);
             this.listBox1.TabIndex = 59;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -291,7 +301,7 @@ namespace CinemaProject
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Brown;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1264, 48);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1259, 48);
             this.guna2CustomGradientPanel1.TabIndex = 53;
             // 
             // guna2ImageButton1
@@ -309,7 +319,10 @@ namespace CinemaProject
             this.guna2ImageButton1.Size = new System.Drawing.Size(47, 43);
             this.guna2ImageButton1.TabIndex = 0;
             this.guna2ImageButton1.UseTransparentBackground = true;
+<<<<<<< HEAD
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+=======
+>>>>>>> Amal
             // 
             // guna2ImageButton4
             // 
@@ -324,7 +337,10 @@ namespace CinemaProject
             this.guna2ImageButton4.PressedState.ImageSize = new System.Drawing.Size(157, 143);
             this.guna2ImageButton4.Size = new System.Drawing.Size(184, 156);
             this.guna2ImageButton4.TabIndex = 56;
+<<<<<<< HEAD
             this.guna2ImageButton4.Click += new System.EventHandler(this.guna2ImageButton4_Click);
+=======
+>>>>>>> Amal
             // 
             // guna2ImageButton3
             // 
@@ -339,7 +355,10 @@ namespace CinemaProject
             this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(160, 145);
             this.guna2ImageButton3.Size = new System.Drawing.Size(184, 156);
             this.guna2ImageButton3.TabIndex = 55;
+<<<<<<< HEAD
             this.guna2ImageButton3.Click += new System.EventHandler(this.guna2ImageButton3_Click);
+=======
+>>>>>>> Amal
             // 
             // guna2ImageButton2
             // 
@@ -354,6 +373,7 @@ namespace CinemaProject
             this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(173, 157);
             this.guna2ImageButton2.Size = new System.Drawing.Size(184, 156);
             this.guna2ImageButton2.TabIndex = 54;
+<<<<<<< HEAD
             this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
             // guna2GradientButton4
@@ -386,14 +406,20 @@ namespace CinemaProject
             this.listBox4.Size = new System.Drawing.Size(49, 302);
             this.listBox4.TabIndex = 1;
             this.listBox4.SelectedIndexChanged += new System.EventHandler(this.listBox4_SelectedIndexChanged);
+=======
+>>>>>>> Amal
             // 
             // SnacksShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.listBox4);
             this.Controls.Add(this.guna2GradientButton4);
+=======
+            this.ClientSize = new System.Drawing.Size(1259, 689);
+>>>>>>> Amal
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.guna2RadioButton2);
             this.Controls.Add(this.label5);
@@ -425,27 +451,37 @@ namespace CinemaProject
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+<<<<<<< HEAD
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton2;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
+=======
+>>>>>>> Amal
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private System.Windows.Forms.ListBox listBox3;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton4;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton3;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+<<<<<<< HEAD
         private System.Windows.Forms.ListBox listBox4;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
+=======
+        public Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label5;
+        public Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
+        public Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton2;
+        public Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        public Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+>>>>>>> Amal
     }
 }

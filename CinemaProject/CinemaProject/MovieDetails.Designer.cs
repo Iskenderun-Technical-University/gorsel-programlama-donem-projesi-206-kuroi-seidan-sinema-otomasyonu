@@ -89,7 +89,11 @@ namespace CinemaProject
             // 
             descriptionLabel.AutoSize = true;
             descriptionLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             descriptionLabel.Location = new System.Drawing.Point(24, 369);
+=======
+            descriptionLabel.Location = new System.Drawing.Point(415, 269);
+>>>>>>> Amal
             descriptionLabel.Name = "descriptionLabel";
             descriptionLabel.Size = new System.Drawing.Size(119, 25);
             descriptionLabel.TabIndex = 55;
@@ -119,7 +123,11 @@ namespace CinemaProject
             // 
             lengthLabel.AutoSize = true;
             lengthLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             lengthLabel.Location = new System.Drawing.Point(536, 254);
+=======
+            lengthLabel.Location = new System.Drawing.Point(26, 269);
+>>>>>>> Amal
             lengthLabel.Name = "lengthLabel";
             lengthLabel.Size = new System.Drawing.Size(79, 25);
             lengthLabel.TabIndex = 41;
@@ -129,7 +137,11 @@ namespace CinemaProject
             // 
             ageRatingLabel.AutoSize = true;
             ageRatingLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             ageRatingLabel.Location = new System.Drawing.Point(500, 306);
+=======
+            ageRatingLabel.Location = new System.Drawing.Point(9, 323);
+>>>>>>> Amal
             ageRatingLabel.Name = "ageRatingLabel";
             ageRatingLabel.Size = new System.Drawing.Size(115, 25);
             ageRatingLabel.TabIndex = 43;
@@ -139,7 +151,11 @@ namespace CinemaProject
             // 
             showDaysLabel.AutoSize = true;
             showDaysLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             showDaysLabel.Location = new System.Drawing.Point(26, 254);
+=======
+            showDaysLabel.Location = new System.Drawing.Point(9, 382);
+>>>>>>> Amal
             showDaysLabel.Name = "showDaysLabel";
             showDaysLabel.Size = new System.Drawing.Size(113, 25);
             showDaysLabel.TabIndex = 45;
@@ -149,7 +165,11 @@ namespace CinemaProject
             // 
             showHoursLabel.AutoSize = true;
             showHoursLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             showHoursLabel.Location = new System.Drawing.Point(22, 302);
+=======
+            showHoursLabel.Location = new System.Drawing.Point(9, 438);
+>>>>>>> Amal
             showHoursLabel.Name = "showHoursLabel";
             showHoursLabel.Size = new System.Drawing.Size(126, 25);
             showHoursLabel.TabIndex = 47;
@@ -159,7 +179,11 @@ namespace CinemaProject
             // 
             releaseDateLabel.AutoSize = true;
             releaseDateLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             releaseDateLabel.Location = new System.Drawing.Point(378, 194);
+=======
+            releaseDateLabel.Location = new System.Drawing.Point(377, 203);
+>>>>>>> Amal
             releaseDateLabel.Name = "releaseDateLabel";
             releaseDateLabel.Size = new System.Drawing.Size(128, 25);
             releaseDateLabel.TabIndex = 49;
@@ -193,7 +217,7 @@ namespace CinemaProject
             this.SaveBtn.FillColor2 = System.Drawing.Color.OrangeRed;
             this.SaveBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveBtn.ForeColor = System.Drawing.Color.White;
-            this.SaveBtn.Location = new System.Drawing.Point(908, 548);
+            this.SaveBtn.Location = new System.Drawing.Point(911, 544);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(104, 46);
             this.SaveBtn.TabIndex = 62;
@@ -229,9 +253,15 @@ namespace CinemaProject
             this.releaseDateDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.releaseDateDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 11.5F);
             this.releaseDateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+<<<<<<< HEAD
             this.releaseDateDateTimePicker.Location = new System.Drawing.Point(512, 190);
             this.releaseDateDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.releaseDateDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+=======
+            this.releaseDateDateTimePicker.Location = new System.Drawing.Point(512, 201);
+            this.releaseDateDateTimePicker.MaxDate = new System.DateTime(2077, 11, 16, 23, 59, 59, 999);
+            this.releaseDateDateTimePicker.MinDate = new System.DateTime(1900, 4, 30, 0, 0, 0, 0);
+>>>>>>> Amal
             this.releaseDateDateTimePicker.Name = "releaseDateDateTimePicker";
             this.releaseDateDateTimePicker.Size = new System.Drawing.Size(257, 38);
             this.releaseDateDateTimePicker.TabIndex = 60;
@@ -251,7 +281,7 @@ namespace CinemaProject
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.OrangeRed;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1030, 44);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1027, 44);
             this.guna2CustomGradientPanel1.TabIndex = 59;
             // 
             // label3
@@ -340,7 +370,11 @@ namespace CinemaProject
             this.movieNameTextBox.BackColor = System.Drawing.Color.White;
             this.movieNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.movieNameTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.movieNameTextBox.Location = new System.Drawing.Point(150, 138);
+=======
+            this.movieNameTextBox.Location = new System.Drawing.Point(173, 139);
+>>>>>>> Amal
             this.movieNameTextBox.Name = "movieNameTextBox";
             this.movieNameTextBox.ReadOnly = true;
             this.movieNameTextBox.Size = new System.Drawing.Size(226, 29);
@@ -369,7 +403,11 @@ namespace CinemaProject
             this.lengthTextBox.BackColor = System.Drawing.Color.White;
             this.lengthTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lengthTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.lengthTextBox.Location = new System.Drawing.Point(621, 250);
+=======
+            this.lengthTextBox.Location = new System.Drawing.Point(183, 269);
+>>>>>>> Amal
             this.lengthTextBox.Name = "lengthTextBox";
             this.lengthTextBox.ReadOnly = true;
             this.lengthTextBox.Size = new System.Drawing.Size(139, 29);
@@ -380,7 +418,11 @@ namespace CinemaProject
             this.ageRatingTextBox.BackColor = System.Drawing.Color.White;
             this.ageRatingTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ageRatingTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.ageRatingTextBox.Location = new System.Drawing.Point(621, 303);
+=======
+            this.ageRatingTextBox.Location = new System.Drawing.Point(183, 325);
+>>>>>>> Amal
             this.ageRatingTextBox.Name = "ageRatingTextBox";
             this.ageRatingTextBox.ReadOnly = true;
             this.ageRatingTextBox.Size = new System.Drawing.Size(139, 29);
@@ -391,7 +433,11 @@ namespace CinemaProject
             this.showDaysTextBox.BackColor = System.Drawing.Color.White;
             this.showDaysTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.showDaysTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.showDaysTextBox.Location = new System.Drawing.Point(154, 254);
+=======
+            this.showDaysTextBox.Location = new System.Drawing.Point(183, 384);
+>>>>>>> Amal
             this.showDaysTextBox.Name = "showDaysTextBox";
             this.showDaysTextBox.ReadOnly = true;
             this.showDaysTextBox.Size = new System.Drawing.Size(315, 29);
@@ -402,7 +448,11 @@ namespace CinemaProject
             this.showHoursTextBox.BackColor = System.Drawing.Color.White;
             this.showHoursTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.showHoursTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.showHoursTextBox.Location = new System.Drawing.Point(154, 302);
+=======
+            this.showHoursTextBox.Location = new System.Drawing.Point(209, 440);
+>>>>>>> Amal
             this.showHoursTextBox.Name = "showHoursTextBox";
             this.showHoursTextBox.ReadOnly = true;
             this.showHoursTextBox.Size = new System.Drawing.Size(315, 29);
@@ -460,10 +510,14 @@ namespace CinemaProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1030, 600);
             this.Controls.Add(label1);
             this.Controls.Add(this.IDtxt);
             this.Controls.Add(this.DeleteBtn);
+=======
+            this.ClientSize = new System.Drawing.Size(1027, 602);
+>>>>>>> Amal
             this.Controls.Add(this.moviePicturePictureBox);
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.uploadImgBtn);

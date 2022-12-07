@@ -71,6 +71,7 @@ C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debu
 C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.MoviesList.resources
 C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\ProjectDB.mdf
 C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\ProjectDB_log.ldf
+<<<<<<< HEAD
 C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\bin\Debug\ProjectDB.mdf
 C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\bin\Debug\ProjectDB_log.ldf
 C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.ChooseSeat.resources
@@ -78,3 +79,28 @@ C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-sei
 C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.LoginForm.resources
 C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.MoviesList.resources
 C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.SnacksShop.resources
+=======
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\bin\Debug\ProjectDB.mdf
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\bin\Debug\ProjectDB_log.ldf
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\bin\Debug\CinemaProject.exe.config
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\bin\Debug\CinemaProject.exe
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\bin\Debug\CinemaProject.pdb
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\bin\Debug\Guna.UI2.dll
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.csproj.AssemblyReference.cache
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.ChooseSeat.resources
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.EditSnacksMenu.resources
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.MainForm.resources
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.AddMovies.resources
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.LoginForm.resources
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.MovieDetails.resources
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.MoviesList.resources
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.Properties.Resources.resources
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.Ticket.resources
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.SnacksShop.resources
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.csproj.GenerateResource.cache
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.csproj.CoreCompileInputs.cache
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.csproj.CopyComplete
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.exe
+C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.pdb
+>>>>>>> Amal
