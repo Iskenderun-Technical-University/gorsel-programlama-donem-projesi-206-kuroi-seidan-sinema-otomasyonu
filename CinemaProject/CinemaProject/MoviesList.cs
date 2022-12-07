@@ -44,7 +44,7 @@ namespace CinemaProject
                 SqlDataAdapter sda = new SqlDataAdapter(sqlquery, con);
                 DataTable dataTable = new DataTable();
                 sda.Fill(dataTable);
-                if (current >= 0)
+                if (current >= 0 && dataTable.Rows.Count>current)
                 {
                     ClearList();
                     prev = current-10;
