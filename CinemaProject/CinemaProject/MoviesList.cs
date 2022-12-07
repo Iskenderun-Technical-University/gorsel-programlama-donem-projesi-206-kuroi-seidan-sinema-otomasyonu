@@ -19,7 +19,7 @@ namespace CinemaProject
             InitializeComponent();
         }
 
-        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Universite Files\Programs\Cinema Project\Cinema Project\ProjectDB.mdf;Integrated Security=True;Connect Timeout=30";
+        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True;Connect Timeout=30";
         SqlConnection con = new SqlConnection(Sqlcon);
         static int current = 0;
 

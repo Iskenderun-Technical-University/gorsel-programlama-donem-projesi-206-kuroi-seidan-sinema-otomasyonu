@@ -21,5 +21,11 @@ namespace CinemaProject
         {
             Application.Exit();
         }
+
+        private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm.seat.Show();
+        }
     }
 }

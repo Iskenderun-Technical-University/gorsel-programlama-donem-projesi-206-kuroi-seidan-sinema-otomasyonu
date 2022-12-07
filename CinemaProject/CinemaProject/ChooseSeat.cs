@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace CinemaProject
 {
@@ -16,7 +17,10 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
-
+        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True;Connect Timeout=30";
+        SqlConnection con = new SqlConnection(Sqlcon);
+        SqlDataAdapter sda;
+        SqlCommand cmd;
         void Seats(Guna.UI2.WinForms.Guna2ImageButton x)
         {
            if (x.Image != x.PressedState.Image) x.Image = x.PressedState.Image;
@@ -82,5 +86,24 @@ namespace CinemaProject
         private void A5_Click(object sender, EventArgs e) {Seats(A5);}
 
         private void A6_Click(object sender, EventArgs e) {Seats(A6);}
+
+        private void ChooseSeat_Load(object sender, EventArgs e)
+        {
+            string query = "select MovieName from MoviesTbl where ShowDays Like '%"+DateTime.Now.ToString("dddd")+"%'";
+            con.Open();
+            DataTable dt = new DataTable();
+            sda = new SqlDataAdapter(query,con);
+            sda.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                guna2ComboBox2.Items.Clear();
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    guna2ComboBox2.Items.Add(dt.Rows[i][0]);
+                }
+            }
+            else MessageBox.Show("No Data Found");
+            con.Close();
+        }
     }
 }

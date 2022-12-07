@@ -71,3 +71,10 @@ C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debu
 C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.MoviesList.resources
 C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\ProjectDB.mdf
 C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\ProjectDB_log.ldf
+C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\bin\Debug\ProjectDB.mdf
+C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\bin\Debug\ProjectDB_log.ldf
+C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.ChooseSeat.resources
+C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.AddMovies.resources
+C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.LoginForm.resources
+C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.MoviesList.resources
+C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.SnacksShop.resources
