@@ -125,6 +125,7 @@ namespace CinemaProject
             this.guna2GradientButton1.Size = new System.Drawing.Size(108, 42);
             this.guna2GradientButton1.TabIndex = 8;
             this.guna2GradientButton1.Text = "Change";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // TextBox4
             // 

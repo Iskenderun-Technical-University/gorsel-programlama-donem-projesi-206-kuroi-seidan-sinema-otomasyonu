@@ -30,16 +30,10 @@ namespace CinemaProject
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label genresLabel;
-            System.Windows.Forms.Label descriptionLabel;
-            System.Windows.Forms.Label movieNameLabel;
-            System.Windows.Forms.Label iMDbRatingLabel;
-            System.Windows.Forms.Label lengthLabel;
-            System.Windows.Forms.Label ageRatingLabel;
-            System.Windows.Forms.Label showDaysLabel;
-            System.Windows.Forms.Label showHoursLabel;
-            System.Windows.Forms.Label releaseDateLabel;
-            System.Windows.Forms.Label label1;
+            this.genresLabel = new System.Windows.Forms.Label();
+            this.lengthLabel = new System.Windows.Forms.Label();
+            this.ageRatingLabel = new System.Windows.Forms.Label();
+            this.releaseDateLabel = new System.Windows.Forms.Label();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.SaveBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.uploadImgBtn = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -61,119 +55,55 @@ namespace CinemaProject
             this.moviePicturePictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.DeleteBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.IDtxt = new System.Windows.Forms.TextBox();
-            genresLabel = new System.Windows.Forms.Label();
-            descriptionLabel = new System.Windows.Forms.Label();
-            movieNameLabel = new System.Windows.Forms.Label();
-            iMDbRatingLabel = new System.Windows.Forms.Label();
-            lengthLabel = new System.Windows.Forms.Label();
-            ageRatingLabel = new System.Windows.Forms.Label();
-            showDaysLabel = new System.Windows.Forms.Label();
-            showHoursLabel = new System.Windows.Forms.Label();
-            releaseDateLabel = new System.Windows.Forms.Label();
-            label1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.descriptionLabel = new System.Windows.Forms.Label();
+            this.movieNameLabel = new System.Windows.Forms.Label();
+            this.iMDbRatingLabel = new System.Windows.Forms.Label();
+            this.showDaysLabel = new System.Windows.Forms.Label();
+            this.showHoursLabel = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moviePicturePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // genresLabel
             // 
-            genresLabel.AutoSize = true;
-            genresLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            genresLabel.Location = new System.Drawing.Point(427, 137);
-            genresLabel.Name = "genresLabel";
-            genresLabel.Size = new System.Drawing.Size(79, 25);
-            genresLabel.TabIndex = 56;
-            genresLabel.Text = "Genres:";
-            // 
-            // descriptionLabel
-            // 
-            descriptionLabel.AutoSize = true;
-            descriptionLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            descriptionLabel.Location = new System.Drawing.Point(24, 369);
-            descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(119, 25);
-            descriptionLabel.TabIndex = 55;
-            descriptionLabel.Text = "Description:";
-            // 
-            // movieNameLabel
-            // 
-            movieNameLabel.AutoSize = true;
-            movieNameLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            movieNameLabel.Location = new System.Drawing.Point(15, 138);
-            movieNameLabel.Name = "movieNameLabel";
-            movieNameLabel.Size = new System.Drawing.Size(129, 25);
-            movieNameLabel.TabIndex = 53;
-            movieNameLabel.Text = "Movie Name:";
-            // 
-            // iMDbRatingLabel
-            // 
-            iMDbRatingLabel.AutoSize = true;
-            iMDbRatingLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            iMDbRatingLabel.Location = new System.Drawing.Point(14, 191);
-            iMDbRatingLabel.Name = "iMDbRatingLabel";
-            iMDbRatingLabel.Size = new System.Drawing.Size(130, 25);
-            iMDbRatingLabel.TabIndex = 50;
-            iMDbRatingLabel.Text = "IMDb Rating:";
+            this.genresLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genresLabel.Location = new System.Drawing.Point(411, 138);
+            this.genresLabel.Name = "genresLabel";
+            this.genresLabel.Size = new System.Drawing.Size(95, 25);
+            this.genresLabel.TabIndex = 56;
+            this.genresLabel.Text = "Genres:";
+            this.genresLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lengthLabel
             // 
-            lengthLabel.AutoSize = true;
-            lengthLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lengthLabel.Location = new System.Drawing.Point(536, 254);
-            lengthLabel.Name = "lengthLabel";
-            lengthLabel.Size = new System.Drawing.Size(79, 25);
-            lengthLabel.TabIndex = 41;
-            lengthLabel.Text = "Length:";
+            this.lengthLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lengthLabel.Location = new System.Drawing.Point(521, 254);
+            this.lengthLabel.Name = "lengthLabel";
+            this.lengthLabel.Size = new System.Drawing.Size(103, 25);
+            this.lengthLabel.TabIndex = 41;
+            this.lengthLabel.Text = "Length:";
+            this.lengthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ageRatingLabel
             // 
-            ageRatingLabel.AutoSize = true;
-            ageRatingLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            ageRatingLabel.Location = new System.Drawing.Point(500, 306);
-            ageRatingLabel.Name = "ageRatingLabel";
-            ageRatingLabel.Size = new System.Drawing.Size(115, 25);
-            ageRatingLabel.TabIndex = 43;
-            ageRatingLabel.Text = "Age Rating:";
-            // 
-            // showDaysLabel
-            // 
-            showDaysLabel.AutoSize = true;
-            showDaysLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            showDaysLabel.Location = new System.Drawing.Point(26, 254);
-            showDaysLabel.Name = "showDaysLabel";
-            showDaysLabel.Size = new System.Drawing.Size(113, 25);
-            showDaysLabel.TabIndex = 45;
-            showDaysLabel.Text = "Show Days:";
-            // 
-            // showHoursLabel
-            // 
-            showHoursLabel.AutoSize = true;
-            showHoursLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            showHoursLabel.Location = new System.Drawing.Point(22, 302);
-            showHoursLabel.Name = "showHoursLabel";
-            showHoursLabel.Size = new System.Drawing.Size(126, 25);
-            showHoursLabel.TabIndex = 47;
-            showHoursLabel.Text = "Show Hours:";
+            this.ageRatingLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ageRatingLabel.Location = new System.Drawing.Point(494, 306);
+            this.ageRatingLabel.Name = "ageRatingLabel";
+            this.ageRatingLabel.Size = new System.Drawing.Size(130, 25);
+            this.ageRatingLabel.TabIndex = 43;
+            this.ageRatingLabel.Text = "Age Rating:";
+            this.ageRatingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // releaseDateLabel
             // 
-            releaseDateLabel.AutoSize = true;
-            releaseDateLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            releaseDateLabel.Location = new System.Drawing.Point(378, 194);
-            releaseDateLabel.Name = "releaseDateLabel";
-            releaseDateLabel.Size = new System.Drawing.Size(128, 25);
-            releaseDateLabel.TabIndex = 49;
-            releaseDateLabel.Text = "Release Date:";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label1.Location = new System.Drawing.Point(107, 86);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(37, 25);
-            label1.TabIndex = 65;
-            label1.Text = "ID:";
+            this.releaseDateLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.releaseDateLabel.Location = new System.Drawing.Point(382, 194);
+            this.releaseDateLabel.Name = "releaseDateLabel";
+            this.releaseDateLabel.Size = new System.Drawing.Size(128, 25);
+            this.releaseDateLabel.TabIndex = 49;
+            this.releaseDateLabel.Text = "Release Date:";
+            this.releaseDateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // guna2BorderlessForm1
             // 
@@ -251,32 +181,32 @@ namespace CinemaProject
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.OrangeRed;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1027, 44);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1030, 44);
             this.guna2CustomGradientPanel1.TabIndex = 59;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(150, 14);
+            this.label3.Location = new System.Drawing.Point(175, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 19);
+            this.label3.Size = new System.Drawing.Size(156, 19);
             this.label3.TabIndex = 43;
             this.label3.Text = "Editing Mode";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(11, 14);
+            this.label4.Location = new System.Drawing.Point(19, 14);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 19);
+            this.label4.Size = new System.Drawing.Size(99, 19);
             this.label4.TabIndex = 42;
             this.label4.Text = "Show Mode";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // guna2ToggleSwitch2
             // 
@@ -285,7 +215,7 @@ namespace CinemaProject
             this.guna2ToggleSwitch2.CheckedState.FillColor = System.Drawing.Color.Black;
             this.guna2ToggleSwitch2.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch2.Location = new System.Drawing.Point(99, 9);
+            this.guna2ToggleSwitch2.Location = new System.Drawing.Point(124, 9);
             this.guna2ToggleSwitch2.Name = "guna2ToggleSwitch2";
             this.guna2ToggleSwitch2.Size = new System.Drawing.Size(45, 27);
             this.guna2ToggleSwitch2.TabIndex = 41;
@@ -317,7 +247,7 @@ namespace CinemaProject
             this.descriptionRichTextBox.BackColor = System.Drawing.Color.White;
             this.descriptionRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.descriptionRichTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descriptionRichTextBox.Location = new System.Drawing.Point(154, 380);
+            this.descriptionRichTextBox.Location = new System.Drawing.Point(154, 359);
             this.descriptionRichTextBox.Name = "descriptionRichTextBox";
             this.descriptionRichTextBox.ReadOnly = true;
             this.descriptionRichTextBox.Size = new System.Drawing.Size(553, 157);
@@ -340,7 +270,7 @@ namespace CinemaProject
             this.movieNameTextBox.BackColor = System.Drawing.Color.White;
             this.movieNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.movieNameTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
-            this.movieNameTextBox.Location = new System.Drawing.Point(150, 138);
+            this.movieNameTextBox.Location = new System.Drawing.Point(154, 139);
             this.movieNameTextBox.Name = "movieNameTextBox";
             this.movieNameTextBox.ReadOnly = true;
             this.movieNameTextBox.Size = new System.Drawing.Size(226, 29);
@@ -369,7 +299,7 @@ namespace CinemaProject
             this.lengthTextBox.BackColor = System.Drawing.Color.White;
             this.lengthTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lengthTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
-            this.lengthTextBox.Location = new System.Drawing.Point(621, 250);
+            this.lengthTextBox.Location = new System.Drawing.Point(630, 254);
             this.lengthTextBox.Name = "lengthTextBox";
             this.lengthTextBox.ReadOnly = true;
             this.lengthTextBox.Size = new System.Drawing.Size(139, 29);
@@ -380,7 +310,7 @@ namespace CinemaProject
             this.ageRatingTextBox.BackColor = System.Drawing.Color.White;
             this.ageRatingTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ageRatingTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
-            this.ageRatingTextBox.Location = new System.Drawing.Point(621, 303);
+            this.ageRatingTextBox.Location = new System.Drawing.Point(630, 302);
             this.ageRatingTextBox.Name = "ageRatingTextBox";
             this.ageRatingTextBox.ReadOnly = true;
             this.ageRatingTextBox.Size = new System.Drawing.Size(139, 29);
@@ -391,7 +321,7 @@ namespace CinemaProject
             this.showDaysTextBox.BackColor = System.Drawing.Color.White;
             this.showDaysTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.showDaysTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
-            this.showDaysTextBox.Location = new System.Drawing.Point(154, 254);
+            this.showDaysTextBox.Location = new System.Drawing.Point(154, 255);
             this.showDaysTextBox.Name = "showDaysTextBox";
             this.showDaysTextBox.ReadOnly = true;
             this.showDaysTextBox.Size = new System.Drawing.Size(315, 29);
@@ -402,7 +332,7 @@ namespace CinemaProject
             this.showHoursTextBox.BackColor = System.Drawing.Color.White;
             this.showHoursTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.showHoursTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
-            this.showHoursTextBox.Location = new System.Drawing.Point(154, 302);
+            this.showHoursTextBox.Location = new System.Drawing.Point(154, 303);
             this.showHoursTextBox.Name = "showHoursTextBox";
             this.showHoursTextBox.ReadOnly = true;
             this.showHoursTextBox.Size = new System.Drawing.Size(315, 29);
@@ -440,7 +370,7 @@ namespace CinemaProject
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(124, 46);
             this.DeleteBtn.TabIndex = 64;
-            this.DeleteBtn.Text = "Delete Movie";
+            this.DeleteBtn.Text = "Delete The Movie";
             this.DeleteBtn.Visible = false;
             this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
@@ -449,11 +379,71 @@ namespace CinemaProject
             this.IDtxt.BackColor = System.Drawing.Color.White;
             this.IDtxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.IDtxt.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
-            this.IDtxt.Location = new System.Drawing.Point(150, 86);
+            this.IDtxt.Location = new System.Drawing.Point(154, 87);
             this.IDtxt.Name = "IDtxt";
             this.IDtxt.ReadOnly = true;
             this.IDtxt.Size = new System.Drawing.Size(114, 29);
             this.IDtxt.TabIndex = 66;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(106, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 25);
+            this.label1.TabIndex = 72;
+            this.label1.Text = "ID:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // descriptionLabel
+            // 
+            this.descriptionLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionLabel.Location = new System.Drawing.Point(24, 359);
+            this.descriptionLabel.Name = "descriptionLabel";
+            this.descriptionLabel.Size = new System.Drawing.Size(119, 25);
+            this.descriptionLabel.TabIndex = 71;
+            this.descriptionLabel.Text = "Description:";
+            this.descriptionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // movieNameLabel
+            // 
+            this.movieNameLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movieNameLabel.Location = new System.Drawing.Point(14, 138);
+            this.movieNameLabel.Name = "movieNameLabel";
+            this.movieNameLabel.Size = new System.Drawing.Size(129, 25);
+            this.movieNameLabel.TabIndex = 70;
+            this.movieNameLabel.Text = "Movie Name:";
+            this.movieNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // iMDbRatingLabel
+            // 
+            this.iMDbRatingLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iMDbRatingLabel.Location = new System.Drawing.Point(13, 194);
+            this.iMDbRatingLabel.Name = "iMDbRatingLabel";
+            this.iMDbRatingLabel.Size = new System.Drawing.Size(130, 25);
+            this.iMDbRatingLabel.TabIndex = 69;
+            this.iMDbRatingLabel.Text = "IMDb Rating:";
+            this.iMDbRatingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // showDaysLabel
+            // 
+            this.showDaysLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showDaysLabel.Location = new System.Drawing.Point(30, 254);
+            this.showDaysLabel.Name = "showDaysLabel";
+            this.showDaysLabel.Size = new System.Drawing.Size(113, 25);
+            this.showDaysLabel.TabIndex = 67;
+            this.showDaysLabel.Text = "Show Days:";
+            this.showDaysLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // showHoursLabel
+            // 
+            this.showHoursLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showHoursLabel.Location = new System.Drawing.Point(17, 302);
+            this.showHoursLabel.Name = "showHoursLabel";
+            this.showHoursLabel.Size = new System.Drawing.Size(126, 25);
+            this.showHoursLabel.TabIndex = 68;
+            this.showHoursLabel.Text = "Show Hours:";
+            this.showHoursLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // MovieDetails
             // 
@@ -461,7 +451,12 @@ namespace CinemaProject
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1030, 600);
-            this.Controls.Add(label1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.descriptionLabel);
+            this.Controls.Add(this.movieNameLabel);
+            this.Controls.Add(this.iMDbRatingLabel);
+            this.Controls.Add(this.showDaysLabel);
+            this.Controls.Add(this.showHoursLabel);
             this.Controls.Add(this.IDtxt);
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.moviePicturePictureBox);
@@ -470,23 +465,18 @@ namespace CinemaProject
             this.Controls.Add(this.releaseDateDateTimePicker);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.descriptionRichTextBox);
-            this.Controls.Add(genresLabel);
+            this.Controls.Add(this.genresLabel);
             this.Controls.Add(this.genresTextBox);
-            this.Controls.Add(descriptionLabel);
-            this.Controls.Add(movieNameLabel);
             this.Controls.Add(this.movieNameTextBox);
             this.Controls.Add(this.guna2RatingStar1);
-            this.Controls.Add(iMDbRatingLabel);
             this.Controls.Add(this.iMDbRatingLabel1);
-            this.Controls.Add(lengthLabel);
+            this.Controls.Add(this.lengthLabel);
             this.Controls.Add(this.lengthTextBox);
-            this.Controls.Add(ageRatingLabel);
+            this.Controls.Add(this.ageRatingLabel);
             this.Controls.Add(this.ageRatingTextBox);
-            this.Controls.Add(showDaysLabel);
             this.Controls.Add(this.showDaysTextBox);
-            this.Controls.Add(showHoursLabel);
             this.Controls.Add(this.showHoursTextBox);
-            this.Controls.Add(releaseDateLabel);
+            this.Controls.Add(this.releaseDateLabel);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -494,7 +484,6 @@ namespace CinemaProject
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
-            this.guna2CustomGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moviePicturePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -505,12 +494,8 @@ namespace CinemaProject
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         public Guna.UI2.WinForms.Guna2PictureBox moviePicturePictureBox;
-        private Guna.UI2.WinForms.Guna2GradientButton SaveBtn;
-        private Guna.UI2.WinForms.Guna2GradientButton uploadImgBtn;
         public Guna.UI2.WinForms.Guna2DateTimePicker releaseDateDateTimePicker;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch2;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         public System.Windows.Forms.RichTextBox descriptionRichTextBox;
@@ -522,7 +507,21 @@ namespace CinemaProject
         public System.Windows.Forms.TextBox ageRatingTextBox;
         public System.Windows.Forms.TextBox showDaysTextBox;
         public System.Windows.Forms.TextBox showHoursTextBox;
-        private Guna.UI2.WinForms.Guna2GradientButton DeleteBtn;
         public System.Windows.Forms.TextBox IDtxt;
+        public Guna.UI2.WinForms.Guna2GradientButton SaveBtn;
+        public Guna.UI2.WinForms.Guna2GradientButton uploadImgBtn;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public Guna.UI2.WinForms.Guna2GradientButton DeleteBtn;
+        public System.Windows.Forms.Label genresLabel;
+        public System.Windows.Forms.Label lengthLabel;
+        public System.Windows.Forms.Label ageRatingLabel;
+        public System.Windows.Forms.Label releaseDateLabel;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label descriptionLabel;
+        public System.Windows.Forms.Label movieNameLabel;
+        public System.Windows.Forms.Label iMDbRatingLabel;
+        public System.Windows.Forms.Label showDaysLabel;
+        public System.Windows.Forms.Label showHoursLabel;
     }
 }

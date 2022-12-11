@@ -133,7 +133,7 @@ namespace CinemaProject
             this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(1000, 132);
+            this.guna2ComboBox2.Location = new System.Drawing.Point(644, 66);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.Size = new System.Drawing.Size(273, 36);
             this.guna2ComboBox2.TabIndex = 84;
@@ -142,9 +142,9 @@ namespace CinemaProject
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label14.Location = new System.Drawing.Point(849, 137);
+            this.label14.Location = new System.Drawing.Point(493, 71);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(150, 21);
+            this.label14.Size = new System.Drawing.Size(144, 21);
             this.label14.TabIndex = 83;
             this.label14.Text = "Choose The Movie:";
             // 
@@ -339,9 +339,11 @@ namespace CinemaProject
             this.E12.ImageRotate = 0F;
             this.E12.Location = new System.Drawing.Point(32, 35);
             this.E12.Name = "E12";
+            this.E12.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.E12.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E12.Size = new System.Drawing.Size(64, 63);
             this.E12.TabIndex = 66;
+            this.E12.Click += new System.EventHandler(this.E12_Click);
             // 
             // E11
             // 
@@ -356,6 +358,7 @@ namespace CinemaProject
             this.E11.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E11.Size = new System.Drawing.Size(64, 63);
             this.E11.TabIndex = 65;
+            this.E11.Click += new System.EventHandler(this.E11_Click);
             // 
             // E10
             // 
@@ -370,6 +373,7 @@ namespace CinemaProject
             this.E10.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E10.Size = new System.Drawing.Size(64, 63);
             this.E10.TabIndex = 64;
+            this.E10.Click += new System.EventHandler(this.E10_Click);
             // 
             // E9
             // 
@@ -384,6 +388,7 @@ namespace CinemaProject
             this.E9.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E9.Size = new System.Drawing.Size(64, 63);
             this.E9.TabIndex = 63;
+            this.E9.Click += new System.EventHandler(this.E9_Click);
             // 
             // E8
             // 
@@ -398,6 +403,7 @@ namespace CinemaProject
             this.E8.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E8.Size = new System.Drawing.Size(64, 63);
             this.E8.TabIndex = 62;
+            this.E8.Click += new System.EventHandler(this.E8_Click);
             // 
             // E7
             // 
@@ -412,6 +418,7 @@ namespace CinemaProject
             this.E7.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E7.Size = new System.Drawing.Size(64, 63);
             this.E7.TabIndex = 61;
+            this.E7.Click += new System.EventHandler(this.E7_Click);
             // 
             // E6
             // 
@@ -527,6 +534,7 @@ namespace CinemaProject
             this.D12.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D12.Size = new System.Drawing.Size(64, 63);
             this.D12.TabIndex = 54;
+            this.D12.Click += new System.EventHandler(this.D12_Click);
             // 
             // D11
             // 
@@ -541,6 +549,7 @@ namespace CinemaProject
             this.D11.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D11.Size = new System.Drawing.Size(64, 63);
             this.D11.TabIndex = 53;
+            this.D11.Click += new System.EventHandler(this.D11_Click);
             // 
             // D10
             // 
@@ -555,6 +564,7 @@ namespace CinemaProject
             this.D10.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D10.Size = new System.Drawing.Size(64, 63);
             this.D10.TabIndex = 52;
+            this.D10.Click += new System.EventHandler(this.D10_Click);
             // 
             // D9
             // 
@@ -569,6 +579,7 @@ namespace CinemaProject
             this.D9.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D9.Size = new System.Drawing.Size(64, 63);
             this.D9.TabIndex = 51;
+            this.D9.Click += new System.EventHandler(this.D9_Click);
             // 
             // D8
             // 
@@ -583,6 +594,7 @@ namespace CinemaProject
             this.D8.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D8.Size = new System.Drawing.Size(64, 63);
             this.D8.TabIndex = 50;
+            this.D8.Click += new System.EventHandler(this.D8_Click);
             // 
             // D7
             // 
@@ -597,6 +609,7 @@ namespace CinemaProject
             this.D7.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D7.Size = new System.Drawing.Size(64, 63);
             this.D7.TabIndex = 49;
+            this.D7.Click += new System.EventHandler(this.D7_Click);
             // 
             // D6
             // 
@@ -716,6 +729,7 @@ namespace CinemaProject
             this.C12.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C12.Size = new System.Drawing.Size(64, 63);
             this.C12.TabIndex = 42;
+            this.C12.Click += new System.EventHandler(this.C12_Click);
             // 
             // C11
             // 
@@ -730,6 +744,7 @@ namespace CinemaProject
             this.C11.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C11.Size = new System.Drawing.Size(64, 63);
             this.C11.TabIndex = 41;
+            this.C11.Click += new System.EventHandler(this.C11_Click);
             // 
             // C10
             // 
@@ -744,6 +759,7 @@ namespace CinemaProject
             this.C10.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C10.Size = new System.Drawing.Size(64, 63);
             this.C10.TabIndex = 40;
+            this.C10.Click += new System.EventHandler(this.C10_Click);
             // 
             // C9
             // 
@@ -758,6 +774,7 @@ namespace CinemaProject
             this.C9.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C9.Size = new System.Drawing.Size(64, 63);
             this.C9.TabIndex = 39;
+            this.C9.Click += new System.EventHandler(this.C9_Click);
             // 
             // C8
             // 
@@ -772,6 +789,7 @@ namespace CinemaProject
             this.C8.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C8.Size = new System.Drawing.Size(64, 63);
             this.C8.TabIndex = 38;
+            this.C8.Click += new System.EventHandler(this.C8_Click);
             // 
             // C7
             // 
@@ -786,6 +804,7 @@ namespace CinemaProject
             this.C7.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C7.Size = new System.Drawing.Size(64, 63);
             this.C7.TabIndex = 37;
+            this.C7.Click += new System.EventHandler(this.C7_Click);
             // 
             // C6
             // 
@@ -916,6 +935,7 @@ namespace CinemaProject
             this.B12.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B12.Size = new System.Drawing.Size(64, 63);
             this.B12.TabIndex = 30;
+            this.B12.Click += new System.EventHandler(this.B12_Click);
             // 
             // B11
             // 
@@ -930,6 +950,7 @@ namespace CinemaProject
             this.B11.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B11.Size = new System.Drawing.Size(64, 63);
             this.B11.TabIndex = 29;
+            this.B11.Click += new System.EventHandler(this.B11_Click);
             // 
             // B10
             // 
@@ -944,6 +965,7 @@ namespace CinemaProject
             this.B10.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B10.Size = new System.Drawing.Size(64, 63);
             this.B10.TabIndex = 28;
+            this.B10.Click += new System.EventHandler(this.B10_Click);
             // 
             // B9
             // 
@@ -958,6 +980,7 @@ namespace CinemaProject
             this.B9.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B9.Size = new System.Drawing.Size(64, 63);
             this.B9.TabIndex = 27;
+            this.B9.Click += new System.EventHandler(this.B9_Click);
             // 
             // B8
             // 
@@ -972,6 +995,7 @@ namespace CinemaProject
             this.B8.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B8.Size = new System.Drawing.Size(64, 63);
             this.B8.TabIndex = 26;
+            this.B8.Click += new System.EventHandler(this.B8_Click);
             // 
             // B7
             // 
@@ -986,6 +1010,7 @@ namespace CinemaProject
             this.B7.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B7.Size = new System.Drawing.Size(64, 63);
             this.B7.TabIndex = 25;
+            this.B7.Click += new System.EventHandler(this.B7_Click);
             // 
             // B6
             // 
@@ -1102,6 +1127,7 @@ namespace CinemaProject
             this.A12.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A12.Size = new System.Drawing.Size(64, 63);
             this.A12.TabIndex = 18;
+            this.A12.Click += new System.EventHandler(this.A12_Click);
             // 
             // A11
             // 
@@ -1116,6 +1142,7 @@ namespace CinemaProject
             this.A11.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A11.Size = new System.Drawing.Size(64, 63);
             this.A11.TabIndex = 17;
+            this.A11.Click += new System.EventHandler(this.A11_Click);
             // 
             // A10
             // 
@@ -1130,6 +1157,7 @@ namespace CinemaProject
             this.A10.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A10.Size = new System.Drawing.Size(64, 63);
             this.A10.TabIndex = 16;
+            this.A10.Click += new System.EventHandler(this.A10_Click);
             // 
             // A9
             // 
@@ -1144,6 +1172,7 @@ namespace CinemaProject
             this.A9.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A9.Size = new System.Drawing.Size(64, 63);
             this.A9.TabIndex = 15;
+            this.A9.Click += new System.EventHandler(this.A9_Click);
             // 
             // A8
             // 
@@ -1158,6 +1187,7 @@ namespace CinemaProject
             this.A8.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A8.Size = new System.Drawing.Size(64, 63);
             this.A8.TabIndex = 14;
+            this.A8.Click += new System.EventHandler(this.A8_Click);
             // 
             // A7
             // 
@@ -1172,6 +1202,7 @@ namespace CinemaProject
             this.A7.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A7.Size = new System.Drawing.Size(64, 63);
             this.A7.TabIndex = 13;
+            this.A7.Click += new System.EventHandler(this.A7_Click);
             // 
             // A6
             // 
@@ -1306,11 +1337,12 @@ namespace CinemaProject
             this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(8, 103);
+            this.guna2GradientButton3.Location = new System.Drawing.Point(12, 66);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
             this.guna2GradientButton3.Size = new System.Drawing.Size(132, 55);
             this.guna2GradientButton3.TabIndex = 80;
             this.guna2GradientButton3.Text = "Back To Main Menu";
+            this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
             // 
             // guna2CustomGradientPanel1
             // 

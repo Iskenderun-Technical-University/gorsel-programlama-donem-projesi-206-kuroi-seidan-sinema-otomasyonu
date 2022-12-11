@@ -17,8 +17,8 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
-        //static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
-        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True;Connect Timeout=30";
+        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
+        //static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True;Connect Timeout=30";
         SqlConnection con = new SqlConnection(Sqlcon);
         SqlDataAdapter sda;
         SqlCommand cmd;
@@ -88,12 +88,73 @@ namespace CinemaProject
 
         private void A6_Click(object sender, EventArgs e) {Seats(A6);}
 
+        private void E7_Click(object sender, EventArgs e) { Seats(E7);}
+
+        private void E8_Click(object sender, EventArgs e) { Seats(E8);}
+
+        private void E9_Click(object sender, EventArgs e) { Seats(E9);}
+
+        private void E10_Click(object sender, EventArgs e) { Seats(E10);}
+
+        private void E11_Click(object sender, EventArgs e) { Seats(E11);}
+
+        private void E12_Click(object sender, EventArgs e) { Seats(E12);}
+
+        private void D7_Click(object sender, EventArgs e) { Seats(D7); }
+
+        private void D8_Click(object sender, EventArgs e) { Seats(D8); }
+
+        private void D9_Click(object sender, EventArgs e) { Seats(D9); }
+
+        private void D10_Click(object sender, EventArgs e) { Seats(D10); }
+
+        private void D11_Click(object sender, EventArgs e) { Seats(D11); }
+
+        private void D12_Click(object sender, EventArgs e) { Seats(D12); }
+
+        private void C7_Click(object sender, EventArgs e) { Seats(C7); }
+
+        private void C8_Click(object sender, EventArgs e) { Seats(C8); }
+
+        private void C9_Click(object sender, EventArgs e) { Seats(C9); }
+
+        private void C10_Click(object sender, EventArgs e) { Seats(C10); }
+
+        private void C11_Click(object sender, EventArgs e) { Seats(C11); }
+
+        private void C12_Click(object sender, EventArgs e) { Seats(C12); }
+
+        private void B7_Click(object sender, EventArgs e) { Seats(B7); }
+
+        private void B8_Click(object sender, EventArgs e) { Seats(B8); }
+
+        private void B9_Click(object sender, EventArgs e) { Seats(B9); }
+
+        private void B10_Click(object sender, EventArgs e) { Seats(B10); }
+
+        private void B11_Click(object sender, EventArgs e) { Seats(B11); }
+
+        private void B12_Click(object sender, EventArgs e) { Seats(B12); }
+
+        private void A7_Click(object sender, EventArgs e) { Seats(A7); }
+
+        private void A8_Click(object sender, EventArgs e) { Seats(A8); }
+
+        private void A9_Click(object sender, EventArgs e) { Seats(A9); }
+
+        private void A10_Click(object sender, EventArgs e) { Seats(A10); }
+
+        private void A11_Click(object sender, EventArgs e) { Seats(A11); }
+
+        private void A12_Click(object sender, EventArgs e) { Seats(A12); }
         private void ChooseSeat_Load(object sender, EventArgs e)
         {
             /*string query = "select MovieName from MoviesTbl where ShowDays like'%"+DateTime.Now.ToString("dddd")+"%'";
             DataTable dt = new DataTable();
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                            guna2ComboBox2.Items.Clear();
+
             sda.Fill(dt);
             for(int i = 0; i < dt.Rows.Count; i++)
             {
@@ -115,5 +176,13 @@ namespace CinemaProject
             else MessageBox.Show("No Data Found");
             con.Close();
         }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm.ticket.Show();
+        }
+
+       
     }
 }

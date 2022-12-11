@@ -106,9 +106,9 @@ namespace CinemaProject
             "Sports",
             "Thriller",
             "Western"});
-            this.GenresList.Location = new System.Drawing.Point(663, 486);
+            this.GenresList.Location = new System.Drawing.Point(663, 474);
             this.GenresList.Name = "GenresList";
-            this.GenresList.Size = new System.Drawing.Size(200, 142);
+            this.GenresList.Size = new System.Drawing.Size(200, 165);
             this.GenresList.TabIndex = 63;
             // 
             // label11
@@ -144,9 +144,9 @@ namespace CinemaProject
             "Wednesday",
             "Thursday",
             "Friday"});
-            this.DaysList.Location = new System.Drawing.Point(154, 458);
+            this.DaysList.Location = new System.Drawing.Point(154, 473);
             this.DaysList.Name = "DaysList";
-            this.DaysList.Size = new System.Drawing.Size(170, 142);
+            this.DaysList.Size = new System.Drawing.Size(170, 165);
             this.DaysList.TabIndex = 60;
             // 
             // HoursList
@@ -169,9 +169,9 @@ namespace CinemaProject
             "08:45PM",
             "10:00PM",
             "10:30PM"});
-            this.HoursList.Location = new System.Drawing.Point(324, 458);
+            this.HoursList.Location = new System.Drawing.Point(324, 474);
             this.HoursList.Name = "HoursList";
-            this.HoursList.Size = new System.Drawing.Size(170, 144);
+            this.HoursList.Size = new System.Drawing.Size(170, 164);
             this.HoursList.TabIndex = 59;
             // 
             // Description
@@ -214,6 +214,7 @@ namespace CinemaProject
             this.guna2GradientButton3.Size = new System.Drawing.Size(132, 55);
             this.guna2GradientButton3.TabIndex = 57;
             this.guna2GradientButton3.Text = "Back To Main Menu";
+            this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click_1);
             // 
             // guna2CustomGradientPanel1
             // 
@@ -244,6 +245,7 @@ namespace CinemaProject
             this.guna2ImageButton1.Size = new System.Drawing.Size(47, 43);
             this.guna2ImageButton1.TabIndex = 0;
             this.guna2ImageButton1.UseTransparentBackground = true;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // guna2GradientButton1
             // 
@@ -267,7 +269,7 @@ namespace CinemaProject
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(945, 139);
+            this.label9.Location = new System.Drawing.Point(945, 124);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(294, 21);
             this.label9.TabIndex = 53;
@@ -277,7 +279,7 @@ namespace CinemaProject
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(527, 507);
+            this.label8.Location = new System.Drawing.Point(529, 474);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(128, 44);
             this.label8.TabIndex = 52;
@@ -347,7 +349,7 @@ namespace CinemaProject
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(20, 478);
+            this.label7.Location = new System.Drawing.Point(24, 473);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(124, 39);
             this.label7.TabIndex = 47;
@@ -357,7 +359,7 @@ namespace CinemaProject
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(527, 426);
+            this.label6.Location = new System.Drawing.Point(529, 405);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(128, 43);
             this.label6.TabIndex = 46;
@@ -367,7 +369,7 @@ namespace CinemaProject
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(527, 348);
+            this.label5.Location = new System.Drawing.Point(529, 327);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(128, 43);
             this.label5.TabIndex = 45;
@@ -377,7 +379,7 @@ namespace CinemaProject
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(16, 274);
+            this.label4.Location = new System.Drawing.Point(16, 253);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(132, 43);
             this.label4.TabIndex = 44;
@@ -387,7 +389,7 @@ namespace CinemaProject
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(527, 274);
+            this.label3.Location = new System.Drawing.Point(529, 253);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(128, 43);
             this.label3.TabIndex = 43;
@@ -397,7 +399,7 @@ namespace CinemaProject
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(524, 199);
+            this.label2.Location = new System.Drawing.Point(526, 178);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 43);
             this.label2.TabIndex = 42;
@@ -407,7 +409,7 @@ namespace CinemaProject
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 199);
+            this.label1.Location = new System.Drawing.Point(18, 178);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 43);
             this.label1.TabIndex = 41;

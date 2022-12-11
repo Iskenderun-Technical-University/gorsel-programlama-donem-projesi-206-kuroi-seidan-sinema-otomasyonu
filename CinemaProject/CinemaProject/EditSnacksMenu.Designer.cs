@@ -51,6 +51,7 @@ namespace CinemaProject
             this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,16 +70,17 @@ namespace CinemaProject
             "4"});
             this.listBox3.Location = new System.Drawing.Point(372, 187);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(40, 182);
+            this.listBox3.Size = new System.Drawing.Size(40, 242);
             this.listBox3.TabIndex = 49;
+            this.listBox3.Visible = false;
             this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
             // guna2Separator1
             // 
             this.guna2Separator1.FillColor = System.Drawing.Color.Black;
-            this.guna2Separator1.Location = new System.Drawing.Point(30, 215);
+            this.guna2Separator1.Location = new System.Drawing.Point(30, 217);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(343, 10);
+            this.guna2Separator1.Size = new System.Drawing.Size(343, 3);
             this.guna2Separator1.TabIndex = 46;
             // 
             // listBox2
@@ -96,7 +98,7 @@ namespace CinemaProject
             "3"});
             this.listBox2.Location = new System.Drawing.Point(289, 187);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(84, 182);
+            this.listBox2.Size = new System.Drawing.Size(84, 242);
             this.listBox2.TabIndex = 48;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
@@ -115,7 +117,7 @@ namespace CinemaProject
             "dsfg"});
             this.listBox1.Location = new System.Drawing.Point(29, 187);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(264, 182);
+            this.listBox1.Size = new System.Drawing.Size(264, 242);
             this.listBox1.TabIndex = 47;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -158,15 +160,16 @@ namespace CinemaProject
             // 
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(37, 48);
+            this.guna2ImageButton1.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(37, 48);
             this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(30, 40);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(896, 5);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(891, 0);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(33, 43);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(40, 36);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(51, 44);
             this.guna2ImageButton1.TabIndex = 44;
             this.guna2ImageButton1.UseTransparentBackground = true;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click_1);
@@ -181,7 +184,7 @@ namespace CinemaProject
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(479, 195);
+            this.label1.Location = new System.Drawing.Point(479, 265);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(209, 31);
             this.label1.TabIndex = 51;
@@ -192,7 +195,7 @@ namespace CinemaProject
             // 
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkRed;
-            this.label2.Location = new System.Drawing.Point(535, 336);
+            this.label2.Location = new System.Drawing.Point(535, 395);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 31);
             this.label2.TabIndex = 52;
@@ -203,7 +206,7 @@ namespace CinemaProject
             // 
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkRed;
-            this.label5.Location = new System.Drawing.Point(479, 269);
+            this.label5.Location = new System.Drawing.Point(479, 329);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(208, 31);
             this.label5.TabIndex = 53;
@@ -222,7 +225,7 @@ namespace CinemaProject
             this.PName.FocusedState.BorderColor = System.Drawing.Color.Black;
             this.PName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.PName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PName.Location = new System.Drawing.Point(693, 191);
+            this.PName.Location = new System.Drawing.Point(693, 261);
             this.PName.Name = "PName";
             this.PName.PasswordChar = '\0';
             this.PName.PlaceholderText = "";
@@ -242,7 +245,7 @@ namespace CinemaProject
             this.price.FocusedState.BorderColor = System.Drawing.Color.Black;
             this.price.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.price.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.price.Location = new System.Drawing.Point(693, 333);
+            this.price.Location = new System.Drawing.Point(693, 392);
             this.price.Name = "price";
             this.price.PasswordChar = '\0';
             this.price.PlaceholderText = "";
@@ -262,7 +265,7 @@ namespace CinemaProject
             this.Size.FocusedState.BorderColor = System.Drawing.Color.Black;
             this.Size.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Size.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Size.Location = new System.Drawing.Point(693, 266);
+            this.Size.Location = new System.Drawing.Point(693, 326);
             this.Size.Name = "Size";
             this.Size.PasswordChar = '\0';
             this.Size.PlaceholderText = "";
@@ -280,7 +283,7 @@ namespace CinemaProject
             this.DeleteRBtn.CheckedState.InnerOffset = -4;
             this.DeleteRBtn.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteRBtn.ForeColor = System.Drawing.Color.DarkRed;
-            this.DeleteRBtn.Location = new System.Drawing.Point(801, 101);
+            this.DeleteRBtn.Location = new System.Drawing.Point(787, 188);
             this.DeleteRBtn.Name = "DeleteRBtn";
             this.DeleteRBtn.Size = new System.Drawing.Size(81, 25);
             this.DeleteRBtn.TabIndex = 57;
@@ -298,7 +301,7 @@ namespace CinemaProject
             this.AddRBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.AddRBtn.CheckedState.InnerColor = System.Drawing.Color.White;
             this.AddRBtn.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.AddRBtn.Location = new System.Drawing.Point(544, 101);
+            this.AddRBtn.Location = new System.Drawing.Point(530, 188);
             this.AddRBtn.Name = "AddRBtn";
             this.AddRBtn.Size = new System.Drawing.Size(63, 25);
             this.AddRBtn.TabIndex = 58;
@@ -317,7 +320,7 @@ namespace CinemaProject
             this.EditRBtn.CheckedState.InnerColor = System.Drawing.Color.White;
             this.EditRBtn.CheckedState.InnerOffset = -4;
             this.EditRBtn.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.EditRBtn.Location = new System.Drawing.Point(683, 101);
+            this.EditRBtn.Location = new System.Drawing.Point(669, 188);
             this.EditRBtn.Name = "EditRBtn";
             this.EditRBtn.Size = new System.Drawing.Size(62, 25);
             this.EditRBtn.TabIndex = 59;
@@ -332,7 +335,7 @@ namespace CinemaProject
             this.guna2VSeparator1.Location = new System.Drawing.Point(463, 45);
             this.guna2VSeparator1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2VSeparator1.Name = "guna2VSeparator1";
-            this.guna2VSeparator1.Size = new System.Drawing.Size(11, 453);
+            this.guna2VSeparator1.Size = new System.Drawing.Size(11, 528);
             this.guna2VSeparator1.TabIndex = 60;
             // 
             // guna2GradientCircleButton1
@@ -346,7 +349,7 @@ namespace CinemaProject
             this.guna2GradientCircleButton1.FillColor2 = System.Drawing.Color.Maroon;
             this.guna2GradientCircleButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(808, 423);
+            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(811, 480);
             this.guna2GradientCircleButton1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GradientCircleButton1.Name = "guna2GradientCircleButton1";
             this.guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -368,29 +371,41 @@ namespace CinemaProject
             // 
             // guna2GradientButton3
             // 
-            this.guna2GradientButton3.BorderRadius = 2;
+            this.guna2GradientButton3.BorderRadius = 5;
             this.guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.Brown;
-            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2GradientButton3.FillColor = System.Drawing.Color.OrangeRed;
+            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.Maroon;
             this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton3.Location = new System.Drawing.Point(20, 50);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.Size = new System.Drawing.Size(132, 55);
+            this.guna2GradientButton3.Size = new System.Drawing.Size(101, 47);
             this.guna2GradientButton3.TabIndex = 63;
             this.guna2GradientButton3.Text = "Back To Main Menu";
             this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label3.Location = new System.Drawing.Point(508, 87);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(401, 48);
+            this.label3.TabIndex = 64;
+            this.label3.Text = "Note:- Please!! For Edit the Menu Or delete something, Select An Item From The Li" +
+    "st left side!";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // EditSnacksMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(942, 501);
+            this.ClientSize = new System.Drawing.Size(942, 556);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2GradientButton3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.guna2GradientCircleButton1);
@@ -413,6 +428,7 @@ namespace CinemaProject
             this.ForeColor = System.Drawing.Color.DarkRed;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EditSnacksMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditSnacksMenu";
             this.Load += new System.EventHandler(this.EditSnacksMenu_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
@@ -444,5 +460,6 @@ namespace CinemaProject
         public Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton1;
         public System.Windows.Forms.Label label6;
         public Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
+        public System.Windows.Forms.Label label3;
     }
 }

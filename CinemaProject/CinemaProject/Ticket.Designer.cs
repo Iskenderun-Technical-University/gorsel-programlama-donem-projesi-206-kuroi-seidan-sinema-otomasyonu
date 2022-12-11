@@ -32,11 +32,10 @@ namespace CinemaProject
             this.components = new System.ComponentModel.Container();
             this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.Type = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Cost = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PhoneNo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.CustName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.StudentTicket = new Guna.UI2.WinForms.Guna2NumericUpDown();
@@ -61,6 +60,7 @@ namespace CinemaProject
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientCircleButton2 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.listBox2 = new System.Windows.Forms.ListBox();
+            this.guna2GradientCircleButton4 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.StudentTicket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VIPTicket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EliteTicket)).BeginInit();
@@ -85,7 +85,8 @@ namespace CinemaProject
             this.guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2GradientCircleButton1.Size = new System.Drawing.Size(70, 70);
             this.guna2GradientCircleButton1.TabIndex = 61;
-            this.guna2GradientCircleButton1.Text = "Add";
+            this.guna2GradientCircleButton1.Text = "ADD";
+            this.guna2GradientCircleButton1.Click += new System.EventHandler(this.guna2GradientCircleButton1_Click);
             // 
             // Type
             // 
@@ -106,15 +107,6 @@ namespace CinemaProject
             this.Type.Name = "Type";
             this.Type.Size = new System.Drawing.Size(213, 36);
             this.Type.TabIndex = 60;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(773, 159);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(11, 13);
-            this.label7.TabIndex = 59;
-            this.label7.Text = "-";
             // 
             // radioButton2
             // 
@@ -140,43 +132,43 @@ namespace CinemaProject
             this.radioButton1.Text = "Male";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // guna2TextBox4
+            // PhoneNo
             // 
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(952, 144);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(220, 40);
-            this.guna2TextBox4.TabIndex = 56;
+            this.PhoneNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PhoneNo.DefaultText = "";
+            this.PhoneNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PhoneNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PhoneNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PhoneNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PhoneNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PhoneNo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PhoneNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PhoneNo.Location = new System.Drawing.Point(952, 144);
+            this.PhoneNo.Name = "PhoneNo";
+            this.PhoneNo.PasswordChar = '\0';
+            this.PhoneNo.PlaceholderText = "";
+            this.PhoneNo.SelectedText = "";
+            this.PhoneNo.Size = new System.Drawing.Size(220, 40);
+            this.PhoneNo.TabIndex = 56;
             // 
-            // Cost
+            // CustName
             // 
-            this.Cost.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Cost.DefaultText = "";
-            this.Cost.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Cost.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Cost.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Cost.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Cost.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Cost.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Cost.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Cost.Location = new System.Drawing.Point(554, 144);
-            this.Cost.Name = "Cost";
-            this.Cost.PasswordChar = '\0';
-            this.Cost.PlaceholderText = "";
-            this.Cost.SelectedText = "";
-            this.Cost.Size = new System.Drawing.Size(213, 40);
-            this.Cost.TabIndex = 55;
+            this.CustName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CustName.DefaultText = "";
+            this.CustName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.CustName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.CustName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CustName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CustName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CustName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.CustName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CustName.Location = new System.Drawing.Point(554, 144);
+            this.CustName.Name = "CustName";
+            this.CustName.PasswordChar = '\0';
+            this.CustName.PlaceholderText = "";
+            this.CustName.SelectedText = "";
+            this.CustName.Size = new System.Drawing.Size(213, 40);
+            this.CustName.TabIndex = 55;
             // 
             // label4
             // 
@@ -317,6 +309,7 @@ namespace CinemaProject
             this.guna2GradientButton3.Size = new System.Drawing.Size(132, 55);
             this.guna2GradientButton3.TabIndex = 62;
             this.guna2GradientButton3.Text = "Back To Main Menu";
+            this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
             // 
             // label12
             // 
@@ -335,18 +328,19 @@ namespace CinemaProject
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(177, 40);
             this.label1.TabIndex = 72;
-            this.label1.Text = "Costumer Name:";
+            this.label1.Text = "Customer Name:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // listBox1
             // 
-            this.listBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 21;
-            this.listBox1.Location = new System.Drawing.Point(433, 330);
+            this.listBox1.ItemHeight = 28;
+            this.listBox1.Location = new System.Drawing.Point(520, 320);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(365, 298);
+            this.listBox1.Size = new System.Drawing.Size(306, 340);
             this.listBox1.TabIndex = 74;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // guna2GroupBox1
             // 
@@ -454,13 +448,33 @@ namespace CinemaProject
             // 
             // listBox2
             // 
-            this.listBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 21;
-            this.listBox2.Location = new System.Drawing.Point(796, 330);
+            this.listBox2.ItemHeight = 28;
+            this.listBox2.Location = new System.Drawing.Point(825, 320);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(373, 298);
+            this.listBox2.Size = new System.Drawing.Size(229, 340);
             this.listBox2.TabIndex = 78;
+            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            // 
+            // guna2GradientCircleButton4
+            // 
+            this.guna2GradientCircleButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientCircleButton4.FillColor = System.Drawing.Color.Maroon;
+            this.guna2GradientCircleButton4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.guna2GradientCircleButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientCircleButton4.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientCircleButton4.Location = new System.Drawing.Point(968, 579);
+            this.guna2GradientCircleButton4.Name = "guna2GradientCircleButton4";
+            this.guna2GradientCircleButton4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2GradientCircleButton4.Size = new System.Drawing.Size(85, 80);
+            this.guna2GradientCircleButton4.TabIndex = 79;
+            this.guna2GradientCircleButton4.Text = "DELETE";
+            this.guna2GradientCircleButton4.Click += new System.EventHandler(this.guna2GradientCircleButton4_Click);
             // 
             // Ticket
             // 
@@ -468,6 +482,7 @@ namespace CinemaProject
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.guna2GradientCircleButton4);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.guna2GradientCircleButton2);
             this.Controls.Add(this.guna2CustomGradientPanel1);
@@ -487,15 +502,15 @@ namespace CinemaProject
             this.Controls.Add(this.guna2GradientButton3);
             this.Controls.Add(this.guna2GradientCircleButton1);
             this.Controls.Add(this.Type);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.guna2TextBox4);
-            this.Controls.Add(this.Cost);
+            this.Controls.Add(this.PhoneNo);
+            this.Controls.Add(this.CustName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ticket";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ticket";
             ((System.ComponentModel.ISupportInitialize)(this.StudentTicket)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VIPTicket)).EndInit();
@@ -511,9 +526,8 @@ namespace CinemaProject
 
         #endregion
         private Guna.UI2.WinForms.Guna2ComboBox Type;
-        private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox Cost;
+        private Guna.UI2.WinForms.Guna2TextBox PhoneNo;
+        private Guna.UI2.WinForms.Guna2TextBox CustName;
         private Guna.UI2.WinForms.Guna2NumericUpDown StudentTicket;
         private Guna.UI2.WinForms.Guna2NumericUpDown VIPTicket;
         private Guna.UI2.WinForms.Guna2NumericUpDown EliteTicket;
@@ -541,5 +555,6 @@ namespace CinemaProject
         public Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton2;
         public Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private System.Windows.Forms.ListBox listBox2;
+        public Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton4;
     }
 }

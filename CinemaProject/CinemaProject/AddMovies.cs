@@ -8,8 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.IO
-    ;
+using System.IO;
+
 namespace CinemaProject
 {
     public partial class AddMovies : Form
@@ -22,6 +22,9 @@ namespace CinemaProject
         SqlConnection con = new SqlConnection(sqlcon);
         SqlCommand cmd;
         string imgloc;
+
+
+
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
@@ -91,6 +94,17 @@ namespace CinemaProject
         {
             this.Hide();
             LoginForm.mainForm.Show();
+        }
+
+        private void guna2GradientButton3_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm.mainForm.Show();
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

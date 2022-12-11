@@ -19,9 +19,11 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
-        static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
+        static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
+        //static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
         SqlConnection con = new SqlConnection(sqlcon);
         SqlCommand cmd;
+
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
 
@@ -61,7 +63,10 @@ namespace CinemaProject
                 MessageBox.Show("The Selected Data Deleted Successfully!");
             }
             con.Close();
+            PName.Clear();Size.Clear();price.Clear(); PName.Focus();
+            UpdateList("select SnackName,Size,Price,ID from MENU where Category='" + Category.Text + "'");
         }
+
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             listBox3.SelectedIndex = listBox2.SelectedIndex = listBox1.SelectedIndex;
@@ -69,9 +74,7 @@ namespace CinemaProject
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
-            
+            listBox3.SelectedIndex = listBox1.SelectedIndex = listBox2.SelectedIndex;
         }
 
         private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
@@ -96,20 +99,11 @@ namespace CinemaProject
             }
             con.Close();
         }
+
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (Category.Text == "Drinks") {
-                string query = "select SnackName,Size,Price,ID from MENU where Category='"+"Drinks"+"'";
-                UpdateList(query);
-            }
-            else if (Category.Text == "PopCorn") {
-                string query = "select SnackName,Size,Price,ID from MENU where Category='" + "PopCorn" + "'";
-                UpdateList(query);
-            }
-            else if (Category.Text == "Snacks") {
-                string query = "select SnackName,Size,Price,ID from MENU where Category='" + "Snacks" + "'";
-                UpdateList(query);
-            }
+            string query = "select SnackName,Size,Price,ID from MENU where Category='" + Category.Text + "'";
+            UpdateList(query);
         }
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)

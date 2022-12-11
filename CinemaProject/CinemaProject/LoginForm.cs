@@ -18,12 +18,12 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
-       // static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
-        static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
+        static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
+        //static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
         //static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True;Connect Timeout=30";
         SqlConnection con = new SqlConnection(sqlcon);
         SqlCommand cmd;
-
+        public static string userid;
         public static SnacksShop snacks = new SnacksShop();
         public static MainForm mainForm = new MainForm();
         public static MoviesList moviesList = new MoviesList();
@@ -32,7 +32,7 @@ namespace CinemaProject
         public static AddMovies addMovies = new AddMovies();
         public static MovieDetails movieDetails = new MovieDetails();
         public static ChooseSeat seat = new ChooseSeat();
-
+        public static LoginForm loginForm = new LoginForm();
 
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
@@ -78,7 +78,7 @@ namespace CinemaProject
 
         private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (guna2CheckBox1.Checked == true) password.UseSystemPasswordChar = false;
+            if (ShowPass.Checked == true) password.UseSystemPasswordChar = false;
             else password.UseSystemPasswordChar = true;
         }
     }
