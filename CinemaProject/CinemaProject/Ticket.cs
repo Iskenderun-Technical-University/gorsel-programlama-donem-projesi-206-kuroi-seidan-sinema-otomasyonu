@@ -17,25 +17,28 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
-        static int CostNum = 0;
+        public static int CustNo = 0,price;
         string gender;
         static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
         SqlConnection con = new SqlConnection(Sqlcon);
         SqlCommand cmd;
+
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
+        }  
 
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
-            CostNum = Convert.ToInt32(StanderdTicket.Value + StudentTicket.Value + EliteTicket.Value + VIPTicket.Value);
-            if (listBox1.Items.Count != CostNum)
-            {
-                MessageBox.Show("Please Add All The Costumer Data.");
-            }
+            CustNo = listBox1.Items.Count ;
+            if (CustNo == 0) MessageBox.Show("Please Add At Least One Customer And Try Again!!");
             else
             {
+                LoginForm.seat.guna2ComboBox1.Items.Clear();
+                for (int i = 0; i < listBox1.Items.Count; i++)
+                {
+                    LoginForm.seat.guna2ComboBox1.Items.Add(listBox1.Items[i]);
+                }
                 this.Hide();
                 LoginForm.seat.Show();
             }
@@ -50,25 +53,36 @@ namespace CinemaProject
         {
             if (radioButton1.Checked) gender = "Male";
             else if (radioButton2.Checked) gender = "Female";
-            string query = "insert into TempOrder (CustomerName,TicketType,PhoneNo,Gender) values ('" + CustName.Text + "','" + Type.Text + "','" + PhoneNo.Text + "','" + gender + "')";
+
+            if (Type.Text == "Standard Ticket") price = 35;
+            else if (Type.Text == "Student Ticket") price = 26;
+            else if (Type.Text == "Elite Ticket") price = 45;
+            else if (Type.Text == "VIP Ticket") price = 60;
+
+            string query = "insert into TempOrder (CustomerName,TicketType,PhoneNo,Gender,Price) values ('" + CustName.Text + "','" + Type.Text + "','" + PhoneNo.Text + "','" + gender + "','"+price+"')";
             con.Open();
             cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
             listBox1.Items.Add(CustName.Text);
             listBox2.Items.Add(Type.Text);
+            CustName.Clear();PhoneNo.Clear();
         }
 
         private void guna2GradientCircleButton4_Click(object sender, EventArgs e)
         {
-            string query = "delete from TempOrder where CustomerName = '"+listBox1.Text+"'";
-            con.Open();
-            cmd = new SqlCommand(query, con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-            int index = Convert.ToInt32(listBox1.SelectedIndex);
-            listBox1.Items.RemoveAt(index);
-            listBox2.Items.RemoveAt(index);
+            try
+            {
+                string query = "delete from TempOrder where CustomerName = '" + listBox1.Text + "'";
+                con.Open();
+                cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                int index = Convert.ToInt32(listBox1.SelectedIndex);
+                listBox1.Items.RemoveAt(index);
+                listBox2.Items.RemoveAt(index);
+            }
+            catch { }
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

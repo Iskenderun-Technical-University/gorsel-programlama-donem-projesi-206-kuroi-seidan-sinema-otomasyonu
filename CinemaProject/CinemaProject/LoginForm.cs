@@ -33,6 +33,7 @@ namespace CinemaProject
         public static MovieDetails movieDetails = new MovieDetails();
         public static ChooseSeat seat = new ChooseSeat();
         public static LoginForm loginForm = new LoginForm();
+        public static OrderDetails orderDetails = new OrderDetails();
 
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {

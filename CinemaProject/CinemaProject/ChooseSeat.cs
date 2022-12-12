@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Runtime;
 
 namespace CinemaProject
 {
@@ -22,12 +23,37 @@ namespace CinemaProject
         SqlConnection con = new SqlConnection(Sqlcon);
         SqlDataAdapter sda;
         SqlCommand cmd;
+        static int selectedseats=0;
+        string currentseat;
+
         void Seats(Guna.UI2.WinForms.Guna2ImageButton x)
         {
-           if (x.Image != x.PressedState.Image) x.Image = x.PressedState.Image;
-            else x.Image = x.CheckedState.Image;
-        }
+            if (x.Checked == true){
+                if (selectedseats >= Ticket.CustNo) MessageBox.Show("You Have Selected The Maximum Number Of Seats For this Order!!");
+                else
+                {
+                    x.Image = imageList1.Images[0];
+                    x.Checked = false;
+                    selectedseats++;
+                    guna2GroupBox2.Visible = true;
+                    currentseat = x.Name;
+                }
+            }
+            else if(x.Checked == false) {
+                x.Image = imageList1.Images[1];
+                x.Checked = true;
+                selectedseats--;
+                string query1="select CustomerName from TempOrder where SeatNo='"+x.Name+"'";
+                string query2 = "update TempOrder set SeatNo='" + "" + "' where SeatNo='" + x.Name + "'";
+                con.Open();
+                cmd = new SqlCommand(query1, con);
+                guna2ComboBox1.Items.Add(cmd.ExecuteScalar());
+                cmd.CommandText = query2;
+                cmd.ExecuteNonQuery();
+                con.Close();
 
+            }
+        }
         private void E1_Click(object sender, EventArgs e) {Seats(E1);}
 
         private void E2_Click(object sender, EventArgs e) {Seats(E2);}
@@ -149,17 +175,6 @@ namespace CinemaProject
         private void A12_Click(object sender, EventArgs e) { Seats(A12); }
         private void ChooseSeat_Load(object sender, EventArgs e)
         {
-            /*string query = "select MovieName from MoviesTbl where ShowDays like'%"+DateTime.Now.ToString("dddd")+"%'";
-            DataTable dt = new DataTable();
-            con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter(query, con);
-                            guna2ComboBox2.Items.Clear();
-
-            sda.Fill(dt);
-            for(int i = 0; i < dt.Rows.Count; i++)
-            {
-                guna2ComboBox2.Items.Add(dt.Rows[i][0].ToString());
-            }*/
             string query = "select MovieName from MoviesTbl where ShowDays Like '%"+DateTime.Now.ToString("dddd")+"%'";
             con.Open();
             DataTable dt = new DataTable();
@@ -183,6 +198,69 @@ namespace CinemaProject
             LoginForm.ticket.Show();
         }
 
-       
+        private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            string query = "select ShowHours from MoviesTbl where MovieName='" + guna2ComboBox2.Text + "'";
+            con.Open();
+            cmd = new SqlCommand(query, con);
+            string temp = cmd.ExecuteScalar().ToString();
+            string now="";
+            for (int i = 0; i < temp.Length; i++) {
+                if (char.IsPunctuation(temp[i])) {
+                    if (temp[i] == ':') { now += temp[i]; continue; }
+                    else
+                    {
+                        listBox1.Items.Add(now);
+                        now = "";
+                    }
+                }
+                else now += temp[i];
+            }
+            listBox1.Items.Add(now);
+            con.Close();
+        }
+
+        private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
+        {
+            string query = "update TempOrder set SeatNo='"+currentseat+"' where CustomerName='"+guna2ComboBox1.Text+"'";
+            guna2ComboBox1.Items.Remove(guna2ComboBox1.Text);
+            con.Open();
+            cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            guna2GroupBox2.Visible = false;
+        }
+
+        private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
+        {
+            if (selectedseats != Ticket.CustNo) MessageBox.Show("Please Choose A seat For All The Customers!!");
+            else if (listBox1.SelectedIndex == -1) MessageBox.Show("Please Choose The Movie And Show Time!!");
+            else
+            {
+                string query = "select CustomerName,TicketType,SeatNo,Price from TempOrder";
+                con.Open();
+                sda = new SqlDataAdapter(query,con);
+                DataTable dt=new DataTable();
+                sda.Fill(dt);
+                LoginForm.orderDetails.listBox1.Items.Clear(); LoginForm.orderDetails.listBox1.Items.Add("Customer Name");
+                LoginForm.orderDetails.listBox2.Items.Clear(); LoginForm.orderDetails.listBox2.Items.Add("Ticket Type");
+                LoginForm.orderDetails.listBox3.Items.Clear(); LoginForm.orderDetails.listBox3.Items.Add("Seat No");
+                LoginForm.orderDetails.listBox4.Items.Clear(); LoginForm.orderDetails.listBox4.Items.Add("Price");
+
+                for (int i = 0; i < dt.Rows.Count; i++) {
+                    LoginForm.orderDetails.listBox1.Items.Add(dt.Rows[i][0]);
+                    LoginForm.orderDetails.listBox2.Items.Add(dt.Rows[i][1]);
+                    LoginForm.orderDetails.listBox3.Items.Add(dt.Rows[i][2]);
+                    LoginForm.orderDetails.listBox4.Items.Add(dt.Rows[i][3]);
+
+                }
+                cmd = new SqlCommand("select sum(Price) from TempOrder", con);
+                LoginForm.orderDetails.label2.Text = cmd.ExecuteScalar().ToString();
+                con.Close();
+                this.Hide();
+                LoginForm.orderDetails.Show();
+            }
+        }
     }
 }

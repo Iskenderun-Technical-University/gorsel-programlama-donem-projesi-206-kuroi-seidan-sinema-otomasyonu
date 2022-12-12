@@ -68,11 +68,6 @@ namespace CinemaProject
             {
                 //Translate For The Ticket Form
                 LoginForm.ticket.guna2GradientButton3.Text = "Ana Sayfaya Dön";
-                LoginForm.ticket.label6.Text = "Bilet Sayisini Seçin:-";
-                LoginForm.ticket.label5.Text = "Standart Bilet:";
-                LoginForm.ticket.label13.Text = "Oğrenci Bilet:";
-                LoginForm.ticket.label2.Text = "Elit Bilet:";
-                LoginForm.ticket.label8.Text = "VIP Bilet:";
                 LoginForm.ticket.label1.Text = "Müşterı Adı:";
                 LoginForm.ticket.label12.Text = "Bilet Tipi:";
                 LoginForm.ticket.label3.Text = "Cep Telefonu:";
@@ -170,11 +165,6 @@ namespace CinemaProject
             else {
                 //Translate For The Ticket Form
                 LoginForm.ticket.guna2GradientButton3.Text = "Back To Main Menu";
-                LoginForm.ticket.label6.Text = "Choose The Number Of Tickets:-";
-                LoginForm.ticket.label5.Text = "Standard Ticket:";
-                LoginForm.ticket.label13.Text = "Student Ticket:";
-                LoginForm.ticket.label2.Text = "Elite Ticket:";
-                LoginForm.ticket.label8.Text = "VIP Ticket:";
                 LoginForm.ticket.label1.Text = "Customer Name:";
                 LoginForm.ticket.label12.Text = "Ticket Type:";
                 LoginForm.ticket.label3.Text = "Phone Number:";
