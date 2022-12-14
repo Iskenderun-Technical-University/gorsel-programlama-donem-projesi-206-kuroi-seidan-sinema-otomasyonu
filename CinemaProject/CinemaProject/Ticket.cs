@@ -22,7 +22,7 @@ namespace CinemaProject
         static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
         SqlConnection con = new SqlConnection(Sqlcon);
         SqlCommand cmd;
-
+        SqlDataAdapter sda;
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -34,11 +34,17 @@ namespace CinemaProject
             if (CustNo == 0) MessageBox.Show("Please Add At Least One Customer And Try Again!!");
             else
             {
+                string query = "select CustomerName from TempOrder where SeatNo is Null";
+                con.Open();
+                sda = new SqlDataAdapter(query, con);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
                 LoginForm.seat.guna2ComboBox1.Items.Clear();
-                for (int i = 0; i < listBox1.Items.Count; i++)
+                for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    LoginForm.seat.guna2ComboBox1.Items.Add(listBox1.Items[i]);
+                    LoginForm.seat.guna2ComboBox1.Items.Add(dt.Rows[i][0].ToString());
                 }
+                con.Close();
                 this.Hide();
                 LoginForm.seat.Show();
             }

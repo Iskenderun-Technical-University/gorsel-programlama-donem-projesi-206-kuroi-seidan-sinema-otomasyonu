@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Runtime;
+using System.IO;
 
 namespace CinemaProject
 {
@@ -23,37 +24,114 @@ namespace CinemaProject
         SqlConnection con = new SqlConnection(Sqlcon);
         SqlDataAdapter sda;
         SqlCommand cmd;
-        static int selectedseats=0;
+        public static int selectedseats = 0;
         string currentseat;
 
-        void Seats(Guna.UI2.WinForms.Guna2ImageButton x)
-        {
-            if (x.Checked == true){
-                if (selectedseats >= Ticket.CustNo) MessageBox.Show("You Have Selected The Maximum Number Of Seats For this Order!!");
-                else
-                {
-                    x.Image = imageList1.Images[0];
-                    x.Checked = false;
-                    selectedseats++;
-                    guna2GroupBox2.Visible = true;
-                    currentseat = x.Name;
-                }
-            }
-            else if(x.Checked == false) {
-                x.Image = imageList1.Images[1];
-                x.Checked = true;
-                selectedseats--;
-                string query1="select CustomerName from TempOrder where SeatNo='"+x.Name+"'";
-                string query2 = "update TempOrder set SeatNo='" + "" + "' where SeatNo='" + x.Name + "'";
-                con.Open();
-                cmd = new SqlCommand(query1, con);
-                guna2ComboBox1.Items.Add(cmd.ExecuteScalar());
-                cmd.CommandText = query2;
-                cmd.ExecuteNonQuery();
-                con.Close();
+        public void disableseat() {
+            if (A1.Checked==false) { A1.Enabled = false; }
+            if (A2.Checked == false) { A2.Enabled = false; }
+            if (A3.Checked == false) { A3.Enabled = false; }
+            if (A4.Checked == false) { A4.Enabled = false; }
+            if (A5.Checked == false) { A5.Enabled = false; }
+            if (A6.Checked == false) { A6.Enabled = false; }
+            if (A7.Checked == false) { A7.Enabled = false; }
+            if (A8.Checked == false) { A8.Enabled = false; }
+            if (A9.Checked == false) { A9.Enabled = false; }
+            if (A10.Checked == false) { A10.Enabled = false; }
+            if (A11.Checked == false) { A11.Enabled = false; }
+            if (A12.Checked == false) { A12.Enabled = false; }
+            if (B1.Checked == false) { B1.Enabled = false; }
+            if (B2.Checked == false) { B2.Enabled = false; }
+            if (B3.Checked == false) { B3.Enabled = false; }
+            if (B4.Checked == false) { B4.Enabled = false; }
+            if (B5.Checked == false) { B5.Enabled = false; }
+            if (B6.Checked == false) { B6.Enabled = false; }
+            if (B7.Checked == false) { B7.Enabled = false; }
+            if (B8.Checked == false) { B8.Enabled = false; }
+            if (B9.Checked == false) { B9.Enabled = false; }
+            if (B10.Checked == false) { B10.Enabled = false; }
+            if (B11.Checked == false) { B11.Enabled = false; }
+            if (B12.Checked == false) { B12.Enabled = false; }
+            if (C1.Checked == false) { C1.Enabled = false; }
+            if (C2.Checked == false) { C2.Enabled = false; }
+            if (C3.Checked == false) { C3.Enabled = false; }
+            if (C4.Checked == false) { C4.Enabled = false; }
+            if (C5.Checked == false) { C5.Enabled = false; }
+            if (C6.Checked == false) { C6.Enabled = false; }
+            if (C7.Checked == false) { C7.Enabled = false; }
+            if (C8.Checked == false) { C8.Enabled = false; }
+            if (C9.Checked == false) { C9.Enabled = false; }
+            if (C10.Checked == false) { C10.Enabled = false; }
+            if (C11.Checked == false) { C11.Enabled = false; }
+            if (C12.Checked == false) { C12.Enabled = false; }
+            if (D1.Checked == false) { D1.Enabled = false; }
+            if (D2.Checked == false) { D2.Enabled = false; }
+            if (D3.Checked == false) { D3.Enabled = false; }
+            if (D4.Checked == false) { D4.Enabled = false; }
+            if (D5.Checked == false) { D5.Enabled = false; }
+            if (D6.Checked == false) { D6.Enabled = false; }
+            if (D7.Checked == false) { D7.Enabled = false; }
+            if (D8.Checked == false) { D8.Enabled = false; }
+            if (D9.Checked == false) { D9.Enabled = false; }
+            if (D10.Checked == false) { D10.Enabled = false; }
+            if (D11.Checked == false) { D11.Enabled = false; }
+            if (D12.Checked == false) { D12.Enabled = false; }
+            if (E1.Checked == false) { E1.Enabled = false; }
+            if (E2.Checked == false) { E2.Enabled = false; }
+            if (E3.Checked == false) { E3.Enabled = false; }
+            if (E4.Checked == false) { E4.Enabled = false; }
+            if (E5.Checked == false) { E5.Enabled = false; }
+            if (E6.Checked == false) { E6.Enabled = false; }
+            if (E7.Checked == false) { E7.Enabled = false; }
+            if (E8.Checked == false) { E8.Enabled = false; }
+            if (E9.Checked == false) { E9.Enabled = false; }
+            if (E10.Checked == false) { E10.Enabled = false; }
+            if (E11.Checked == false) { E11.Enabled = false; }
+            if (E12.Checked == false) { E12.Enabled = false; }
 
+
+
+        }
+
+        private static Image GetImage(byte[] data)
+        {
+            using (MemoryStream ms = new MemoryStream(data))
+            {
+                return (Image.FromStream(ms));
             }
         }
+
+        public void Seats(Guna.UI2.WinForms.Guna2ImageButton x)
+        {
+                if (x.Checked == true)
+                {
+                    if (selectedseats >= Ticket.CustNo) MessageBox.Show("You Have Selected The Maximum Number Of Seats For this Order!!");
+                    else
+                    {
+                        x.Image = imageList1.Images[0];
+                        x.Checked = false;
+                        selectedseats++;
+                        guna2GroupBox2.Visible = true;
+                        currentseat = x.Name;
+                    }
+                }
+                else if (x.Checked == false)
+                {
+                    x.Image = imageList1.Images[1];
+                    x.Checked = true;
+                    selectedseats--;
+                    string query1 = "select CustomerName from TempOrder where SeatNo='" + x.Name + "'";
+                    string query2 = "update TempOrder set SeatNo= NULL where SeatNo='" + x.Name + "'";
+                    con.Open();
+                    cmd = new SqlCommand(query1, con);
+                    guna2ComboBox1.Items.Add(cmd.ExecuteScalar());
+                    cmd.CommandText = query2;
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+
+                }
+        }
+
         private void E1_Click(object sender, EventArgs e) {Seats(E1);}
 
         private void E2_Click(object sender, EventArgs e) {Seats(E2);}
@@ -78,7 +156,7 @@ namespace CinemaProject
 
         private void D6_Click(object sender, EventArgs e) {Seats(D6);}
 
-        private void C1_Click(object sender, EventArgs e) {Seats(C1);}
+        private void C1_Click(object sender, EventArgs e) { Seats(C1);}
 
         private void C2_Click(object sender, EventArgs e) {Seats(C2);}
 
@@ -238,23 +316,13 @@ namespace CinemaProject
             else if (listBox1.SelectedIndex == -1) MessageBox.Show("Please Choose The Movie And Show Time!!");
             else
             {
+                disableseat();
                 string query = "select CustomerName,TicketType,SeatNo,Price from TempOrder";
                 con.Open();
                 sda = new SqlDataAdapter(query,con);
                 DataTable dt=new DataTable();
                 sda.Fill(dt);
-                LoginForm.orderDetails.listBox1.Items.Clear(); LoginForm.orderDetails.listBox1.Items.Add("Customer Name");
-                LoginForm.orderDetails.listBox2.Items.Clear(); LoginForm.orderDetails.listBox2.Items.Add("Ticket Type");
-                LoginForm.orderDetails.listBox3.Items.Clear(); LoginForm.orderDetails.listBox3.Items.Add("Seat No");
-                LoginForm.orderDetails.listBox4.Items.Clear(); LoginForm.orderDetails.listBox4.Items.Add("Price");
-
-                for (int i = 0; i < dt.Rows.Count; i++) {
-                    LoginForm.orderDetails.listBox1.Items.Add(dt.Rows[i][0]);
-                    LoginForm.orderDetails.listBox2.Items.Add(dt.Rows[i][1]);
-                    LoginForm.orderDetails.listBox3.Items.Add(dt.Rows[i][2]);
-                    LoginForm.orderDetails.listBox4.Items.Add(dt.Rows[i][3]);
-
-                }
+                LoginForm.orderDetails.guna2DataGridView1.DataSource = dt;
                 cmd = new SqlCommand("select sum(Price) from TempOrder", con);
                 LoginForm.orderDetails.label2.Text = cmd.ExecuteScalar().ToString();
                 con.Close();
