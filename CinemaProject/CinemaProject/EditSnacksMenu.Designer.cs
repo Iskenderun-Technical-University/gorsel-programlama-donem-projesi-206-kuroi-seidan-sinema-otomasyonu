@@ -42,7 +42,6 @@ namespace CinemaProject
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.PName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.price = new Guna.UI2.WinForms.Guna2TextBox();
             this.Size = new Guna.UI2.WinForms.Guna2TextBox();
             this.DeleteRBtn = new Guna.UI2.WinForms.Guna2RadioButton();
             this.AddRBtn = new Guna.UI2.WinForms.Guna2RadioButton();
@@ -52,6 +51,8 @@ namespace CinemaProject
             this.label6 = new System.Windows.Forms.Label();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label3 = new System.Windows.Forms.Label();
+            this.PopCornSize = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.price = new System.Windows.Forms.MaskedTextBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,12 +64,8 @@ namespace CinemaProject
             this.listBox3.FormattingEnabled = true;
             this.listBox3.ItemHeight = 30;
             this.listBox3.Items.AddRange(new object[] {
-            "ID",
-            "1",
-            "2",
-            "3",
-            "4"});
-            this.listBox3.Location = new System.Drawing.Point(372, 187);
+            "ID"});
+            this.listBox3.Location = new System.Drawing.Point(412, 211);
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(40, 242);
             this.listBox3.TabIndex = 49;
@@ -78,9 +75,9 @@ namespace CinemaProject
             // guna2Separator1
             // 
             this.guna2Separator1.FillColor = System.Drawing.Color.Black;
-            this.guna2Separator1.Location = new System.Drawing.Point(30, 217);
+            this.guna2Separator1.Location = new System.Drawing.Point(30, 241);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(343, 3);
+            this.guna2Separator1.Size = new System.Drawing.Size(381, 1);
             this.guna2Separator1.TabIndex = 46;
             // 
             // listBox2
@@ -91,12 +88,8 @@ namespace CinemaProject
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 30;
             this.listBox2.Items.AddRange(new object[] {
-            "Price",
-            "45",
-            "3",
-            "66",
-            "3"});
-            this.listBox2.Location = new System.Drawing.Point(289, 187);
+            "Price"});
+            this.listBox2.Location = new System.Drawing.Point(329, 211);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(84, 242);
             this.listBox2.TabIndex = 48;
@@ -110,14 +103,10 @@ namespace CinemaProject
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 30;
             this.listBox1.Items.AddRange(new object[] {
-            "Item",
-            "gssdfg",
-            "sdfgdsgsdfg",
-            "sdfgsdfgsdfgsdfgsdfg",
-            "dsfg"});
-            this.listBox1.Location = new System.Drawing.Point(29, 187);
+            "Item"});
+            this.listBox1.Location = new System.Drawing.Point(29, 211);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(264, 242);
+            this.listBox1.Size = new System.Drawing.Size(301, 242);
             this.listBox1.TabIndex = 47;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -136,7 +125,7 @@ namespace CinemaProject
             "Drinks",
             "PopCorn",
             "Snacks"});
-            this.Category.Location = new System.Drawing.Point(187, 118);
+            this.Category.Location = new System.Drawing.Point(187, 142);
             this.Category.Name = "Category";
             this.Category.Size = new System.Drawing.Size(200, 36);
             this.Category.TabIndex = 44;
@@ -223,35 +212,17 @@ namespace CinemaProject
             this.PName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.PName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.PName.FocusedState.BorderColor = System.Drawing.Color.Black;
-            this.PName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.PName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PName.Location = new System.Drawing.Point(693, 261);
+            this.PName.Location = new System.Drawing.Point(693, 265);
+            this.PName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.PName.Name = "PName";
             this.PName.PasswordChar = '\0';
             this.PName.PlaceholderText = "";
             this.PName.SelectedText = "";
-            this.PName.Size = new System.Drawing.Size(200, 36);
+            this.PName.Size = new System.Drawing.Size(200, 33);
             this.PName.TabIndex = 54;
-            // 
-            // price
-            // 
-            this.price.BorderColor = System.Drawing.Color.Gray;
-            this.price.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.price.DefaultText = "";
-            this.price.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.price.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.price.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.price.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.price.FocusedState.BorderColor = System.Drawing.Color.Black;
-            this.price.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.price.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.price.Location = new System.Drawing.Point(693, 392);
-            this.price.Name = "price";
-            this.price.PasswordChar = '\0';
-            this.price.PlaceholderText = "";
-            this.price.SelectedText = "";
-            this.price.Size = new System.Drawing.Size(200, 36);
-            this.price.TabIndex = 55;
             // 
             // Size
             // 
@@ -263,14 +234,16 @@ namespace CinemaProject
             this.Size.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Size.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Size.FocusedState.BorderColor = System.Drawing.Color.Black;
-            this.Size.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Size.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Size.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.Size.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Size.Location = new System.Drawing.Point(693, 326);
+            this.Size.Location = new System.Drawing.Point(693, 328);
+            this.Size.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Size.Name = "Size";
             this.Size.PasswordChar = '\0';
             this.Size.PlaceholderText = "";
             this.Size.SelectedText = "";
-            this.Size.Size = new System.Drawing.Size(200, 36);
+            this.Size.Size = new System.Drawing.Size(200, 33);
             this.Size.TabIndex = 56;
             // 
             // DeleteRBtn
@@ -362,7 +335,7 @@ namespace CinemaProject
             // 
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.DarkRed;
-            this.label6.Location = new System.Drawing.Point(15, 118);
+            this.label6.Location = new System.Drawing.Point(15, 142);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(166, 31);
             this.label6.TabIndex = 62;
@@ -399,12 +372,49 @@ namespace CinemaProject
     "st left side!";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // PopCornSize
+            // 
+            this.PopCornSize.BackColor = System.Drawing.Color.Transparent;
+            this.PopCornSize.BorderColor = System.Drawing.Color.Gray;
+            this.PopCornSize.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.PopCornSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PopCornSize.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PopCornSize.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PopCornSize.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PopCornSize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.PopCornSize.ItemHeight = 30;
+            this.PopCornSize.Items.AddRange(new object[] {
+            "Small",
+            "Medium",
+            "Large",
+            "XLarge"});
+            this.PopCornSize.Location = new System.Drawing.Point(693, 329);
+            this.PopCornSize.Name = "PopCornSize";
+            this.PopCornSize.Size = new System.Drawing.Size(200, 36);
+            this.PopCornSize.TabIndex = 65;
+            this.PopCornSize.Visible = false;
+            // 
+            // price
+            // 
+            this.price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.price.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price.HidePromptOnLeave = true;
+            this.price.Location = new System.Drawing.Point(693, 395);
+            this.price.Mask = "0000";
+            this.price.Name = "price";
+            this.price.ResetOnSpace = false;
+            this.price.Size = new System.Drawing.Size(200, 33);
+            this.price.TabIndex = 66;
+            this.price.ValidatingType = typeof(int);
+            // 
             // EditSnacksMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(942, 556);
+            this.Controls.Add(this.price);
+            this.Controls.Add(this.PopCornSize);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2GradientButton3);
             this.Controls.Add(this.label6);
@@ -414,7 +424,6 @@ namespace CinemaProject
             this.Controls.Add(this.AddRBtn);
             this.Controls.Add(this.DeleteRBtn);
             this.Controls.Add(this.Size);
-            this.Controls.Add(this.price);
             this.Controls.Add(this.PName);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
@@ -448,7 +457,6 @@ namespace CinemaProject
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2TextBox Size;
-        private Guna.UI2.WinForms.Guna2TextBox price;
         private Guna.UI2.WinForms.Guna2TextBox PName;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
         public System.Windows.Forms.Label label5;
@@ -461,5 +469,7 @@ namespace CinemaProject
         public System.Windows.Forms.Label label6;
         public Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         public System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2ComboBox PopCornSize;
+        private System.Windows.Forms.MaskedTextBox price;
     }
 }

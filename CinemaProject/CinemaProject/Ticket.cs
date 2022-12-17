@@ -39,19 +39,31 @@ namespace CinemaProject
                 sda = new SqlDataAdapter(query, con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
-                LoginForm.seat.guna2ComboBox1.Items.Clear();
+                LoginForm.seat.CustomerCombox.Items.Clear();
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    LoginForm.seat.guna2ComboBox1.Items.Add(dt.Rows[i][0].ToString());
+                    LoginForm.seat.CustomerCombox.Items.Add(dt.Rows[i][0].ToString());
                 }
                 con.Close();
                 this.Hide();
                 LoginForm.seat.Show();
             }
         }
+
+        public void ResetPage() {
+            Type.SelectedIndex = -1; CustName.Clear(); PhoneNo.Clear(); radioButton1.Checked = false; radioButton2.Checked = false; listBox1.Items.Clear();listBox2.Items.Clear();
+            LoginForm.seat.listBox1.Items.Clear(); ChooseSeat.selectedseats = 0; CustNo = 0; LoginForm.seat.cover.Visible = false;
+            LoginForm.seat.guna2ComboBox2.SelectedIndex = -1; LoginForm.seat.ResetChairs(); LoginForm.seat.CustomerCombox.Items.Clear();
+            string query = "delete from TempOrder where ID > 0";
+            con.Open();
+            cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            ResetPage(); this.Hide();
             LoginForm.mainForm.Show();
         }
 
@@ -64,15 +76,19 @@ namespace CinemaProject
             else if (Type.Text == "Student Ticket") price = 26;
             else if (Type.Text == "Elite Ticket") price = 45;
             else if (Type.Text == "VIP Ticket") price = 60;
-
-            string query = "insert into TempOrder (CustomerName,TicketType,PhoneNo,Gender,Price) values ('" + CustName.Text + "','" + Type.Text + "','" + PhoneNo.Text + "','" + gender + "','"+price+"')";
-            con.Open();
-            cmd = new SqlCommand(query, con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-            listBox1.Items.Add(CustName.Text);
-            listBox2.Items.Add(Type.Text);
-            CustName.Clear();PhoneNo.Clear();
+            if (CustName.Text == "" || Type.SelectedIndex == -1) MessageBox.Show("You Can't Leave The Name And Ticket Type Empty!! Please Fill Them Then Try Again!!");
+            else if (CustName.Text.Contains("  ") || CustName.Text[0].ToString() == " ") { MessageBox.Show("You Can't Make That Kind Of Spaces In Your Name!! Please Try Again."); CustName.Clear(); CustName.Focus(); }
+            else
+            {
+                string query = "insert into TempOrder (CustomerName,TicketType,PhoneNo,Gender,Price) values ('" + CustName.Text + "','" + Type.Text + "','" + PhoneNo.Text + "','" + gender + "','" + price + "')";
+                con.Open();
+                cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                listBox1.Items.Add(CustName.Text);
+                listBox2.Items.Add(Type.Text);
+                CustName.Clear(); PhoneNo.Clear();
+            }
         }
 
         private void guna2GradientCircleButton4_Click(object sender, EventArgs e)

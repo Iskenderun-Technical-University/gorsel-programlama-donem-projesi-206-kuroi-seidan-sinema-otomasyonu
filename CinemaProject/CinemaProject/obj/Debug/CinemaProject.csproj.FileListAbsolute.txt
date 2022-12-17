@@ -105,3 +105,4 @@ C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-
 C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\obj\Debug\CinemaProject.pdb
 >>>>>>> Amal
 C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.OrderDetails.resources
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.csproj.SuggestedBindingRedirects.cache

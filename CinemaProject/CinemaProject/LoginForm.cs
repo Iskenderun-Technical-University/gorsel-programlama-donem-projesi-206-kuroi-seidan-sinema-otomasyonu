@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace CinemaProject
 {
@@ -66,21 +65,38 @@ namespace CinemaProject
                  MessageBox.Show("The User Name Or Password is Wrong, Please Check them and Try again!", "Invaild Details", MessageBoxButtons.OK, MessageBoxIcon.Error);
                  guna2TextBox1.Clear(); guna2TextBox2.Clear(); guna2TextBox1.Focus();
              }*/
-            this.Hide();
-           mainForm.Show();
+            /* if (password.Text.Contains(' '))
+             {
+                 MessageBox.Show("You can't make spaces in the password, Please Try Again!");
+                 password.Clear();
+             }*/
 
-            /*if (Login())
+             this.Hide();
+             mainForm.Show();
+
+
+           /* if (Login())
             {
-                
+             this.Hide();
+            mainForm.Show();
             }
             else MessageBox.Show("the data is worng");*/
-           
+
         }
 
         private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (ShowPass.Checked == true) password.UseSystemPasswordChar = false;
             else password.UseSystemPasswordChar = true;
+        }
+
+        private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            string query = "delete from TempOrder where ID > 0";
+            con.Open();
+            cmd = new SqlCommand(query,con);
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
     }
 }

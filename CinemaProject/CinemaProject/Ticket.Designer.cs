@@ -48,6 +48,7 @@ namespace CinemaProject
             this.label9 = new System.Windows.Forms.Label();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientCircleButton2 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.guna2GradientCircleButton4 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
@@ -57,7 +58,6 @@ namespace CinemaProject
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GroupBox1.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.guna2GroupBox2.SuspendLayout();
@@ -302,6 +302,24 @@ namespace CinemaProject
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1172, 48);
             this.guna2CustomGradientPanel1.TabIndex = 76;
             // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
+            this.guna2ImageButton1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
+            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1116, 0);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 50);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(56, 48);
+            this.guna2ImageButton1.TabIndex = 0;
+            this.guna2ImageButton1.UseTransparentBackground = true;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            // 
             // guna2GradientCircleButton2
             // 
             this.guna2GradientCircleButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -343,7 +361,7 @@ namespace CinemaProject
             this.guna2GradientCircleButton4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.guna2GradientCircleButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientCircleButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton4.Location = new System.Drawing.Point(473, 611);
+            this.guna2GradientCircleButton4.Location = new System.Drawing.Point(472, 611);
             this.guna2GradientCircleButton4.Name = "guna2GradientCircleButton4";
             this.guna2GradientCircleButton4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2GradientCircleButton4.Size = new System.Drawing.Size(85, 80);
@@ -368,7 +386,7 @@ namespace CinemaProject
             this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox2.Location = new System.Drawing.Point(910, 139);
+            this.guna2GroupBox2.Location = new System.Drawing.Point(910, 130);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
             this.guna2GroupBox2.Size = new System.Drawing.Size(252, 200);
             this.guna2GroupBox2.TabIndex = 76;
@@ -416,24 +434,6 @@ namespace CinemaProject
             this.label6.Size = new System.Drawing.Size(211, 20);
             this.label6.TabIndex = 0;
             this.label6.Text = "1- Standard Ticket Price : 35TL.";
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1116, 0);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(56, 48);
-            this.guna2ImageButton1.TabIndex = 0;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // Ticket
             // 

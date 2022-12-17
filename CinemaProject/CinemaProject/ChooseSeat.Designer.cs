@@ -49,11 +49,11 @@ namespace CinemaProject
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.ChooseCust = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.CustomerCombox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cover = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2GradientCircleButton2 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -118,8 +118,8 @@ namespace CinemaProject
             this.C5 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.C6 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2CustomGradientPanel1.SuspendLayout();
-            this.guna2GroupBox1.SuspendLayout();
-            this.guna2GroupBox2.SuspendLayout();
+            this.ChooseCust.SuspendLayout();
+            this.cover.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -303,6 +303,7 @@ namespace CinemaProject
             this.guna2ImageButton1.Size = new System.Drawing.Size(55, 48);
             this.guna2ImageButton1.TabIndex = 0;
             this.guna2ImageButton1.UseTransparentBackground = true;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // imageList1
             // 
@@ -323,22 +324,22 @@ namespace CinemaProject
             this.listBox1.Size = new System.Drawing.Size(263, 300);
             this.listBox1.TabIndex = 85;
             // 
-            // guna2GroupBox1
+            // ChooseCust
             // 
-            this.guna2GroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.BorderRadius = 10;
-            this.guna2GroupBox1.Controls.Add(this.guna2GradientCircleButton1);
-            this.guna2GroupBox1.Controls.Add(this.label4);
-            this.guna2GroupBox1.Controls.Add(this.guna2ComboBox1);
-            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Gainsboro;
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2GroupBox1.Location = new System.Drawing.Point(203, 36);
-            this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(382, 228);
-            this.guna2GroupBox1.TabIndex = 76;
-            this.guna2GroupBox1.Text = "Choose The Customer";
-            this.guna2GroupBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ChooseCust.BackColor = System.Drawing.Color.Transparent;
+            this.ChooseCust.BorderRadius = 10;
+            this.ChooseCust.Controls.Add(this.guna2GradientCircleButton1);
+            this.ChooseCust.Controls.Add(this.label4);
+            this.ChooseCust.Controls.Add(this.CustomerCombox);
+            this.ChooseCust.CustomBorderColor = System.Drawing.Color.Gainsboro;
+            this.ChooseCust.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChooseCust.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ChooseCust.Location = new System.Drawing.Point(203, 36);
+            this.ChooseCust.Name = "ChooseCust";
+            this.ChooseCust.Size = new System.Drawing.Size(382, 228);
+            this.ChooseCust.TabIndex = 76;
+            this.ChooseCust.Text = "Choose The Customer";
+            this.ChooseCust.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2GradientCircleButton1
             // 
@@ -370,51 +371,51 @@ namespace CinemaProject
             this.label4.TabIndex = 84;
             this.label4.Text = "Choose Customer:";
             // 
-            // guna2ComboBox1
+            // CustomerCombox
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(171, 70);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(184, 36);
-            this.guna2ComboBox1.TabIndex = 0;
+            this.CustomerCombox.BackColor = System.Drawing.Color.Transparent;
+            this.CustomerCombox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CustomerCombox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CustomerCombox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CustomerCombox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CustomerCombox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.CustomerCombox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.CustomerCombox.ItemHeight = 30;
+            this.CustomerCombox.Location = new System.Drawing.Point(171, 70);
+            this.CustomerCombox.Name = "CustomerCombox";
+            this.CustomerCombox.Size = new System.Drawing.Size(184, 36);
+            this.CustomerCombox.TabIndex = 0;
             // 
-            // guna2GroupBox2
+            // cover
             // 
-            this.guna2GroupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox2.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox2.BorderThickness = 0;
-            this.guna2GroupBox2.Controls.Add(this.guna2GroupBox1);
-            this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox2.CustomBorderThickness = new System.Windows.Forms.Padding(0);
-            this.guna2GroupBox2.CustomizableEdges.BottomLeft = false;
-            this.guna2GroupBox2.CustomizableEdges.BottomRight = false;
-            this.guna2GroupBox2.CustomizableEdges.TopLeft = false;
-            this.guna2GroupBox2.CustomizableEdges.TopRight = false;
-            this.guna2GroupBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GroupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2GroupBox2.Location = new System.Drawing.Point(55, 223);
-            this.guna2GroupBox2.Name = "guna2GroupBox2";
-            this.guna2GroupBox2.ShadowDecoration.BorderRadius = 0;
-            this.guna2GroupBox2.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.guna2GroupBox2.ShadowDecoration.CustomizableEdges.BottomLeft = false;
-            this.guna2GroupBox2.ShadowDecoration.CustomizableEdges.BottomRight = false;
-            this.guna2GroupBox2.ShadowDecoration.CustomizableEdges.TopLeft = false;
-            this.guna2GroupBox2.ShadowDecoration.CustomizableEdges.TopRight = false;
-            this.guna2GroupBox2.ShadowDecoration.Depth = 0;
-            this.guna2GroupBox2.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0);
-            this.guna2GroupBox2.Size = new System.Drawing.Size(790, 297);
-            this.guna2GroupBox2.TabIndex = 78;
-            this.guna2GroupBox2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2GroupBox2.UseTransparentBackground = true;
-            this.guna2GroupBox2.Visible = false;
+            this.cover.BackColor = System.Drawing.Color.Transparent;
+            this.cover.BorderColor = System.Drawing.Color.Transparent;
+            this.cover.BorderThickness = 0;
+            this.cover.Controls.Add(this.ChooseCust);
+            this.cover.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.cover.CustomBorderThickness = new System.Windows.Forms.Padding(0);
+            this.cover.CustomizableEdges.BottomLeft = false;
+            this.cover.CustomizableEdges.BottomRight = false;
+            this.cover.CustomizableEdges.TopLeft = false;
+            this.cover.CustomizableEdges.TopRight = false;
+            this.cover.FillColor = System.Drawing.Color.Transparent;
+            this.cover.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cover.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cover.Location = new System.Drawing.Point(55, 223);
+            this.cover.Name = "cover";
+            this.cover.ShadowDecoration.BorderRadius = 0;
+            this.cover.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.cover.ShadowDecoration.CustomizableEdges.BottomLeft = false;
+            this.cover.ShadowDecoration.CustomizableEdges.BottomRight = false;
+            this.cover.ShadowDecoration.CustomizableEdges.TopLeft = false;
+            this.cover.ShadowDecoration.CustomizableEdges.TopRight = false;
+            this.cover.ShadowDecoration.Depth = 0;
+            this.cover.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0);
+            this.cover.Size = new System.Drawing.Size(790, 297);
+            this.cover.TabIndex = 78;
+            this.cover.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.cover.UseTransparentBackground = true;
+            this.cover.Visible = false;
             // 
             // guna2GradientCircleButton2
             // 
@@ -1485,7 +1486,7 @@ namespace CinemaProject
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.guna2GradientCircleButton2);
-            this.Controls.Add(this.guna2GroupBox2);
+            this.Controls.Add(this.cover);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.guna2ComboBox2);
@@ -1569,9 +1570,9 @@ namespace CinemaProject
             this.Text = "ChooseSeat";
             this.Load += new System.EventHandler(this.ChooseSeat_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
-            this.guna2GroupBox1.ResumeLayout(false);
-            this.guna2GroupBox1.PerformLayout();
-            this.guna2GroupBox2.ResumeLayout(false);
+            this.ChooseCust.ResumeLayout(false);
+            this.ChooseCust.PerformLayout();
+            this.cover.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -1658,14 +1659,14 @@ namespace CinemaProject
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private System.Windows.Forms.ImageList imageList1;
-        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton1;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
-        public Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        public Guna.UI2.WinForms.Guna2ComboBox CustomerCombox;
         public Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton2;
         private Guna.UI2.WinForms.Guna2ImageButton C1;
         public Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
         public System.Windows.Forms.ListBox listBox1;
+        public Guna.UI2.WinForms.Guna2GroupBox cover;
+        private Guna.UI2.WinForms.Guna2GroupBox ChooseCust;
     }
 }

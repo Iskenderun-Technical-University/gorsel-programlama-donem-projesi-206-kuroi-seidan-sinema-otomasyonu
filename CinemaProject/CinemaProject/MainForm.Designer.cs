@@ -30,6 +30,7 @@ namespace CinemaProject
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
@@ -47,7 +48,6 @@ namespace CinemaProject
             this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2ToggleSwitch2 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.guna2ImageButton6 = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -55,6 +55,8 @@ namespace CinemaProject
             this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton7 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.GroupBox1.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -78,11 +80,10 @@ namespace CinemaProject
             this.guna2GradientCircleButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2GradientCircleButton1.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(16, 768);
-            this.guna2GradientCircleButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(12, 624);
             this.guna2GradientCircleButton1.Name = "guna2GradientCircleButton1";
             this.guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(145, 103);
+            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(109, 84);
             this.guna2GradientCircleButton1.TabIndex = 51;
             this.guna2GradientCircleButton1.Text = "Change Account Password";
             this.guna2GradientCircleButton1.Click += new System.EventHandler(this.guna2GradientCircleButton1_Click);
@@ -102,10 +103,9 @@ namespace CinemaProject
             this.GroupBox1.CustomBorderColor = System.Drawing.Color.Brown;
             this.GroupBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.GroupBox1.Location = new System.Drawing.Point(169, 519);
-            this.GroupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox1.Location = new System.Drawing.Point(127, 425);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Size = new System.Drawing.Size(527, 306);
+            this.GroupBox1.Size = new System.Drawing.Size(395, 249);
             this.GroupBox1.TabIndex = 50;
             this.GroupBox1.Text = "Change Account Password:-";
             this.GroupBox1.Visible = false;
@@ -122,10 +122,9 @@ namespace CinemaProject
             this.guna2GradientButton1.FillColor2 = System.Drawing.SystemColors.AppWorkspace;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(311, 246);
-            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(233, 200);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(144, 52);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(108, 42);
             this.guna2GradientButton1.TabIndex = 8;
             this.guna2GradientButton1.Text = "Change";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
@@ -141,13 +140,12 @@ namespace CinemaProject
             this.TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox4.Location = new System.Drawing.Point(267, 199);
-            this.TextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox4.Location = new System.Drawing.Point(200, 162);
             this.TextBox4.Name = "TextBox4";
             this.TextBox4.PasswordChar = '\0';
             this.TextBox4.PlaceholderText = "";
             this.TextBox4.SelectedText = "";
-            this.TextBox4.Size = new System.Drawing.Size(223, 33);
+            this.TextBox4.Size = new System.Drawing.Size(167, 27);
             this.TextBox4.TabIndex = 7;
             // 
             // label5
@@ -157,10 +155,9 @@ namespace CinemaProject
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(87, 194);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(65, 158);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 42);
+            this.label5.Size = new System.Drawing.Size(101, 33);
             this.label5.TabIndex = 6;
             this.label5.Text = "43+32";
             // 
@@ -175,13 +172,12 @@ namespace CinemaProject
             this.TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox3.Location = new System.Drawing.Point(267, 139);
-            this.TextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox3.Location = new System.Drawing.Point(200, 113);
             this.TextBox3.Name = "TextBox3";
             this.TextBox3.PasswordChar = '●';
             this.TextBox3.PlaceholderText = "";
             this.TextBox3.SelectedText = "";
-            this.TextBox3.Size = new System.Drawing.Size(223, 33);
+            this.TextBox3.Size = new System.Drawing.Size(167, 27);
             this.TextBox3.TabIndex = 5;
             this.TextBox3.UseSystemPasswordChar = true;
             // 
@@ -196,13 +192,12 @@ namespace CinemaProject
             this.TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox2.Location = new System.Drawing.Point(267, 98);
-            this.TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox2.Location = new System.Drawing.Point(200, 80);
             this.TextBox2.Name = "TextBox2";
             this.TextBox2.PasswordChar = '●';
             this.TextBox2.PlaceholderText = "";
             this.TextBox2.SelectedText = "";
-            this.TextBox2.Size = new System.Drawing.Size(223, 33);
+            this.TextBox2.Size = new System.Drawing.Size(167, 27);
             this.TextBox2.TabIndex = 4;
             this.TextBox2.UseSystemPasswordChar = true;
             // 
@@ -217,13 +212,12 @@ namespace CinemaProject
             this.TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox1.Location = new System.Drawing.Point(267, 58);
-            this.TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox1.Location = new System.Drawing.Point(200, 47);
             this.TextBox1.Name = "TextBox1";
             this.TextBox1.PasswordChar = '●';
             this.TextBox1.PlaceholderText = "";
             this.TextBox1.SelectedText = "";
-            this.TextBox1.Size = new System.Drawing.Size(223, 33);
+            this.TextBox1.Size = new System.Drawing.Size(167, 27);
             this.TextBox1.TabIndex = 3;
             this.TextBox1.UseSystemPasswordChar = true;
             // 
@@ -233,10 +227,9 @@ namespace CinemaProject
             this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(9, 144);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(7, 117);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(251, 25);
+            this.label6.Size = new System.Drawing.Size(188, 20);
             this.label6.TabIndex = 2;
             this.label6.Text = "Enter The Password Again:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -247,10 +240,9 @@ namespace CinemaProject
             this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(4, 103);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(3, 84);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(255, 25);
+            this.label7.Size = new System.Drawing.Size(191, 20);
             this.label7.TabIndex = 1;
             this.label7.Text = "Enter The New Password:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -261,10 +253,9 @@ namespace CinemaProject
             this.label8.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F);
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(4, 62);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(3, 50);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(256, 25);
+            this.label8.Size = new System.Drawing.Size(192, 20);
             this.label8.TabIndex = 0;
             this.label8.Text = "Enter The Old Password:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -275,10 +266,9 @@ namespace CinemaProject
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(1656, 74);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(1242, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 25);
+            this.label2.Size = new System.Drawing.Size(26, 20);
             this.label2.TabIndex = 49;
             this.label2.Text = "TR";
             // 
@@ -288,10 +278,9 @@ namespace CinemaProject
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(1548, 74);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(1161, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 25);
+            this.label1.Size = new System.Drawing.Size(29, 20);
             this.label1.TabIndex = 48;
             this.label1.Text = "EN";
             // 
@@ -302,10 +291,9 @@ namespace CinemaProject
             this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.Black;
             this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(1588, 68);
-            this.guna2ToggleSwitch1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(1191, 55);
             this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
-            this.guna2ToggleSwitch1.Size = new System.Drawing.Size(67, 36);
+            this.guna2ToggleSwitch1.Size = new System.Drawing.Size(50, 29);
             this.guna2ToggleSwitch1.TabIndex = 47;
             this.guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -326,9 +314,8 @@ namespace CinemaProject
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.IndianRed;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Brown;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1707, 59);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1284, 48);
             this.guna2CustomGradientPanel1.TabIndex = 43;
             // 
             // label3
@@ -337,40 +324,20 @@ namespace CinemaProject
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(217, 22);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(163, 18);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 23);
+            this.label3.Size = new System.Drawing.Size(73, 19);
             this.label3.TabIndex = 40;
             this.label3.Text = "Worker UI";
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1637, 4);
-            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(63, 53);
-            this.guna2ImageButton1.TabIndex = 0;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(0, 22);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(0, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 23);
+            this.label4.Size = new System.Drawing.Size(106, 19);
             this.label4.TabIndex = 39;
             this.label4.Text = "Costumer UI";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -382,10 +349,9 @@ namespace CinemaProject
             this.guna2ToggleSwitch2.CheckedState.FillColor = System.Drawing.Color.Black;
             this.guna2ToggleSwitch2.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch2.Location = new System.Drawing.Point(149, 17);
-            this.guna2ToggleSwitch2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ToggleSwitch2.Location = new System.Drawing.Point(112, 14);
             this.guna2ToggleSwitch2.Name = "guna2ToggleSwitch2";
-            this.guna2ToggleSwitch2.Size = new System.Drawing.Size(60, 33);
+            this.guna2ToggleSwitch2.Size = new System.Drawing.Size(45, 27);
             this.guna2ToggleSwitch2.TabIndex = 36;
             this.guna2ToggleSwitch2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2ToggleSwitch2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -396,16 +362,15 @@ namespace CinemaProject
             // guna2ImageButton6
             // 
             this.guna2ImageButton6.CheckedState.ImageSize = new System.Drawing.Size(160, 150);
-            this.guna2ImageButton6.HoverState.ImageSize = new System.Drawing.Size(180, 170);
-            this.guna2ImageButton6.Image = global::CinemaProject.Properties.Resources._10_23_2022_5_24_41_PM;
+            this.guna2ImageButton6.HoverState.ImageSize = new System.Drawing.Size(190, 180);
+            this.guna2ImageButton6.Image = global::CinemaProject.Properties.Resources._12_16_2022_7_31_05_PM;
             this.guna2ImageButton6.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton6.ImageRotate = 0F;
-            this.guna2ImageButton6.ImageSize = new System.Drawing.Size(170, 160);
-            this.guna2ImageButton6.Location = new System.Drawing.Point(1216, 562);
-            this.guna2ImageButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ImageButton6.ImageSize = new System.Drawing.Size(180, 170);
+            this.guna2ImageButton6.Location = new System.Drawing.Point(917, 440);
             this.guna2ImageButton6.Name = "guna2ImageButton6";
-            this.guna2ImageButton6.PressedState.ImageSize = new System.Drawing.Size(170, 160);
-            this.guna2ImageButton6.Size = new System.Drawing.Size(257, 198);
+            this.guna2ImageButton6.PressedState.ImageSize = new System.Drawing.Size(180, 170);
+            this.guna2ImageButton6.Size = new System.Drawing.Size(193, 161);
             this.guna2ImageButton6.TabIndex = 53;
             this.guna2ImageButton6.Click += new System.EventHandler(this.guna2ImageButton6_Click);
             // 
@@ -417,11 +382,10 @@ namespace CinemaProject
             this.guna2ImageButton5.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton5.ImageRotate = 0F;
             this.guna2ImageButton5.ImageSize = new System.Drawing.Size(150, 140);
-            this.guna2ImageButton5.Location = new System.Drawing.Point(713, 194);
-            this.guna2ImageButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ImageButton5.Location = new System.Drawing.Point(559, 141);
             this.guna2ImageButton5.Name = "guna2ImageButton5";
             this.guna2ImageButton5.PressedState.ImageSize = new System.Drawing.Size(150, 140);
-            this.guna2ImageButton5.Size = new System.Drawing.Size(257, 198);
+            this.guna2ImageButton5.Size = new System.Drawing.Size(193, 161);
             this.guna2ImageButton5.TabIndex = 52;
             this.guna2ImageButton5.Click += new System.EventHandler(this.guna2ImageButton5_Click);
             // 
@@ -433,11 +397,10 @@ namespace CinemaProject
             this.guna2ImageButton4.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton4.ImageRotate = 0F;
             this.guna2ImageButton4.ImageSize = new System.Drawing.Size(175, 165);
-            this.guna2ImageButton4.Location = new System.Drawing.Point(1216, 194);
-            this.guna2ImageButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ImageButton4.Location = new System.Drawing.Point(917, 141);
             this.guna2ImageButton4.Name = "guna2ImageButton4";
             this.guna2ImageButton4.PressedState.ImageSize = new System.Drawing.Size(175, 165);
-            this.guna2ImageButton4.Size = new System.Drawing.Size(257, 198);
+            this.guna2ImageButton4.Size = new System.Drawing.Size(193, 161);
             this.guna2ImageButton4.TabIndex = 46;
             this.guna2ImageButton4.Click += new System.EventHandler(this.guna2ImageButton4_Click);
             // 
@@ -449,11 +412,10 @@ namespace CinemaProject
             this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton3.ImageRotate = 0F;
             this.guna2ImageButton3.ImageSize = new System.Drawing.Size(150, 140);
-            this.guna2ImageButton3.Location = new System.Drawing.Point(713, 562);
-            this.guna2ImageButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ImageButton3.Location = new System.Drawing.Point(559, 440);
             this.guna2ImageButton3.Name = "guna2ImageButton3";
             this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(150, 140);
-            this.guna2ImageButton3.Size = new System.Drawing.Size(257, 198);
+            this.guna2ImageButton3.Size = new System.Drawing.Size(193, 161);
             this.guna2ImageButton3.TabIndex = 45;
             this.guna2ImageButton3.Click += new System.EventHandler(this.guna2ImageButton3_Click);
             // 
@@ -465,19 +427,51 @@ namespace CinemaProject
             this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton2.ImageRotate = 0F;
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(220, 120);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(235, 194);
-            this.guna2ImageButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(181, 141);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
             this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(220, 120);
-            this.guna2ImageButton2.Size = new System.Drawing.Size(321, 198);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(241, 161);
             this.guna2ImageButton2.TabIndex = 44;
             this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
+            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1228, 3);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 50);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(47, 43);
+            this.guna2ImageButton1.TabIndex = 0;
+            this.guna2ImageButton1.UseTransparentBackground = true;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            // 
+            // guna2ImageButton7
+            // 
+            this.guna2ImageButton7.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton7.HoverState.ImageSize = new System.Drawing.Size(180, 145);
+            this.guna2ImageButton7.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton7.Image")));
+            this.guna2ImageButton7.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton7.ImageRotate = 0F;
+            this.guna2ImageButton7.ImageSize = new System.Drawing.Size(170, 135);
+            this.guna2ImageButton7.Location = new System.Drawing.Point(172, 440);
+            this.guna2ImageButton7.Name = "guna2ImageButton7";
+            this.guna2ImageButton7.PressedState.ImageSize = new System.Drawing.Size(170, 135);
+            this.guna2ImageButton7.Size = new System.Drawing.Size(250, 161);
+            this.guna2ImageButton7.TabIndex = 54;
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1707, 886);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1284, 718);
+            this.Controls.Add(this.guna2ImageButton7);
             this.Controls.Add(this.guna2ImageButton6);
             this.Controls.Add(this.guna2ImageButton5);
             this.Controls.Add(this.guna2GradientCircleButton1);
@@ -491,7 +485,6 @@ namespace CinemaProject
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(1280, 720);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -531,6 +524,7 @@ namespace CinemaProject
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch2;
         public System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton7;
     }
     }
 

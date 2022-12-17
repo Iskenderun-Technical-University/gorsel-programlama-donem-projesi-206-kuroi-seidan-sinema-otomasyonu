@@ -135,7 +135,7 @@ namespace CinemaProject
             this.Genrelbl2.AutoSize = true;
             this.Genrelbl2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.Genrelbl2.ForeColor = System.Drawing.Color.Black;
-            this.Genrelbl2.Location = new System.Drawing.Point(197, 159);
+            this.Genrelbl2.Location = new System.Drawing.Point(209, 159);
             this.Genrelbl2.Name = "Genrelbl2";
             this.Genrelbl2.Size = new System.Drawing.Size(111, 19);
             this.Genrelbl2.TabIndex = 7;
@@ -146,7 +146,7 @@ namespace CinemaProject
             // 
             this.Snamelbl2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.Snamelbl2.ForeColor = System.Drawing.Color.Black;
-            this.Snamelbl2.Location = new System.Drawing.Point(6, 159);
+            this.Snamelbl2.Location = new System.Drawing.Point(18, 159);
             this.Snamelbl2.Name = "Snamelbl2";
             this.Snamelbl2.Size = new System.Drawing.Size(128, 19);
             this.Snamelbl2.TabIndex = 6;
@@ -159,7 +159,7 @@ namespace CinemaProject
             this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(144, 158);
+            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(156, 158);
             this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
             this.guna2ToggleSwitch1.Size = new System.Drawing.Size(40, 23);
             this.guna2ToggleSwitch1.TabIndex = 5;
@@ -179,19 +179,20 @@ namespace CinemaProject
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(132, 101);
+            this.guna2TextBox1.Location = new System.Drawing.Point(139, 101);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(155, 36);
+            this.guna2TextBox1.Size = new System.Drawing.Size(176, 36);
             this.guna2TextBox1.TabIndex = 4;
+            this.guna2TextBox1.Click += new System.EventHandler(this.guna2TextBox1_Click);
             // 
             // Snamelbl
             // 
             this.Snamelbl.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Snamelbl.ForeColor = System.Drawing.Color.Black;
-            this.Snamelbl.Location = new System.Drawing.Point(6, 111);
+            this.Snamelbl.Location = new System.Drawing.Point(13, 111);
             this.Snamelbl.Name = "Snamelbl";
             this.Snamelbl.Size = new System.Drawing.Size(123, 17);
             this.Snamelbl.TabIndex = 3;
@@ -210,7 +211,7 @@ namespace CinemaProject
             this.SearchBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.SearchBtn.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SearchBtn.ForeColor = System.Drawing.Color.White;
-            this.SearchBtn.Location = new System.Drawing.Point(120, 201);
+            this.SearchBtn.Location = new System.Drawing.Point(125, 200);
             this.SearchBtn.Name = "SearchBtn";
             this.SearchBtn.Size = new System.Drawing.Size(100, 42);
             this.SearchBtn.TabIndex = 2;
@@ -241,16 +242,17 @@ namespace CinemaProject
             "Sports",
             "Thriller",
             "Western"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(147, 47);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(154, 47);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(140, 36);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(161, 36);
             this.guna2ComboBox1.TabIndex = 1;
+            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // Genrelbl
             // 
             this.Genrelbl.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Genrelbl.ForeColor = System.Drawing.Color.Black;
-            this.Genrelbl.Location = new System.Drawing.Point(9, 55);
+            this.Genrelbl.Location = new System.Drawing.Point(16, 55);
             this.Genrelbl.Name = "Genrelbl";
             this.Genrelbl.Size = new System.Drawing.Size(132, 17);
             this.Genrelbl.TabIndex = 0;
@@ -281,9 +283,9 @@ namespace CinemaProject
             // MovieName10
             // 
             this.MovieName10.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
-            this.MovieName10.Location = new System.Drawing.Point(1009, 652);
+            this.MovieName10.Location = new System.Drawing.Point(1009, 664);
             this.MovieName10.Name = "MovieName10";
-            this.MovieName10.Size = new System.Drawing.Size(195, 68);
+            this.MovieName10.Size = new System.Drawing.Size(195, 55);
             this.MovieName10.TabIndex = 81;
             this.MovieName10.Text = "Movie Name";
             this.MovieName10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -291,9 +293,9 @@ namespace CinemaProject
             // MovieName9
             // 
             this.MovieName9.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
-            this.MovieName9.Location = new System.Drawing.Point(787, 652);
+            this.MovieName9.Location = new System.Drawing.Point(787, 664);
             this.MovieName9.Name = "MovieName9";
-            this.MovieName9.Size = new System.Drawing.Size(195, 68);
+            this.MovieName9.Size = new System.Drawing.Size(195, 55);
             this.MovieName9.TabIndex = 80;
             this.MovieName9.Text = "Movie Name";
             this.MovieName9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -301,9 +303,9 @@ namespace CinemaProject
             // MovieName8
             // 
             this.MovieName8.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
-            this.MovieName8.Location = new System.Drawing.Point(568, 652);
+            this.MovieName8.Location = new System.Drawing.Point(568, 664);
             this.MovieName8.Name = "MovieName8";
-            this.MovieName8.Size = new System.Drawing.Size(195, 68);
+            this.MovieName8.Size = new System.Drawing.Size(195, 55);
             this.MovieName8.TabIndex = 79;
             this.MovieName8.Text = "Movie Name";
             this.MovieName8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -311,9 +313,9 @@ namespace CinemaProject
             // MovieName7
             // 
             this.MovieName7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
-            this.MovieName7.Location = new System.Drawing.Point(347, 652);
+            this.MovieName7.Location = new System.Drawing.Point(347, 664);
             this.MovieName7.Name = "MovieName7";
-            this.MovieName7.Size = new System.Drawing.Size(195, 68);
+            this.MovieName7.Size = new System.Drawing.Size(195, 55);
             this.MovieName7.TabIndex = 78;
             this.MovieName7.Text = "Movie Name";
             this.MovieName7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -321,9 +323,9 @@ namespace CinemaProject
             // MovieName6
             // 
             this.MovieName6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
-            this.MovieName6.Location = new System.Drawing.Point(125, 652);
+            this.MovieName6.Location = new System.Drawing.Point(125, 664);
             this.MovieName6.Name = "MovieName6";
-            this.MovieName6.Size = new System.Drawing.Size(195, 68);
+            this.MovieName6.Size = new System.Drawing.Size(195, 55);
             this.MovieName6.TabIndex = 77;
             this.MovieName6.Text = "Movie Name";
             this.MovieName6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -331,7 +333,7 @@ namespace CinemaProject
             // MovieName5
             // 
             this.MovieName5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
-            this.MovieName5.Location = new System.Drawing.Point(1009, 326);
+            this.MovieName5.Location = new System.Drawing.Point(1009, 338);
             this.MovieName5.Name = "MovieName5";
             this.MovieName5.Size = new System.Drawing.Size(195, 68);
             this.MovieName5.TabIndex = 76;
@@ -341,7 +343,7 @@ namespace CinemaProject
             // MovieName4
             // 
             this.MovieName4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
-            this.MovieName4.Location = new System.Drawing.Point(788, 326);
+            this.MovieName4.Location = new System.Drawing.Point(788, 338);
             this.MovieName4.Name = "MovieName4";
             this.MovieName4.Size = new System.Drawing.Size(195, 68);
             this.MovieName4.TabIndex = 75;
@@ -351,7 +353,7 @@ namespace CinemaProject
             // MovieName3
             // 
             this.MovieName3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
-            this.MovieName3.Location = new System.Drawing.Point(568, 326);
+            this.MovieName3.Location = new System.Drawing.Point(568, 338);
             this.MovieName3.Name = "MovieName3";
             this.MovieName3.Size = new System.Drawing.Size(195, 68);
             this.MovieName3.TabIndex = 74;
@@ -361,7 +363,7 @@ namespace CinemaProject
             // MovieName2
             // 
             this.MovieName2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
-            this.MovieName2.Location = new System.Drawing.Point(347, 326);
+            this.MovieName2.Location = new System.Drawing.Point(347, 338);
             this.MovieName2.Name = "MovieName2";
             this.MovieName2.Size = new System.Drawing.Size(195, 68);
             this.MovieName2.TabIndex = 73;
@@ -371,7 +373,7 @@ namespace CinemaProject
             // MovieName1
             // 
             this.MovieName1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
-            this.MovieName1.Location = new System.Drawing.Point(125, 326);
+            this.MovieName1.Location = new System.Drawing.Point(125, 338);
             this.MovieName1.Name = "MovieName1";
             this.MovieName1.Size = new System.Drawing.Size(195, 68);
             this.MovieName1.TabIndex = 72;
@@ -396,17 +398,19 @@ namespace CinemaProject
             // 
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
+            this.guna2ImageButton1.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
             this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1228, 3);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1222, 0);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(47, 43);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(58, 48);
             this.guna2ImageButton1.TabIndex = 0;
             this.guna2ImageButton1.UseTransparentBackground = true;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // MoviePic10
             // 
@@ -416,7 +420,7 @@ namespace CinemaProject
             this.MoviePic10.ImageOffset = new System.Drawing.Point(0, 0);
             this.MoviePic10.ImageRotate = 0F;
             this.MoviePic10.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic10.Location = new System.Drawing.Point(1009, 384);
+            this.MoviePic10.Location = new System.Drawing.Point(1009, 396);
             this.MoviePic10.Name = "MoviePic10";
             this.MoviePic10.PressedState.ImageSize = new System.Drawing.Size(190, 260);
             this.MoviePic10.Size = new System.Drawing.Size(195, 265);
@@ -431,7 +435,7 @@ namespace CinemaProject
             this.MoviePic9.ImageOffset = new System.Drawing.Point(0, 0);
             this.MoviePic9.ImageRotate = 0F;
             this.MoviePic9.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic9.Location = new System.Drawing.Point(787, 384);
+            this.MoviePic9.Location = new System.Drawing.Point(787, 396);
             this.MoviePic9.Name = "MoviePic9";
             this.MoviePic9.PressedState.ImageSize = new System.Drawing.Size(190, 260);
             this.MoviePic9.Size = new System.Drawing.Size(195, 265);
@@ -446,7 +450,7 @@ namespace CinemaProject
             this.MoviePic8.ImageOffset = new System.Drawing.Point(0, 0);
             this.MoviePic8.ImageRotate = 0F;
             this.MoviePic8.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic8.Location = new System.Drawing.Point(568, 384);
+            this.MoviePic8.Location = new System.Drawing.Point(568, 396);
             this.MoviePic8.Name = "MoviePic8";
             this.MoviePic8.PressedState.ImageSize = new System.Drawing.Size(190, 260);
             this.MoviePic8.Size = new System.Drawing.Size(195, 265);
@@ -461,7 +465,7 @@ namespace CinemaProject
             this.MoviePic6.ImageOffset = new System.Drawing.Point(0, 0);
             this.MoviePic6.ImageRotate = 0F;
             this.MoviePic6.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic6.Location = new System.Drawing.Point(125, 384);
+            this.MoviePic6.Location = new System.Drawing.Point(125, 396);
             this.MoviePic6.Name = "MoviePic6";
             this.MoviePic6.PressedState.ImageSize = new System.Drawing.Size(190, 260);
             this.MoviePic6.Size = new System.Drawing.Size(195, 265);
@@ -476,7 +480,7 @@ namespace CinemaProject
             this.MoviePic7.ImageOffset = new System.Drawing.Point(0, 0);
             this.MoviePic7.ImageRotate = 0F;
             this.MoviePic7.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic7.Location = new System.Drawing.Point(347, 384);
+            this.MoviePic7.Location = new System.Drawing.Point(347, 396);
             this.MoviePic7.Name = "MoviePic7";
             this.MoviePic7.PressedState.ImageSize = new System.Drawing.Size(190, 260);
             this.MoviePic7.Size = new System.Drawing.Size(195, 265);
@@ -491,7 +495,7 @@ namespace CinemaProject
             this.MoviePic5.ImageOffset = new System.Drawing.Point(0, 0);
             this.MoviePic5.ImageRotate = 0F;
             this.MoviePic5.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic5.Location = new System.Drawing.Point(1009, 58);
+            this.MoviePic5.Location = new System.Drawing.Point(1009, 70);
             this.MoviePic5.Name = "MoviePic5";
             this.MoviePic5.PressedState.ImageSize = new System.Drawing.Size(190, 260);
             this.MoviePic5.Size = new System.Drawing.Size(195, 265);
@@ -506,7 +510,7 @@ namespace CinemaProject
             this.MoviePic4.ImageOffset = new System.Drawing.Point(0, 0);
             this.MoviePic4.ImageRotate = 0F;
             this.MoviePic4.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic4.Location = new System.Drawing.Point(788, 58);
+            this.MoviePic4.Location = new System.Drawing.Point(788, 70);
             this.MoviePic4.Name = "MoviePic4";
             this.MoviePic4.PressedState.ImageSize = new System.Drawing.Size(190, 260);
             this.MoviePic4.Size = new System.Drawing.Size(195, 265);
@@ -521,7 +525,7 @@ namespace CinemaProject
             this.MoviePic3.ImageOffset = new System.Drawing.Point(0, 0);
             this.MoviePic3.ImageRotate = 0F;
             this.MoviePic3.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic3.Location = new System.Drawing.Point(568, 58);
+            this.MoviePic3.Location = new System.Drawing.Point(568, 70);
             this.MoviePic3.Name = "MoviePic3";
             this.MoviePic3.PressedState.ImageSize = new System.Drawing.Size(190, 260);
             this.MoviePic3.Size = new System.Drawing.Size(195, 265);
@@ -536,7 +540,7 @@ namespace CinemaProject
             this.MoviePic1.ImageOffset = new System.Drawing.Point(0, 0);
             this.MoviePic1.ImageRotate = 0F;
             this.MoviePic1.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic1.Location = new System.Drawing.Point(125, 58);
+            this.MoviePic1.Location = new System.Drawing.Point(125, 70);
             this.MoviePic1.Name = "MoviePic1";
             this.MoviePic1.PressedState.ImageSize = new System.Drawing.Size(190, 260);
             this.MoviePic1.Size = new System.Drawing.Size(195, 265);
@@ -551,7 +555,7 @@ namespace CinemaProject
             this.MoviePic2.ImageOffset = new System.Drawing.Point(0, 0);
             this.MoviePic2.ImageRotate = 0F;
             this.MoviePic2.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic2.Location = new System.Drawing.Point(347, 58);
+            this.MoviePic2.Location = new System.Drawing.Point(347, 70);
             this.MoviePic2.Name = "MoviePic2";
             this.MoviePic2.PressedState.ImageSize = new System.Drawing.Size(190, 260);
             this.MoviePic2.Size = new System.Drawing.Size(195, 265);
@@ -594,7 +598,7 @@ namespace CinemaProject
             // ID1
             // 
             this.ID1.AutoSize = true;
-            this.ID1.Location = new System.Drawing.Point(103, 144);
+            this.ID1.Location = new System.Drawing.Point(103, 156);
             this.ID1.Name = "ID1";
             this.ID1.Size = new System.Drawing.Size(10, 13);
             this.ID1.TabIndex = 99;
@@ -604,7 +608,7 @@ namespace CinemaProject
             // ID2
             // 
             this.ID2.AutoSize = true;
-            this.ID2.Location = new System.Drawing.Point(331, 144);
+            this.ID2.Location = new System.Drawing.Point(331, 156);
             this.ID2.Name = "ID2";
             this.ID2.Size = new System.Drawing.Size(10, 13);
             this.ID2.TabIndex = 100;
@@ -614,7 +618,7 @@ namespace CinemaProject
             // ID4
             // 
             this.ID4.AutoSize = true;
-            this.ID4.Location = new System.Drawing.Point(773, 144);
+            this.ID4.Location = new System.Drawing.Point(773, 156);
             this.ID4.Name = "ID4";
             this.ID4.Size = new System.Drawing.Size(10, 13);
             this.ID4.TabIndex = 102;
@@ -624,7 +628,7 @@ namespace CinemaProject
             // ID3
             // 
             this.ID3.AutoSize = true;
-            this.ID3.Location = new System.Drawing.Point(545, 144);
+            this.ID3.Location = new System.Drawing.Point(545, 156);
             this.ID3.Name = "ID3";
             this.ID3.Size = new System.Drawing.Size(10, 13);
             this.ID3.TabIndex = 101;
@@ -634,7 +638,7 @@ namespace CinemaProject
             // ID5
             // 
             this.ID5.AutoSize = true;
-            this.ID5.Location = new System.Drawing.Point(989, 144);
+            this.ID5.Location = new System.Drawing.Point(989, 156);
             this.ID5.Name = "ID5";
             this.ID5.Size = new System.Drawing.Size(10, 13);
             this.ID5.TabIndex = 102;
@@ -644,7 +648,7 @@ namespace CinemaProject
             // ID10
             // 
             this.ID10.AutoSize = true;
-            this.ID10.Location = new System.Drawing.Point(989, 480);
+            this.ID10.Location = new System.Drawing.Point(989, 492);
             this.ID10.Name = "ID10";
             this.ID10.Size = new System.Drawing.Size(10, 13);
             this.ID10.TabIndex = 106;
@@ -654,7 +658,7 @@ namespace CinemaProject
             // ID9
             // 
             this.ID9.AutoSize = true;
-            this.ID9.Location = new System.Drawing.Point(773, 480);
+            this.ID9.Location = new System.Drawing.Point(773, 492);
             this.ID9.Name = "ID9";
             this.ID9.Size = new System.Drawing.Size(10, 13);
             this.ID9.TabIndex = 107;
@@ -664,7 +668,7 @@ namespace CinemaProject
             // ID8
             // 
             this.ID8.AutoSize = true;
-            this.ID8.Location = new System.Drawing.Point(545, 480);
+            this.ID8.Location = new System.Drawing.Point(545, 492);
             this.ID8.Name = "ID8";
             this.ID8.Size = new System.Drawing.Size(10, 13);
             this.ID8.TabIndex = 105;
@@ -674,7 +678,7 @@ namespace CinemaProject
             // ID7
             // 
             this.ID7.AutoSize = true;
-            this.ID7.Location = new System.Drawing.Point(331, 480);
+            this.ID7.Location = new System.Drawing.Point(331, 492);
             this.ID7.Name = "ID7";
             this.ID7.Size = new System.Drawing.Size(10, 13);
             this.ID7.TabIndex = 104;
@@ -684,7 +688,7 @@ namespace CinemaProject
             // ID6
             // 
             this.ID6.AutoSize = true;
-            this.ID6.Location = new System.Drawing.Point(103, 480);
+            this.ID6.Location = new System.Drawing.Point(103, 492);
             this.ID6.Name = "ID6";
             this.ID6.Size = new System.Drawing.Size(10, 13);
             this.ID6.TabIndex = 103;

@@ -92,7 +92,7 @@ namespace CinemaProject
                 LoginForm.addMovies.label8.Text = "Türler:";
                 LoginForm.addMovies.label7.Text = "Gösteri Zamanlar:";
                 LoginForm.addMovies.label6.Text = "Yayın Tarhhi:";
-                LoginForm.addMovies.label4.Text = "Tanım:";
+                LoginForm.addMovies.Link.Text = "Tanım:";
                 LoginForm.addMovies.guna2GradientButton1.Text = "Yükle";
                 LoginForm.addMovies.label9.Text = "Film Resmi";
                 LoginForm.addMovies.guna2GradientButton2.Text = "Filmi Ekle";
@@ -189,7 +189,7 @@ namespace CinemaProject
                 LoginForm.addMovies.label8.Text = "Genres:";
                 LoginForm.addMovies.label7.Text = "Show Times:";
                 LoginForm.addMovies.label6.Text = "Realese Date:";
-                LoginForm.addMovies.label4.Text = "Description:";
+                LoginForm.addMovies.Link.Text = "Description:";
                 LoginForm.addMovies.guna2GradientButton1.Text = "Upload Picture";
                 LoginForm.addMovies.label9.Text = "Movie Picture";
                 LoginForm.addMovies.guna2GradientButton2.Text = "Add The Movie";

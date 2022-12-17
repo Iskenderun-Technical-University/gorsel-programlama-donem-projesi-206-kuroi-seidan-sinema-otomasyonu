@@ -26,7 +26,7 @@ namespace CinemaProject
 
         private void MoviesList_Load(object sender, EventArgs e)
         {
-            UpdateList("select MovieName,MoviePicture,ID from MoviesTbl");
+            UpdateList("select MovieName,MoviePicture,ID from MoviesTbl order by MovieName ASC");
         }
          
         private static Image GetImage(byte[] data)
@@ -112,19 +112,20 @@ namespace CinemaProject
 
         private void NextBtn_Click(object sender, EventArgs e)
         {
-            UpdateList("select MovieName,MoviePicture,ID from MoviesTbl");
+            UpdateList("select MovieName,MoviePicture,ID from MoviesTbl order by MovieName ASC");
         }
 
         private void PreviousBtn_Click(object sender, EventArgs e)
         {
             current = prev;
-            UpdateList("select MovieName,MoviePicture,ID from MoviesTbl");
+            UpdateList("select MovieName,MoviePicture,ID from MoviesTbl order by MovieName ASC");
         }
 
         void ShowMovieDetails(string sqlquery)
         {
             try
             {
+                SearchBox.Visible = FilterBtn.Checked = false;
                 con.Open();
                 SqlDataAdapter sda = new SqlDataAdapter(sqlquery, con);
                 DataTable dataTable = new DataTable();
@@ -133,7 +134,7 @@ namespace CinemaProject
                 LoginForm.movieDetails.movieNameTextBox.Text = dataTable.Rows[0][1].ToString();
                 byte[] img = (byte[])(dataTable.Rows[0][2]);
                 LoginForm.movieDetails.moviePicturePictureBox.Image = GetImage(img);
-                LoginForm.movieDetails.descriptionRichTextBox.Text = dataTable.Rows[0][3].ToString();
+                LoginForm.movieDetails.Link.Text = dataTable.Rows[0][3].ToString();
                 LoginForm.movieDetails.genresTextBox.Text = dataTable.Rows[0][4].ToString();
                 LoginForm.movieDetails.iMDbRatingLabel1.Text = dataTable.Rows[0][5].ToString();
                 LoginForm.movieDetails.lengthTextBox.Text = dataTable.Rows[0][6].ToString();
@@ -141,7 +142,7 @@ namespace CinemaProject
                 LoginForm.movieDetails.showDaysTextBox.Text = dataTable.Rows[0][8].ToString();
                 LoginForm.movieDetails.showHoursTextBox.Text = dataTable.Rows[0][9].ToString();
                 LoginForm.movieDetails.releaseDateDateTimePicker.Value = Convert.ToDateTime(dataTable.Rows[0][10]);
-                LoginForm.movieDetails.Show();
+                LoginForm.movieDetails.ShowDialog();
                 con.Close();
             }
             catch { }
@@ -150,33 +151,43 @@ namespace CinemaProject
 
         void ClearList()
         {
+            ID1.Text = "";
             MovieName1.Text = "";
             MoviePic1.Image = null;
 
+            ID2.Text = "";
             MovieName2.Text = "";
             MoviePic2.Image = null;
 
+            ID3.Text = "";
             MovieName3.Text = "";
             MoviePic3.Image = null;
-
+           
+            ID4.Text = "";
             MovieName4.Text = "";
             MoviePic4.Image = null;
 
+            ID5.Text = "";
             MovieName5.Text = "";
             MoviePic5.Image = null;
 
+            ID6.Text = "";
             MovieName6.Text = "";
             MoviePic6.Image = null;
 
+            ID7.Text = "";
             MovieName7.Text = "";
             MoviePic7.Image = null;
 
+            ID8.Text = "";
             MovieName8.Text = "";
             MoviePic8.Image = null;
 
+            ID9.Text = "";
             MovieName9.Text = "";
             MoviePic9.Image = null;
 
+            ID10.Text = "";
             MovieName10.Text = "";
             MoviePic10.Image = null;
         }
@@ -186,12 +197,12 @@ namespace CinemaProject
             current = 0;
             if (guna2ToggleSwitch1.Checked == true)
             {
-                string sqlquery = "select MovieName,MoviePicture,ID from MoviesTbl where Genres like '%" + guna2ComboBox1.Text + "%'";
+                string sqlquery = "select MovieName,MoviePicture,ID from MoviesTbl where Genres like '%" + guna2ComboBox1.Text + "%' order by MovieName ASC";
                 UpdateList(sqlquery);
             }
             else
             {
-                string sqlquery = "select MovieName,MoviePicture,ID from MoviesTbl where MovieName like '%" + guna2TextBox1.Text + "%'";
+                string sqlquery = "select MovieName,MoviePicture,ID from MoviesTbl where MovieName like '%" + guna2TextBox1.Text + "%' order by MovieName ASC";
                 UpdateList(sqlquery);
                 guna2TextBox1.Clear();
             }
@@ -201,6 +212,7 @@ namespace CinemaProject
         {
             string sqlquery = "select * from MoviesTbl where ID = '" + ID1.Text + "'";
             ShowMovieDetails(sqlquery);
+            
         }
 
         private void MoviePic2_Click(object sender, EventArgs e)
@@ -262,8 +274,24 @@ namespace CinemaProject
             SearchBox.Visible = FilterBtn.Checked;
         }
 
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            guna2ToggleSwitch1.Checked = true;
+        }
+
+        private void guna2TextBox1_Click(object sender, EventArgs e)
+        {
+            guna2ToggleSwitch1.Checked = false;
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
+            SearchBox.Visible = FilterBtn.Checked = false;
             this.Hide();
             LoginForm.mainForm.Show();
         }

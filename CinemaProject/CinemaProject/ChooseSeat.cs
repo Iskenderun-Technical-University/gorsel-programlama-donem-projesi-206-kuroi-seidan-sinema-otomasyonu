@@ -88,17 +88,70 @@ namespace CinemaProject
             if (E10.Checked == false) { E10.Enabled = false; }
             if (E11.Checked == false) { E11.Enabled = false; }
             if (E12.Checked == false) { E12.Enabled = false; }
-
-
-
         }
 
-        private static Image GetImage(byte[] data)
+        public void ResetChairs()
         {
-            using (MemoryStream ms = new MemoryStream(data))
-            {
-                return (Image.FromStream(ms));
-            }
+            if (A1.Checked == false) { A1.Checked = true; A1.Image = imageList1.Images[1]; }
+            if (A2.Checked == false) { A2.Checked = true; A2.Image = imageList1.Images[1]; }
+            if (A3.Checked == false) { A3.Checked = true; A3.Image = imageList1.Images[1]; }
+            if (A4.Checked == false) { A4.Checked = true; A4.Image = imageList1.Images[1]; }
+            if (A5.Checked == false) { A5.Checked = true; A5.Image = imageList1.Images[1]; }
+            if (A6.Checked == false) { A6.Checked = true; A6.Image = imageList1.Images[1]; }
+            if (A7.Checked == false) { A7.Checked = true; A7.Image = imageList1.Images[1]; }
+            if (A8.Checked == false) { A8.Checked = true; A8.Image = imageList1.Images[1]; }
+            if (A9.Checked == false) { A9.Checked = true; A9.Image = imageList1.Images[1]; }
+            if (A10.Checked == false) { A10.Checked = true; A10.Image = imageList1.Images[1]; }
+            if (A11.Checked == false) { A11.Checked = true; A11.Image = imageList1.Images[1]; }
+            if (A12.Checked == false) { A12.Checked = true;A12.Image = imageList1.Images[1]; }
+            if (B1.Checked == false) { B1.Checked = true; B1.Image = imageList1.Images[1]; }
+            if (B2.Checked == false) { B2.Checked = true; B2.Image = imageList1.Images[1]; }
+            if (B3.Checked == false) { B3.Checked = true; B3.Image = imageList1.Images[1]; }
+            if (B4.Checked == false) { B4.Checked = true; B4.Image = imageList1.Images[1]; }
+            if (B5.Checked == false) { B5.Checked = true; B5.Image = imageList1.Images[1]; }
+            if (B6.Checked == false) { B6.Checked = true; B6.Image = imageList1.Images[1]; }
+            if (B7.Checked == false) { B7.Checked = true; B7.Image = imageList1.Images[1]; }
+            if (B8.Checked == false) { B8.Checked = true; B8.Image = imageList1.Images[1]; }
+            if (B9.Checked == false) { B9.Checked = true; B9.Image = imageList1.Images[1]; }
+            if (B10.Checked == false) { B10.Checked = true; B10.Image = imageList1.Images[1]; }
+            if (B11.Checked == false) { B11.Checked = true; B11.Image = imageList1.Images[1]; }
+            if (B12.Checked == false) { B12.Checked = true; B12.Image = imageList1.Images[1]; }
+            if (C1.Checked == false) { C1.Checked = true; C1.Image = imageList1.Images[1]; }
+            if (C2.Checked == false) { C2.Checked = true; C2.Image = imageList1.Images[1]; }
+            if (C3.Checked == false) { C3.Checked = true; C3.Image = imageList1.Images[1]; }
+            if (C4.Checked == false) { C4.Checked = true; C4.Image = imageList1.Images[1]; }
+            if (C5.Checked == false) { C5.Checked = true; C5.Image = imageList1.Images[1]; }
+            if (C6.Checked == false) { C6.Checked = true; C6.Image = imageList1.Images[1]; }
+            if (C7.Checked == false) { C7.Checked = true; C7.Image = imageList1.Images[1]; }
+            if (C8.Checked == false) { C8.Checked = true; C8.Image = imageList1.Images[1]; }
+            if (C9.Checked == false) { C9.Checked = true; C9.Image = imageList1.Images[1]; }
+            if (C10.Checked == false) { C10.Checked = true; C10.Image = imageList1.Images[1]; }
+            if (C11.Checked == false) { C11.Checked = true; C11.Image = imageList1.Images[1]; }
+            if (C12.Checked == false) { C12.Checked = true; C12.Image = imageList1.Images[1]; }
+            if (D1.Checked == false) { D1.Checked = true; D1.Image = imageList1.Images[1]; }
+            if (D2.Checked == false) { D2.Checked = true; D2.Image = imageList1.Images[1]; }
+            if (D3.Checked == false) { D3.Checked = true; D3.Image = imageList1.Images[1]; }
+            if (D4.Checked == false) { D4.Checked = true; D4.Image = imageList1.Images[1]; }
+            if (D5.Checked == false) { D5.Checked = true; D5.Image = imageList1.Images[1]; }
+            if (D6.Checked == false) { D6.Checked = true; D6.Image = imageList1.Images[1]; }
+            if (D7.Checked == false) { D7.Checked = true; D7.Image = imageList1.Images[1]; }
+            if (D8.Checked == false) { D8.Checked = true; D8.Image = imageList1.Images[1]; }
+            if (D9.Checked == false) { D9.Checked = true; D9.Image = imageList1.Images[1]; }
+            if (D10.Checked == false) { D10.Checked = true; D10.Image = imageList1.Images[1]; }
+            if (D11.Checked == false) { D11.Checked = true; D11.Image = imageList1.Images[1]; }
+            if (D12.Checked == false) { D12.Checked = true; D12.Image = imageList1.Images[1]; }
+            if (E1.Checked == false) { E1.Checked = true; E1.Image = imageList1.Images[1]; }
+            if (E2.Checked == false) { E2.Checked = true; E2.Image = imageList1.Images[1]; }
+            if (E3.Checked == false) { E3.Checked = true; E3.Image = imageList1.Images[1]; }
+            if (E4.Checked == false) { E4.Checked = true; E4.Image = imageList1.Images[1]; }
+            if (E5.Checked == false) { E5.Checked = true; E5.Image = imageList1.Images[1]; }
+            if (E6.Checked == false) { E6.Checked = true; E6.Image = imageList1.Images[1]; }
+            if (E7.Checked == false) { E7.Checked = true; E7.Image = imageList1.Images[1]; }
+            if (E8.Checked == false) { E8.Checked = true; E8.Image = imageList1.Images[1]; }
+            if (E9.Checked == false) { E9.Checked = true; E9.Image = imageList1.Images[1]; }
+            if (E10.Checked == false) { E10.Checked = true; E10.Image = imageList1.Images[1]; }
+            if (E11.Checked == false) { E11.Checked = true; E11.Image = imageList1.Images[1]; }
+            if (E12.Checked == false) { E12.Checked = true; E12.Image = imageList1.Images[1]; }
         }
 
         public void Seats(Guna.UI2.WinForms.Guna2ImageButton x)
@@ -111,7 +164,7 @@ namespace CinemaProject
                         x.Image = imageList1.Images[0];
                         x.Checked = false;
                         selectedseats++;
-                        guna2GroupBox2.Visible = true;
+                        cover.Visible = true;
                         currentseat = x.Name;
                     }
                 }
@@ -124,7 +177,7 @@ namespace CinemaProject
                     string query2 = "update TempOrder set SeatNo= NULL where SeatNo='" + x.Name + "'";
                     con.Open();
                     cmd = new SqlCommand(query1, con);
-                    guna2ComboBox1.Items.Add(cmd.ExecuteScalar());
+                    CustomerCombox.Items.Add(cmd.ExecuteScalar());
                     cmd.CommandText = query2;
                     cmd.ExecuteNonQuery();
                     con.Close();
@@ -251,6 +304,7 @@ namespace CinemaProject
         private void A11_Click(object sender, EventArgs e) { Seats(A11); }
 
         private void A12_Click(object sender, EventArgs e) { Seats(A12); }
+
         private void ChooseSeat_Load(object sender, EventArgs e)
         {
             string query = "select MovieName from MoviesTbl where ShowDays Like '%"+DateTime.Now.ToString("dddd")+"%'";
@@ -278,36 +332,41 @@ namespace CinemaProject
 
         private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listBox1.Items.Clear();
-            string query = "select ShowHours from MoviesTbl where MovieName='" + guna2ComboBox2.Text + "'";
-            con.Open();
-            cmd = new SqlCommand(query, con);
-            string temp = cmd.ExecuteScalar().ToString();
-            string now="";
-            for (int i = 0; i < temp.Length; i++) {
-                if (char.IsPunctuation(temp[i])) {
-                    if (temp[i] == ':') { now += temp[i]; continue; }
-                    else
+            if (guna2ComboBox2.SelectedIndex != -1)
+            {
+                listBox1.Items.Clear();
+                string query = "select ShowHours from MoviesTbl where MovieName='" + guna2ComboBox2.Text + "'";
+                con.Open();
+                cmd = new SqlCommand(query, con);
+                string temp = cmd.ExecuteScalar().ToString();
+                string now = "";
+                for (int i = 0; i < temp.Length; i++)
+                {
+                    if (char.IsPunctuation(temp[i]))
                     {
-                        listBox1.Items.Add(now);
-                        now = "";
+                        if (temp[i] == ':') { now += temp[i]; continue; }
+                        else
+                        {
+                            listBox1.Items.Add(now);
+                            now = "";
+                        }
                     }
+                    else now += temp[i];
                 }
-                else now += temp[i];
+                listBox1.Items.Add(now);
+                con.Close();
             }
-            listBox1.Items.Add(now);
-            con.Close();
         }
 
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
-            string query = "update TempOrder set SeatNo='"+currentseat+"' where CustomerName='"+guna2ComboBox1.Text+"'";
-            guna2ComboBox1.Items.Remove(guna2ComboBox1.Text);
+            string query = "update TempOrder set SeatNo='"+currentseat+"' where CustomerName='"+CustomerCombox.Text+"'";
+            CustomerCombox.Items.Remove(CustomerCombox.Text);
             con.Open();
             cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
-            guna2GroupBox2.Visible = false;
+            cover.Visible = false;
         }
 
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
@@ -316,9 +375,12 @@ namespace CinemaProject
             else if (listBox1.SelectedIndex == -1) MessageBox.Show("Please Choose The Movie And Show Time!!");
             else
             {
-                disableseat();
+                //disableseat();
                 string query = "select CustomerName,TicketType,SeatNo,Price from TempOrder";
+                string update = "update TempOrder set MovieName='" + guna2ComboBox2.Text + "' ,Date='" + DateTime.Now.ToString("MM/dd/yyyy") + "', ShowTime='" + listBox1.Text + "' where ID>0";
                 con.Open();
+                cmd = new SqlCommand(update, con);
+                cmd.ExecuteNonQuery();
                 sda = new SqlDataAdapter(query,con);
                 DataTable dt=new DataTable();
                 sda.Fill(dt);
@@ -329,6 +391,11 @@ namespace CinemaProject
                 this.Hide();
                 LoginForm.orderDetails.Show();
             }
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

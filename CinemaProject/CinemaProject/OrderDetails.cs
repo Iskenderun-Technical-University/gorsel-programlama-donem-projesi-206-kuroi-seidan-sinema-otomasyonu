@@ -23,21 +23,36 @@ namespace CinemaProject
 
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
-            LoginForm.ticket.PhoneNo.Clear(); LoginForm.ticket.CustName.Clear();
-            LoginForm.ticket.listBox1.Items.Clear(); LoginForm.ticket.listBox2.Items.Clear();
-            ChooseSeat.selectedseats = 0; LoginForm.seat.listBox1.Items.Clear();
-            LoginForm.seat.guna2ComboBox2.Text = "";
+            try
+            {
+                if (guna2RadioButton3.Checked == false && guna2RadioButton4.Checked == false) MessageBox.Show("Please Choose The Payment Method And Try Again !!!");
+                else
+                {
+                    string update = "";
+                    if (guna2RadioButton3.Checked == true) update = "update TempOrder set Payment='" + guna2RadioButton3.Text + "' where ID>0";
+                    else if (guna2RadioButton4.Checked == true) update = "update TempOrder set Payment='" + guna2RadioButton4.Text + "' where ID>0";
+                    string add = "insert into TicketOrders select * from TempOrder";
 
+                    con.Open();
+                    cmd = new SqlCommand(update, con);
+                    cmd.ExecuteNonQuery();
+                    cmd = new SqlCommand(add, con);
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    LoginForm.seat.disableseat();
+                    LoginForm.ticket.ResetPage();
+                    guna2RadioButton3.Checked = false; guna2RadioButton4.Checked = false;
+                    this.Hide();
+                    LoginForm.mainForm.Show();
+                }
+            }
+            catch { }
+        }
 
-
-
-            string query = "delete from TempOrder where ID > 0";
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
             this.Hide();
-            con.Open();
-            LoginForm.mainForm.Show();
-            cmd = new SqlCommand(query, con);
-            cmd.ExecuteNonQuery();
-            con.Close();
+            LoginForm.seat.Show();
         }
     }
 }

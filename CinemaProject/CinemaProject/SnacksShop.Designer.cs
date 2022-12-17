@@ -30,13 +30,13 @@ namespace CinemaProject
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.listBox3 = new System.Windows.Forms.ListBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -53,7 +53,14 @@ namespace CinemaProject
             this.label2 = new System.Windows.Forms.Label();
             this.guna2RadioButton3 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2RadioButton4 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2GradientCircleButton2 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
+            this.category = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.CheckStatus = new System.Windows.Forms.Label();
+            this.TicketNo = new System.Windows.Forms.MaskedTextBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -68,76 +75,21 @@ namespace CinemaProject
             this.listBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox3.FormattingEnabled = true;
             this.listBox3.ItemHeight = 30;
-            this.listBox3.Location = new System.Drawing.Point(888, 186);
+            this.listBox3.Location = new System.Drawing.Point(844, 186);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(265, 302);
+            this.listBox3.Size = new System.Drawing.Size(329, 302);
             this.listBox3.TabIndex = 63;
             this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(1033, 106);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(198, 36);
-            this.guna2TextBox1.TabIndex = 62;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(843, 109);
+            this.label1.Location = new System.Drawing.Point(855, 97);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(177, 33);
             this.label1.TabIndex = 61;
             this.label1.Text = "Ticket Number:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.FillColor = System.Drawing.Color.Black;
-            this.guna2Separator1.Location = new System.Drawing.Point(312, 174);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(524, 3);
-            this.guna2Separator1.TabIndex = 58;
-            // 
-            // listBox2
-            // 
-            this.listBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 30;
-            this.listBox2.Items.AddRange(new object[] {
-            "Price"});
-            this.listBox2.Location = new System.Drawing.Point(717, 142);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(120, 422);
-            this.listBox2.TabIndex = 60;
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
-            // 
-            // listBox1
-            // 
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 30;
-            this.listBox1.Items.AddRange(new object[] {
-            "Item"});
-            this.listBox1.Location = new System.Drawing.Point(311, 142);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(406, 422);
-            this.listBox1.TabIndex = 59;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // guna2GradientButton3
             // 
@@ -197,7 +149,7 @@ namespace CinemaProject
             this.guna2ImageButton4.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton4.ImageRotate = 0F;
             this.guna2ImageButton4.ImageSize = new System.Drawing.Size(157, 143);
-            this.guna2ImageButton4.Location = new System.Drawing.Point(71, 142);
+            this.guna2ImageButton4.Location = new System.Drawing.Point(58, 150);
             this.guna2ImageButton4.Name = "guna2ImageButton4";
             this.guna2ImageButton4.PressedState.ImageSize = new System.Drawing.Size(157, 143);
             this.guna2ImageButton4.Size = new System.Drawing.Size(184, 156);
@@ -212,7 +164,7 @@ namespace CinemaProject
             this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton3.ImageRotate = 0F;
             this.guna2ImageButton3.ImageSize = new System.Drawing.Size(160, 145);
-            this.guna2ImageButton3.Location = new System.Drawing.Point(71, 506);
+            this.guna2ImageButton3.Location = new System.Drawing.Point(58, 514);
             this.guna2ImageButton3.Name = "guna2ImageButton3";
             this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(160, 145);
             this.guna2ImageButton3.Size = new System.Drawing.Size(184, 156);
@@ -227,7 +179,7 @@ namespace CinemaProject
             this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton2.ImageRotate = 0F;
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(173, 157);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(71, 326);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(58, 333);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
             this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(173, 157);
             this.guna2ImageButton2.Size = new System.Drawing.Size(184, 156);
@@ -246,7 +198,7 @@ namespace CinemaProject
             this.guna2GradientButton4.FillColor2 = System.Drawing.Color.Brown;
             this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton4.Location = new System.Drawing.Point(1055, 440);
+            this.guna2GradientButton4.Location = new System.Drawing.Point(1073, 440);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
             this.guna2GradientButton4.Size = new System.Drawing.Size(97, 46);
             this.guna2GradientButton4.TabIndex = 75;
@@ -259,9 +211,9 @@ namespace CinemaProject
             this.listBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox4.FormattingEnabled = true;
             this.listBox4.ItemHeight = 30;
-            this.listBox4.Location = new System.Drawing.Point(1152, 186);
+            this.listBox4.Location = new System.Drawing.Point(1172, 186);
             this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(88, 302);
+            this.listBox4.Size = new System.Drawing.Size(87, 302);
             this.listBox4.TabIndex = 1;
             this.listBox4.SelectedIndexChanged += new System.EventHandler(this.listBox4_SelectedIndexChanged);
             // 
@@ -281,9 +233,9 @@ namespace CinemaProject
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(1046, 546);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(16, 21);
+            this.label7.Size = new System.Drawing.Size(19, 21);
             this.label7.TabIndex = 78;
-            this.label7.Text = "-";
+            this.label7.Text = "0";
             // 
             // label8
             // 
@@ -326,7 +278,7 @@ namespace CinemaProject
             this.guna2GradientButton5.FillColor2 = System.Drawing.Color.Brown;
             this.guna2GradientButton5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton5.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton5.Location = new System.Drawing.Point(717, 570);
+            this.guna2GradientButton5.Location = new System.Drawing.Point(701, 568);
             this.guna2GradientButton5.Name = "guna2GradientButton5";
             this.guna2GradientButton5.Size = new System.Drawing.Size(120, 53);
             this.guna2GradientButton5.TabIndex = 80;
@@ -381,11 +333,151 @@ namespace CinemaProject
             this.guna2RadioButton4.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.guna2RadioButton4.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
+            // guna2DataGridView1
+            // 
+            this.guna2DataGridView1.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(60)))), ((int)(((byte)(33)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(95)))), ((int)(((byte)(44)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(95)))), ((int)(((byte)(44)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.guna2DataGridView1.ColumnHeadersHeight = 44;
+            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(60)))), ((int)(((byte)(33)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.Location = new System.Drawing.Point(281, 188);
+            this.guna2DataGridView1.Name = "guna2DataGridView1";
+            this.guna2DataGridView1.ReadOnly = true;
+            this.guna2DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.guna2DataGridView1.RowHeadersVisible = false;
+            this.guna2DataGridView1.RowTemplate.Height = 28;
+            this.guna2DataGridView1.Size = new System.Drawing.Size(540, 374);
+            this.guna2DataGridView1.TabIndex = 93;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(60)))), ((int)(((byte)(33)))));
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(95)))), ((int)(((byte)(44)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 44;
+            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.Silver;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 28;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(60)))), ((int)(((byte)(33)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            // 
+            // guna2GradientCircleButton2
+            // 
+            this.guna2GradientCircleButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientCircleButton2.FillColor = System.Drawing.Color.Maroon;
+            this.guna2GradientCircleButton2.FillColor2 = System.Drawing.Color.Tomato;
+            this.guna2GradientCircleButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.guna2GradientCircleButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientCircleButton2.Location = new System.Drawing.Point(1143, 85);
+            this.guna2GradientCircleButton2.Name = "guna2GradientCircleButton2";
+            this.guna2GradientCircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2GradientCircleButton2.Size = new System.Drawing.Size(73, 59);
+            this.guna2GradientCircleButton2.TabIndex = 94;
+            this.guna2GradientCircleButton2.Text = "Enter";
+            this.guna2GradientCircleButton2.Click += new System.EventHandler(this.guna2GradientCircleButton2_Click);
+            // 
+            // category
+            // 
+            this.category.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.category.Location = new System.Drawing.Point(464, 152);
+            this.category.Name = "category";
+            this.category.Size = new System.Drawing.Size(177, 33);
+            this.category.TabIndex = 95;
+            this.category.Text = "Category";
+            this.category.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // listBox1
+            // 
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 30;
+            this.listBox1.Location = new System.Drawing.Point(1225, 186);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(34, 302);
+            this.listBox1.TabIndex = 96;
+            this.listBox1.Visible = false;
+            // 
+            // CheckStatus
+            // 
+            this.CheckStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckStatus.Location = new System.Drawing.Point(844, 156);
+            this.CheckStatus.Name = "CheckStatus";
+            this.CheckStatus.Size = new System.Drawing.Size(425, 22);
+            this.CheckStatus.TabIndex = 97;
+            this.CheckStatus.Text = "label3";
+            this.CheckStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CheckStatus.Visible = false;
+            // 
+            // TicketNo
+            // 
+            this.TicketNo.BackColor = System.Drawing.Color.White;
+            this.TicketNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TicketNo.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TicketNo.Location = new System.Drawing.Point(1038, 98);
+            this.TicketNo.Mask = "00000";
+            this.TicketNo.Name = "TicketNo";
+            this.TicketNo.ResetOnSpace = false;
+            this.TicketNo.Size = new System.Drawing.Size(99, 33);
+            this.TicketNo.TabIndex = 98;
+            this.TicketNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TicketNo.ValidatingType = typeof(int);
+            // 
             // SnacksShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.listBox4);
+            this.Controls.Add(this.TicketNo);
+            this.Controls.Add(this.CheckStatus);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.category);
+            this.Controls.Add(this.guna2GradientCircleButton2);
+            this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.guna2RadioButton4);
             this.Controls.Add(this.guna2RadioButton3);
             this.Controls.Add(this.guna2GradientButton5);
@@ -394,14 +486,9 @@ namespace CinemaProject
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.guna2GradientButton2);
-            this.Controls.Add(this.listBox4);
             this.Controls.Add(this.guna2GradientButton4);
             this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2Separator1);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.guna2GradientButton3);
             this.Controls.Add(this.guna2ImageButton4);
             this.Controls.Add(this.guna2ImageButton3);
@@ -412,6 +499,7 @@ namespace CinemaProject
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SnacksShop";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,10 +512,6 @@ namespace CinemaProject
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
         private System.Windows.Forms.ListBox listBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton4;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton3;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
@@ -445,5 +529,11 @@ namespace CinemaProject
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label8;
         public Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        public Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        public Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton2;
+        public System.Windows.Forms.Label category;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label CheckStatus;
+        private System.Windows.Forms.MaskedTextBox TicketNo;
     }
 }
