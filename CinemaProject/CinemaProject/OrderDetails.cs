@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using CrystalDecisions.CrystalReports.Engine;
 
 namespace CinemaProject
 {
@@ -20,6 +21,7 @@ namespace CinemaProject
         static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
         SqlConnection con = new SqlConnection(Sqlcon);
         SqlCommand cmd;
+        SqlDataAdapter sda;
 
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
@@ -28,28 +30,39 @@ namespace CinemaProject
                 if (guna2RadioButton3.Checked == false && guna2RadioButton4.Checked == false) MessageBox.Show("Please Choose The Payment Method And Try Again !!!");
                 else
                 {
-                    string update = "";
-                    if (guna2RadioButton3.Checked == true) update = "update TempOrder set Payment='" + guna2RadioButton3.Text + "' where ID>0";
-                    else if (guna2RadioButton4.Checked == true) update = "update TempOrder set Payment='" + guna2RadioButton4.Text + "' where ID>0";
-                    string add = "insert into TicketOrders select * from TempOrder";
-
-                    con.Open();
-                    cmd = new SqlCommand(update, con);
-                    cmd.ExecuteNonQuery();
-                    cmd = new SqlCommand(add, con);
-                    cmd.ExecuteNonQuery();
-                    con.Close();
-                    LoginForm.seat.disableseat();
-                    LoginForm.ticket.ResetPage();
-                    guna2RadioButton3.Checked = false; guna2RadioButton4.Checked = false;
-                    this.Hide();
-                    LoginForm.mainForm.Show();
-                }
+                    crystalReportViewer1.PrintReport();
+                        string update = "";
+                        if (guna2RadioButton3.Checked == true) update = "update TempOrder set Payment='" + guna2RadioButton3.Text + "' where ID>0";
+                        else if (guna2RadioButton4.Checked == true) update = "update TempOrder set Payment='" + guna2RadioButton4.Text + "' where ID>0";
+                        string add = "insert into TicketOrders select * from TempOrder";
+                        con.Open();
+                        cmd = new SqlCommand(update, con);
+                        cmd.ExecuteNonQuery();
+                        cmd = new SqlCommand(add, con);
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        LoginForm.seat.disableseat();
+                        LoginForm.ticket.ResetPage();
+                        guna2RadioButton3.Checked = false; guna2RadioButton4.Checked = false;
+                        this.Hide();
+                        LoginForm.mainForm.Show(); }
             }
             catch { }
         }
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        private void OrderDetails_Load(object sender, EventArgs e)
+        {
+            con.Open();
+             CrystalReport1 Receipt = new CrystalReport1();
+            sda = new SqlDataAdapter("select ID,CustomerName,TicketType,MovieName,SeatNo,Price from TempOrder", con);
+            DataSet ds = new DataSet();
+            sda.Fill(ds);
+            Receipt.SetDataSource(ds.Tables[0]);
+            crystalReportViewer1.ReportSource = Receipt ;
+            con.Close();
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
             LoginForm.seat.Show();

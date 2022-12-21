@@ -24,21 +24,6 @@ namespace CinemaProject
         SqlConnection con = new SqlConnection(sqlcon);
         SqlCommand cmd;
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EditSnacksMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2ImageButton1_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
             string query = "";
@@ -156,6 +141,11 @@ namespace CinemaProject
             Category.SelectedIndex = -1;
             this.Hide();
             LoginForm.mainForm.Show();
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

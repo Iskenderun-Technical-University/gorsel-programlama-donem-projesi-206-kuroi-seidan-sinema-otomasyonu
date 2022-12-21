@@ -53,8 +53,18 @@ namespace CinemaProject
             this.MovieName3 = new System.Windows.Forms.Label();
             this.MovieName2 = new System.Windows.Forms.Label();
             this.MovieName1 = new System.Windows.Forms.Label();
+            this.ID1 = new System.Windows.Forms.Label();
+            this.ID2 = new System.Windows.Forms.Label();
+            this.ID4 = new System.Windows.Forms.Label();
+            this.ID3 = new System.Windows.Forms.Label();
+            this.ID5 = new System.Windows.Forms.Label();
+            this.ID10 = new System.Windows.Forms.Label();
+            this.ID9 = new System.Windows.Forms.Label();
+            this.ID8 = new System.Windows.Forms.Label();
+            this.ID7 = new System.Windows.Forms.Label();
+            this.ID6 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.MoviePic10 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.MoviePic9 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.MoviePic8 = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -67,22 +77,14 @@ namespace CinemaProject
             this.MoviePic2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.PreviousBtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.NextBtn = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.ID1 = new System.Windows.Forms.Label();
-            this.ID2 = new System.Windows.Forms.Label();
-            this.ID4 = new System.Windows.Forms.Label();
-            this.ID3 = new System.Windows.Forms.Label();
-            this.ID5 = new System.Windows.Forms.Label();
-            this.ID10 = new System.Windows.Forms.Label();
-            this.ID9 = new System.Windows.Forms.Label();
-            this.ID8 = new System.Windows.Forms.Label();
-            this.ID7 = new System.Windows.Forms.Label();
-            this.ID6 = new System.Windows.Forms.Label();
+            this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.SearchBox.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
             // 
+            this.guna2BorderlessForm1.BorderRadius = 12;
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
@@ -100,7 +102,7 @@ namespace CinemaProject
             this.BackMenuBtn.FillColor2 = System.Drawing.Color.DarkGray;
             this.BackMenuBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BackMenuBtn.ForeColor = System.Drawing.Color.White;
-            this.BackMenuBtn.Location = new System.Drawing.Point(6, 54);
+            this.BackMenuBtn.Location = new System.Drawing.Point(12, 659);
             this.BackMenuBtn.Name = "BackMenuBtn";
             this.BackMenuBtn.Size = new System.Drawing.Size(107, 49);
             this.BackMenuBtn.TabIndex = 98;
@@ -109,6 +111,7 @@ namespace CinemaProject
             // 
             // SearchBox
             // 
+            this.SearchBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.SearchBox.BackColor = System.Drawing.Color.Transparent;
             this.SearchBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.SearchBox.BorderRadius = 10;
@@ -124,7 +127,7 @@ namespace CinemaProject
             this.SearchBox.CustomBorderThickness = new System.Windows.Forms.Padding(0, 30, 0, 0);
             this.SearchBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.SearchBox.ForeColor = System.Drawing.Color.White;
-            this.SearchBox.Location = new System.Drawing.Point(862, 58);
+            this.SearchBox.Location = new System.Drawing.Point(862, 70);
             this.SearchBox.Name = "SearchBox";
             this.SearchBox.Size = new System.Drawing.Size(342, 246);
             this.SearchBox.TabIndex = 92;
@@ -261,6 +264,7 @@ namespace CinemaProject
             // 
             // FilterBtn
             // 
+            this.FilterBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FilterBtn.BackColor = System.Drawing.Color.Transparent;
             this.FilterBtn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.FilterBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -272,7 +276,7 @@ namespace CinemaProject
             this.FilterBtn.FillColor2 = System.Drawing.Color.Brown;
             this.FilterBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.FilterBtn.ForeColor = System.Drawing.Color.White;
-            this.FilterBtn.Location = new System.Drawing.Point(1210, 52);
+            this.FilterBtn.Location = new System.Drawing.Point(1209, 52);
             this.FilterBtn.Name = "FilterBtn";
             this.FilterBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.FilterBtn.Size = new System.Drawing.Size(68, 65);
@@ -282,6 +286,7 @@ namespace CinemaProject
             // 
             // MovieName10
             // 
+            this.MovieName10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.MovieName10.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
             this.MovieName10.Location = new System.Drawing.Point(1009, 664);
             this.MovieName10.Name = "MovieName10";
@@ -292,6 +297,7 @@ namespace CinemaProject
             // 
             // MovieName9
             // 
+            this.MovieName9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.MovieName9.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
             this.MovieName9.Location = new System.Drawing.Point(787, 664);
             this.MovieName9.Name = "MovieName9";
@@ -302,6 +308,7 @@ namespace CinemaProject
             // 
             // MovieName8
             // 
+            this.MovieName8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.MovieName8.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
             this.MovieName8.Location = new System.Drawing.Point(568, 664);
             this.MovieName8.Name = "MovieName8";
@@ -312,6 +319,7 @@ namespace CinemaProject
             // 
             // MovieName7
             // 
+            this.MovieName7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.MovieName7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
             this.MovieName7.Location = new System.Drawing.Point(347, 664);
             this.MovieName7.Name = "MovieName7";
@@ -322,6 +330,7 @@ namespace CinemaProject
             // 
             // MovieName6
             // 
+            this.MovieName6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.MovieName6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
             this.MovieName6.Location = new System.Drawing.Point(125, 664);
             this.MovieName6.Name = "MovieName6";
@@ -332,6 +341,7 @@ namespace CinemaProject
             // 
             // MovieName5
             // 
+            this.MovieName5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.MovieName5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
             this.MovieName5.Location = new System.Drawing.Point(1009, 338);
             this.MovieName5.Name = "MovieName5";
@@ -342,6 +352,7 @@ namespace CinemaProject
             // 
             // MovieName4
             // 
+            this.MovieName4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.MovieName4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
             this.MovieName4.Location = new System.Drawing.Point(788, 338);
             this.MovieName4.Name = "MovieName4";
@@ -352,6 +363,7 @@ namespace CinemaProject
             // 
             // MovieName3
             // 
+            this.MovieName3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.MovieName3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
             this.MovieName3.Location = new System.Drawing.Point(568, 338);
             this.MovieName3.Name = "MovieName3";
@@ -379,221 +391,6 @@ namespace CinemaProject
             this.MovieName1.TabIndex = 72;
             this.MovieName1.Text = "Movie Name";
             this.MovieName1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // guna2CustomGradientPanel1
-            // 
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ImageButton1);
-            this.guna2CustomGradientPanel1.CustomBorderColor = System.Drawing.Color.White;
-            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.OrangeRed;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1280, 48);
-            this.guna2CustomGradientPanel1.TabIndex = 71;
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1222, 0);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(58, 48);
-            this.guna2ImageButton1.TabIndex = 0;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
-            // 
-            // MoviePic10
-            // 
-            this.MoviePic10.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic10.HoverState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic10.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic10.Image")));
-            this.MoviePic10.ImageOffset = new System.Drawing.Point(0, 0);
-            this.MoviePic10.ImageRotate = 0F;
-            this.MoviePic10.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic10.Location = new System.Drawing.Point(1009, 396);
-            this.MoviePic10.Name = "MoviePic10";
-            this.MoviePic10.PressedState.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic10.Size = new System.Drawing.Size(195, 265);
-            this.MoviePic10.TabIndex = 97;
-            this.MoviePic10.Click += new System.EventHandler(this.MoviePic10_Click);
-            // 
-            // MoviePic9
-            // 
-            this.MoviePic9.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic9.HoverState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic9.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic9.Image")));
-            this.MoviePic9.ImageOffset = new System.Drawing.Point(0, 0);
-            this.MoviePic9.ImageRotate = 0F;
-            this.MoviePic9.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic9.Location = new System.Drawing.Point(787, 396);
-            this.MoviePic9.Name = "MoviePic9";
-            this.MoviePic9.PressedState.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic9.Size = new System.Drawing.Size(195, 265);
-            this.MoviePic9.TabIndex = 96;
-            this.MoviePic9.Click += new System.EventHandler(this.MoviePic9_Click);
-            // 
-            // MoviePic8
-            // 
-            this.MoviePic8.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic8.HoverState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic8.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic8.Image")));
-            this.MoviePic8.ImageOffset = new System.Drawing.Point(0, 0);
-            this.MoviePic8.ImageRotate = 0F;
-            this.MoviePic8.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic8.Location = new System.Drawing.Point(568, 396);
-            this.MoviePic8.Name = "MoviePic8";
-            this.MoviePic8.PressedState.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic8.Size = new System.Drawing.Size(195, 265);
-            this.MoviePic8.TabIndex = 95;
-            this.MoviePic8.Click += new System.EventHandler(this.MoviePic8_Click);
-            // 
-            // MoviePic6
-            // 
-            this.MoviePic6.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic6.HoverState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic6.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic6.Image")));
-            this.MoviePic6.ImageOffset = new System.Drawing.Point(0, 0);
-            this.MoviePic6.ImageRotate = 0F;
-            this.MoviePic6.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic6.Location = new System.Drawing.Point(125, 396);
-            this.MoviePic6.Name = "MoviePic6";
-            this.MoviePic6.PressedState.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic6.Size = new System.Drawing.Size(195, 265);
-            this.MoviePic6.TabIndex = 94;
-            this.MoviePic6.Click += new System.EventHandler(this.MoviePic6_Click);
-            // 
-            // MoviePic7
-            // 
-            this.MoviePic7.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic7.HoverState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic7.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic7.Image")));
-            this.MoviePic7.ImageOffset = new System.Drawing.Point(0, 0);
-            this.MoviePic7.ImageRotate = 0F;
-            this.MoviePic7.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic7.Location = new System.Drawing.Point(347, 396);
-            this.MoviePic7.Name = "MoviePic7";
-            this.MoviePic7.PressedState.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic7.Size = new System.Drawing.Size(195, 265);
-            this.MoviePic7.TabIndex = 93;
-            this.MoviePic7.Click += new System.EventHandler(this.MoviePic7_Click);
-            // 
-            // MoviePic5
-            // 
-            this.MoviePic5.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic5.HoverState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic5.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic5.Image")));
-            this.MoviePic5.ImageOffset = new System.Drawing.Point(0, 0);
-            this.MoviePic5.ImageRotate = 0F;
-            this.MoviePic5.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic5.Location = new System.Drawing.Point(1009, 70);
-            this.MoviePic5.Name = "MoviePic5";
-            this.MoviePic5.PressedState.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic5.Size = new System.Drawing.Size(195, 265);
-            this.MoviePic5.TabIndex = 91;
-            this.MoviePic5.Click += new System.EventHandler(this.MoviePic5_Click);
-            // 
-            // MoviePic4
-            // 
-            this.MoviePic4.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic4.HoverState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic4.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic4.Image")));
-            this.MoviePic4.ImageOffset = new System.Drawing.Point(0, 0);
-            this.MoviePic4.ImageRotate = 0F;
-            this.MoviePic4.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic4.Location = new System.Drawing.Point(788, 70);
-            this.MoviePic4.Name = "MoviePic4";
-            this.MoviePic4.PressedState.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic4.Size = new System.Drawing.Size(195, 265);
-            this.MoviePic4.TabIndex = 90;
-            this.MoviePic4.Click += new System.EventHandler(this.MoviePic4_Click);
-            // 
-            // MoviePic3
-            // 
-            this.MoviePic3.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic3.HoverState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic3.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic3.Image")));
-            this.MoviePic3.ImageOffset = new System.Drawing.Point(0, 0);
-            this.MoviePic3.ImageRotate = 0F;
-            this.MoviePic3.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic3.Location = new System.Drawing.Point(568, 70);
-            this.MoviePic3.Name = "MoviePic3";
-            this.MoviePic3.PressedState.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic3.Size = new System.Drawing.Size(195, 265);
-            this.MoviePic3.TabIndex = 89;
-            this.MoviePic3.Click += new System.EventHandler(this.MoviePic3_Click);
-            // 
-            // MoviePic1
-            // 
-            this.MoviePic1.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic1.HoverState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic1.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic1.Image")));
-            this.MoviePic1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.MoviePic1.ImageRotate = 0F;
-            this.MoviePic1.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic1.Location = new System.Drawing.Point(125, 70);
-            this.MoviePic1.Name = "MoviePic1";
-            this.MoviePic1.PressedState.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic1.Size = new System.Drawing.Size(195, 265);
-            this.MoviePic1.TabIndex = 88;
-            this.MoviePic1.Click += new System.EventHandler(this.MoviePic1_Click);
-            // 
-            // MoviePic2
-            // 
-            this.MoviePic2.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic2.HoverState.ImageSize = new System.Drawing.Size(195, 265);
-            this.MoviePic2.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic2.Image")));
-            this.MoviePic2.ImageOffset = new System.Drawing.Point(0, 0);
-            this.MoviePic2.ImageRotate = 0F;
-            this.MoviePic2.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic2.Location = new System.Drawing.Point(347, 70);
-            this.MoviePic2.Name = "MoviePic2";
-            this.MoviePic2.PressedState.ImageSize = new System.Drawing.Size(190, 260);
-            this.MoviePic2.Size = new System.Drawing.Size(195, 265);
-            this.MoviePic2.TabIndex = 87;
-            this.MoviePic2.Click += new System.EventHandler(this.MoviePic2_Click);
-            // 
-            // PreviousBtn
-            // 
-            this.PreviousBtn.CheckedState.ImageSize = new System.Drawing.Size(45, 65);
-            this.PreviousBtn.HoverState.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Horizontal;
-            this.PreviousBtn.HoverState.ImageSize = new System.Drawing.Size(50, 70);
-            this.PreviousBtn.Image = global::CinemaProject.Properties.Resources.next1;
-            this.PreviousBtn.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Horizontal;
-            this.PreviousBtn.ImageOffset = new System.Drawing.Point(0, 0);
-            this.PreviousBtn.ImageRotate = 0F;
-            this.PreviousBtn.ImageSize = new System.Drawing.Size(45, 65);
-            this.PreviousBtn.Location = new System.Drawing.Point(12, 316);
-            this.PreviousBtn.Name = "PreviousBtn";
-            this.PreviousBtn.PressedState.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Horizontal;
-            this.PreviousBtn.PressedState.ImageSize = new System.Drawing.Size(45, 65);
-            this.PreviousBtn.Size = new System.Drawing.Size(44, 87);
-            this.PreviousBtn.TabIndex = 83;
-            this.PreviousBtn.Click += new System.EventHandler(this.PreviousBtn_Click);
-            // 
-            // NextBtn
-            // 
-            this.NextBtn.CheckedState.ImageSize = new System.Drawing.Size(45, 65);
-            this.NextBtn.HoverState.ImageSize = new System.Drawing.Size(50, 70);
-            this.NextBtn.Image = global::CinemaProject.Properties.Resources.next1;
-            this.NextBtn.ImageOffset = new System.Drawing.Point(0, 0);
-            this.NextBtn.ImageRotate = 0F;
-            this.NextBtn.ImageSize = new System.Drawing.Size(45, 65);
-            this.NextBtn.Location = new System.Drawing.Point(1222, 316);
-            this.NextBtn.Name = "NextBtn";
-            this.NextBtn.PressedState.ImageSize = new System.Drawing.Size(45, 65);
-            this.NextBtn.Size = new System.Drawing.Size(53, 87);
-            this.NextBtn.TabIndex = 82;
-            this.NextBtn.Click += new System.EventHandler(this.NextBtn_Click);
             // 
             // ID1
             // 
@@ -695,12 +492,261 @@ namespace CinemaProject
             this.ID6.Text = "-";
             this.ID6.Visible = false;
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ControlBox1);
+            this.guna2CustomGradientPanel1.CustomBorderColor = System.Drawing.Color.White;
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.OrangeRed;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1280, 42);
+            this.guna2CustomGradientPanel1.TabIndex = 108;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.CustomIconSize = 20F;
+            this.guna2ControlBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1226, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(54, 42);
+            this.guna2ControlBox1.TabIndex = 87;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
+            // 
+            // MoviePic10
+            // 
+            this.MoviePic10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.MoviePic10.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic10.HoverState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic10.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic10.Image")));
+            this.MoviePic10.ImageOffset = new System.Drawing.Point(0, 0);
+            this.MoviePic10.ImageRotate = 0F;
+            this.MoviePic10.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic10.Location = new System.Drawing.Point(1009, 396);
+            this.MoviePic10.Name = "MoviePic10";
+            this.MoviePic10.PressedState.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic10.Size = new System.Drawing.Size(195, 265);
+            this.MoviePic10.TabIndex = 97;
+            this.MoviePic10.Click += new System.EventHandler(this.MoviePic10_Click);
+            // 
+            // MoviePic9
+            // 
+            this.MoviePic9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.MoviePic9.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic9.HoverState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic9.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic9.Image")));
+            this.MoviePic9.ImageOffset = new System.Drawing.Point(0, 0);
+            this.MoviePic9.ImageRotate = 0F;
+            this.MoviePic9.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic9.Location = new System.Drawing.Point(787, 396);
+            this.MoviePic9.Name = "MoviePic9";
+            this.MoviePic9.PressedState.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic9.Size = new System.Drawing.Size(195, 265);
+            this.MoviePic9.TabIndex = 96;
+            this.MoviePic9.Click += new System.EventHandler(this.MoviePic9_Click);
+            // 
+            // MoviePic8
+            // 
+            this.MoviePic8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.MoviePic8.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic8.HoverState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic8.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic8.Image")));
+            this.MoviePic8.ImageOffset = new System.Drawing.Point(0, 0);
+            this.MoviePic8.ImageRotate = 0F;
+            this.MoviePic8.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic8.Location = new System.Drawing.Point(568, 396);
+            this.MoviePic8.Name = "MoviePic8";
+            this.MoviePic8.PressedState.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic8.Size = new System.Drawing.Size(195, 265);
+            this.MoviePic8.TabIndex = 95;
+            this.MoviePic8.Click += new System.EventHandler(this.MoviePic8_Click);
+            // 
+            // MoviePic6
+            // 
+            this.MoviePic6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.MoviePic6.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic6.HoverState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic6.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic6.Image")));
+            this.MoviePic6.ImageOffset = new System.Drawing.Point(0, 0);
+            this.MoviePic6.ImageRotate = 0F;
+            this.MoviePic6.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic6.Location = new System.Drawing.Point(125, 396);
+            this.MoviePic6.Name = "MoviePic6";
+            this.MoviePic6.PressedState.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic6.Size = new System.Drawing.Size(195, 265);
+            this.MoviePic6.TabIndex = 94;
+            this.MoviePic6.Click += new System.EventHandler(this.MoviePic6_Click);
+            // 
+            // MoviePic7
+            // 
+            this.MoviePic7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.MoviePic7.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic7.HoverState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic7.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic7.Image")));
+            this.MoviePic7.ImageOffset = new System.Drawing.Point(0, 0);
+            this.MoviePic7.ImageRotate = 0F;
+            this.MoviePic7.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic7.Location = new System.Drawing.Point(347, 396);
+            this.MoviePic7.Name = "MoviePic7";
+            this.MoviePic7.PressedState.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic7.Size = new System.Drawing.Size(195, 265);
+            this.MoviePic7.TabIndex = 93;
+            this.MoviePic7.Click += new System.EventHandler(this.MoviePic7_Click);
+            // 
+            // MoviePic5
+            // 
+            this.MoviePic5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MoviePic5.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic5.HoverState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic5.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic5.Image")));
+            this.MoviePic5.ImageOffset = new System.Drawing.Point(0, 0);
+            this.MoviePic5.ImageRotate = 0F;
+            this.MoviePic5.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic5.Location = new System.Drawing.Point(1009, 70);
+            this.MoviePic5.Name = "MoviePic5";
+            this.MoviePic5.PressedState.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic5.Size = new System.Drawing.Size(195, 265);
+            this.MoviePic5.TabIndex = 91;
+            this.MoviePic5.Click += new System.EventHandler(this.MoviePic5_Click);
+            // 
+            // MoviePic4
+            // 
+            this.MoviePic4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MoviePic4.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic4.HoverState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic4.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic4.Image")));
+            this.MoviePic4.ImageOffset = new System.Drawing.Point(0, 0);
+            this.MoviePic4.ImageRotate = 0F;
+            this.MoviePic4.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic4.Location = new System.Drawing.Point(788, 70);
+            this.MoviePic4.Name = "MoviePic4";
+            this.MoviePic4.PressedState.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic4.Size = new System.Drawing.Size(195, 265);
+            this.MoviePic4.TabIndex = 90;
+            this.MoviePic4.Click += new System.EventHandler(this.MoviePic4_Click);
+            // 
+            // MoviePic3
+            // 
+            this.MoviePic3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.MoviePic3.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic3.HoverState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic3.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic3.Image")));
+            this.MoviePic3.ImageOffset = new System.Drawing.Point(0, 0);
+            this.MoviePic3.ImageRotate = 0F;
+            this.MoviePic3.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic3.Location = new System.Drawing.Point(568, 70);
+            this.MoviePic3.Name = "MoviePic3";
+            this.MoviePic3.PressedState.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic3.Size = new System.Drawing.Size(195, 265);
+            this.MoviePic3.TabIndex = 89;
+            this.MoviePic3.Click += new System.EventHandler(this.MoviePic3_Click);
+            // 
+            // MoviePic1
+            // 
+            this.MoviePic1.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic1.HoverState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic1.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic1.Image")));
+            this.MoviePic1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.MoviePic1.ImageRotate = 0F;
+            this.MoviePic1.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic1.Location = new System.Drawing.Point(125, 70);
+            this.MoviePic1.Name = "MoviePic1";
+            this.MoviePic1.PressedState.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic1.Size = new System.Drawing.Size(195, 265);
+            this.MoviePic1.TabIndex = 88;
+            this.MoviePic1.Click += new System.EventHandler(this.MoviePic1_Click);
+            // 
+            // MoviePic2
+            // 
+            this.MoviePic2.CheckedState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic2.HoverState.ImageSize = new System.Drawing.Size(195, 265);
+            this.MoviePic2.Image = ((System.Drawing.Image)(resources.GetObject("MoviePic2.Image")));
+            this.MoviePic2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.MoviePic2.ImageRotate = 0F;
+            this.MoviePic2.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic2.Location = new System.Drawing.Point(347, 70);
+            this.MoviePic2.Name = "MoviePic2";
+            this.MoviePic2.PressedState.ImageSize = new System.Drawing.Size(190, 260);
+            this.MoviePic2.Size = new System.Drawing.Size(195, 265);
+            this.MoviePic2.TabIndex = 87;
+            this.MoviePic2.Click += new System.EventHandler(this.MoviePic2_Click);
+            // 
+            // PreviousBtn
+            // 
+            this.PreviousBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.PreviousBtn.CheckedState.ImageSize = new System.Drawing.Size(45, 65);
+            this.PreviousBtn.HoverState.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Horizontal;
+            this.PreviousBtn.HoverState.ImageSize = new System.Drawing.Size(50, 70);
+            this.PreviousBtn.Image = global::CinemaProject.Properties.Resources.next1;
+            this.PreviousBtn.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Horizontal;
+            this.PreviousBtn.ImageOffset = new System.Drawing.Point(0, 0);
+            this.PreviousBtn.ImageRotate = 0F;
+            this.PreviousBtn.ImageSize = new System.Drawing.Size(45, 65);
+            this.PreviousBtn.Location = new System.Drawing.Point(63, 316);
+            this.PreviousBtn.Name = "PreviousBtn";
+            this.PreviousBtn.PressedState.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Horizontal;
+            this.PreviousBtn.PressedState.ImageSize = new System.Drawing.Size(45, 65);
+            this.PreviousBtn.Size = new System.Drawing.Size(44, 87);
+            this.PreviousBtn.TabIndex = 83;
+            this.PreviousBtn.Click += new System.EventHandler(this.PreviousBtn_Click);
+            // 
+            // NextBtn
+            // 
+            this.NextBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.NextBtn.CheckedState.ImageSize = new System.Drawing.Size(45, 65);
+            this.NextBtn.HoverState.ImageSize = new System.Drawing.Size(50, 70);
+            this.NextBtn.Image = global::CinemaProject.Properties.Resources.next1;
+            this.NextBtn.ImageOffset = new System.Drawing.Point(0, 0);
+            this.NextBtn.ImageRotate = 0F;
+            this.NextBtn.ImageSize = new System.Drawing.Size(45, 65);
+            this.NextBtn.Location = new System.Drawing.Point(1222, 316);
+            this.NextBtn.Name = "NextBtn";
+            this.NextBtn.PressedState.ImageSize = new System.Drawing.Size(45, 65);
+            this.NextBtn.Size = new System.Drawing.Size(53, 87);
+            this.NextBtn.TabIndex = 82;
+            this.NextBtn.Click += new System.EventHandler(this.NextBtn_Click);
+            // 
+            // guna2GradientCircleButton1
+            // 
+            this.guna2GradientCircleButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2GradientCircleButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientCircleButton1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
+            this.guna2GradientCircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientCircleButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.guna2GradientCircleButton1.FillColor2 = System.Drawing.Color.Brown;
+            this.guna2GradientCircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(2, 52);
+            this.guna2GradientCircleButton1.Name = "guna2GradientCircleButton1";
+            this.guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(68, 65);
+            this.guna2GradientCircleButton1.TabIndex = 109;
+            this.guna2GradientCircleButton1.Text = "Refresh";
+            this.guna2GradientCircleButton1.Click += new System.EventHandler(this.guna2GradientCircleButton1_Click);
+            // 
             // MoviesList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.guna2GradientCircleButton1);
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.ID10);
             this.Controls.Add(this.ID9);
             this.Controls.Add(this.ID8);
@@ -736,7 +782,6 @@ namespace CinemaProject
             this.Controls.Add(this.MovieName3);
             this.Controls.Add(this.MovieName2);
             this.Controls.Add(this.MovieName1);
-            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MoviesList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -777,8 +822,6 @@ namespace CinemaProject
         private System.Windows.Forms.Label MovieName3;
         private System.Windows.Forms.Label MovieName2;
         private System.Windows.Forms.Label MovieName1;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
         public Guna.UI2.WinForms.Guna2GradientButton BackMenuBtn;
@@ -798,5 +841,8 @@ namespace CinemaProject
         public System.Windows.Forms.Label Snamelbl;
         public System.Windows.Forms.Label Genrelbl2;
         public System.Windows.Forms.Label Snamelbl2;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        public Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton1;
     }
 }

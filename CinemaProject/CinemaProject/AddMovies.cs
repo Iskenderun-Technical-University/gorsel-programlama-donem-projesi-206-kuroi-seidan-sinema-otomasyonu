@@ -65,19 +65,16 @@ namespace CinemaProject
                     {
                         days += DaysList.CheckedItems[i].ToString();
                         if (i + 1 != DaysList.CheckedItems.Count) days += ",";
-                        DaysList.CheckedItems[i] = false;
                     }
                     for (int i = 0; i < HoursList.CheckedItems.Count; i++)
                     {
                         hours += HoursList.CheckedItems[i].ToString();
                         if (i + 1 != HoursList.CheckedItems.Count) hours += ",";
-                        HoursList.CheckedItems[i] = false;
                     }
                     for (int i = 0; i < GenresList.CheckedItems.Count; i++)
                     {
                         genres += GenresList.CheckedItems[i].ToString();
                         if (i + 1 != GenresList.CheckedItems.Count) genres += ",";
-                        GenresList.CheckedItems[i] = false;
                     }
                     string query = "insert into MoviesTbl (MovieName,MoviePicture,Description,Genres,IMDbRating,Length,AgeRating,ShowDays,ShowHours,ReleaseDate) values (@name,@pic,@desc,@genres,@rate,@length,@age,@days,@hours,@date)";
                     con.Open();
@@ -96,7 +93,7 @@ namespace CinemaProject
                     MessageBox.Show("Successful!!");
                 }
             }
-            catch{}
+            catch(Exception ex){ MessageBox.Show(ex.Message); }
             finally { con.Close(); }
         }
 
@@ -117,7 +114,7 @@ namespace CinemaProject
             LoginForm.mainForm.Show();
         }
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

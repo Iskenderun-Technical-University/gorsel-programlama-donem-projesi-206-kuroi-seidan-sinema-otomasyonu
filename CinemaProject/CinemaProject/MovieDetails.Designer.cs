@@ -37,11 +37,9 @@ namespace CinemaProject
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.SaveBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.uploadImgBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2ToggleSwitch2 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.genresTextBox = new System.Windows.Forms.TextBox();
             this.movieNameTextBox = new System.Windows.Forms.TextBox();
             this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
@@ -62,8 +60,10 @@ namespace CinemaProject
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.Link = new System.Windows.Forms.TextBox();
             this.releaseDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.guna2CustomGradientPanel1.SuspendLayout();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.moviePicturePictureBox)).BeginInit();
+            this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // genresLabel
@@ -122,8 +122,8 @@ namespace CinemaProject
             this.SaveBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.SaveBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.SaveBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.SaveBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SaveBtn.FillColor2 = System.Drawing.Color.OrangeRed;
+            this.SaveBtn.FillColor = System.Drawing.Color.Maroon;
+            this.SaveBtn.FillColor2 = System.Drawing.Color.Tomato;
             this.SaveBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveBtn.ForeColor = System.Drawing.Color.White;
             this.SaveBtn.Location = new System.Drawing.Point(914, 542);
@@ -142,11 +142,11 @@ namespace CinemaProject
             this.uploadImgBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.uploadImgBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.uploadImgBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.uploadImgBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uploadImgBtn.FillColor2 = System.Drawing.Color.OrangeRed;
+            this.uploadImgBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.uploadImgBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.uploadImgBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.uploadImgBtn.ForeColor = System.Drawing.Color.White;
-            this.uploadImgBtn.Location = new System.Drawing.Point(857, 402);
+            this.uploadImgBtn.Location = new System.Drawing.Point(857, 399);
             this.uploadImgBtn.Name = "uploadImgBtn";
             this.uploadImgBtn.Size = new System.Drawing.Size(117, 41);
             this.uploadImgBtn.TabIndex = 61;
@@ -154,29 +154,12 @@ namespace CinemaProject
             this.uploadImgBtn.Visible = false;
             this.uploadImgBtn.Click += new System.EventHandler(this.uploadImgBtn_Click);
             // 
-            // guna2CustomGradientPanel1
-            // 
-            this.guna2CustomGradientPanel1.Controls.Add(this.label3);
-            this.guna2CustomGradientPanel1.Controls.Add(this.label4);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ToggleSwitch2);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ImageButton1);
-            this.guna2CustomGradientPanel1.CustomBorderColor = System.Drawing.Color.White;
-            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.OrangeRed;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1039, 44);
-            this.guna2CustomGradientPanel1.TabIndex = 59;
-            // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(175, 14);
+            this.label3.Location = new System.Drawing.Point(175, 13);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(156, 19);
             this.label3.TabIndex = 43;
@@ -188,7 +171,7 @@ namespace CinemaProject
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(19, 14);
+            this.label4.Location = new System.Drawing.Point(19, 13);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 19);
             this.label4.TabIndex = 42;
@@ -202,7 +185,7 @@ namespace CinemaProject
             this.guna2ToggleSwitch2.CheckedState.FillColor = System.Drawing.Color.Black;
             this.guna2ToggleSwitch2.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch2.Location = new System.Drawing.Point(124, 9);
+            this.guna2ToggleSwitch2.Location = new System.Drawing.Point(124, 8);
             this.guna2ToggleSwitch2.Name = "guna2ToggleSwitch2";
             this.guna2ToggleSwitch2.Size = new System.Drawing.Size(45, 27);
             this.guna2ToggleSwitch2.TabIndex = 41;
@@ -211,24 +194,6 @@ namespace CinemaProject
             this.guna2ToggleSwitch2.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch2.UncheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch2.CheckedChanged += new System.EventHandler(this.guna2ToggleSwitch2_CheckedChanged);
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(37, 48);
-            this.guna2ImageButton1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(37, 48);
-            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(33, 43);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(992, 0);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(33, 43);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(47, 44);
-            this.guna2ImageButton1.TabIndex = 0;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // genresTextBox
             // 
@@ -456,12 +421,46 @@ namespace CinemaProject
             this.releaseDateDateTimePicker.Size = new System.Drawing.Size(274, 28);
             this.releaseDateDateTimePicker.TabIndex = 76;
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ControlBox1);
+            this.guna2CustomGradientPanel1.Controls.Add(this.label3);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ToggleSwitch2);
+            this.guna2CustomGradientPanel1.Controls.Add(this.label4);
+            this.guna2CustomGradientPanel1.CustomBorderColor = System.Drawing.Color.White;
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.OrangeRed;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1039, 42);
+            this.guna2CustomGradientPanel1.TabIndex = 80;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.CustomIconSize = 20F;
+            this.guna2ControlBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(985, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(54, 42);
+            this.guna2ControlBox1.TabIndex = 87;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
+            // 
             // MovieDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1039, 600);
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.releaseDateDateTimePicker);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.Link);
@@ -476,7 +475,6 @@ namespace CinemaProject
             this.Controls.Add(this.moviePicturePictureBox);
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.uploadImgBtn);
-            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.genresLabel);
             this.Controls.Add(this.genresTextBox);
             this.Controls.Add(this.movieNameTextBox);
@@ -497,8 +495,8 @@ namespace CinemaProject
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.TopMost = true;
-            this.guna2CustomGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.moviePicturePictureBox)).EndInit();
+            this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -508,9 +506,6 @@ namespace CinemaProject
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         public Guna.UI2.WinForms.Guna2PictureBox moviePicturePictureBox;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch2;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         public System.Windows.Forms.TextBox genresTextBox;
         public System.Windows.Forms.TextBox movieNameTextBox;
         private Guna.UI2.WinForms.Guna2RatingStar guna2RatingStar1;
@@ -538,5 +533,8 @@ namespace CinemaProject
         private System.Windows.Forms.LinkLabel linkLabel1;
         public System.Windows.Forms.TextBox Link;
         public System.Windows.Forms.DateTimePicker releaseDateDateTimePicker;
+        public Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch2;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

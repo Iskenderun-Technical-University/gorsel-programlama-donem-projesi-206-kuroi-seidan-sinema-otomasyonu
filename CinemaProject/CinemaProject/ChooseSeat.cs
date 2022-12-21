@@ -375,7 +375,6 @@ namespace CinemaProject
             else if (listBox1.SelectedIndex == -1) MessageBox.Show("Please Choose The Movie And Show Time!!");
             else
             {
-                //disableseat();
                 string query = "select CustomerName,TicketType,SeatNo,Price from TempOrder";
                 string update = "update TempOrder set MovieName='" + guna2ComboBox2.Text + "' ,Date='" + DateTime.Now.ToString("MM/dd/yyyy") + "', ShowTime='" + listBox1.Text + "' where ID>0";
                 con.Open();
@@ -390,10 +389,11 @@ namespace CinemaProject
                 con.Close();
                 this.Hide();
                 LoginForm.orderDetails.Show();
+                LoginForm.orderDetails.Location = this.Location;
             }
         }
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

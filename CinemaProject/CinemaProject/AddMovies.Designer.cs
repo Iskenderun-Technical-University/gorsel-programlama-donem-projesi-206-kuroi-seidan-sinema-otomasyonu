@@ -33,15 +33,9 @@ namespace CinemaProject
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.imdbRate = new System.Windows.Forms.Label();
             this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.GenresList = new System.Windows.Forms.CheckedListBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.DaysList = new System.Windows.Forms.CheckedListBox();
-            this.HoursList = new System.Windows.Forms.CheckedListBox();
-            this.Date = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -58,12 +52,19 @@ namespace CinemaProject
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Link = new Guna.UI2.WinForms.Guna2TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.guna2CustomGradientPanel1.SuspendLayout();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.HoursList = new System.Windows.Forms.CheckedListBox();
+            this.DaysList = new System.Windows.Forms.CheckedListBox();
+            this.GenresList = new System.Windows.Forms.CheckedListBox();
+            this.Date = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
             // 
+            this.guna2BorderlessForm1.BorderRadius = 10;
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
@@ -87,30 +88,6 @@ namespace CinemaProject
             this.guna2RatingStar1.TabIndex = 64;
             this.guna2RatingStar1.ValueChanged += new System.EventHandler(this.guna2RatingStar1_ValueChanged);
             // 
-            // GenresList
-            // 
-            this.GenresList.BackColor = System.Drawing.Color.White;
-            this.GenresList.Font = new System.Drawing.Font("Segoe UI", 11.278F);
-            this.GenresList.FormattingEnabled = true;
-            this.GenresList.Items.AddRange(new object[] {
-            "Action",
-            "Adventure",
-            "Comedy",
-            "Drama",
-            "Fantasy",
-            "Horror",
-            "Musicals",
-            "Mystery",
-            "Romance",
-            "Science fiction",
-            "Sports",
-            "Thriller",
-            "Western"});
-            this.GenresList.Location = new System.Drawing.Point(643, 382);
-            this.GenresList.Name = "GenresList";
-            this.GenresList.Size = new System.Drawing.Size(200, 165);
-            this.GenresList.TabIndex = 63;
-            // 
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -131,62 +108,6 @@ namespace CinemaProject
             this.label10.Text = "Show Days";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // DaysList
-            // 
-            this.DaysList.BackColor = System.Drawing.Color.White;
-            this.DaysList.Font = new System.Drawing.Font("Segoe UI", 11.278F);
-            this.DaysList.FormattingEnabled = true;
-            this.DaysList.Items.AddRange(new object[] {
-            "Saturday",
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"});
-            this.DaysList.Location = new System.Drawing.Point(142, 382);
-            this.DaysList.Name = "DaysList";
-            this.DaysList.Size = new System.Drawing.Size(170, 165);
-            this.DaysList.TabIndex = 60;
-            // 
-            // HoursList
-            // 
-            this.HoursList.BackColor = System.Drawing.Color.White;
-            this.HoursList.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.HoursList.FormattingEnabled = true;
-            this.HoursList.Items.AddRange(new object[] {
-            "10:15AM",
-            "10:45AM",
-            "12:00PM",
-            "01:00PM",
-            "01:45PM",
-            "03:15PM",
-            "03:30PM",
-            "05:15PM",
-            "05:30PM",
-            "07:00PM",
-            "07:45PM",
-            "08:45PM",
-            "10:00PM",
-            "10:30PM"});
-            this.HoursList.Location = new System.Drawing.Point(312, 383);
-            this.HoursList.Name = "HoursList";
-            this.HoursList.Size = new System.Drawing.Size(170, 164);
-            this.HoursList.TabIndex = 59;
-            // 
-            // Date
-            // 
-            this.Date.Checked = true;
-            this.Date.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.Date.Location = new System.Drawing.Point(643, 291);
-            this.Date.MaxDate = new System.DateTime(2077, 11, 16, 23, 59, 59, 999);
-            this.Date.MinDate = new System.DateTime(1900, 4, 30, 0, 0, 0, 0);
-            this.Date.Name = "Date";
-            this.Date.Size = new System.Drawing.Size(212, 35);
-            this.Date.TabIndex = 58;
-            this.Date.Value = new System.DateTime(2022, 10, 1, 4, 25, 4, 299);
-            // 
             // guna2GradientButton3
             // 
             this.guna2GradientButton3.BorderRadius = 2;
@@ -195,7 +116,7 @@ namespace CinemaProject
             this.guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.Brown;
+            this.guna2GradientButton3.FillColor = System.Drawing.Color.OrangeRed;
             this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
@@ -206,51 +127,20 @@ namespace CinemaProject
             this.guna2GradientButton3.Text = "Back To Main Menu";
             this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click_1);
             // 
-            // guna2CustomGradientPanel1
-            // 
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ImageButton1);
-            this.guna2CustomGradientPanel1.CustomBorderColor = System.Drawing.Color.White;
-            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.DimGray;
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.IndianRed;
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Brown;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1188, 48);
-            this.guna2CustomGradientPanel1.TabIndex = 56;
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1141, 0);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(47, 48);
-            this.guna2ImageButton1.TabIndex = 0;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
-            // 
             // guna2GradientButton1
             // 
+            this.guna2GradientButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2GradientButton1.BorderRadius = 2;
             this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Brown;
+            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(986, 414);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(988, 414);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(106, 42);
             this.guna2GradientButton1.TabIndex = 54;
@@ -259,6 +149,7 @@ namespace CinemaProject
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(927, 105);
             this.label9.Name = "label9";
@@ -269,6 +160,8 @@ namespace CinemaProject
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(645, 353);
             this.label8.Name = "label8";
@@ -279,6 +172,8 @@ namespace CinemaProject
             // 
             // Length
             // 
+            this.Length.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Length.BorderColor = System.Drawing.Color.Gray;
             this.Length.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Length.DefaultText = "";
@@ -294,11 +189,13 @@ namespace CinemaProject
             this.Length.PasswordChar = '\0';
             this.Length.PlaceholderText = "";
             this.Length.SelectedText = "";
-            this.Length.Size = new System.Drawing.Size(212, 35);
+            this.Length.Size = new System.Drawing.Size(232, 35);
             this.Length.TabIndex = 51;
             // 
             // AgeRate
             // 
+            this.AgeRate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.AgeRate.BorderColor = System.Drawing.Color.Gray;
             this.AgeRate.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.AgeRate.DefaultText = "";
@@ -314,7 +211,7 @@ namespace CinemaProject
             this.AgeRate.PasswordChar = '\0';
             this.AgeRate.PlaceholderText = "";
             this.AgeRate.SelectedText = "";
-            this.AgeRate.Size = new System.Drawing.Size(212, 35);
+            this.AgeRate.Size = new System.Drawing.Size(232, 35);
             this.AgeRate.TabIndex = 50;
             // 
             // MovieName
@@ -349,6 +246,8 @@ namespace CinemaProject
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(509, 291);
             this.label6.Name = "label6";
@@ -369,6 +268,8 @@ namespace CinemaProject
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(509, 219);
             this.label3.Name = "label3";
@@ -379,6 +280,8 @@ namespace CinemaProject
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(506, 155);
             this.label2.Name = "label2";
@@ -399,14 +302,15 @@ namespace CinemaProject
             // 
             // guna2GradientButton2
             // 
+            this.guna2GradientButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2GradientButton2.BorderRadius = 2;
             this.guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Brown;
+            this.guna2GradientButton2.FillColor = System.Drawing.Color.Maroon;
+            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Tomato;
             this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton2.Location = new System.Drawing.Point(1040, 602);
@@ -418,6 +322,7 @@ namespace CinemaProject
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Location = new System.Drawing.Point(927, 133);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(223, 275);
@@ -455,25 +360,132 @@ namespace CinemaProject
             this.label12.Text = "IMDb  Link:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ControlBox1);
+            this.guna2CustomGradientPanel1.CustomBorderColor = System.Drawing.Color.White;
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.OrangeRed;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1188, 42);
+            this.guna2CustomGradientPanel1.TabIndex = 80;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.CustomIconSize = 20F;
+            this.guna2ControlBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1134, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(54, 42);
+            this.guna2ControlBox1.TabIndex = 87;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
+            // 
+            // HoursList
+            // 
+            this.HoursList.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.HoursList.FormattingEnabled = true;
+            this.HoursList.Items.AddRange(new object[] {
+            "10:15AM",
+            "10:45AM",
+            "12:00PM",
+            "01:00PM",
+            "01:45PM",
+            "03:15PM",
+            "03:30PM",
+            "05:15PM",
+            "05:30PM",
+            "07:00PM",
+            "07:45PM",
+            "08:45PM",
+            "10:00PM",
+            "10:30PM"});
+            this.HoursList.Location = new System.Drawing.Point(316, 383);
+            this.HoursList.Name = "HoursList";
+            this.HoursList.Size = new System.Drawing.Size(166, 164);
+            this.HoursList.TabIndex = 81;
+            // 
+            // DaysList
+            // 
+            this.DaysList.Font = new System.Drawing.Font("Segoe UI", 11.278F);
+            this.DaysList.FormattingEnabled = true;
+            this.DaysList.Items.AddRange(new object[] {
+            "Saturday",
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"});
+            this.DaysList.Location = new System.Drawing.Point(142, 382);
+            this.DaysList.Name = "DaysList";
+            this.DaysList.Size = new System.Drawing.Size(170, 165);
+            this.DaysList.TabIndex = 82;
+            // 
+            // GenresList
+            // 
+            this.GenresList.Font = new System.Drawing.Font("Segoe UI", 11.278F);
+            this.GenresList.FormattingEnabled = true;
+            this.GenresList.Items.AddRange(new object[] {
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "Fantasy",
+            "Horror",
+            "Musicals",
+            "Mystery",
+            "Romance",
+            "Science fiction",
+            "Sports",
+            "Thriller",
+            "Western",
+            "Sci-Fi"});
+            this.GenresList.Location = new System.Drawing.Point(637, 383);
+            this.GenresList.Name = "GenresList";
+            this.GenresList.Size = new System.Drawing.Size(213, 165);
+            this.GenresList.TabIndex = 83;
+            // 
+            // Date
+            // 
+            this.Date.CalendarFont = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.Date.CalendarMonthBackground = System.Drawing.SystemColors.InactiveCaption;
+            this.Date.CalendarTitleBackColor = System.Drawing.SystemColors.ControlDark;
+            this.Date.Enabled = false;
+            this.Date.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.Date.Location = new System.Drawing.Point(643, 299);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(232, 25);
+            this.Date.TabIndex = 84;
+            // 
             // AddMovies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1188, 668);
+            this.Controls.Add(this.Date);
+            this.Controls.Add(this.GenresList);
+            this.Controls.Add(this.DaysList);
+            this.Controls.Add(this.HoursList);
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.Link);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.guna2GradientButton2);
             this.Controls.Add(this.imdbRate);
             this.Controls.Add(this.guna2RatingStar1);
-            this.Controls.Add(this.GenresList);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.DaysList);
-            this.Controls.Add(this.HoursList);
-            this.Controls.Add(this.Date);
             this.Controls.Add(this.guna2GradientButton3);
-            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -491,8 +503,8 @@ namespace CinemaProject
             this.Name = "AddMovies";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddMoview";
-            this.guna2CustomGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -503,12 +515,6 @@ namespace CinemaProject
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private System.Windows.Forms.Label imdbRate;
         private Guna.UI2.WinForms.Guna2RatingStar guna2RatingStar1;
-        private System.Windows.Forms.CheckedListBox GenresList;
-        private System.Windows.Forms.CheckedListBox DaysList;
-        private System.Windows.Forms.CheckedListBox HoursList;
-        private Guna.UI2.WinForms.Guna2DateTimePicker Date;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2TextBox Length;
         private Guna.UI2.WinForms.Guna2TextBox AgeRate;
         private Guna.UI2.WinForms.Guna2TextBox MovieName;
@@ -528,5 +534,11 @@ namespace CinemaProject
         public System.Windows.Forms.Label label9;
         public System.Windows.Forms.Label label12;
         public Guna.UI2.WinForms.Guna2TextBox Link;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private System.Windows.Forms.CheckedListBox GenresList;
+        private System.Windows.Forms.CheckedListBox DaysList;
+        private System.Windows.Forms.CheckedListBox HoursList;
+        public System.Windows.Forms.DateTimePicker Date;
     }
 }

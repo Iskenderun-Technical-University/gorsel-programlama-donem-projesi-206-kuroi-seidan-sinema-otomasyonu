@@ -24,13 +24,6 @@ namespace CinemaProject
         SqlConnection con = new SqlConnection(Sqlcon);
         SqlCommand cmd;
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
-        {
-            PicCheck = false;
-            guna2ToggleSwitch2.Checked = false;
-            this.Hide();
-        }
-
         private void iMDbRatingLabel1_TextChanged(object sender, EventArgs e)
         {
             guna2RatingStar1.Value = Convert.ToSingle(iMDbRatingLabel1.Text);
@@ -109,7 +102,7 @@ namespace CinemaProject
                 cmd.Parameters.Add(new SqlParameter("@date", releaseDateDateTimePicker.Value));
                 cmd.ExecuteNonQuery(); con.Close();
                 guna2ToggleSwitch2.Checked = false;
-                MessageBox.Show("Successful!!");
+                MessageBox.Show("Successfuly Updated!!");
             }
             catch { con.Close(); }
         }
@@ -142,6 +135,13 @@ namespace CinemaProject
                 this.Hide();
             }
             else MessageBox.Show("Sorry, There Is No Link Or The Link Is Wrong.");
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            PicCheck = false;
+            guna2ToggleSwitch2.Checked = false;
+            this.Hide();
         }
     }
 }

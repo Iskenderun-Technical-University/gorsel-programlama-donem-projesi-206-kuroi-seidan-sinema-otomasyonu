@@ -46,7 +46,7 @@ namespace CinemaProject
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.ChooseCust = new Guna.UI2.WinForms.Guna2GroupBox();
@@ -126,6 +126,7 @@ namespace CinemaProject
             // 
             // guna2BorderlessForm1
             // 
+            this.guna2BorderlessForm1.BorderRadius = 12;
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
@@ -262,7 +263,7 @@ namespace CinemaProject
             this.guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.Brown;
+            this.guna2GradientButton3.FillColor = System.Drawing.Color.OrangeRed;
             this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
@@ -275,7 +276,7 @@ namespace CinemaProject
             // 
             // guna2CustomGradientPanel1
             // 
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ImageButton1);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ControlBox1);
             this.guna2CustomGradientPanel1.CustomBorderColor = System.Drawing.Color.White;
             this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -284,26 +285,24 @@ namespace CinemaProject
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.OrangeRed;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1280, 48);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1280, 42);
             this.guna2CustomGradientPanel1.TabIndex = 79;
             // 
-            // guna2ImageButton1
+            // guna2ControlBox1
             // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 55);
-            this.guna2ImageButton1.Image = global::CinemaProject.Properties.Resources._1200px_Font_Awesome_5_solid_times_svg;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1225, 0);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 50);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(55, 48);
-            this.guna2ImageButton1.TabIndex = 0;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.CustomIconSize = 20F;
+            this.guna2ControlBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1226, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(54, 42);
+            this.guna2ControlBox1.TabIndex = 87;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // imageList1
             // 
@@ -401,7 +400,7 @@ namespace CinemaProject
             this.cover.FillColor = System.Drawing.Color.Transparent;
             this.cover.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cover.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.cover.Location = new System.Drawing.Point(55, 223);
+            this.cover.Location = new System.Drawing.Point(55, 217);
             this.cover.Name = "cover";
             this.cover.ShadowDecoration.BorderRadius = 0;
             this.cover.ShadowDecoration.Color = System.Drawing.Color.Transparent;
@@ -411,7 +410,7 @@ namespace CinemaProject
             this.cover.ShadowDecoration.CustomizableEdges.TopRight = false;
             this.cover.ShadowDecoration.Depth = 0;
             this.cover.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0);
-            this.cover.Size = new System.Drawing.Size(790, 297);
+            this.cover.Size = new System.Drawing.Size(790, 304);
             this.cover.TabIndex = 78;
             this.cover.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.cover.UseTransparentBackground = true;
@@ -424,8 +423,8 @@ namespace CinemaProject
             this.guna2GradientCircleButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientCircleButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientCircleButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientCircleButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2GradientCircleButton2.FillColor2 = System.Drawing.Color.Maroon;
+            this.guna2GradientCircleButton2.FillColor = System.Drawing.Color.Maroon;
+            this.guna2GradientCircleButton2.FillColor2 = System.Drawing.Color.Tomato;
             this.guna2GradientCircleButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientCircleButton2.ForeColor = System.Drawing.Color.White;
             this.guna2GradientCircleButton2.Location = new System.Drawing.Point(1166, 616);
@@ -464,12 +463,11 @@ namespace CinemaProject
             this.E12.Checked = true;
             this.E12.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.E12.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E12.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.E12.Image = ((System.Drawing.Image)(resources.GetObject("E12.Image")));
             this.E12.ImageOffset = new System.Drawing.Point(0, 0);
             this.E12.ImageRotate = 0F;
             this.E12.Location = new System.Drawing.Point(53, 220);
             this.E12.Name = "E12";
-            this.E12.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.E12.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E12.Size = new System.Drawing.Size(64, 63);
             this.E12.TabIndex = 66;
@@ -479,15 +477,13 @@ namespace CinemaProject
             // 
             this.A1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("A1.BackgroundImage")));
             this.A1.Checked = true;
-            this.A1.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.A1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.A1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A1.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.A1.Image = ((System.Drawing.Image)(resources.GetObject("A1.Image")));
             this.A1.ImageOffset = new System.Drawing.Point(0, 0);
             this.A1.ImageRotate = 0F;
             this.A1.Location = new System.Drawing.Point(781, 457);
             this.A1.Name = "A1";
-            this.A1.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.A1.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A1.Size = new System.Drawing.Size(64, 63);
             this.A1.TabIndex = 7;
@@ -499,7 +495,7 @@ namespace CinemaProject
             this.E11.Checked = true;
             this.E11.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.E11.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E11.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.E11.Image = ((System.Drawing.Image)(resources.GetObject("E11.Image")));
             this.E11.ImageOffset = new System.Drawing.Point(0, 0);
             this.E11.ImageRotate = 0F;
             this.E11.Location = new System.Drawing.Point(113, 220);
@@ -513,15 +509,13 @@ namespace CinemaProject
             // 
             this.A2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("A2.BackgroundImage")));
             this.A2.Checked = true;
-            this.A2.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.A2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.A2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A2.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.A2.Image = ((System.Drawing.Image)(resources.GetObject("A2.Image")));
             this.A2.ImageOffset = new System.Drawing.Point(0, 0);
             this.A2.ImageRotate = 0F;
             this.A2.Location = new System.Drawing.Point(722, 457);
             this.A2.Name = "A2";
-            this.A2.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.A2.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A2.Size = new System.Drawing.Size(64, 63);
             this.A2.TabIndex = 8;
@@ -533,7 +527,7 @@ namespace CinemaProject
             this.E10.Checked = true;
             this.E10.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.E10.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E10.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.E10.Image = ((System.Drawing.Image)(resources.GetObject("E10.Image")));
             this.E10.ImageOffset = new System.Drawing.Point(0, 0);
             this.E10.ImageRotate = 0F;
             this.E10.Location = new System.Drawing.Point(173, 220);
@@ -547,15 +541,13 @@ namespace CinemaProject
             // 
             this.A3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("A3.BackgroundImage")));
             this.A3.Checked = true;
-            this.A3.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.A3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.A3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A3.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.A3.Image = ((System.Drawing.Image)(resources.GetObject("A3.Image")));
             this.A3.ImageOffset = new System.Drawing.Point(0, 0);
             this.A3.ImageRotate = 0F;
             this.A3.Location = new System.Drawing.Point(665, 457);
             this.A3.Name = "A3";
-            this.A3.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.A3.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A3.Size = new System.Drawing.Size(64, 63);
             this.A3.TabIndex = 9;
@@ -567,7 +559,7 @@ namespace CinemaProject
             this.E9.Checked = true;
             this.E9.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.E9.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E9.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.E9.Image = ((System.Drawing.Image)(resources.GetObject("E9.Image")));
             this.E9.ImageOffset = new System.Drawing.Point(0, 0);
             this.E9.ImageRotate = 0F;
             this.E9.Location = new System.Drawing.Point(230, 220);
@@ -581,15 +573,13 @@ namespace CinemaProject
             // 
             this.A4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("A4.BackgroundImage")));
             this.A4.Checked = true;
-            this.A4.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.A4.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.A4.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A4.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.A4.Image = ((System.Drawing.Image)(resources.GetObject("A4.Image")));
             this.A4.ImageOffset = new System.Drawing.Point(0, 0);
             this.A4.ImageRotate = 0F;
             this.A4.Location = new System.Drawing.Point(606, 457);
             this.A4.Name = "A4";
-            this.A4.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.A4.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A4.Size = new System.Drawing.Size(64, 63);
             this.A4.TabIndex = 10;
@@ -601,7 +591,7 @@ namespace CinemaProject
             this.E8.Checked = true;
             this.E8.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.E8.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E8.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.E8.Image = ((System.Drawing.Image)(resources.GetObject("E8.Image")));
             this.E8.ImageOffset = new System.Drawing.Point(0, 0);
             this.E8.ImageRotate = 0F;
             this.E8.Location = new System.Drawing.Point(288, 220);
@@ -615,15 +605,13 @@ namespace CinemaProject
             // 
             this.A5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("A5.BackgroundImage")));
             this.A5.Checked = true;
-            this.A5.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.A5.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.A5.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A5.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.A5.Image = ((System.Drawing.Image)(resources.GetObject("A5.Image")));
             this.A5.ImageOffset = new System.Drawing.Point(0, 0);
             this.A5.ImageRotate = 0F;
             this.A5.Location = new System.Drawing.Point(547, 457);
             this.A5.Name = "A5";
-            this.A5.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.A5.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A5.Size = new System.Drawing.Size(64, 63);
             this.A5.TabIndex = 11;
@@ -635,7 +623,7 @@ namespace CinemaProject
             this.E7.Checked = true;
             this.E7.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.E7.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E7.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.E7.Image = ((System.Drawing.Image)(resources.GetObject("E7.Image")));
             this.E7.ImageOffset = new System.Drawing.Point(0, 0);
             this.E7.ImageRotate = 0F;
             this.E7.Location = new System.Drawing.Point(347, 220);
@@ -649,15 +637,13 @@ namespace CinemaProject
             // 
             this.A6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("A6.BackgroundImage")));
             this.A6.Checked = true;
-            this.A6.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.A6.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.A6.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A6.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.A6.Image = ((System.Drawing.Image)(resources.GetObject("A6.Image")));
             this.A6.ImageOffset = new System.Drawing.Point(0, 0);
             this.A6.ImageRotate = 0F;
             this.A6.Location = new System.Drawing.Point(486, 457);
             this.A6.Name = "A6";
-            this.A6.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.A6.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.A6.Size = new System.Drawing.Size(64, 63);
             this.A6.TabIndex = 12;
@@ -667,15 +653,13 @@ namespace CinemaProject
             // 
             this.E6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("E6.BackgroundImage")));
             this.E6.Checked = true;
-            this.E6.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.E6.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.E6.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E6.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.E6.Image = ((System.Drawing.Image)(resources.GetObject("E6.Image")));
             this.E6.ImageOffset = new System.Drawing.Point(0, 0);
             this.E6.ImageRotate = 0F;
             this.E6.Location = new System.Drawing.Point(486, 220);
             this.E6.Name = "E6";
-            this.E6.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.E6.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E6.Size = new System.Drawing.Size(64, 63);
             this.E6.TabIndex = 60;
@@ -687,7 +671,7 @@ namespace CinemaProject
             this.A7.Checked = true;
             this.A7.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.A7.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A7.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.A7.Image = ((System.Drawing.Image)(resources.GetObject("A7.Image")));
             this.A7.ImageOffset = new System.Drawing.Point(0, 0);
             this.A7.ImageRotate = 0F;
             this.A7.Location = new System.Drawing.Point(347, 457);
@@ -701,15 +685,13 @@ namespace CinemaProject
             // 
             this.E5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("E5.BackgroundImage")));
             this.E5.Checked = true;
-            this.E5.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.E5.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.E5.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E5.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.E5.Image = ((System.Drawing.Image)(resources.GetObject("E5.Image")));
             this.E5.ImageOffset = new System.Drawing.Point(0, 0);
             this.E5.ImageRotate = 0F;
             this.E5.Location = new System.Drawing.Point(547, 220);
             this.E5.Name = "E5";
-            this.E5.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.E5.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E5.Size = new System.Drawing.Size(64, 63);
             this.E5.TabIndex = 59;
@@ -721,7 +703,7 @@ namespace CinemaProject
             this.A8.Checked = true;
             this.A8.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.A8.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A8.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.A8.Image = ((System.Drawing.Image)(resources.GetObject("A8.Image")));
             this.A8.ImageOffset = new System.Drawing.Point(0, 0);
             this.A8.ImageRotate = 0F;
             this.A8.Location = new System.Drawing.Point(288, 457);
@@ -735,15 +717,13 @@ namespace CinemaProject
             // 
             this.E4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("E4.BackgroundImage")));
             this.E4.Checked = true;
-            this.E4.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.E4.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.E4.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E4.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.E4.Image = ((System.Drawing.Image)(resources.GetObject("E4.Image")));
             this.E4.ImageOffset = new System.Drawing.Point(0, 0);
             this.E4.ImageRotate = 0F;
             this.E4.Location = new System.Drawing.Point(606, 220);
             this.E4.Name = "E4";
-            this.E4.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.E4.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E4.Size = new System.Drawing.Size(64, 63);
             this.E4.TabIndex = 58;
@@ -755,7 +735,7 @@ namespace CinemaProject
             this.A9.Checked = true;
             this.A9.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.A9.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A9.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.A9.Image = ((System.Drawing.Image)(resources.GetObject("A9.Image")));
             this.A9.ImageOffset = new System.Drawing.Point(0, 0);
             this.A9.ImageRotate = 0F;
             this.A9.Location = new System.Drawing.Point(230, 457);
@@ -769,15 +749,13 @@ namespace CinemaProject
             // 
             this.E3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("E3.BackgroundImage")));
             this.E3.Checked = true;
-            this.E3.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.E3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.E3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E3.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.E3.Image = ((System.Drawing.Image)(resources.GetObject("E3.Image")));
             this.E3.ImageOffset = new System.Drawing.Point(0, 0);
             this.E3.ImageRotate = 0F;
             this.E3.Location = new System.Drawing.Point(665, 220);
             this.E3.Name = "E3";
-            this.E3.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.E3.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E3.Size = new System.Drawing.Size(64, 63);
             this.E3.TabIndex = 57;
@@ -789,7 +767,7 @@ namespace CinemaProject
             this.A10.Checked = true;
             this.A10.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.A10.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A10.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.A10.Image = ((System.Drawing.Image)(resources.GetObject("A10.Image")));
             this.A10.ImageOffset = new System.Drawing.Point(0, 0);
             this.A10.ImageRotate = 0F;
             this.A10.Location = new System.Drawing.Point(173, 457);
@@ -803,15 +781,13 @@ namespace CinemaProject
             // 
             this.E2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("E2.BackgroundImage")));
             this.E2.Checked = true;
-            this.E2.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.E2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.E2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.E2.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.E2.Image = ((System.Drawing.Image)(resources.GetObject("E2.Image")));
             this.E2.ImageOffset = new System.Drawing.Point(0, 0);
             this.E2.ImageRotate = 0F;
             this.E2.Location = new System.Drawing.Point(722, 220);
             this.E2.Name = "E2";
-            this.E2.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.E2.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.E2.Size = new System.Drawing.Size(64, 63);
             this.E2.TabIndex = 56;
@@ -823,7 +799,7 @@ namespace CinemaProject
             this.A11.Checked = true;
             this.A11.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.A11.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A11.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.A11.Image = ((System.Drawing.Image)(resources.GetObject("A11.Image")));
             this.A11.ImageOffset = new System.Drawing.Point(0, 0);
             this.A11.ImageRotate = 0F;
             this.A11.Location = new System.Drawing.Point(113, 457);
@@ -854,7 +830,7 @@ namespace CinemaProject
             this.A12.Checked = true;
             this.A12.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.A12.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.A12.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.A12.Image = ((System.Drawing.Image)(resources.GetObject("A12.Image")));
             this.A12.ImageOffset = new System.Drawing.Point(0, 0);
             this.A12.ImageRotate = 0F;
             this.A12.Location = new System.Drawing.Point(53, 457);
@@ -870,7 +846,7 @@ namespace CinemaProject
             this.D12.Checked = true;
             this.D12.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.D12.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D12.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.D12.Image = ((System.Drawing.Image)(resources.GetObject("D12.Image")));
             this.D12.ImageOffset = new System.Drawing.Point(0, 0);
             this.D12.ImageRotate = 0F;
             this.D12.Location = new System.Drawing.Point(53, 280);
@@ -884,15 +860,13 @@ namespace CinemaProject
             // 
             this.B1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B1.BackgroundImage")));
             this.B1.Checked = true;
-            this.B1.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.B1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.B1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B1.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.B1.Image = ((System.Drawing.Image)(resources.GetObject("B1.Image")));
             this.B1.ImageOffset = new System.Drawing.Point(0, 0);
             this.B1.ImageRotate = 0F;
             this.B1.Location = new System.Drawing.Point(781, 398);
             this.B1.Name = "B1";
-            this.B1.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.B1.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B1.Size = new System.Drawing.Size(64, 63);
             this.B1.TabIndex = 19;
@@ -904,7 +878,7 @@ namespace CinemaProject
             this.D11.Checked = true;
             this.D11.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.D11.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D11.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.D11.Image = ((System.Drawing.Image)(resources.GetObject("D11.Image")));
             this.D11.ImageOffset = new System.Drawing.Point(0, 0);
             this.D11.ImageRotate = 0F;
             this.D11.Location = new System.Drawing.Point(113, 280);
@@ -918,15 +892,13 @@ namespace CinemaProject
             // 
             this.B2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B2.BackgroundImage")));
             this.B2.Checked = true;
-            this.B2.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.B2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.B2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B2.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.B2.Image = ((System.Drawing.Image)(resources.GetObject("B2.Image")));
             this.B2.ImageOffset = new System.Drawing.Point(0, 0);
             this.B2.ImageRotate = 0F;
             this.B2.Location = new System.Drawing.Point(722, 398);
             this.B2.Name = "B2";
-            this.B2.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.B2.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B2.Size = new System.Drawing.Size(64, 63);
             this.B2.TabIndex = 20;
@@ -938,7 +910,7 @@ namespace CinemaProject
             this.D10.Checked = true;
             this.D10.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.D10.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D10.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.D10.Image = ((System.Drawing.Image)(resources.GetObject("D10.Image")));
             this.D10.ImageOffset = new System.Drawing.Point(0, 0);
             this.D10.ImageRotate = 0F;
             this.D10.Location = new System.Drawing.Point(173, 280);
@@ -952,15 +924,13 @@ namespace CinemaProject
             // 
             this.B3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B3.BackgroundImage")));
             this.B3.Checked = true;
-            this.B3.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.B3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.B3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B3.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.B3.Image = ((System.Drawing.Image)(resources.GetObject("B3.Image")));
             this.B3.ImageOffset = new System.Drawing.Point(0, 0);
             this.B3.ImageRotate = 0F;
             this.B3.Location = new System.Drawing.Point(665, 398);
             this.B3.Name = "B3";
-            this.B3.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.B3.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B3.Size = new System.Drawing.Size(64, 63);
             this.B3.TabIndex = 21;
@@ -972,7 +942,7 @@ namespace CinemaProject
             this.D9.Checked = true;
             this.D9.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.D9.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D9.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.D9.Image = ((System.Drawing.Image)(resources.GetObject("D9.Image")));
             this.D9.ImageOffset = new System.Drawing.Point(0, 0);
             this.D9.ImageRotate = 0F;
             this.D9.Location = new System.Drawing.Point(230, 280);
@@ -986,15 +956,13 @@ namespace CinemaProject
             // 
             this.B4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B4.BackgroundImage")));
             this.B4.Checked = true;
-            this.B4.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.B4.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.B4.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B4.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.B4.Image = ((System.Drawing.Image)(resources.GetObject("B4.Image")));
             this.B4.ImageOffset = new System.Drawing.Point(0, 0);
             this.B4.ImageRotate = 0F;
             this.B4.Location = new System.Drawing.Point(606, 398);
             this.B4.Name = "B4";
-            this.B4.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.B4.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B4.Size = new System.Drawing.Size(64, 63);
             this.B4.TabIndex = 22;
@@ -1006,7 +974,7 @@ namespace CinemaProject
             this.D8.Checked = true;
             this.D8.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.D8.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D8.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.D8.Image = ((System.Drawing.Image)(resources.GetObject("D8.Image")));
             this.D8.ImageOffset = new System.Drawing.Point(0, 0);
             this.D8.ImageRotate = 0F;
             this.D8.Location = new System.Drawing.Point(288, 280);
@@ -1020,15 +988,13 @@ namespace CinemaProject
             // 
             this.B5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B5.BackgroundImage")));
             this.B5.Checked = true;
-            this.B5.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.B5.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.B5.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B5.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.B5.Image = ((System.Drawing.Image)(resources.GetObject("B5.Image")));
             this.B5.ImageOffset = new System.Drawing.Point(0, 0);
             this.B5.ImageRotate = 0F;
             this.B5.Location = new System.Drawing.Point(547, 398);
             this.B5.Name = "B5";
-            this.B5.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.B5.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B5.Size = new System.Drawing.Size(64, 63);
             this.B5.TabIndex = 23;
@@ -1040,7 +1006,7 @@ namespace CinemaProject
             this.D7.Checked = true;
             this.D7.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.D7.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D7.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.D7.Image = ((System.Drawing.Image)(resources.GetObject("D7.Image")));
             this.D7.ImageOffset = new System.Drawing.Point(0, 0);
             this.D7.ImageRotate = 0F;
             this.D7.Location = new System.Drawing.Point(347, 280);
@@ -1054,15 +1020,13 @@ namespace CinemaProject
             // 
             this.B6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B6.BackgroundImage")));
             this.B6.Checked = true;
-            this.B6.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.B6.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.B6.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B6.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.B6.Image = ((System.Drawing.Image)(resources.GetObject("B6.Image")));
             this.B6.ImageOffset = new System.Drawing.Point(0, 0);
             this.B6.ImageRotate = 0F;
             this.B6.Location = new System.Drawing.Point(486, 398);
             this.B6.Name = "B6";
-            this.B6.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.B6.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.B6.Size = new System.Drawing.Size(64, 63);
             this.B6.TabIndex = 24;
@@ -1072,15 +1036,13 @@ namespace CinemaProject
             // 
             this.D6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("D6.BackgroundImage")));
             this.D6.Checked = true;
-            this.D6.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.D6.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.D6.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D6.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.D6.Image = ((System.Drawing.Image)(resources.GetObject("D6.Image")));
             this.D6.ImageOffset = new System.Drawing.Point(0, 0);
             this.D6.ImageRotate = 0F;
             this.D6.Location = new System.Drawing.Point(486, 280);
             this.D6.Name = "D6";
-            this.D6.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.D6.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D6.Size = new System.Drawing.Size(64, 63);
             this.D6.TabIndex = 48;
@@ -1092,7 +1054,7 @@ namespace CinemaProject
             this.B7.Checked = true;
             this.B7.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.B7.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B7.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.B7.Image = ((System.Drawing.Image)(resources.GetObject("B7.Image")));
             this.B7.ImageOffset = new System.Drawing.Point(0, 0);
             this.B7.ImageRotate = 0F;
             this.B7.Location = new System.Drawing.Point(347, 398);
@@ -1106,15 +1068,13 @@ namespace CinemaProject
             // 
             this.D5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("D5.BackgroundImage")));
             this.D5.Checked = true;
-            this.D5.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.D5.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.D5.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D5.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.D5.Image = ((System.Drawing.Image)(resources.GetObject("D5.Image")));
             this.D5.ImageOffset = new System.Drawing.Point(0, 0);
             this.D5.ImageRotate = 0F;
             this.D5.Location = new System.Drawing.Point(547, 280);
             this.D5.Name = "D5";
-            this.D5.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.D5.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D5.ShadowDecoration.BorderRadius = 15;
             this.D5.ShadowDecoration.Depth = 15;
@@ -1129,7 +1089,7 @@ namespace CinemaProject
             this.B8.Checked = true;
             this.B8.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.B8.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B8.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.B8.Image = ((System.Drawing.Image)(resources.GetObject("B8.Image")));
             this.B8.ImageOffset = new System.Drawing.Point(0, 0);
             this.B8.ImageRotate = 0F;
             this.B8.Location = new System.Drawing.Point(288, 398);
@@ -1143,15 +1103,13 @@ namespace CinemaProject
             // 
             this.D4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("D4.BackgroundImage")));
             this.D4.Checked = true;
-            this.D4.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.D4.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.D4.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D4.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.D4.Image = ((System.Drawing.Image)(resources.GetObject("D4.Image")));
             this.D4.ImageOffset = new System.Drawing.Point(0, 0);
             this.D4.ImageRotate = 0F;
             this.D4.Location = new System.Drawing.Point(606, 280);
             this.D4.Name = "D4";
-            this.D4.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.D4.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D4.Size = new System.Drawing.Size(64, 63);
             this.D4.TabIndex = 46;
@@ -1163,7 +1121,7 @@ namespace CinemaProject
             this.B9.Checked = true;
             this.B9.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.B9.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B9.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.B9.Image = ((System.Drawing.Image)(resources.GetObject("B9.Image")));
             this.B9.ImageOffset = new System.Drawing.Point(0, 0);
             this.B9.ImageRotate = 0F;
             this.B9.Location = new System.Drawing.Point(230, 398);
@@ -1177,15 +1135,13 @@ namespace CinemaProject
             // 
             this.D3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("D3.BackgroundImage")));
             this.D3.Checked = true;
-            this.D3.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.D3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.D3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D3.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.D3.Image = ((System.Drawing.Image)(resources.GetObject("D3.Image")));
             this.D3.ImageOffset = new System.Drawing.Point(0, 0);
             this.D3.ImageRotate = 0F;
             this.D3.Location = new System.Drawing.Point(665, 280);
             this.D3.Name = "D3";
-            this.D3.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.D3.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D3.Size = new System.Drawing.Size(64, 63);
             this.D3.TabIndex = 45;
@@ -1197,7 +1153,7 @@ namespace CinemaProject
             this.B10.Checked = true;
             this.B10.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.B10.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B10.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.B10.Image = ((System.Drawing.Image)(resources.GetObject("B10.Image")));
             this.B10.ImageOffset = new System.Drawing.Point(0, 0);
             this.B10.ImageRotate = 0F;
             this.B10.Location = new System.Drawing.Point(173, 398);
@@ -1211,15 +1167,13 @@ namespace CinemaProject
             // 
             this.D2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("D2.BackgroundImage")));
             this.D2.Checked = true;
-            this.D2.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.D2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.D2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D2.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.D2.Image = ((System.Drawing.Image)(resources.GetObject("D2.Image")));
             this.D2.ImageOffset = new System.Drawing.Point(0, 0);
             this.D2.ImageRotate = 0F;
             this.D2.Location = new System.Drawing.Point(722, 280);
             this.D2.Name = "D2";
-            this.D2.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.D2.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D2.Size = new System.Drawing.Size(64, 63);
             this.D2.TabIndex = 44;
@@ -1231,7 +1185,7 @@ namespace CinemaProject
             this.B11.Checked = true;
             this.B11.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.B11.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B11.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.B11.Image = ((System.Drawing.Image)(resources.GetObject("B11.Image")));
             this.B11.ImageOffset = new System.Drawing.Point(0, 0);
             this.B11.ImageRotate = 0F;
             this.B11.Location = new System.Drawing.Point(113, 398);
@@ -1245,15 +1199,13 @@ namespace CinemaProject
             // 
             this.D1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("D1.BackgroundImage")));
             this.D1.Checked = true;
-            this.D1.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.D1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.D1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.D1.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.D1.Image = ((System.Drawing.Image)(resources.GetObject("D1.Image")));
             this.D1.ImageOffset = new System.Drawing.Point(0, 0);
             this.D1.ImageRotate = 0F;
             this.D1.Location = new System.Drawing.Point(781, 280);
             this.D1.Name = "D1";
-            this.D1.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.D1.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D1.Size = new System.Drawing.Size(64, 63);
             this.D1.TabIndex = 43;
@@ -1265,7 +1217,7 @@ namespace CinemaProject
             this.B12.Checked = true;
             this.B12.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.B12.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.B12.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.B12.Image = ((System.Drawing.Image)(resources.GetObject("B12.Image")));
             this.B12.ImageOffset = new System.Drawing.Point(0, 0);
             this.B12.ImageRotate = 0F;
             this.B12.Location = new System.Drawing.Point(53, 398);
@@ -1281,7 +1233,7 @@ namespace CinemaProject
             this.C12.Checked = true;
             this.C12.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.C12.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C12.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.C12.Image = ((System.Drawing.Image)(resources.GetObject("C12.Image")));
             this.C12.ImageOffset = new System.Drawing.Point(0, 0);
             this.C12.ImageRotate = 0F;
             this.C12.Location = new System.Drawing.Point(53, 339);
@@ -1295,15 +1247,13 @@ namespace CinemaProject
             // 
             this.C1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("C1.BackgroundImage")));
             this.C1.Checked = true;
-            this.C1.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.C1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.C1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C1.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.C1.Image = ((System.Drawing.Image)(resources.GetObject("C1.Image")));
             this.C1.ImageOffset = new System.Drawing.Point(0, 0);
             this.C1.ImageRotate = 0F;
             this.C1.Location = new System.Drawing.Point(781, 339);
             this.C1.Name = "C1";
-            this.C1.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.C1.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C1.Size = new System.Drawing.Size(64, 63);
             this.C1.TabIndex = 31;
@@ -1315,7 +1265,7 @@ namespace CinemaProject
             this.C11.Checked = true;
             this.C11.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.C11.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C11.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.C11.Image = ((System.Drawing.Image)(resources.GetObject("C11.Image")));
             this.C11.ImageOffset = new System.Drawing.Point(0, 0);
             this.C11.ImageRotate = 0F;
             this.C11.Location = new System.Drawing.Point(113, 339);
@@ -1329,15 +1279,13 @@ namespace CinemaProject
             // 
             this.C2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("C2.BackgroundImage")));
             this.C2.Checked = true;
-            this.C2.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.C2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.C2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C2.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.C2.Image = ((System.Drawing.Image)(resources.GetObject("C2.Image")));
             this.C2.ImageOffset = new System.Drawing.Point(0, 0);
             this.C2.ImageRotate = 0F;
             this.C2.Location = new System.Drawing.Point(722, 339);
             this.C2.Name = "C2";
-            this.C2.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.C2.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C2.Size = new System.Drawing.Size(64, 63);
             this.C2.TabIndex = 32;
@@ -1349,7 +1297,7 @@ namespace CinemaProject
             this.C10.Checked = true;
             this.C10.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.C10.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C10.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.C10.Image = ((System.Drawing.Image)(resources.GetObject("C10.Image")));
             this.C10.ImageOffset = new System.Drawing.Point(0, 0);
             this.C10.ImageRotate = 0F;
             this.C10.Location = new System.Drawing.Point(173, 339);
@@ -1365,7 +1313,7 @@ namespace CinemaProject
             this.C9.Checked = true;
             this.C9.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.C9.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C9.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.C9.Image = ((System.Drawing.Image)(resources.GetObject("C9.Image")));
             this.C9.ImageOffset = new System.Drawing.Point(0, 0);
             this.C9.ImageRotate = 0F;
             this.C9.Location = new System.Drawing.Point(230, 339);
@@ -1379,15 +1327,13 @@ namespace CinemaProject
             // 
             this.C3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("C3.BackgroundImage")));
             this.C3.Checked = true;
-            this.C3.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.C3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.C3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C3.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.C3.Image = ((System.Drawing.Image)(resources.GetObject("C3.Image")));
             this.C3.ImageOffset = new System.Drawing.Point(0, 0);
             this.C3.ImageRotate = 0F;
             this.C3.Location = new System.Drawing.Point(665, 339);
             this.C3.Name = "C3";
-            this.C3.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.C3.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C3.Size = new System.Drawing.Size(64, 63);
             this.C3.TabIndex = 33;
@@ -1399,7 +1345,7 @@ namespace CinemaProject
             this.C8.Checked = true;
             this.C8.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.C8.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C8.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.C8.Image = ((System.Drawing.Image)(resources.GetObject("C8.Image")));
             this.C8.ImageOffset = new System.Drawing.Point(0, 0);
             this.C8.ImageRotate = 0F;
             this.C8.Location = new System.Drawing.Point(288, 339);
@@ -1413,15 +1359,13 @@ namespace CinemaProject
             // 
             this.C4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("C4.BackgroundImage")));
             this.C4.Checked = true;
-            this.C4.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.C4.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.C4.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C4.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.C4.Image = ((System.Drawing.Image)(resources.GetObject("C4.Image")));
             this.C4.ImageOffset = new System.Drawing.Point(0, 0);
             this.C4.ImageRotate = 0F;
             this.C4.Location = new System.Drawing.Point(606, 339);
             this.C4.Name = "C4";
-            this.C4.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.C4.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C4.Size = new System.Drawing.Size(64, 63);
             this.C4.TabIndex = 34;
@@ -1433,7 +1377,7 @@ namespace CinemaProject
             this.C7.Checked = true;
             this.C7.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.C7.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C7.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.C7.Image = ((System.Drawing.Image)(resources.GetObject("C7.Image")));
             this.C7.ImageOffset = new System.Drawing.Point(0, 0);
             this.C7.ImageRotate = 0F;
             this.C7.Location = new System.Drawing.Point(347, 339);
@@ -1447,15 +1391,13 @@ namespace CinemaProject
             // 
             this.C5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("C5.BackgroundImage")));
             this.C5.Checked = true;
-            this.C5.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.C5.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.C5.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C5.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.C5.Image = ((System.Drawing.Image)(resources.GetObject("C5.Image")));
             this.C5.ImageOffset = new System.Drawing.Point(0, 0);
             this.C5.ImageRotate = 0F;
             this.C5.Location = new System.Drawing.Point(547, 339);
             this.C5.Name = "C5";
-            this.C5.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.C5.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C5.Size = new System.Drawing.Size(64, 63);
             this.C5.TabIndex = 35;
@@ -1465,15 +1407,13 @@ namespace CinemaProject
             // 
             this.C6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("C6.BackgroundImage")));
             this.C6.Checked = true;
-            this.C6.CheckedState.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.C6.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.C6.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.C6.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
+            this.C6.Image = ((System.Drawing.Image)(resources.GetObject("C6.Image")));
             this.C6.ImageOffset = new System.Drawing.Point(0, 0);
             this.C6.ImageRotate = 0F;
             this.C6.Location = new System.Drawing.Point(486, 339);
             this.C6.Name = "C6";
-            this.C6.PressedState.Image = global::CinemaProject.Properties.Resources._2666565___Copy_removebg_preview;
             this.C6.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.C6.Size = new System.Drawing.Size(64, 63);
             this.C6.TabIndex = 36;
@@ -1657,7 +1597,6 @@ namespace CinemaProject
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private System.Windows.Forms.ImageList imageList1;
         private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton1;
         private System.Windows.Forms.Label label4;
@@ -1668,5 +1607,6 @@ namespace CinemaProject
         public System.Windows.Forms.ListBox listBox1;
         public Guna.UI2.WinForms.Guna2GroupBox cover;
         private Guna.UI2.WinForms.Guna2GroupBox ChooseCust;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

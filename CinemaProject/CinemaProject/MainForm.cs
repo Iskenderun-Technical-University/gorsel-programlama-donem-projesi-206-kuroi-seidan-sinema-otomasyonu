@@ -22,6 +22,7 @@ namespace CinemaProject
         static int sum;
         static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
         SqlConnection con = new SqlConnection(sqlcon);
+        
         private void guna2ImageButton5_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -52,14 +53,68 @@ namespace CinemaProject
             LoginForm.addMovies.Show();
         }
 
-        private void guna2ToggleSwitch2_CheckedChanged(object sender, EventArgs e)
+        private void TypeSwitch_CheckedChanged(object sender, EventArgs e)
         {
-            
-        }
+            if (TypeSwitch.Checked == true){
+                LoginForm.loginForm.username.Clear(); ChangePassBtn.Visible = true;
+                LoginForm.loginForm.ShowPass.Checked = false; this.Hide();
+                LoginForm.loginForm.password.Clear(); LoginForm.loginForm.Show();
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
+                TicketBtn.Location = new Point(100, 124); 
+                MoviesListBtn.Location = new Point(509, 124);
+                SnacksShopBtn.Location = new Point(858, 124);
 
+                LoginForm.movieDetails.label3.Visible = true;
+                LoginForm.movieDetails.label4.Visible = true;
+                LoginForm.movieDetails.guna2ToggleSwitch2.Visible = true;
+
+                TicketBtn.ImageSize = new Size(220, 120);
+                TicketBtn.HoverState.ImageSize = new Size(230, 130);
+                TicketBtn.PressedState.ImageSize = new Size(220, 120);
+
+
+                MoviesListBtn.ImageSize = new Size(150, 140);
+                MoviesListBtn.HoverState.ImageSize = new Size(160, 150);
+                MoviesListBtn.PressedState.ImageSize = new Size(150, 140);
+
+                SnacksShopBtn.ImageSize = new Size(175, 165);
+                SnacksShopBtn.HoverState.ImageSize = new Size(185, 175);
+                SnacksShopBtn.PressedState.ImageSize = new Size(175, 165);
+
+                AddMoviesBtn.Visible = true;
+                AdminPageBtn.Visible = true;
+                EditMenuBtn.Visible = true;
+            }
+            else 
+            {
+                ChangePassBtn.Visible = false;
+
+                TicketBtn.Location = new Point(115, 255);
+                MoviesListBtn.Location = new Point(515, 255);
+                SnacksShopBtn.Location = new Point(857, 255);
+
+                LoginForm.movieDetails.label3.Visible = false;
+                LoginForm.movieDetails.label4.Visible = false;
+                LoginForm.movieDetails.guna2ToggleSwitch2.Visible = false;
+                LoginForm.movieDetails.guna2ToggleSwitch2.Checked = false;
+
+                TicketBtn.ImageSize =new Size (260, 160);
+                TicketBtn.HoverState.ImageSize = new Size (270,170);
+                TicketBtn.PressedState.ImageSize = new Size(260,160);
+
+                MoviesListBtn.ImageSize = new Size(190,180);
+                MoviesListBtn.HoverState.ImageSize = new Size(200,190);
+                MoviesListBtn.PressedState.ImageSize = new Size(190,180);
+
+                SnacksShopBtn.ImageSize = new Size(215, 205);
+                SnacksShopBtn.HoverState.ImageSize = new Size(225, 215);
+                SnacksShopBtn.PressedState.ImageSize = new Size(215, 205);
+
+                AddMoviesBtn.Visible = false;
+                AdminPageBtn.Visible = false;
+                EditMenuBtn.Visible = false;
+
+            }
         }
 
         private void guna2ToggleSwitch1_CheckedChanged(object sender, EventArgs e)
@@ -104,7 +159,7 @@ namespace CinemaProject
                 label7.Text = "Yeni Şifre Giriniz:";
                 label6.Text = "Yeni Şifre Tekrar Giriniz:";
                 guna2GradientButton1.Text = "Değştir";
-                guna2GradientCircleButton1.Text = "Hesap Şifresi Değştir";
+                ChangePassBtn.Text = "Hesap Şifresi Değştir";
                 GroupBox1.Text = "Hesap Şifresi Değştir:-";
                 /////////////////////////////////////////////////////////////////
                 //Translate For the editsnacksMenu Form
@@ -201,7 +256,7 @@ namespace CinemaProject
                 label7.Text = "Enter The New Password:";
                 label6.Text = "Enter The Password Again:";
                 guna2GradientButton1.Text = "Change";
-                guna2GradientCircleButton1.Text = "Change Account Password";
+                ChangePassBtn.Text = "Change Account Password";
                 GroupBox1.Text = "Change Account Password:-";
                 /////////////////////////////////////////////////////////////////
                 //Translate For the editsnacksMenu Form
@@ -261,14 +316,9 @@ namespace CinemaProject
             }
         }
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
-            GroupBox1.Visible = guna2GradientCircleButton1.Checked;
+            GroupBox1.Visible = ChangePassBtn.Checked;
             Createcaptcha();
         }
 
@@ -294,11 +344,11 @@ namespace CinemaProject
                 else
                 {
                     con.Open();
-                    SqlCommand command = new SqlCommand("select Password from LoginTb Where UserID='" + LoginForm.userid + "'", con);
+                    SqlCommand command = new SqlCommand("select Password from Login Where ID='" + LoginForm.userid + "'", con);
                     if (command.ExecuteScalar().ToString() != TextBox1.Text) { MessageBox.Show("The Old Password Is Wrong! Please Check It And Try Again"); TextBox4.Clear(); Createcaptcha(); }
                     else
                     {
-                        command = new SqlCommand("Update LoginTb set Password='" + TextBox3.Text + "' where UserID='" + LoginForm.userid + "'", con);
+                        command = new SqlCommand("Update Login set Password='" + TextBox3.Text + "' where ID='" + LoginForm.userid + "'", con);
                         if (command.ExecuteNonQuery() == 1) MessageBox.Show("Your Password Changed Successfully!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         GroupBox1.Visible = false;
                     }
@@ -311,6 +361,16 @@ namespace CinemaProject
                 TextBox4.Clear();
                 Createcaptcha();
             }
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void AdminPageBtn_Click(object sender, EventArgs e)
+        {
+            LoginForm.admin.ShowDialog();
         }
     }
 }

@@ -63,29 +63,9 @@ namespace CinemaProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _10_1_2022_11_14_00_PM_removebg_preview {
-            get {
-                object obj = ResourceManager.GetObject("10_1_2022_11_14_00_PM-removebg-preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _10_1_2022_3_39_37_AM_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("10_1_2022_3_39_37_AM-removebg-preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _10_23_2022_5_24_41_PM {
-            get {
-                object obj = ResourceManager.GetObject("10_23_2022 5_24_41 PM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +93,9 @@ namespace CinemaProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1200px_Font_Awesome_5_solid_times_svg {
+        internal static System.Drawing.Bitmap _12_21_2022_4_00_19_AM_removebg_preview {
             get {
-                object obj = ResourceManager.GetObject("1200px-Font_Awesome_5_solid_times.svg", resourceCulture);
+                object obj = ResourceManager.GetObject("12_21_2022_4_00_19_AM-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,26 +123,6 @@ namespace CinemaProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _2666565___Copy___Copy_removebg_preview {
-            get {
-                object obj = ResourceManager.GetObject("2666565_-_Copy_-_Copy-removebg-preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2666565___Copy_removebg_preview {
-            get {
-                object obj = ResourceManager.GetObject("2666565_-_Copy-removebg-preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _2666565_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("2666565-removebg-preview", resourceCulture);
@@ -183,29 +143,19 @@ namespace CinemaProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap admin {
+            get {
+                object obj = ResourceManager.GetObject("admin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cinema {
             get {
                 object obj = ResourceManager.GetObject("cinema", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap image_removebg_preview__1_ {
-            get {
-                object obj = ResourceManager.GetObject("image-removebg-preview (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap image_removebg_preview__2_ {
-            get {
-                object obj = ResourceManager.GetObject("image-removebg-preview (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

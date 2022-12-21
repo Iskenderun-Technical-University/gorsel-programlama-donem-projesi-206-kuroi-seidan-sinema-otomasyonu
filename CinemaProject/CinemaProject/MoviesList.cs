@@ -284,9 +284,15 @@ namespace CinemaProject
             guna2ToggleSwitch1.Checked = false;
         }
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
+        {
+            current = 0;
+            UpdateList("select MovieName,MoviePicture,ID from MoviesTbl order by MovieName ASC");
         }
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)

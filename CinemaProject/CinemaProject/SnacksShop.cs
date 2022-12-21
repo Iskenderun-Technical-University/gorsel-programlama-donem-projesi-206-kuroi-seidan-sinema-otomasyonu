@@ -86,11 +86,6 @@ namespace CinemaProject
             listBox3.SelectedIndex =listBox1.SelectedIndex= listBox4.SelectedIndex;
         }
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -186,6 +181,12 @@ namespace CinemaProject
             label7.Text = "0"; CheckStatus.Visible = false; CustomerID = 0;
 
         }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
             try

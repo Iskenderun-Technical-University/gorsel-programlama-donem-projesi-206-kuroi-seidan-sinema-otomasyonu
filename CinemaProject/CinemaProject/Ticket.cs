@@ -23,10 +23,6 @@ namespace CinemaProject
         SqlConnection con = new SqlConnection(Sqlcon);
         SqlCommand cmd;
         SqlDataAdapter sda;
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }  
 
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
@@ -110,6 +106,11 @@ namespace CinemaProject
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             listBox2.SelectedIndex = listBox1.SelectedIndex;
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)

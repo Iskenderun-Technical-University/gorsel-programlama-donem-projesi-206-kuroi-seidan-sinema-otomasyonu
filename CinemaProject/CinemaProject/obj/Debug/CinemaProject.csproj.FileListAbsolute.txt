@@ -106,3 +106,23 @@ C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-
 >>>>>>> Amal
 C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.OrderDetails.resources
 C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\stdole.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\obj\Debug\CinemaProject.AdminPage.resources

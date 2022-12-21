@@ -48,9 +48,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
@@ -58,6 +60,8 @@
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -76,11 +80,23 @@
     <Compile Include="AddMovies.Designer.cs">
       <DependentUpon>AddMovies.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChooseSeat.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChooseSeat.Designer.cs">
       <DependentUpon>ChooseSeat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="EditSnacksMenu.cs">
       <SubType>Form</SubType>
@@ -125,6 +141,11 @@
       <DependentUpon>ProjectDS.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SnacksShop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,8 +158,15 @@
     <Compile Include="Ticket.Designer.cs">
       <DependentUpon>Ticket.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChooseSeat.resx">
       <DependentUpon>ChooseSeat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="EditSnacksMenu.resx">
       <DependentUpon>EditSnacksMenu.cs</DependentUpon>
@@ -163,14 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Ticket.resx">
       <DependentUpon>Ticket.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -204,36 +227,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\10_1_2022_3_39_37_AM-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\10_1_2022_11_14_00_PM-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1200px-Font_Awesome_5_solid_times.svg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2198002.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2666565_-_Copy-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2666565-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cinema.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\staircase_construction_plan - Copy - Copy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\staircase_construction_plan - Copy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ticket-logo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
@@ -253,18 +246,24 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>ProjectDB.mdf</DependentUpon>
     </Content>
-    <None Include="Resources\image-removebg-preview %282%29.png" />
-    <None Include="Resources\image-removebg-preview %281%29.png" />
-    <None Include="Resources\12_16_2022 7_31_05 PM.png" />
-    <None Include="Resources\2666565_-_Copy_-_Copy-removebg-preview.png" />
-    <None Include="Resources\next1.png" />
     <None Include="Resources\820603.png" />
     <None Include="Resources\150-1506427_popcorn-icon-gloucester-road-tube-station-hd-png-removebg-preview.png" />
     <None Include="Resources\1051948.png" />
-    <None Include="Resources\10_23_2022 5_24_41 PM.png" />
+    <None Include="Resources\next1.png" />
+    <None Include="Resources\admin.png" />
+    <None Include="Resources\10_1_2022_3_39_37_AM-removebg-preview.png" />
+    <None Include="Resources\12_16_2022 7_31_05 PM.png" />
+    <None Include="Resources\2198002.png" />
+    <None Include="Resources\cinema.png" />
+    <None Include="Resources\ticket-logo.png" />
+    <None Include="Resources\2666565-removebg-preview.png" />
+    <None Include="Resources\staircase_construction_plan - Copy.png" />
+    <None Include="Resources\staircase_construction_plan - Copy - Copy.png" />
+    <None Include="Resources\12_21_2022_4_00_19_AM-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

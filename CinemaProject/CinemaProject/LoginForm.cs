@@ -22,7 +22,7 @@ namespace CinemaProject
         //static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True;Connect Timeout=30";
         SqlConnection con = new SqlConnection(sqlcon);
         SqlCommand cmd;
-        public static string userid;
+        public static string UserType,userid;
         public static SnacksShop snacks = new SnacksShop();
         public static MainForm mainForm = new MainForm();
         public static MoviesList moviesList = new MoviesList();
@@ -33,6 +33,7 @@ namespace CinemaProject
         public static ChooseSeat seat = new ChooseSeat();
         public static LoginForm loginForm = new LoginForm();
         public static OrderDetails orderDetails = new OrderDetails();
+        public static AdminPage admin = new AdminPage();
 
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
@@ -40,54 +41,43 @@ namespace CinemaProject
         }
 
         Boolean Login() {
-            string query = "select * from Login where UserName='"+username.Text+"'and Password='"+password.Text+"'";
-            con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            con.Close();
-            if (dt.Rows.Count > 0) return true;
-            else return false;
+            try
+            {
+                string query = "select * from Login where UserName='" + username.Text + "' and Password='" + password.Text + "'";
+                con.Open();
+                SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                con.Close();
+                if (dt.Rows.Count > 0) { userid=dt.Rows[0][0].ToString(); return true; }
+                else return false;
+            }
+            catch { con.Close(); return false; }
         }
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
-            /*   string query = "select * from LoginTbl where UserName='"+guna2TextBox1.Text+"' and Password='"+guna2TextBox2.Text+"'";
-                 sda = new SqlDataAdapter(query,con);
-                 DataTable dt = new DataTable();
-                 sda.Fill(dt);
-             if (dt.Rows.Count > 0)
-             {
-                 this.Hide();
-                 mainForm.Show();
-             }
-             else
-             {
-                 MessageBox.Show("The User Name Or Password is Wrong, Please Check them and Try again!", "Invaild Details", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                 guna2TextBox1.Clear(); guna2TextBox2.Clear(); guna2TextBox1.Focus();
-             }*/
-            /* if (password.Text.Contains(' '))
-             {
-                 MessageBox.Show("You can't make spaces in the password, Please Try Again!");
-                 password.Clear();
-             }*/
-
-             this.Hide();
-             mainForm.Show();
-
-
-           /* if (Login())
+           
+            if (Login())
             {
-             this.Hide();
-            mainForm.Show();
+                UserType = "Worker";
+                username.Clear(); password.Clear(); ShowPass.Checked = false;
+                this.Hide();
+                mainForm.Show();
             }
-            else MessageBox.Show("the data is worng");*/
-
+            else { MessageBox.Show("the data is worng, Please Try Again");username.Clear();password.Clear(); username.Focus(); }
         }
 
         private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (ShowPass.Checked == true) password.UseSystemPasswordChar = false;
             else password.UseSystemPasswordChar = true;
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            mainForm.TypeSwitch.Checked = false;
+            this.Hide();
+            mainForm.Show();
         }
 
         private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
