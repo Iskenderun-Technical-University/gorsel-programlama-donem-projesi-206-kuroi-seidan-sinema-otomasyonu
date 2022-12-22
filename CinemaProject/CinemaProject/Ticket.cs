@@ -59,11 +59,13 @@ namespace CinemaProject
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
+            
             ResetPage(); this.Hide();
             LoginForm.mainForm.Show();
         }
 
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
+            //BİLET BİLGİLERİNİ KAYDETMEK İÇİM
         {
             if (radioButton1.Checked) gender = "Male";
             else if (radioButton2.Checked) gender = "Female";
@@ -111,6 +113,31 @@ namespace CinemaProject
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void PhoneNo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CustName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GroupBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)

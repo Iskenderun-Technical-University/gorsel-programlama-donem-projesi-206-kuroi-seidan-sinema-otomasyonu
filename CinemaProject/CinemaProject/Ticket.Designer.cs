@@ -74,10 +74,11 @@ namespace CinemaProject
             this.guna2GradientCircleButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.guna2GradientCircleButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(808, 194);
+            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(1212, 298);
+            this.guna2GradientCircleButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2GradientCircleButton1.Name = "guna2GradientCircleButton1";
             this.guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(70, 70);
+            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(105, 108);
             this.guna2GradientCircleButton1.TabIndex = 61;
             this.guna2GradientCircleButton1.Text = "ADD";
             this.guna2GradientCircleButton1.Click += new System.EventHandler(this.guna2GradientCircleButton1_Click);
@@ -97,18 +98,20 @@ namespace CinemaProject
             "Student Ticket",
             "Elite Ticket",
             "VIP Ticket"});
-            this.Type.Location = new System.Drawing.Point(168, 250);
+            this.Type.Location = new System.Drawing.Point(252, 385);
+            this.Type.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Type.Name = "Type";
-            this.Type.Size = new System.Drawing.Size(213, 36);
+            this.Type.Size = new System.Drawing.Size(318, 36);
             this.Type.TabIndex = 60;
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(698, 265);
+            this.radioButton2.Location = new System.Drawing.Point(1047, 408);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(79, 25);
+            this.radioButton2.Size = new System.Drawing.Size(115, 36);
             this.radioButton2.TabIndex = 58;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Female";
@@ -118,9 +121,10 @@ namespace CinemaProject
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(568, 263);
+            this.radioButton1.Location = new System.Drawing.Point(852, 405);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(62, 25);
+            this.radioButton1.Size = new System.Drawing.Size(90, 36);
             this.radioButton1.TabIndex = 57;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Male";
@@ -137,13 +141,15 @@ namespace CinemaProject
             this.PhoneNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PhoneNo.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.PhoneNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PhoneNo.Location = new System.Drawing.Point(557, 187);
+            this.PhoneNo.Location = new System.Drawing.Point(836, 288);
+            this.PhoneNo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PhoneNo.Name = "PhoneNo";
             this.PhoneNo.PasswordChar = '\0';
             this.PhoneNo.PlaceholderText = "";
             this.PhoneNo.SelectedText = "";
-            this.PhoneNo.Size = new System.Drawing.Size(220, 40);
+            this.PhoneNo.Size = new System.Drawing.Size(330, 62);
             this.PhoneNo.TabIndex = 56;
+            this.PhoneNo.TextChanged += new System.EventHandler(this.PhoneNo_TextChanged);
             // 
             // CustName
             // 
@@ -156,20 +162,23 @@ namespace CinemaProject
             this.CustName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.CustName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.CustName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CustName.Location = new System.Drawing.Point(168, 187);
+            this.CustName.Location = new System.Drawing.Point(252, 288);
+            this.CustName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CustName.Name = "CustName";
             this.CustName.PasswordChar = '\0';
             this.CustName.PlaceholderText = "";
             this.CustName.SelectedText = "";
-            this.CustName.Size = new System.Drawing.Size(213, 40);
+            this.CustName.Size = new System.Drawing.Size(320, 62);
             this.CustName.TabIndex = 55;
+            this.CustName.TextChanged += new System.EventHandler(this.CustName_TextChanged);
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label4.Location = new System.Drawing.Point(406, 250);
+            this.label4.Location = new System.Drawing.Point(609, 385);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 40);
+            this.label4.Size = new System.Drawing.Size(216, 62);
             this.label4.TabIndex = 54;
             this.label4.Text = "Gender:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -177,9 +186,10 @@ namespace CinemaProject
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label3.Location = new System.Drawing.Point(402, 187);
+            this.label3.Location = new System.Drawing.Point(603, 288);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 40);
+            this.label3.Size = new System.Drawing.Size(222, 62);
             this.label3.TabIndex = 53;
             this.label3.Text = "Phone Number:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -196,9 +206,10 @@ namespace CinemaProject
             this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(11, 61);
+            this.guna2GradientButton3.Location = new System.Drawing.Point(16, 94);
+            this.guna2GradientButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.Size = new System.Drawing.Size(132, 55);
+            this.guna2GradientButton3.Size = new System.Drawing.Size(198, 85);
             this.guna2GradientButton3.TabIndex = 62;
             this.guna2GradientButton3.Text = "Back To Main Menu";
             this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
@@ -206,9 +217,10 @@ namespace CinemaProject
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label12.Location = new System.Drawing.Point(7, 250);
+            this.label12.Location = new System.Drawing.Point(10, 385);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(153, 36);
+            this.label12.Size = new System.Drawing.Size(230, 55);
             this.label12.TabIndex = 73;
             this.label12.Text = "Ticket Type:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -216,9 +228,10 @@ namespace CinemaProject
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label1.Location = new System.Drawing.Point(3, 187);
+            this.label1.Location = new System.Drawing.Point(4, 288);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 40);
+            this.label1.Size = new System.Drawing.Size(236, 62);
             this.label1.TabIndex = 72;
             this.label1.Text = "Customer Name:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -227,10 +240,11 @@ namespace CinemaProject
             // 
             this.listBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 28;
-            this.listBox1.Location = new System.Drawing.Point(26, 382);
+            this.listBox1.ItemHeight = 41;
+            this.listBox1.Location = new System.Drawing.Point(39, 588);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(306, 312);
+            this.listBox1.Size = new System.Drawing.Size(457, 455);
             this.listBox1.TabIndex = 74;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -243,9 +257,10 @@ namespace CinemaProject
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(639, 428);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(958, 658);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(379, 218);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(568, 335);
             this.guna2GroupBox1.TabIndex = 75;
             this.guna2GroupBox1.Text = "Ticket Types Details:";
             // 
@@ -253,9 +268,10 @@ namespace CinemaProject
             // 
             this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Maroon;
-            this.label11.Location = new System.Drawing.Point(12, 138);
+            this.label11.Location = new System.Drawing.Point(18, 212);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(343, 65);
+            this.label11.Size = new System.Drawing.Size(514, 100);
             this.label11.TabIndex = 2;
             this.label11.Text = "3- VIP Ticket: The Movie Entry + Large PopCorn Of \r\n    Choice + Drink Of Choice " +
     "With 10TL Limit Price.";
@@ -265,9 +281,10 @@ namespace CinemaProject
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Maroon;
-            this.label10.Location = new System.Drawing.Point(12, 102);
+            this.label10.Location = new System.Drawing.Point(18, 157);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(363, 20);
+            this.label10.Size = new System.Drawing.Size(561, 31);
             this.label10.TabIndex = 1;
             this.label10.Text = "2- Elite Ticket: Movie Entry Ticket + Meduim PopCorn.";
             // 
@@ -276,9 +293,10 @@ namespace CinemaProject
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Maroon;
-            this.label9.Location = new System.Drawing.Point(12, 65);
+            this.label9.Location = new System.Drawing.Point(18, 100);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(289, 20);
+            this.label9.Size = new System.Drawing.Size(445, 31);
             this.label9.TabIndex = 0;
             this.label9.Text = "1- Standard Ticket: The Movie Entry Ticket.";
             // 
@@ -299,10 +317,11 @@ namespace CinemaProject
             this.guna2GradientCircleButton2.FillColor2 = System.Drawing.Color.Tomato;
             this.guna2GradientCircleButton2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientCircleButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton2.Location = new System.Drawing.Point(1041, 623);
+            this.guna2GradientCircleButton2.Location = new System.Drawing.Point(1562, 958);
+            this.guna2GradientCircleButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2GradientCircleButton2.Name = "guna2GradientCircleButton2";
             this.guna2GradientCircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton2.Size = new System.Drawing.Size(119, 85);
+            this.guna2GradientCircleButton2.Size = new System.Drawing.Size(178, 131);
             this.guna2GradientCircleButton2.TabIndex = 77;
             this.guna2GradientCircleButton2.Text = "Choose The Seat";
             this.guna2GradientCircleButton2.Click += new System.EventHandler(this.guna2GradientCircleButton2_Click);
@@ -311,10 +330,11 @@ namespace CinemaProject
             // 
             this.listBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 28;
-            this.listBox2.Location = new System.Drawing.Point(331, 382);
+            this.listBox2.ItemHeight = 41;
+            this.listBox2.Location = new System.Drawing.Point(496, 588);
+            this.listBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(229, 312);
+            this.listBox2.Size = new System.Drawing.Size(342, 455);
             this.listBox2.TabIndex = 78;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
@@ -329,19 +349,21 @@ namespace CinemaProject
             this.guna2GradientCircleButton4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.guna2GradientCircleButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientCircleButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton4.Location = new System.Drawing.Point(472, 611);
+            this.guna2GradientCircleButton4.Location = new System.Drawing.Point(708, 940);
+            this.guna2GradientCircleButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2GradientCircleButton4.Name = "guna2GradientCircleButton4";
             this.guna2GradientCircleButton4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton4.Size = new System.Drawing.Size(85, 80);
+            this.guna2GradientCircleButton4.Size = new System.Drawing.Size(128, 123);
             this.guna2GradientCircleButton4.TabIndex = 79;
             this.guna2GradientCircleButton4.Text = "DELETE";
             this.guna2GradientCircleButton4.Click += new System.EventHandler(this.guna2GradientCircleButton4_Click);
             // 
             // guna2Separator1
             // 
-            this.guna2Separator1.Location = new System.Drawing.Point(0, 347);
+            this.guna2Separator1.Location = new System.Drawing.Point(0, 534);
+            this.guna2Separator1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(1172, 10);
+            this.guna2Separator1.Size = new System.Drawing.Size(1758, 15);
             this.guna2Separator1.TabIndex = 80;
             // 
             // guna2GroupBox2
@@ -354,20 +376,23 @@ namespace CinemaProject
             this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox2.Location = new System.Drawing.Point(910, 130);
+            this.guna2GroupBox2.Location = new System.Drawing.Point(1365, 200);
+            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
-            this.guna2GroupBox2.Size = new System.Drawing.Size(252, 200);
+            this.guna2GroupBox2.Size = new System.Drawing.Size(378, 308);
             this.guna2GroupBox2.TabIndex = 76;
             this.guna2GroupBox2.Text = "Ticket Prices:-";
+            this.guna2GroupBox2.Click += new System.EventHandler(this.guna2GroupBox2_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Maroon;
-            this.label7.Location = new System.Drawing.Point(12, 87);
+            this.label7.Location = new System.Drawing.Point(18, 134);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(202, 20);
+            this.label7.Size = new System.Drawing.Size(311, 31);
             this.label7.TabIndex = 3;
             this.label7.Text = "2- Student Ticket Price : 26TL.";
             // 
@@ -375,31 +400,36 @@ namespace CinemaProject
             // 
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(12, 153);
+            this.label2.Location = new System.Drawing.Point(18, 235);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(237, 29);
+            this.label2.Size = new System.Drawing.Size(356, 45);
             this.label2.TabIndex = 2;
             this.label2.Text = "4- VIP Ticket Price : 60TL.";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Maroon;
-            this.label5.Location = new System.Drawing.Point(12, 120);
+            this.label5.Location = new System.Drawing.Point(18, 185);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 20);
+            this.label5.Size = new System.Drawing.Size(276, 31);
             this.label5.TabIndex = 1;
             this.label5.Text = "3- Elite Ticket Price : 45TL.";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Maroon;
-            this.label6.Location = new System.Drawing.Point(12, 58);
+            this.label6.Location = new System.Drawing.Point(18, 89);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(211, 20);
+            this.label6.Size = new System.Drawing.Size(324, 31);
             this.label6.TabIndex = 0;
             this.label6.Text = "1- Standard Ticket Price : 35TL.";
             // 
@@ -413,8 +443,9 @@ namespace CinemaProject
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.OrangeRed;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1172, 42);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1758, 65);
             this.guna2CustomGradientPanel1.TabIndex = 81;
             // 
             // guna2ControlBox1
@@ -426,19 +457,20 @@ namespace CinemaProject
             this.guna2ControlBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1118, 0);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1677, 0);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(54, 42);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(81, 65);
             this.guna2ControlBox1.TabIndex = 87;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // Ticket
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1172, 720);
+            this.ClientSize = new System.Drawing.Size(1758, 1106);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.guna2GroupBox2);
             this.Controls.Add(this.guna2Separator1);
@@ -459,6 +491,7 @@ namespace CinemaProject
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Ticket";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ticket";

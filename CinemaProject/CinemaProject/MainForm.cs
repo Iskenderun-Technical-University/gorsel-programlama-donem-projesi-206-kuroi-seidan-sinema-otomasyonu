@@ -25,30 +25,33 @@ namespace CinemaProject
         
         private void guna2ImageButton5_Click(object sender, EventArgs e)
         {
+            // MEVCUT FILIMLERI
             this.Hide();
             LoginForm.moviesList.Show();
         }
 
         private void guna2ImageButton4_Click(object sender, EventArgs e)
         {
+            //MENÜYÜ GÖRUNTÜLEMEK İÇİN
             this.Hide();
             LoginForm.snacks.Show();
         }
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)
-        {
+        {//BILET SATIŞI İÇİN
             this.Hide();
             LoginForm.ticket.Show();
         }
 
         private void guna2ImageButton6_Click(object sender, EventArgs e)
         {
+            //MENÜNÜN DEĞİŞTİRİLMESI İÇİN
             this.Hide();
             LoginForm.editSnacks.Show();
         }
 
         private void guna2ImageButton3_Click(object sender, EventArgs e)
-        {
+        {//FILMI EKLEMEK İÇİN
             this.Hide();
             LoginForm.addMovies.Show();
         }
@@ -135,6 +138,20 @@ namespace CinemaProject
                 LoginForm.ticket.label10.Text = "2- Elit Bilet:Sineme Giriş Bilet + Orta Boy Patlamiş Mısır.";
                 LoginForm.ticket.label11.Text = "3- VIP Bilet:Sineme Giriş Bilet + Büyük Boy Patlamiş Mısır + Seçeceğniz Içecek 10TL Limitli Fiyat.";
                 LoginForm.ticket.guna2GradientCircleButton2.Text = "Koltugu Seçin";
+                LoginForm.ticket.guna2GroupBox2.Text = "Bilet Fiyatları:-";
+                LoginForm.ticket.label6.Text = "1- Standart Bilet Fiyatı : 35TL.";
+                LoginForm.ticket.label7.Text = "2- Öğrenci Bilet Fiyatı : 26TL.";
+                LoginForm.ticket.label5.Text = "3- Elite Bilet Fiyatı : 45TL.";
+                LoginForm.ticket.label2.Text = "4- VİP Bilet Fiyatı : 45TL.";
+                LoginForm.ticket.guna2GradientCircleButton4.Text = "SİL";
+                LoginForm.ticket.guna2GradientCircleButton2.Text = "Koltuğu Seç";
+
+
+
+
+
+
+
                 /////////////////////////////////////////////////////////////////
                 //Translate For The AddMovies Form
                 LoginForm.addMovies.guna2GradientButton3.Text = "Ana Sayfaya Dön";
@@ -184,6 +201,32 @@ namespace CinemaProject
                 LoginForm.snacks.guna2GradientButton2.Text = "Siparişi Bitir";
                 LoginForm.snacks.guna2GradientButton5.Text = "Siparişe Ekle";
                 LoginForm.snacks.guna2GradientButton4.Text = "Siparişten Sil";
+                LoginForm.snacks.guna2GradientCircleButton2.Text = "Gir";
+                //Translate For The AdmınPage
+
+                LoginForm.admin.guna2TabControl1.TabPages[0].Text = "Gelir Paneli";
+                LoginForm.admin.guna2TabControl1.TabPages[1].Text = "Kantini Yönet";
+                LoginForm.admin.guna2TabControl1.TabPages[2].Text = "Bilet Siparşi";
+                LoginForm.admin.guna2TabControl1.TabPages[3].Text = "Işçi yöntimi";
+                LoginForm.admin.label3.Text = "Toplam Siparişi Sayısı";
+                LoginForm.admin.label6.Text = "Kantin Geliri";
+                LoginForm.admin.category.Text= "Kantin Gelir";
+                LoginForm.admin.category.Text = "Kantin Gelir";
+                LoginForm.admin.label1.Text = "Sineme Bileti Geliri";
+                LoginForm.admin.label10.Text = "Toplam Satılan Bilet";
+                LoginForm.admin.label8.Text = "Film Geliri";
+                LoginForm.admin.label2.Text = "Toplam Geliri";
+                LoginForm.admin.label12.Text = "Toplam Geliri";
+                LoginForm.admin.label5.Text = "Belirli bir sipariste Ara";
+                LoginForm.admin.guna2Button2.Text = "ARA";
+                LoginForm.admin.label4.Text = "Belirli bir sipariste Ara";
+                LoginForm.admin.guna2Button1.Text = "ARA";
+                LoginForm.admin.label11.Text = "Yeni Personal Ekle:-";
+                LoginForm.admin.label13.Text = "Personalin Adını Giriniz:";
+                LoginForm.admin.label17.Text = "Personal Şifresini Giriniz:";
+                LoginForm.admin.label18.Text = "Personal Şifresini Tekrar Giriniz:";
+                LoginForm.admin.guna2TileButton1.Text = "Personal Ekle";
+
                 /////////////////////////////////////////////////////////////
                 ///Translate For The LoginForm
                 LoginForm.loginForm.Unamelbl.Text = "Kullanıcı Adı:";
@@ -196,9 +239,9 @@ namespace CinemaProject
                 LoginForm.moviesList.BackMenuBtn.Text = "Ana Sayfaya Dön";
                 LoginForm.moviesList.FilterBtn.Text = "Filtreler";
                 LoginForm.moviesList.Genrelbl.Text = "Türü Seçin:";
-                LoginForm.moviesList.Snamelbl.Text = "Ada Göre Ara:";
+                LoginForm.moviesList.Snamelbl.Text = "Adı Göre Ara:";
                 LoginForm.moviesList.Genrelbl2.Text = "Türe Göre Ara";
-                LoginForm.moviesList.Snamelbl2.Text = "Ada Göre Ara";
+                LoginForm.moviesList.Snamelbl2.Text = "Adı Göre Ara";
                 LoginForm.moviesList.SearchBtn.Text = "Ara";
                 /////////////////////////////////////////////////////////////
                 ///Translate For The MovieDetails Form
@@ -216,8 +259,33 @@ namespace CinemaProject
                 LoginForm.movieDetails.releaseDateLabel.Text = "Yayın Tarihi:";
                 LoginForm.movieDetails.showDaysLabel.Text = "Gösteri Günleri:";
                 LoginForm.movieDetails.showHoursLabel.Text = "Gösteri Saatleri:";
+                //Translate For The ChooseSeat Form
+                LoginForm.seat.guna2GradientButton3.Text = "Ana Sayfaya Dön";
+                LoginForm.seat.label1.Text = "Koltuğu Seç";
+                LoginForm.seat.ChooseCust.Text = "Müşteriyi Seç";
+                LoginForm.seat.label4.Text = "Müşteriyi Seç";
+                LoginForm.seat.guna2GradientCircleButton1.Text = "Devam Et";
+                LoginForm.seat.label2.Text = "Ekran";
+                LoginForm.seat.label11.Text = "Çıkış";
+                LoginForm.seat.guna2GradientCircleButton2.Text = "Ödemeye Git";
+                LoginForm.seat.label14.Text = "Filml Seç";
+                //Translate For The OrderDetails
+                LoginForm.orderDetails.label1.Text = "Toplam Fıyatı";
+                LoginForm.orderDetails.label4.Text = "Ödeme Şekli";
+                LoginForm.orderDetails.guna2RadioButton3.Text = "Nakit";
+                LoginForm.orderDetails.guna2RadioButton4.Text = "Kredi Kartı";
+                LoginForm.orderDetails.guna2GradientCircleButton2.Text = "Siparişi Bitir";
+
+                //Translate For The MovieList
+                LoginForm.moviesList.guna2GradientCircleButton1.Text = "Yenile";
+
+
+
+
+
             }
-            else {
+            else
+            {
                 //Translate For The Ticket Form
                 LoginForm.ticket.guna2GradientButton3.Text = "Back To Main Menu";
                 LoginForm.ticket.label1.Text = "Customer Name:";
@@ -232,6 +300,13 @@ namespace CinemaProject
                 LoginForm.ticket.label10.Text = "2- Elite Ticket: Movie Entry Ticket + Meduim PopCorn.";
                 LoginForm.ticket.label11.Text = "3- VIP Ticket: The Movie Entry + Large PopCorn Of Choice + Drink Of Choice With 10TL Limit Price.";
                 LoginForm.ticket.guna2GradientCircleButton2.Text = "Choose The Seat";
+                LoginForm.ticket.guna2GroupBox2.Text = "Ticket Prices:-";
+                LoginForm.ticket.label6.Text = "1- Standard Ticket Price : 35TL.";
+                LoginForm.ticket.label7.Text = "2- Student Ticket Price : 26TL.";
+                LoginForm.ticket.label5.Text = "3- Elite Bilet Fiyatı : 45TL.";
+                LoginForm.ticket.guna2GroupBox2.Text = ":";
+
+
                 /////////////////////////////////////////////////////////////////
                 //Translate For The AddMovies Form
                 LoginForm.addMovies.guna2GradientButton3.Text = "Back To Main Menu";
@@ -313,11 +388,57 @@ namespace CinemaProject
                 LoginForm.movieDetails.releaseDateLabel.Text = "Release Date:";
                 LoginForm.movieDetails.showDaysLabel.Text = "Show Days:";
                 LoginForm.movieDetails.showHoursLabel.Text = "Show Hours:";
+                //Translate For The ChooseSeat Form
+                LoginForm.seat.guna2GradientButton3.Text = "Back To Main Menu";
+                LoginForm.seat.label1.Text = "Choose The Seat ";
+                LoginForm.seat.ChooseCust.Text = "Choose Customer:";
+                LoginForm.seat.label4.Text = "Choose Customer:";
+                LoginForm.seat.guna2GradientCircleButton1.Text = "Continue";
+                LoginForm.seat.label2.Text = "Screen";
+                LoginForm.seat.label11.Text = "Exit";
+                LoginForm.seat.guna2GradientCircleButton2.Text = "Go To Pay";
+                LoginForm.seat.label14.Text = "Choose The Movie";
+                //Translate For The OrderDetails
+                LoginForm.orderDetails.label1.Text = "Total Price";
+                LoginForm.orderDetails.label4.Text = "Payment Method:";
+                LoginForm.orderDetails.guna2RadioButton3.Text = "Cash";
+                LoginForm.orderDetails.guna2RadioButton4.Text = "Credit Card";
+                LoginForm.orderDetails.guna2GradientCircleButton2.Text = "Finish Order";
+                //Translate For The AdminPage
+                LoginForm.admin.guna2TabControl1.TabPages[0].Text = "Income Panel";
+                LoginForm.admin.guna2TabControl1.TabPages[1].Text = "Manage Canteen Orders";
+                LoginForm.admin.guna2TabControl1.TabPages[2].Text = "Manage Ticket Orders";
+                LoginForm.admin.guna2TabControl1.TabPages[3].Text = "Worker Managment";
+                LoginForm.admin.label3.Text = "Total Orders Count:";
+                LoginForm.admin.label6.Text = "Canteen Income:";
+                LoginForm.admin.category.Text = "Canteen Income";
+                LoginForm.admin.label1.Text = "Movie Tickets Income";
+                LoginForm.admin.label10.Text = "Total Sold Tickets:";
+                LoginForm.admin.label8.Text = "Movies Income:";
+                LoginForm.admin.label2.Text = "Total Income:";
+                LoginForm.admin.label12.Text = "Total Income:";
+                LoginForm.admin.label5.Text = "Search A Specific Order:";
+                LoginForm.admin.guna2Button2.Text = "Search";
+                LoginForm.admin.label4.Text = "Search A Specific Order:";
+                LoginForm.admin.guna2Button1.Text = "Search";
+                LoginForm.admin.label11.Text = "Add A New Woreker:-";
+                LoginForm.admin.label13.Text = "Enter The Worker Name:";
+                LoginForm.admin.label17.Text = "Enter The Worker's Password:";
+                LoginForm.admin.label18.Text = "Enter The Password Again:";
+                LoginForm.admin.guna2TileButton1.Text = "Add Worker";
+
+
+
+
+
             }
         }
 
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
+           
+          // HESAP ŞİFRESİ DEĞŞTİRMEK İÇİN
+
             GroupBox1.Visible = ChangePassBtn.Checked;
             Createcaptcha();
         }
@@ -371,6 +492,11 @@ namespace CinemaProject
         private void AdminPageBtn_Click(object sender, EventArgs e)
         {
             LoginForm.admin.ShowDialog();
+        }
+
+        private void GroupBox1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

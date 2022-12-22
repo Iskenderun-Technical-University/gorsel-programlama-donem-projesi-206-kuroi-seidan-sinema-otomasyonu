@@ -26,6 +26,7 @@ namespace CinemaProject
 
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
+            //DEĞŞİKLİKLERİ KEYDETMEK İÇİN
             string query = "";
             try
             {
@@ -49,12 +50,13 @@ namespace CinemaProject
                             else
                             {
                                 if (AddRBtn.Checked)
-                                {
+                                {//MENÜYE EKLEMEK İÇİN
                                     if (Category.Text == "PopCorn") query = "insert into MENU (SnackName,Size,Category,Price) values ('" + PName.Text + "','" + PopCornSize.Text + "','" + Category.Text + "','" + price.Text + "')";
                                     else query = "insert into MENU (SnackName,Size,Category,Price) values ('" + PName.Text + "','" + Size.Text + "','" + Category.Text + "','" + price.Text + "')";
                                 }
                                 else if (EditRBtn.Checked && listBox3.SelectedIndex != -1)
                                 {
+                                   // MENÜYÜ DEĞŞTİRMEK İÇİN
                                     if (Category.Text == "PopCorn") query = "Update MENU Set SnackName='" + PName.Text + "', Size='" + PopCornSize.Text + "',Category='" + Category.Text + "',price='" + price.Text + "' where ID='" + listBox3.SelectedItem.ToString() + "'";
                                     else query = "Update MENU Set SnackName='" + PName.Text + "', Size='" + Size.Text + "',Category='" + Category.Text + "',price='" + price.Text + "' where ID='" + listBox3.SelectedItem.ToString() + "'";
                                 }
@@ -129,6 +131,7 @@ namespace CinemaProject
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //ATIŞTIRMALIK TÜRÜNÜ SEÇMENİZ VE ARADINDAN İSTEDİĞNİZ İŞLMİ GEÇELEŞTİRMENİZİ SAĞLAR
             if (Category.Text == "PopCorn") { Size.Visible = false; PopCornSize.Visible = true; }
             else { Size.Visible = true; PopCornSize.Visible = false; }
             string query = "select SnackName,Size,Price,ID from MENU where Category='" + Category.Text + "'";
@@ -146,6 +149,16 @@ namespace CinemaProject
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void AddRBtn_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void EditRBtn_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

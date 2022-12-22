@@ -141,9 +141,10 @@ namespace CinemaProject
             this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(980, 183);
+            this.guna2ComboBox2.Location = new System.Drawing.Point(1470, 282);
+            this.guna2ComboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(263, 36);
+            this.guna2ComboBox2.Size = new System.Drawing.Size(392, 36);
             this.guna2ComboBox2.TabIndex = 84;
             this.guna2ComboBox2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
             // 
@@ -151,9 +152,10 @@ namespace CinemaProject
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label14.Location = new System.Drawing.Point(1039, 159);
+            this.label14.Location = new System.Drawing.Point(1558, 245);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(140, 21);
+            this.label14.Size = new System.Drawing.Size(208, 32);
             this.label14.TabIndex = 83;
             this.label14.Text = "Choose The Movie";
             // 
@@ -161,9 +163,10 @@ namespace CinemaProject
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(378, 183);
+            this.label1.Location = new System.Drawing.Point(567, 282);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 30);
+            this.label1.Size = new System.Drawing.Size(267, 45);
             this.label1.TabIndex = 82;
             this.label1.Text = "Choose The Seat";
             // 
@@ -171,9 +174,10 @@ namespace CinemaProject
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(880, 618);
+            this.label11.Location = new System.Drawing.Point(1320, 951);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(35, 20);
+            this.label11.Size = new System.Drawing.Size(52, 30);
             this.label11.TabIndex = 75;
             this.label11.Text = "Exit";
             // 
@@ -181,18 +185,20 @@ namespace CinemaProject
             // 
             this.guna2Separator2.FillColor = System.Drawing.Color.Black;
             this.guna2Separator2.FillThickness = 2;
-            this.guna2Separator2.Location = new System.Drawing.Point(859, 605);
+            this.guna2Separator2.Location = new System.Drawing.Point(1288, 931);
+            this.guna2Separator2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(76, 10);
+            this.guna2Separator2.Size = new System.Drawing.Size(114, 15);
             this.guna2Separator2.TabIndex = 74;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(20, 417);
+            this.label10.Location = new System.Drawing.Point(30, 642);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(27, 30);
+            this.label10.Size = new System.Drawing.Size(41, 45);
             this.label10.TabIndex = 71;
             this.label10.Text = "B";
             // 
@@ -200,9 +206,10 @@ namespace CinemaProject
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(20, 362);
+            this.label9.Location = new System.Drawing.Point(30, 557);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(27, 30);
+            this.label9.Size = new System.Drawing.Size(40, 45);
             this.label9.TabIndex = 70;
             this.label9.Text = "C";
             // 
@@ -210,9 +217,10 @@ namespace CinemaProject
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(20, 301);
+            this.label8.Location = new System.Drawing.Point(30, 463);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 30);
+            this.label8.Size = new System.Drawing.Size(44, 45);
             this.label8.TabIndex = 69;
             this.label8.Text = "D";
             // 
@@ -220,9 +228,10 @@ namespace CinemaProject
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(20, 238);
+            this.label6.Location = new System.Drawing.Point(30, 366);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(25, 30);
+            this.label6.Size = new System.Drawing.Size(37, 45);
             this.label6.TabIndex = 68;
             this.label6.Text = "E";
             // 
@@ -230,9 +239,10 @@ namespace CinemaProject
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(20, 478);
+            this.label5.Location = new System.Drawing.Point(30, 735);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 30);
+            this.label5.Size = new System.Drawing.Size(43, 45);
             this.label5.TabIndex = 67;
             this.label5.Text = "A";
             // 
@@ -240,9 +250,10 @@ namespace CinemaProject
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(407, 605);
+            this.label2.Location = new System.Drawing.Point(610, 931);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 30);
+            this.label2.Size = new System.Drawing.Size(119, 45);
             this.label2.TabIndex = 2;
             this.label2.Text = "Screen";
             // 
@@ -250,9 +261,10 @@ namespace CinemaProject
             // 
             this.guna2Separator1.FillColor = System.Drawing.Color.Black;
             this.guna2Separator1.FillThickness = 5;
-            this.guna2Separator1.Location = new System.Drawing.Point(301, 592);
+            this.guna2Separator1.Location = new System.Drawing.Point(452, 911);
+            this.guna2Separator1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(286, 10);
+            this.guna2Separator1.Size = new System.Drawing.Size(429, 15);
             this.guna2Separator1.TabIndex = 0;
             // 
             // guna2GradientButton3
@@ -267,9 +279,10 @@ namespace CinemaProject
             this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(12, 66);
+            this.guna2GradientButton3.Location = new System.Drawing.Point(18, 102);
+            this.guna2GradientButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.Size = new System.Drawing.Size(132, 55);
+            this.guna2GradientButton3.Size = new System.Drawing.Size(198, 85);
             this.guna2GradientButton3.TabIndex = 80;
             this.guna2GradientButton3.Text = "Back To Main Menu";
             this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
@@ -284,8 +297,9 @@ namespace CinemaProject
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.OrangeRed;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1280, 42);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1920, 65);
             this.guna2CustomGradientPanel1.TabIndex = 79;
             // 
             // guna2ControlBox1
@@ -297,10 +311,11 @@ namespace CinemaProject
             this.guna2ControlBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1226, 0);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1839, 0);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(54, 42);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(81, 65);
             this.guna2ControlBox1.TabIndex = 87;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
@@ -317,10 +332,11 @@ namespace CinemaProject
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 30;
-            this.listBox1.Location = new System.Drawing.Point(980, 223);
+            this.listBox1.ItemHeight = 45;
+            this.listBox1.Location = new System.Drawing.Point(1470, 343);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(263, 300);
+            this.listBox1.Size = new System.Drawing.Size(394, 450);
             this.listBox1.TabIndex = 85;
             // 
             // ChooseCust
@@ -333,9 +349,10 @@ namespace CinemaProject
             this.ChooseCust.CustomBorderColor = System.Drawing.Color.Gainsboro;
             this.ChooseCust.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChooseCust.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ChooseCust.Location = new System.Drawing.Point(203, 36);
+            this.ChooseCust.Location = new System.Drawing.Point(304, 55);
+            this.ChooseCust.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ChooseCust.Name = "ChooseCust";
-            this.ChooseCust.Size = new System.Drawing.Size(382, 228);
+            this.ChooseCust.Size = new System.Drawing.Size(573, 351);
             this.ChooseCust.TabIndex = 76;
             this.ChooseCust.Text = "Choose The Customer";
             this.ChooseCust.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -351,10 +368,11 @@ namespace CinemaProject
             this.guna2GradientCircleButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2GradientCircleButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(137, 141);
+            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(206, 217);
+            this.guna2GradientCircleButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2GradientCircleButton1.Name = "guna2GradientCircleButton1";
             this.guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(122, 68);
+            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(183, 105);
             this.guna2GradientCircleButton1.TabIndex = 85;
             this.guna2GradientCircleButton1.Text = "Continue";
             this.guna2GradientCircleButton1.Click += new System.EventHandler(this.guna2GradientCircleButton1_Click);
@@ -364,9 +382,10 @@ namespace CinemaProject
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(30, 76);
+            this.label4.Location = new System.Drawing.Point(45, 117);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 21);
+            this.label4.Size = new System.Drawing.Size(206, 32);
             this.label4.TabIndex = 84;
             this.label4.Text = "Choose Customer:";
             // 
@@ -380,9 +399,10 @@ namespace CinemaProject
             this.CustomerCombox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.CustomerCombox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.CustomerCombox.ItemHeight = 30;
-            this.CustomerCombox.Location = new System.Drawing.Point(171, 70);
+            this.CustomerCombox.Location = new System.Drawing.Point(256, 108);
+            this.CustomerCombox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CustomerCombox.Name = "CustomerCombox";
-            this.CustomerCombox.Size = new System.Drawing.Size(184, 36);
+            this.CustomerCombox.Size = new System.Drawing.Size(274, 36);
             this.CustomerCombox.TabIndex = 0;
             // 
             // cover
@@ -400,7 +420,8 @@ namespace CinemaProject
             this.cover.FillColor = System.Drawing.Color.Transparent;
             this.cover.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cover.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.cover.Location = new System.Drawing.Point(55, 217);
+            this.cover.Location = new System.Drawing.Point(82, 334);
+            this.cover.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cover.Name = "cover";
             this.cover.ShadowDecoration.BorderRadius = 0;
             this.cover.ShadowDecoration.Color = System.Drawing.Color.Transparent;
@@ -410,7 +431,7 @@ namespace CinemaProject
             this.cover.ShadowDecoration.CustomizableEdges.TopRight = false;
             this.cover.ShadowDecoration.Depth = 0;
             this.cover.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0);
-            this.cover.Size = new System.Drawing.Size(790, 304);
+            this.cover.Size = new System.Drawing.Size(1185, 468);
             this.cover.TabIndex = 78;
             this.cover.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.cover.UseTransparentBackground = true;
@@ -427,10 +448,11 @@ namespace CinemaProject
             this.guna2GradientCircleButton2.FillColor2 = System.Drawing.Color.Tomato;
             this.guna2GradientCircleButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientCircleButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton2.Location = new System.Drawing.Point(1166, 616);
+            this.guna2GradientCircleButton2.Location = new System.Drawing.Point(1749, 948);
+            this.guna2GradientCircleButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2GradientCircleButton2.Name = "guna2GradientCircleButton2";
             this.guna2GradientCircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton2.Size = new System.Drawing.Size(110, 100);
+            this.guna2GradientCircleButton2.Size = new System.Drawing.Size(165, 154);
             this.guna2GradientCircleButton2.TabIndex = 86;
             this.guna2GradientCircleButton2.Text = "Go To Pay";
             this.guna2GradientCircleButton2.Click += new System.EventHandler(this.guna2GradientCircleButton2_Click);
@@ -439,9 +461,10 @@ namespace CinemaProject
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::CinemaProject.Properties.Resources.staircase_construction_plan___Copy;
-            this.pictureBox2.Location = new System.Drawing.Point(410, 230);
+            this.pictureBox2.Location = new System.Drawing.Point(615, 354);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(79, 302);
+            this.pictureBox2.Size = new System.Drawing.Size(118, 465);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 73;
             this.pictureBox2.TabStop = false;
@@ -450,9 +473,10 @@ namespace CinemaProject
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::CinemaProject.Properties.Resources.staircase_construction_plan___Copy___Copy;
-            this.pictureBox1.Location = new System.Drawing.Point(851, 183);
+            this.pictureBox1.Location = new System.Drawing.Point(1276, 282);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 349);
+            this.pictureBox1.Size = new System.Drawing.Size(130, 537);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 72;
             this.pictureBox1.TabStop = false;
@@ -466,10 +490,11 @@ namespace CinemaProject
             this.E12.Image = ((System.Drawing.Image)(resources.GetObject("E12.Image")));
             this.E12.ImageOffset = new System.Drawing.Point(0, 0);
             this.E12.ImageRotate = 0F;
-            this.E12.Location = new System.Drawing.Point(53, 220);
+            this.E12.Location = new System.Drawing.Point(80, 338);
+            this.E12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.E12.Name = "E12";
             this.E12.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.E12.Size = new System.Drawing.Size(64, 63);
+            this.E12.Size = new System.Drawing.Size(96, 97);
             this.E12.TabIndex = 66;
             this.E12.Click += new System.EventHandler(this.E12_Click);
             // 
@@ -482,10 +507,11 @@ namespace CinemaProject
             this.A1.Image = ((System.Drawing.Image)(resources.GetObject("A1.Image")));
             this.A1.ImageOffset = new System.Drawing.Point(0, 0);
             this.A1.ImageRotate = 0F;
-            this.A1.Location = new System.Drawing.Point(781, 457);
+            this.A1.Location = new System.Drawing.Point(1172, 703);
+            this.A1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.A1.Name = "A1";
             this.A1.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.A1.Size = new System.Drawing.Size(64, 63);
+            this.A1.Size = new System.Drawing.Size(96, 97);
             this.A1.TabIndex = 7;
             this.A1.Click += new System.EventHandler(this.A1_Click);
             // 
@@ -498,10 +524,11 @@ namespace CinemaProject
             this.E11.Image = ((System.Drawing.Image)(resources.GetObject("E11.Image")));
             this.E11.ImageOffset = new System.Drawing.Point(0, 0);
             this.E11.ImageRotate = 0F;
-            this.E11.Location = new System.Drawing.Point(113, 220);
+            this.E11.Location = new System.Drawing.Point(170, 338);
+            this.E11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.E11.Name = "E11";
             this.E11.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.E11.Size = new System.Drawing.Size(64, 63);
+            this.E11.Size = new System.Drawing.Size(96, 97);
             this.E11.TabIndex = 65;
             this.E11.Click += new System.EventHandler(this.E11_Click);
             // 
@@ -514,10 +541,11 @@ namespace CinemaProject
             this.A2.Image = ((System.Drawing.Image)(resources.GetObject("A2.Image")));
             this.A2.ImageOffset = new System.Drawing.Point(0, 0);
             this.A2.ImageRotate = 0F;
-            this.A2.Location = new System.Drawing.Point(722, 457);
+            this.A2.Location = new System.Drawing.Point(1083, 703);
+            this.A2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.A2.Name = "A2";
             this.A2.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.A2.Size = new System.Drawing.Size(64, 63);
+            this.A2.Size = new System.Drawing.Size(96, 97);
             this.A2.TabIndex = 8;
             this.A2.Click += new System.EventHandler(this.A2_Click);
             // 
@@ -530,10 +558,11 @@ namespace CinemaProject
             this.E10.Image = ((System.Drawing.Image)(resources.GetObject("E10.Image")));
             this.E10.ImageOffset = new System.Drawing.Point(0, 0);
             this.E10.ImageRotate = 0F;
-            this.E10.Location = new System.Drawing.Point(173, 220);
+            this.E10.Location = new System.Drawing.Point(260, 338);
+            this.E10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.E10.Name = "E10";
             this.E10.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.E10.Size = new System.Drawing.Size(64, 63);
+            this.E10.Size = new System.Drawing.Size(96, 97);
             this.E10.TabIndex = 64;
             this.E10.Click += new System.EventHandler(this.E10_Click);
             // 
@@ -546,10 +575,11 @@ namespace CinemaProject
             this.A3.Image = ((System.Drawing.Image)(resources.GetObject("A3.Image")));
             this.A3.ImageOffset = new System.Drawing.Point(0, 0);
             this.A3.ImageRotate = 0F;
-            this.A3.Location = new System.Drawing.Point(665, 457);
+            this.A3.Location = new System.Drawing.Point(998, 703);
+            this.A3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.A3.Name = "A3";
             this.A3.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.A3.Size = new System.Drawing.Size(64, 63);
+            this.A3.Size = new System.Drawing.Size(96, 97);
             this.A3.TabIndex = 9;
             this.A3.Click += new System.EventHandler(this.A3_Click);
             // 
@@ -562,10 +592,11 @@ namespace CinemaProject
             this.E9.Image = ((System.Drawing.Image)(resources.GetObject("E9.Image")));
             this.E9.ImageOffset = new System.Drawing.Point(0, 0);
             this.E9.ImageRotate = 0F;
-            this.E9.Location = new System.Drawing.Point(230, 220);
+            this.E9.Location = new System.Drawing.Point(345, 338);
+            this.E9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.E9.Name = "E9";
             this.E9.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.E9.Size = new System.Drawing.Size(64, 63);
+            this.E9.Size = new System.Drawing.Size(96, 97);
             this.E9.TabIndex = 63;
             this.E9.Click += new System.EventHandler(this.E9_Click);
             // 
@@ -578,10 +609,11 @@ namespace CinemaProject
             this.A4.Image = ((System.Drawing.Image)(resources.GetObject("A4.Image")));
             this.A4.ImageOffset = new System.Drawing.Point(0, 0);
             this.A4.ImageRotate = 0F;
-            this.A4.Location = new System.Drawing.Point(606, 457);
+            this.A4.Location = new System.Drawing.Point(909, 703);
+            this.A4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.A4.Name = "A4";
             this.A4.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.A4.Size = new System.Drawing.Size(64, 63);
+            this.A4.Size = new System.Drawing.Size(96, 97);
             this.A4.TabIndex = 10;
             this.A4.Click += new System.EventHandler(this.A4_Click);
             // 
@@ -594,10 +626,11 @@ namespace CinemaProject
             this.E8.Image = ((System.Drawing.Image)(resources.GetObject("E8.Image")));
             this.E8.ImageOffset = new System.Drawing.Point(0, 0);
             this.E8.ImageRotate = 0F;
-            this.E8.Location = new System.Drawing.Point(288, 220);
+            this.E8.Location = new System.Drawing.Point(432, 338);
+            this.E8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.E8.Name = "E8";
             this.E8.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.E8.Size = new System.Drawing.Size(64, 63);
+            this.E8.Size = new System.Drawing.Size(96, 97);
             this.E8.TabIndex = 62;
             this.E8.Click += new System.EventHandler(this.E8_Click);
             // 
@@ -610,10 +643,11 @@ namespace CinemaProject
             this.A5.Image = ((System.Drawing.Image)(resources.GetObject("A5.Image")));
             this.A5.ImageOffset = new System.Drawing.Point(0, 0);
             this.A5.ImageRotate = 0F;
-            this.A5.Location = new System.Drawing.Point(547, 457);
+            this.A5.Location = new System.Drawing.Point(820, 703);
+            this.A5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.A5.Name = "A5";
             this.A5.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.A5.Size = new System.Drawing.Size(64, 63);
+            this.A5.Size = new System.Drawing.Size(96, 97);
             this.A5.TabIndex = 11;
             this.A5.Click += new System.EventHandler(this.A5_Click);
             // 
@@ -626,10 +660,11 @@ namespace CinemaProject
             this.E7.Image = ((System.Drawing.Image)(resources.GetObject("E7.Image")));
             this.E7.ImageOffset = new System.Drawing.Point(0, 0);
             this.E7.ImageRotate = 0F;
-            this.E7.Location = new System.Drawing.Point(347, 220);
+            this.E7.Location = new System.Drawing.Point(520, 338);
+            this.E7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.E7.Name = "E7";
             this.E7.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.E7.Size = new System.Drawing.Size(64, 63);
+            this.E7.Size = new System.Drawing.Size(96, 97);
             this.E7.TabIndex = 61;
             this.E7.Click += new System.EventHandler(this.E7_Click);
             // 
@@ -642,10 +677,11 @@ namespace CinemaProject
             this.A6.Image = ((System.Drawing.Image)(resources.GetObject("A6.Image")));
             this.A6.ImageOffset = new System.Drawing.Point(0, 0);
             this.A6.ImageRotate = 0F;
-            this.A6.Location = new System.Drawing.Point(486, 457);
+            this.A6.Location = new System.Drawing.Point(729, 703);
+            this.A6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.A6.Name = "A6";
             this.A6.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.A6.Size = new System.Drawing.Size(64, 63);
+            this.A6.Size = new System.Drawing.Size(96, 97);
             this.A6.TabIndex = 12;
             this.A6.Click += new System.EventHandler(this.A6_Click);
             // 
@@ -658,10 +694,11 @@ namespace CinemaProject
             this.E6.Image = ((System.Drawing.Image)(resources.GetObject("E6.Image")));
             this.E6.ImageOffset = new System.Drawing.Point(0, 0);
             this.E6.ImageRotate = 0F;
-            this.E6.Location = new System.Drawing.Point(486, 220);
+            this.E6.Location = new System.Drawing.Point(729, 338);
+            this.E6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.E6.Name = "E6";
             this.E6.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.E6.Size = new System.Drawing.Size(64, 63);
+            this.E6.Size = new System.Drawing.Size(96, 97);
             this.E6.TabIndex = 60;
             this.E6.Click += new System.EventHandler(this.E6_Click);
             // 
@@ -674,10 +711,11 @@ namespace CinemaProject
             this.A7.Image = ((System.Drawing.Image)(resources.GetObject("A7.Image")));
             this.A7.ImageOffset = new System.Drawing.Point(0, 0);
             this.A7.ImageRotate = 0F;
-            this.A7.Location = new System.Drawing.Point(347, 457);
+            this.A7.Location = new System.Drawing.Point(520, 703);
+            this.A7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.A7.Name = "A7";
             this.A7.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.A7.Size = new System.Drawing.Size(64, 63);
+            this.A7.Size = new System.Drawing.Size(96, 97);
             this.A7.TabIndex = 13;
             this.A7.Click += new System.EventHandler(this.A7_Click);
             // 
@@ -690,10 +728,11 @@ namespace CinemaProject
             this.E5.Image = ((System.Drawing.Image)(resources.GetObject("E5.Image")));
             this.E5.ImageOffset = new System.Drawing.Point(0, 0);
             this.E5.ImageRotate = 0F;
-            this.E5.Location = new System.Drawing.Point(547, 220);
+            this.E5.Location = new System.Drawing.Point(820, 338);
+            this.E5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.E5.Name = "E5";
             this.E5.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.E5.Size = new System.Drawing.Size(64, 63);
+            this.E5.Size = new System.Drawing.Size(96, 97);
             this.E5.TabIndex = 59;
             this.E5.Click += new System.EventHandler(this.E5_Click);
             // 
@@ -706,10 +745,11 @@ namespace CinemaProject
             this.A8.Image = ((System.Drawing.Image)(resources.GetObject("A8.Image")));
             this.A8.ImageOffset = new System.Drawing.Point(0, 0);
             this.A8.ImageRotate = 0F;
-            this.A8.Location = new System.Drawing.Point(288, 457);
+            this.A8.Location = new System.Drawing.Point(432, 703);
+            this.A8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.A8.Name = "A8";
             this.A8.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.A8.Size = new System.Drawing.Size(64, 63);
+            this.A8.Size = new System.Drawing.Size(96, 97);
             this.A8.TabIndex = 14;
             this.A8.Click += new System.EventHandler(this.A8_Click);
             // 
@@ -722,10 +762,11 @@ namespace CinemaProject
             this.E4.Image = ((System.Drawing.Image)(resources.GetObject("E4.Image")));
             this.E4.ImageOffset = new System.Drawing.Point(0, 0);
             this.E4.ImageRotate = 0F;
-            this.E4.Location = new System.Drawing.Point(606, 220);
+            this.E4.Location = new System.Drawing.Point(909, 338);
+            this.E4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.E4.Name = "E4";
             this.E4.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.E4.Size = new System.Drawing.Size(64, 63);
+            this.E4.Size = new System.Drawing.Size(96, 97);
             this.E4.TabIndex = 58;
             this.E4.Click += new System.EventHandler(this.E4_Click);
             // 
@@ -738,10 +779,11 @@ namespace CinemaProject
             this.A9.Image = ((System.Drawing.Image)(resources.GetObject("A9.Image")));
             this.A9.ImageOffset = new System.Drawing.Point(0, 0);
             this.A9.ImageRotate = 0F;
-            this.A9.Location = new System.Drawing.Point(230, 457);
+            this.A9.Location = new System.Drawing.Point(345, 703);
+            this.A9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.A9.Name = "A9";
             this.A9.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.A9.Size = new System.Drawing.Size(64, 63);
+            this.A9.Size = new System.Drawing.Size(96, 97);
             this.A9.TabIndex = 15;
             this.A9.Click += new System.EventHandler(this.A9_Click);
             // 
@@ -754,10 +796,11 @@ namespace CinemaProject
             this.E3.Image = ((System.Drawing.Image)(resources.GetObject("E3.Image")));
             this.E3.ImageOffset = new System.Drawing.Point(0, 0);
             this.E3.ImageRotate = 0F;
-            this.E3.Location = new System.Drawing.Point(665, 220);
+            this.E3.Location = new System.Drawing.Point(998, 338);
+            this.E3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.E3.Name = "E3";
             this.E3.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.E3.Size = new System.Drawing.Size(64, 63);
+            this.E3.Size = new System.Drawing.Size(96, 97);
             this.E3.TabIndex = 57;
             this.E3.Click += new System.EventHandler(this.E3_Click);
             // 
@@ -770,10 +813,11 @@ namespace CinemaProject
             this.A10.Image = ((System.Drawing.Image)(resources.GetObject("A10.Image")));
             this.A10.ImageOffset = new System.Drawing.Point(0, 0);
             this.A10.ImageRotate = 0F;
-            this.A10.Location = new System.Drawing.Point(173, 457);
+            this.A10.Location = new System.Drawing.Point(260, 703);
+            this.A10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.A10.Name = "A10";
             this.A10.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.A10.Size = new System.Drawing.Size(64, 63);
+            this.A10.Size = new System.Drawing.Size(96, 97);
             this.A10.TabIndex = 16;
             this.A10.Click += new System.EventHandler(this.A10_Click);
             // 
@@ -786,10 +830,11 @@ namespace CinemaProject
             this.E2.Image = ((System.Drawing.Image)(resources.GetObject("E2.Image")));
             this.E2.ImageOffset = new System.Drawing.Point(0, 0);
             this.E2.ImageRotate = 0F;
-            this.E2.Location = new System.Drawing.Point(722, 220);
+            this.E2.Location = new System.Drawing.Point(1083, 338);
+            this.E2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.E2.Name = "E2";
             this.E2.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.E2.Size = new System.Drawing.Size(64, 63);
+            this.E2.Size = new System.Drawing.Size(96, 97);
             this.E2.TabIndex = 56;
             this.E2.Click += new System.EventHandler(this.E2_Click);
             // 
@@ -802,10 +847,11 @@ namespace CinemaProject
             this.A11.Image = ((System.Drawing.Image)(resources.GetObject("A11.Image")));
             this.A11.ImageOffset = new System.Drawing.Point(0, 0);
             this.A11.ImageRotate = 0F;
-            this.A11.Location = new System.Drawing.Point(113, 457);
+            this.A11.Location = new System.Drawing.Point(170, 703);
+            this.A11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.A11.Name = "A11";
             this.A11.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.A11.Size = new System.Drawing.Size(64, 63);
+            this.A11.Size = new System.Drawing.Size(96, 97);
             this.A11.TabIndex = 17;
             this.A11.Click += new System.EventHandler(this.A11_Click);
             // 
@@ -817,10 +863,11 @@ namespace CinemaProject
             this.E1.Image = global::CinemaProject.Properties.Resources._2666565_removebg_preview;
             this.E1.ImageOffset = new System.Drawing.Point(0, 0);
             this.E1.ImageRotate = 0F;
-            this.E1.Location = new System.Drawing.Point(781, 220);
+            this.E1.Location = new System.Drawing.Point(1172, 338);
+            this.E1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.E1.Name = "E1";
             this.E1.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.E1.Size = new System.Drawing.Size(64, 63);
+            this.E1.Size = new System.Drawing.Size(96, 97);
             this.E1.TabIndex = 55;
             this.E1.Click += new System.EventHandler(this.E1_Click);
             // 
@@ -833,10 +880,11 @@ namespace CinemaProject
             this.A12.Image = ((System.Drawing.Image)(resources.GetObject("A12.Image")));
             this.A12.ImageOffset = new System.Drawing.Point(0, 0);
             this.A12.ImageRotate = 0F;
-            this.A12.Location = new System.Drawing.Point(53, 457);
+            this.A12.Location = new System.Drawing.Point(80, 703);
+            this.A12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.A12.Name = "A12";
             this.A12.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.A12.Size = new System.Drawing.Size(64, 63);
+            this.A12.Size = new System.Drawing.Size(96, 97);
             this.A12.TabIndex = 18;
             this.A12.Click += new System.EventHandler(this.A12_Click);
             // 
@@ -849,10 +897,11 @@ namespace CinemaProject
             this.D12.Image = ((System.Drawing.Image)(resources.GetObject("D12.Image")));
             this.D12.ImageOffset = new System.Drawing.Point(0, 0);
             this.D12.ImageRotate = 0F;
-            this.D12.Location = new System.Drawing.Point(53, 280);
+            this.D12.Location = new System.Drawing.Point(80, 431);
+            this.D12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.D12.Name = "D12";
             this.D12.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.D12.Size = new System.Drawing.Size(64, 63);
+            this.D12.Size = new System.Drawing.Size(96, 97);
             this.D12.TabIndex = 54;
             this.D12.Click += new System.EventHandler(this.D12_Click);
             // 
@@ -865,10 +914,11 @@ namespace CinemaProject
             this.B1.Image = ((System.Drawing.Image)(resources.GetObject("B1.Image")));
             this.B1.ImageOffset = new System.Drawing.Point(0, 0);
             this.B1.ImageRotate = 0F;
-            this.B1.Location = new System.Drawing.Point(781, 398);
+            this.B1.Location = new System.Drawing.Point(1172, 612);
+            this.B1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.B1.Name = "B1";
             this.B1.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.B1.Size = new System.Drawing.Size(64, 63);
+            this.B1.Size = new System.Drawing.Size(96, 97);
             this.B1.TabIndex = 19;
             this.B1.Click += new System.EventHandler(this.B1_Click);
             // 
@@ -881,10 +931,11 @@ namespace CinemaProject
             this.D11.Image = ((System.Drawing.Image)(resources.GetObject("D11.Image")));
             this.D11.ImageOffset = new System.Drawing.Point(0, 0);
             this.D11.ImageRotate = 0F;
-            this.D11.Location = new System.Drawing.Point(113, 280);
+            this.D11.Location = new System.Drawing.Point(170, 431);
+            this.D11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.D11.Name = "D11";
             this.D11.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.D11.Size = new System.Drawing.Size(64, 63);
+            this.D11.Size = new System.Drawing.Size(96, 97);
             this.D11.TabIndex = 53;
             this.D11.Click += new System.EventHandler(this.D11_Click);
             // 
@@ -897,10 +948,11 @@ namespace CinemaProject
             this.B2.Image = ((System.Drawing.Image)(resources.GetObject("B2.Image")));
             this.B2.ImageOffset = new System.Drawing.Point(0, 0);
             this.B2.ImageRotate = 0F;
-            this.B2.Location = new System.Drawing.Point(722, 398);
+            this.B2.Location = new System.Drawing.Point(1083, 612);
+            this.B2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.B2.Name = "B2";
             this.B2.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.B2.Size = new System.Drawing.Size(64, 63);
+            this.B2.Size = new System.Drawing.Size(96, 97);
             this.B2.TabIndex = 20;
             this.B2.Click += new System.EventHandler(this.B2_Click);
             // 
@@ -913,10 +965,11 @@ namespace CinemaProject
             this.D10.Image = ((System.Drawing.Image)(resources.GetObject("D10.Image")));
             this.D10.ImageOffset = new System.Drawing.Point(0, 0);
             this.D10.ImageRotate = 0F;
-            this.D10.Location = new System.Drawing.Point(173, 280);
+            this.D10.Location = new System.Drawing.Point(260, 431);
+            this.D10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.D10.Name = "D10";
             this.D10.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.D10.Size = new System.Drawing.Size(64, 63);
+            this.D10.Size = new System.Drawing.Size(96, 97);
             this.D10.TabIndex = 52;
             this.D10.Click += new System.EventHandler(this.D10_Click);
             // 
@@ -929,10 +982,11 @@ namespace CinemaProject
             this.B3.Image = ((System.Drawing.Image)(resources.GetObject("B3.Image")));
             this.B3.ImageOffset = new System.Drawing.Point(0, 0);
             this.B3.ImageRotate = 0F;
-            this.B3.Location = new System.Drawing.Point(665, 398);
+            this.B3.Location = new System.Drawing.Point(998, 612);
+            this.B3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.B3.Name = "B3";
             this.B3.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.B3.Size = new System.Drawing.Size(64, 63);
+            this.B3.Size = new System.Drawing.Size(96, 97);
             this.B3.TabIndex = 21;
             this.B3.Click += new System.EventHandler(this.B3_Click);
             // 
@@ -945,10 +999,11 @@ namespace CinemaProject
             this.D9.Image = ((System.Drawing.Image)(resources.GetObject("D9.Image")));
             this.D9.ImageOffset = new System.Drawing.Point(0, 0);
             this.D9.ImageRotate = 0F;
-            this.D9.Location = new System.Drawing.Point(230, 280);
+            this.D9.Location = new System.Drawing.Point(345, 431);
+            this.D9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.D9.Name = "D9";
             this.D9.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.D9.Size = new System.Drawing.Size(64, 63);
+            this.D9.Size = new System.Drawing.Size(96, 97);
             this.D9.TabIndex = 51;
             this.D9.Click += new System.EventHandler(this.D9_Click);
             // 
@@ -961,10 +1016,11 @@ namespace CinemaProject
             this.B4.Image = ((System.Drawing.Image)(resources.GetObject("B4.Image")));
             this.B4.ImageOffset = new System.Drawing.Point(0, 0);
             this.B4.ImageRotate = 0F;
-            this.B4.Location = new System.Drawing.Point(606, 398);
+            this.B4.Location = new System.Drawing.Point(909, 612);
+            this.B4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.B4.Name = "B4";
             this.B4.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.B4.Size = new System.Drawing.Size(64, 63);
+            this.B4.Size = new System.Drawing.Size(96, 97);
             this.B4.TabIndex = 22;
             this.B4.Click += new System.EventHandler(this.B4_Click);
             // 
@@ -977,10 +1033,11 @@ namespace CinemaProject
             this.D8.Image = ((System.Drawing.Image)(resources.GetObject("D8.Image")));
             this.D8.ImageOffset = new System.Drawing.Point(0, 0);
             this.D8.ImageRotate = 0F;
-            this.D8.Location = new System.Drawing.Point(288, 280);
+            this.D8.Location = new System.Drawing.Point(432, 431);
+            this.D8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.D8.Name = "D8";
             this.D8.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.D8.Size = new System.Drawing.Size(64, 63);
+            this.D8.Size = new System.Drawing.Size(96, 97);
             this.D8.TabIndex = 50;
             this.D8.Click += new System.EventHandler(this.D8_Click);
             // 
@@ -993,10 +1050,11 @@ namespace CinemaProject
             this.B5.Image = ((System.Drawing.Image)(resources.GetObject("B5.Image")));
             this.B5.ImageOffset = new System.Drawing.Point(0, 0);
             this.B5.ImageRotate = 0F;
-            this.B5.Location = new System.Drawing.Point(547, 398);
+            this.B5.Location = new System.Drawing.Point(820, 612);
+            this.B5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.B5.Name = "B5";
             this.B5.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.B5.Size = new System.Drawing.Size(64, 63);
+            this.B5.Size = new System.Drawing.Size(96, 97);
             this.B5.TabIndex = 23;
             this.B5.Click += new System.EventHandler(this.B5_Click);
             // 
@@ -1009,10 +1067,11 @@ namespace CinemaProject
             this.D7.Image = ((System.Drawing.Image)(resources.GetObject("D7.Image")));
             this.D7.ImageOffset = new System.Drawing.Point(0, 0);
             this.D7.ImageRotate = 0F;
-            this.D7.Location = new System.Drawing.Point(347, 280);
+            this.D7.Location = new System.Drawing.Point(520, 431);
+            this.D7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.D7.Name = "D7";
             this.D7.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.D7.Size = new System.Drawing.Size(64, 63);
+            this.D7.Size = new System.Drawing.Size(96, 97);
             this.D7.TabIndex = 49;
             this.D7.Click += new System.EventHandler(this.D7_Click);
             // 
@@ -1025,10 +1084,11 @@ namespace CinemaProject
             this.B6.Image = ((System.Drawing.Image)(resources.GetObject("B6.Image")));
             this.B6.ImageOffset = new System.Drawing.Point(0, 0);
             this.B6.ImageRotate = 0F;
-            this.B6.Location = new System.Drawing.Point(486, 398);
+            this.B6.Location = new System.Drawing.Point(729, 612);
+            this.B6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.B6.Name = "B6";
             this.B6.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.B6.Size = new System.Drawing.Size(64, 63);
+            this.B6.Size = new System.Drawing.Size(96, 97);
             this.B6.TabIndex = 24;
             this.B6.Click += new System.EventHandler(this.B6_Click);
             // 
@@ -1041,10 +1101,11 @@ namespace CinemaProject
             this.D6.Image = ((System.Drawing.Image)(resources.GetObject("D6.Image")));
             this.D6.ImageOffset = new System.Drawing.Point(0, 0);
             this.D6.ImageRotate = 0F;
-            this.D6.Location = new System.Drawing.Point(486, 280);
+            this.D6.Location = new System.Drawing.Point(729, 431);
+            this.D6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.D6.Name = "D6";
             this.D6.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.D6.Size = new System.Drawing.Size(64, 63);
+            this.D6.Size = new System.Drawing.Size(96, 97);
             this.D6.TabIndex = 48;
             this.D6.Click += new System.EventHandler(this.D6_Click);
             // 
@@ -1057,10 +1118,11 @@ namespace CinemaProject
             this.B7.Image = ((System.Drawing.Image)(resources.GetObject("B7.Image")));
             this.B7.ImageOffset = new System.Drawing.Point(0, 0);
             this.B7.ImageRotate = 0F;
-            this.B7.Location = new System.Drawing.Point(347, 398);
+            this.B7.Location = new System.Drawing.Point(520, 612);
+            this.B7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.B7.Name = "B7";
             this.B7.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.B7.Size = new System.Drawing.Size(64, 63);
+            this.B7.Size = new System.Drawing.Size(96, 97);
             this.B7.TabIndex = 25;
             this.B7.Click += new System.EventHandler(this.B7_Click);
             // 
@@ -1073,13 +1135,14 @@ namespace CinemaProject
             this.D5.Image = ((System.Drawing.Image)(resources.GetObject("D5.Image")));
             this.D5.ImageOffset = new System.Drawing.Point(0, 0);
             this.D5.ImageRotate = 0F;
-            this.D5.Location = new System.Drawing.Point(547, 280);
+            this.D5.Location = new System.Drawing.Point(820, 431);
+            this.D5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.D5.Name = "D5";
             this.D5.PressedState.ImageSize = new System.Drawing.Size(58, 58);
             this.D5.ShadowDecoration.BorderRadius = 15;
             this.D5.ShadowDecoration.Depth = 15;
             this.D5.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.D5.Size = new System.Drawing.Size(64, 63);
+            this.D5.Size = new System.Drawing.Size(96, 97);
             this.D5.TabIndex = 47;
             this.D5.Click += new System.EventHandler(this.D5_Click);
             // 
@@ -1092,10 +1155,11 @@ namespace CinemaProject
             this.B8.Image = ((System.Drawing.Image)(resources.GetObject("B8.Image")));
             this.B8.ImageOffset = new System.Drawing.Point(0, 0);
             this.B8.ImageRotate = 0F;
-            this.B8.Location = new System.Drawing.Point(288, 398);
+            this.B8.Location = new System.Drawing.Point(432, 612);
+            this.B8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.B8.Name = "B8";
             this.B8.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.B8.Size = new System.Drawing.Size(64, 63);
+            this.B8.Size = new System.Drawing.Size(96, 97);
             this.B8.TabIndex = 26;
             this.B8.Click += new System.EventHandler(this.B8_Click);
             // 
@@ -1108,10 +1172,11 @@ namespace CinemaProject
             this.D4.Image = ((System.Drawing.Image)(resources.GetObject("D4.Image")));
             this.D4.ImageOffset = new System.Drawing.Point(0, 0);
             this.D4.ImageRotate = 0F;
-            this.D4.Location = new System.Drawing.Point(606, 280);
+            this.D4.Location = new System.Drawing.Point(909, 431);
+            this.D4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.D4.Name = "D4";
             this.D4.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.D4.Size = new System.Drawing.Size(64, 63);
+            this.D4.Size = new System.Drawing.Size(96, 97);
             this.D4.TabIndex = 46;
             this.D4.Click += new System.EventHandler(this.D4_Click);
             // 
@@ -1124,10 +1189,11 @@ namespace CinemaProject
             this.B9.Image = ((System.Drawing.Image)(resources.GetObject("B9.Image")));
             this.B9.ImageOffset = new System.Drawing.Point(0, 0);
             this.B9.ImageRotate = 0F;
-            this.B9.Location = new System.Drawing.Point(230, 398);
+            this.B9.Location = new System.Drawing.Point(345, 612);
+            this.B9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.B9.Name = "B9";
             this.B9.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.B9.Size = new System.Drawing.Size(64, 63);
+            this.B9.Size = new System.Drawing.Size(96, 97);
             this.B9.TabIndex = 27;
             this.B9.Click += new System.EventHandler(this.B9_Click);
             // 
@@ -1140,10 +1206,11 @@ namespace CinemaProject
             this.D3.Image = ((System.Drawing.Image)(resources.GetObject("D3.Image")));
             this.D3.ImageOffset = new System.Drawing.Point(0, 0);
             this.D3.ImageRotate = 0F;
-            this.D3.Location = new System.Drawing.Point(665, 280);
+            this.D3.Location = new System.Drawing.Point(998, 431);
+            this.D3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.D3.Name = "D3";
             this.D3.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.D3.Size = new System.Drawing.Size(64, 63);
+            this.D3.Size = new System.Drawing.Size(96, 97);
             this.D3.TabIndex = 45;
             this.D3.Click += new System.EventHandler(this.D3_Click);
             // 
@@ -1156,10 +1223,11 @@ namespace CinemaProject
             this.B10.Image = ((System.Drawing.Image)(resources.GetObject("B10.Image")));
             this.B10.ImageOffset = new System.Drawing.Point(0, 0);
             this.B10.ImageRotate = 0F;
-            this.B10.Location = new System.Drawing.Point(173, 398);
+            this.B10.Location = new System.Drawing.Point(260, 612);
+            this.B10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.B10.Name = "B10";
             this.B10.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.B10.Size = new System.Drawing.Size(64, 63);
+            this.B10.Size = new System.Drawing.Size(96, 97);
             this.B10.TabIndex = 28;
             this.B10.Click += new System.EventHandler(this.B10_Click);
             // 
@@ -1172,10 +1240,11 @@ namespace CinemaProject
             this.D2.Image = ((System.Drawing.Image)(resources.GetObject("D2.Image")));
             this.D2.ImageOffset = new System.Drawing.Point(0, 0);
             this.D2.ImageRotate = 0F;
-            this.D2.Location = new System.Drawing.Point(722, 280);
+            this.D2.Location = new System.Drawing.Point(1083, 431);
+            this.D2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.D2.Name = "D2";
             this.D2.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.D2.Size = new System.Drawing.Size(64, 63);
+            this.D2.Size = new System.Drawing.Size(96, 97);
             this.D2.TabIndex = 44;
             this.D2.Click += new System.EventHandler(this.D2_Click);
             // 
@@ -1188,10 +1257,11 @@ namespace CinemaProject
             this.B11.Image = ((System.Drawing.Image)(resources.GetObject("B11.Image")));
             this.B11.ImageOffset = new System.Drawing.Point(0, 0);
             this.B11.ImageRotate = 0F;
-            this.B11.Location = new System.Drawing.Point(113, 398);
+            this.B11.Location = new System.Drawing.Point(170, 612);
+            this.B11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.B11.Name = "B11";
             this.B11.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.B11.Size = new System.Drawing.Size(64, 63);
+            this.B11.Size = new System.Drawing.Size(96, 97);
             this.B11.TabIndex = 29;
             this.B11.Click += new System.EventHandler(this.B11_Click);
             // 
@@ -1204,10 +1274,11 @@ namespace CinemaProject
             this.D1.Image = ((System.Drawing.Image)(resources.GetObject("D1.Image")));
             this.D1.ImageOffset = new System.Drawing.Point(0, 0);
             this.D1.ImageRotate = 0F;
-            this.D1.Location = new System.Drawing.Point(781, 280);
+            this.D1.Location = new System.Drawing.Point(1172, 431);
+            this.D1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.D1.Name = "D1";
             this.D1.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.D1.Size = new System.Drawing.Size(64, 63);
+            this.D1.Size = new System.Drawing.Size(96, 97);
             this.D1.TabIndex = 43;
             this.D1.Click += new System.EventHandler(this.D1_Click);
             // 
@@ -1220,10 +1291,11 @@ namespace CinemaProject
             this.B12.Image = ((System.Drawing.Image)(resources.GetObject("B12.Image")));
             this.B12.ImageOffset = new System.Drawing.Point(0, 0);
             this.B12.ImageRotate = 0F;
-            this.B12.Location = new System.Drawing.Point(53, 398);
+            this.B12.Location = new System.Drawing.Point(80, 612);
+            this.B12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.B12.Name = "B12";
             this.B12.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.B12.Size = new System.Drawing.Size(64, 63);
+            this.B12.Size = new System.Drawing.Size(96, 97);
             this.B12.TabIndex = 30;
             this.B12.Click += new System.EventHandler(this.B12_Click);
             // 
@@ -1236,10 +1308,11 @@ namespace CinemaProject
             this.C12.Image = ((System.Drawing.Image)(resources.GetObject("C12.Image")));
             this.C12.ImageOffset = new System.Drawing.Point(0, 0);
             this.C12.ImageRotate = 0F;
-            this.C12.Location = new System.Drawing.Point(53, 339);
+            this.C12.Location = new System.Drawing.Point(80, 522);
+            this.C12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.C12.Name = "C12";
             this.C12.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.C12.Size = new System.Drawing.Size(64, 63);
+            this.C12.Size = new System.Drawing.Size(96, 97);
             this.C12.TabIndex = 42;
             this.C12.Click += new System.EventHandler(this.C12_Click);
             // 
@@ -1252,10 +1325,11 @@ namespace CinemaProject
             this.C1.Image = ((System.Drawing.Image)(resources.GetObject("C1.Image")));
             this.C1.ImageOffset = new System.Drawing.Point(0, 0);
             this.C1.ImageRotate = 0F;
-            this.C1.Location = new System.Drawing.Point(781, 339);
+            this.C1.Location = new System.Drawing.Point(1172, 522);
+            this.C1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.C1.Name = "C1";
             this.C1.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.C1.Size = new System.Drawing.Size(64, 63);
+            this.C1.Size = new System.Drawing.Size(96, 97);
             this.C1.TabIndex = 31;
             this.C1.Click += new System.EventHandler(this.C1_Click);
             // 
@@ -1268,10 +1342,11 @@ namespace CinemaProject
             this.C11.Image = ((System.Drawing.Image)(resources.GetObject("C11.Image")));
             this.C11.ImageOffset = new System.Drawing.Point(0, 0);
             this.C11.ImageRotate = 0F;
-            this.C11.Location = new System.Drawing.Point(113, 339);
+            this.C11.Location = new System.Drawing.Point(170, 522);
+            this.C11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.C11.Name = "C11";
             this.C11.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.C11.Size = new System.Drawing.Size(64, 63);
+            this.C11.Size = new System.Drawing.Size(96, 97);
             this.C11.TabIndex = 41;
             this.C11.Click += new System.EventHandler(this.C11_Click);
             // 
@@ -1284,10 +1359,11 @@ namespace CinemaProject
             this.C2.Image = ((System.Drawing.Image)(resources.GetObject("C2.Image")));
             this.C2.ImageOffset = new System.Drawing.Point(0, 0);
             this.C2.ImageRotate = 0F;
-            this.C2.Location = new System.Drawing.Point(722, 339);
+            this.C2.Location = new System.Drawing.Point(1083, 522);
+            this.C2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.C2.Name = "C2";
             this.C2.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.C2.Size = new System.Drawing.Size(64, 63);
+            this.C2.Size = new System.Drawing.Size(96, 97);
             this.C2.TabIndex = 32;
             this.C2.Click += new System.EventHandler(this.C2_Click);
             // 
@@ -1300,10 +1376,11 @@ namespace CinemaProject
             this.C10.Image = ((System.Drawing.Image)(resources.GetObject("C10.Image")));
             this.C10.ImageOffset = new System.Drawing.Point(0, 0);
             this.C10.ImageRotate = 0F;
-            this.C10.Location = new System.Drawing.Point(173, 339);
+            this.C10.Location = new System.Drawing.Point(260, 522);
+            this.C10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.C10.Name = "C10";
             this.C10.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.C10.Size = new System.Drawing.Size(64, 63);
+            this.C10.Size = new System.Drawing.Size(96, 97);
             this.C10.TabIndex = 40;
             this.C10.Click += new System.EventHandler(this.C10_Click);
             // 
@@ -1316,10 +1393,11 @@ namespace CinemaProject
             this.C9.Image = ((System.Drawing.Image)(resources.GetObject("C9.Image")));
             this.C9.ImageOffset = new System.Drawing.Point(0, 0);
             this.C9.ImageRotate = 0F;
-            this.C9.Location = new System.Drawing.Point(230, 339);
+            this.C9.Location = new System.Drawing.Point(345, 522);
+            this.C9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.C9.Name = "C9";
             this.C9.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.C9.Size = new System.Drawing.Size(64, 63);
+            this.C9.Size = new System.Drawing.Size(96, 97);
             this.C9.TabIndex = 39;
             this.C9.Click += new System.EventHandler(this.C9_Click);
             // 
@@ -1332,10 +1410,11 @@ namespace CinemaProject
             this.C3.Image = ((System.Drawing.Image)(resources.GetObject("C3.Image")));
             this.C3.ImageOffset = new System.Drawing.Point(0, 0);
             this.C3.ImageRotate = 0F;
-            this.C3.Location = new System.Drawing.Point(665, 339);
+            this.C3.Location = new System.Drawing.Point(998, 522);
+            this.C3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.C3.Name = "C3";
             this.C3.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.C3.Size = new System.Drawing.Size(64, 63);
+            this.C3.Size = new System.Drawing.Size(96, 97);
             this.C3.TabIndex = 33;
             this.C3.Click += new System.EventHandler(this.C3_Click);
             // 
@@ -1348,10 +1427,11 @@ namespace CinemaProject
             this.C8.Image = ((System.Drawing.Image)(resources.GetObject("C8.Image")));
             this.C8.ImageOffset = new System.Drawing.Point(0, 0);
             this.C8.ImageRotate = 0F;
-            this.C8.Location = new System.Drawing.Point(288, 339);
+            this.C8.Location = new System.Drawing.Point(432, 522);
+            this.C8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.C8.Name = "C8";
             this.C8.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.C8.Size = new System.Drawing.Size(64, 63);
+            this.C8.Size = new System.Drawing.Size(96, 97);
             this.C8.TabIndex = 38;
             this.C8.Click += new System.EventHandler(this.C8_Click);
             // 
@@ -1364,10 +1444,11 @@ namespace CinemaProject
             this.C4.Image = ((System.Drawing.Image)(resources.GetObject("C4.Image")));
             this.C4.ImageOffset = new System.Drawing.Point(0, 0);
             this.C4.ImageRotate = 0F;
-            this.C4.Location = new System.Drawing.Point(606, 339);
+            this.C4.Location = new System.Drawing.Point(909, 522);
+            this.C4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.C4.Name = "C4";
             this.C4.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.C4.Size = new System.Drawing.Size(64, 63);
+            this.C4.Size = new System.Drawing.Size(96, 97);
             this.C4.TabIndex = 34;
             this.C4.Click += new System.EventHandler(this.C4_Click);
             // 
@@ -1380,10 +1461,11 @@ namespace CinemaProject
             this.C7.Image = ((System.Drawing.Image)(resources.GetObject("C7.Image")));
             this.C7.ImageOffset = new System.Drawing.Point(0, 0);
             this.C7.ImageRotate = 0F;
-            this.C7.Location = new System.Drawing.Point(347, 339);
+            this.C7.Location = new System.Drawing.Point(520, 522);
+            this.C7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.C7.Name = "C7";
             this.C7.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.C7.Size = new System.Drawing.Size(64, 63);
+            this.C7.Size = new System.Drawing.Size(96, 97);
             this.C7.TabIndex = 37;
             this.C7.Click += new System.EventHandler(this.C7_Click);
             // 
@@ -1396,10 +1478,11 @@ namespace CinemaProject
             this.C5.Image = ((System.Drawing.Image)(resources.GetObject("C5.Image")));
             this.C5.ImageOffset = new System.Drawing.Point(0, 0);
             this.C5.ImageRotate = 0F;
-            this.C5.Location = new System.Drawing.Point(547, 339);
+            this.C5.Location = new System.Drawing.Point(820, 522);
+            this.C5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.C5.Name = "C5";
             this.C5.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.C5.Size = new System.Drawing.Size(64, 63);
+            this.C5.Size = new System.Drawing.Size(96, 97);
             this.C5.TabIndex = 35;
             this.C5.Click += new System.EventHandler(this.C5_Click);
             // 
@@ -1412,19 +1495,20 @@ namespace CinemaProject
             this.C6.Image = ((System.Drawing.Image)(resources.GetObject("C6.Image")));
             this.C6.ImageOffset = new System.Drawing.Point(0, 0);
             this.C6.ImageRotate = 0F;
-            this.C6.Location = new System.Drawing.Point(486, 339);
+            this.C6.Location = new System.Drawing.Point(729, 522);
+            this.C6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.C6.Name = "C6";
             this.C6.PressedState.ImageSize = new System.Drawing.Size(58, 58);
-            this.C6.Size = new System.Drawing.Size(64, 63);
+            this.C6.Size = new System.Drawing.Size(96, 97);
             this.C6.TabIndex = 36;
             this.C6.Click += new System.EventHandler(this.C6_Click);
             // 
             // ChooseSeat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.ClientSize = new System.Drawing.Size(1920, 1106);
             this.Controls.Add(this.guna2GradientCircleButton2);
             this.Controls.Add(this.cover);
             this.Controls.Add(this.listBox1);
@@ -1505,6 +1589,7 @@ namespace CinemaProject
             this.Controls.Add(this.C5);
             this.Controls.Add(this.C6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ChooseSeat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChooseSeat";
@@ -1523,9 +1608,6 @@ namespace CinemaProject
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -1593,20 +1675,23 @@ namespace CinemaProject
         private Guna.UI2.WinForms.Guna2ImageButton A3;
         private Guna.UI2.WinForms.Guna2ImageButton A2;
         private Guna.UI2.WinForms.Guna2ImageButton A1;
-        private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private System.Windows.Forms.ImageList imageList1;
-        private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton1;
-        private System.Windows.Forms.Label label4;
         public Guna.UI2.WinForms.Guna2ComboBox CustomerCombox;
         public Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton2;
         private Guna.UI2.WinForms.Guna2ImageButton C1;
         public Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
         public System.Windows.Forms.ListBox listBox1;
         public Guna.UI2.WinForms.Guna2GroupBox cover;
-        private Guna.UI2.WinForms.Guna2GroupBox ChooseCust;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        public System.Windows.Forms.Label label14;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label11;
+        public System.Windows.Forms.Label label2;
+        public Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
+        public Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton1;
+        public System.Windows.Forms.Label label4;
+        public Guna.UI2.WinForms.Guna2GroupBox ChooseCust;
     }
 }

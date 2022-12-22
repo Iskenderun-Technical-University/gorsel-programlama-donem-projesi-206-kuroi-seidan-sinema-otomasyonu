@@ -194,6 +194,7 @@ namespace CinemaProject
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            //FİLM ARAMAK İÇİN ID GÖRE YADA ADI GÖRE
             current = 0;
             if (guna2ToggleSwitch1.Checked == true)
             {

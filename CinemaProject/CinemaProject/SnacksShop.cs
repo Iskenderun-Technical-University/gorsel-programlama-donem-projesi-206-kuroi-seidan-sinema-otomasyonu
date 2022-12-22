@@ -36,28 +36,33 @@ namespace CinemaProject
             con.Close();
         }
         private void guna2ImageButton4_Click(object sender, EventArgs e)
-        {
+        { 
+          //  BELİRLİ BİR MENÜ TÜRÜNÜ GÖSTERMEK İÇİN
             category.Text = "Snacks";
             string query = "select SnackName,Size,Price from MENU where Category='"+"Snacks"+"'";
             UpdateList(query);
         }
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)
-        {
+        {          //  BELİRLİ BİR MENÜ TÜRÜNÜ GÖSTERMEK İÇİN
+
+
             category.Text = "PopCorn";
             string query = "select SnackName,Size,Price  from MENU where Category='" + "PopCorn" + "'";
             UpdateList(query);
         }
 
         private void guna2ImageButton3_Click(object sender, EventArgs e)
-        {
+        {          //  BELİRLİ BİR MENÜ TÜRÜNÜ GÖSTERMEK İÇİN
+
+
             category.Text = "Drinks";
             string query = "select SnackName,Size,Price from MENU where Category='" + "Drinks" + "'";
             UpdateList(query);
         }
 
         private void guna2GradientButton4_Click(object sender, EventArgs e)
-        {
+        {//MENÜDEN SİLMEK İÇİN
             try
             {
                 if (listBox1.Text == "Discounted PopCorn") Pcheck = false;
@@ -95,6 +100,8 @@ namespace CinemaProject
 
         private void guna2GradientButton5_Click(object sender, EventArgs e)
         {
+
+
             if (type == "VIP Ticket")
             {
                 if (category.Text == "PopCorn" && guna2DataGridView1.CurrentRow.Cells[1].Value.ToString()=="Large" && Pcheck==false)
@@ -185,6 +192,11 @@ namespace CinemaProject
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)

@@ -28,6 +28,7 @@ namespace CinemaProject
         string currentseat;
 
         public void disableseat() {
+            //To Stop Using The Bought Seat
             if (A1.Checked==false) { A1.Enabled = false; }
             if (A2.Checked == false) { A2.Enabled = false; }
             if (A3.Checked == false) { A3.Enabled = false; }
@@ -92,6 +93,7 @@ namespace CinemaProject
 
         public void ResetChairs()
         {
+            //To Reset All The seats
             if (A1.Checked == false) { A1.Checked = true; A1.Image = imageList1.Images[1]; }
             if (A2.Checked == false) { A2.Checked = true; A2.Image = imageList1.Images[1]; }
             if (A3.Checked == false) { A3.Checked = true; A3.Image = imageList1.Images[1]; }
@@ -156,6 +158,7 @@ namespace CinemaProject
 
         public void Seats(Guna.UI2.WinForms.Guna2ImageButton x)
         {
+            //To Check or Uncheck The Seat
                 if (x.Checked == true)
                 {
                     if (selectedseats >= Ticket.CustNo) MessageBox.Show("You Have Selected The Maximum Number Of Seats For this Order!!");
@@ -307,6 +310,7 @@ namespace CinemaProject
 
         private void ChooseSeat_Load(object sender, EventArgs e)
         {
+            //To Show The Movies in the CompoBox
             string query = "select MovieName from MoviesTbl where ShowDays Like '%"+DateTime.Now.ToString("dddd")+"%'";
             con.Open();
             DataTable dt = new DataTable();
@@ -326,12 +330,14 @@ namespace CinemaProject
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
+            //To Back To The Ticke Form
             this.Hide();
             LoginForm.ticket.Show();
         }
 
         private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //To show The ShowHours Of the Movie in The ListBox
             if (guna2ComboBox2.SelectedIndex != -1)
             {
                 listBox1.Items.Clear();
@@ -360,6 +366,7 @@ namespace CinemaProject
 
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
+            //To Save The Seat Data For The Customer
             string query = "update TempOrder set SeatNo='"+currentseat+"' where CustomerName='"+CustomerCombox.Text+"'";
             CustomerCombox.Items.Remove(CustomerCombox.Text);
             con.Open();
@@ -371,6 +378,7 @@ namespace CinemaProject
 
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
+            //To Enter The Next Form If EveryThing Is Good!
             if (selectedseats != Ticket.CustNo) MessageBox.Show("Please Choose A seat For All The Customers!!");
             else if (listBox1.SelectedIndex == -1) MessageBox.Show("Please Choose The Movie And Show Time!!");
             else
@@ -395,6 +403,7 @@ namespace CinemaProject
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
+            //To Close The App
             Application.Exit();
         }
     }

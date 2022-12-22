@@ -27,6 +27,7 @@ namespace CinemaProject
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            //To Upload The Picture
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Filter = "jpg files(*.jpg)|*.jpg|png files(*.png)|*.png|All Files(*.*)|*.*";
             if (dialog.ShowDialog() == DialogResult.OK)
@@ -38,11 +39,15 @@ namespace CinemaProject
 
         private void guna2RatingStar1_ValueChanged(object sender, EventArgs e)
         {
+            //To Show The Rating in The Label
             imdbRate.Text = guna2RatingStar1.Value.ToString();
         }
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
+
+            //FİLMİ EKLEMEK İÇİN
+
             try
             {
                 string hours = "", days = "", genres = ""; byte[] images = null;
@@ -98,17 +103,13 @@ namespace CinemaProject
         }
 
         void ResetPage() {
+            //To Clean The Form From the Data
             MovieName.Clear(); Link.Clear(); AgeRate.Clear(); Length.Clear(); guna2RatingStar1.Value = 0; imgloc = ""; pictureBox1.Image = null;
-        }
-
-        private void guna2GradientButton3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            LoginForm.mainForm.Show();
         }
 
         private void guna2GradientButton3_Click_1(object sender, EventArgs e)
         {
+            //To Get Back To The Main Form
             ResetPage();
             this.Hide();
             LoginForm.mainForm.Show();
@@ -116,7 +117,9 @@ namespace CinemaProject
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
+            // To Leave From The Whole App
             Application.Exit();
         }
+
     }
 }

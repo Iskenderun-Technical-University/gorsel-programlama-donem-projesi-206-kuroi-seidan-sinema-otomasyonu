@@ -25,6 +25,7 @@ namespace CinemaProject
 
         private void AdminPage_Load(object sender, EventArgs e)
         {
+            // Show The Income Data
             int TotalIncome=0, TotalOrders=0;
             string query1 = "select count(*),sum(TotalPrice) from CanteenOrders";
             string query2 = "select count(*),sum(Price) from TicketOrders";
@@ -56,6 +57,7 @@ namespace CinemaProject
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            //To Show Customer Order Details
             string query = "select CustomerName,TicketType,MovieName,SeatNo,Date,ShowTime from TicketOrders where ";
             if (TicketComboBox.Text== "By ID") { query += "ID='" + TicketSearch.Text + "'"; }
             else if (TicketComboBox.Text == "By Name") { query += "CustomerName like '%"+TicketSearch.Text+"%'"; }
@@ -71,6 +73,7 @@ namespace CinemaProject
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
+            //To Show The Customer Orders 
             if (OrderComboBox.Text == "By Customer ID") {
                 string query = "select ID,CustomerID AS 'Customer ID',TotalPrice AS 'Total Price',PurchaseDate AS 'Purchase Date',Payment from CanteenOrders where CustomerID='"+OrderSearch.Text+"'";
                 con.Open();
@@ -87,11 +90,13 @@ namespace CinemaProject
 
         private void OrderDGV_Click(object sender, EventArgs e)
         {
+            //To Save The ID For Another Operations
             if(OrderDGV.Rows.Count>0)label7.Text = OrderDGV.CurrentRow.Cells[0].Value.ToString();
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
+            //To Show The Order Details
             if (OrderDGV.Rows.Count > 0 && label7.Text != "")
             {
                 string query = "select ID,SnackName AS 'Snack Name',Price from CanteenOrderDetails where OrderID='"+label7.Text+"'";
@@ -111,6 +116,7 @@ namespace CinemaProject
         }
         void Createcaptcha()
         {
+            //Make Captcha
             Random r = new Random();
             int temp1 = r.Next(0, 49);
             int temp2 = r.Next(0, 50);
@@ -120,12 +126,14 @@ namespace CinemaProject
 
         Boolean Checkcaptcha()
         {
+            //Check The Captcha
             if (TextBox4.Text == sum.ToString()) return true;
             else return false;
         }
 
         private void guna2TileButton1_Click(object sender, EventArgs e)
         {
+            //To Add The New Worker If The Data Is Right
             if (Checkcaptcha())
             {
                 if (guna2TextBox1.Text == "" || guna2TextBox1.Text[0].ToString() == " " || guna2TextBox1.Text.Contains("  "))

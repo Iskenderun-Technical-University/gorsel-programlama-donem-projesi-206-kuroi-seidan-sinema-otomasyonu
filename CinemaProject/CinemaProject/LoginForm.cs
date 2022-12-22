@@ -40,7 +40,8 @@ namespace CinemaProject
             Application.Exit();
         }
 
-        Boolean Login() {
+        Boolean Login()
+        {
             try
             {
                 string query = "select * from Login where UserName='" + username.Text + "' and Password='" + password.Text + "'";
