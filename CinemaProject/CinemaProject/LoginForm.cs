@@ -17,10 +17,10 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
-        static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
+        public static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
         //static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
         //static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True;Connect Timeout=30";
-        SqlConnection con = new SqlConnection(sqlcon);
+        SqlConnection con = new SqlConnection(LoginForm.sqlcon);
         SqlCommand cmd;
         public static string UserType,userid;
         public static SnacksShop snacks = new SnacksShop();
@@ -37,11 +37,13 @@ namespace CinemaProject
 
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
+            //To Exit The App
             Application.Exit();
         }
 
         Boolean Login()
         {
+            //To Check If The Account Data Is Right Or Wrong
             try
             {
                 string query = "select * from Login where UserName='" + username.Text + "' and Password='" + password.Text + "'";
@@ -55,9 +57,10 @@ namespace CinemaProject
             }
             catch { con.Close(); return false; }
         }
+
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
-           
+           // Perform The Click For Check The Login Data
             if (Login())
             {
                 UserType = "Worker";
@@ -70,12 +73,14 @@ namespace CinemaProject
 
         private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
+            //To Show The Password Or Hide it
             if (ShowPass.Checked == true) password.UseSystemPasswordChar = false;
             else password.UseSystemPasswordChar = true;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            //To Open The Customer UI Mode
             mainForm.TypeSwitch.Checked = false;
             this.Hide();
             mainForm.Show();
@@ -83,6 +88,7 @@ namespace CinemaProject
 
         private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            //To Delete The Table Data
             string query = "delete from TempOrder where ID > 0";
             con.Open();
             cmd = new SqlCommand(query,con);

@@ -18,8 +18,7 @@ namespace CinemaProject
             InitializeComponent();
         }
         int sum = 0;
-        static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
-        SqlConnection con = new SqlConnection(sqlcon);
+        SqlConnection con = new SqlConnection(LoginForm.sqlcon);
         SqlDataAdapter sda;
         SqlCommand cmd;
 

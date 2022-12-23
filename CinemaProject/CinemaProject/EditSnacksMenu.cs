@@ -19,9 +19,7 @@ namespace CinemaProject
         {    
             InitializeComponent();
         }
-        static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
-        //static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amalz\Desktop\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
-        SqlConnection con = new SqlConnection(sqlcon);
+        SqlConnection con = new SqlConnection(LoginForm.sqlcon);
         SqlCommand cmd;
 
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
@@ -93,30 +91,33 @@ namespace CinemaProject
         }
 
         void ResetPage() {
+            //Clean The The Page From The Entered Data
             PName.Clear(); Size.Clear(); price.Clear();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        { //To Select Both the Lists with the this list
             listBox3.SelectedIndex = listBox2.SelectedIndex = listBox1.SelectedIndex;
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        { //To Select Both the Lists with the this list
             listBox3.SelectedIndex = listBox1.SelectedIndex = listBox2.SelectedIndex;
         }
 
         private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        { //To Select Both the Lists with the this list
             listBox2.SelectedIndex = listBox1.SelectedIndex = listBox3.SelectedIndex;
         }
 
         void ClearList() { 
+            //To Clear The Data From The Lists
         listBox1.Items.Clear(); listBox2.Items.Clear(); listBox3.Items.Clear();
         listBox1.Items.Add("Item"); listBox2.Items.Add("Price"); listBox3.Items.Add("ID");
         }
 
         void UpdateList(string query) {
+            //To Show The Another Categories In The List
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             DataTable dt =new DataTable();
@@ -140,6 +141,7 @@ namespace CinemaProject
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
+            //Back To Main Form And Clear All The Current Form
             ResetPage(); ClearList();
             Category.SelectedIndex = -1;
             this.Hide();
@@ -148,17 +150,8 @@ namespace CinemaProject
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
+            //To Exit The App
             Application.Exit();
-        }
-
-        private void AddRBtn_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void EditRBtn_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

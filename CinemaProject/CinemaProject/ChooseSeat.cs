@@ -19,9 +19,7 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
-        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
-        //static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True;Connect Timeout=30";
-        SqlConnection con = new SqlConnection(Sqlcon);
+        SqlConnection con = new SqlConnection(LoginForm.sqlcon);
         SqlDataAdapter sda;
         SqlCommand cmd;
         public static int selectedseats = 0;
@@ -398,6 +396,15 @@ namespace CinemaProject
                 this.Hide();
                 LoginForm.orderDetails.Show();
                 LoginForm.orderDetails.Location = this.Location;
+
+                con.Open();
+                CrystalReport1 Receipt = new CrystalReport1();
+                sda = new SqlDataAdapter("select ID,CustomerName,TicketType,MovieName,SeatNo,Price from TempOrder", con);
+                DataSet ds = new DataSet();
+                sda.Fill(ds);
+                Receipt.SetDataSource(ds.Tables[0]);
+                LoginForm.orderDetails.crystalReportViewer2.ReportSource = Receipt;
+                con.Close();
             }
         }
 

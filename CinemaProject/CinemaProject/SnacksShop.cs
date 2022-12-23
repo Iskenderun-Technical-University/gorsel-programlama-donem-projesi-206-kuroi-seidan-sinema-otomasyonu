@@ -17,9 +17,7 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
-        static string Sqlcon= @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
-        //static string Sqlcon= @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True;Connect Timeout=30";
-        SqlConnection con = new SqlConnection(Sqlcon);
+        SqlConnection con = new SqlConnection(LoginForm.sqlcon);
         SqlCommand cmd;
         static float total=0;
         string type="";
@@ -28,6 +26,7 @@ namespace CinemaProject
 
         void UpdateList(string query)
         {
+            //To Change The List to The Specific Catego
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
@@ -83,16 +82,19 @@ namespace CinemaProject
 
         private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //To Select The Other Lists With This one
             listBox4.SelectedIndex =listBox1.SelectedIndex= listBox3.SelectedIndex;
         }
 
         private void listBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //To Select The Other Lists With This one
             listBox3.SelectedIndex =listBox1.SelectedIndex= listBox4.SelectedIndex;
         }
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
+            //To Clear Everything in this Form and Go To The Main Form
             this.Hide();
             ResetPage();
             LoginForm.mainForm.Show();
@@ -100,8 +102,7 @@ namespace CinemaProject
 
         private void guna2GradientButton5_Click(object sender, EventArgs e)
         {
-
-
+            //To Add The Choosed Product To The Order
             if (type == "VIP Ticket")
             {
                 if (category.Text == "PopCorn" && guna2DataGridView1.CurrentRow.Cells[1].Value.ToString()=="Large" && Pcheck==false)
@@ -152,6 +153,7 @@ namespace CinemaProject
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
+            //To Finish The Order and Save it in the Database
             string temp = "";
             if (guna2RadioButton4.Checked) temp = "Credit Card";
             else if (guna2RadioButton3.Checked) temp = "Cash";
@@ -184,23 +186,20 @@ namespace CinemaProject
         }
 
         void ResetPage() {
+            //To Reset Everything in This Form
             listBox1.Items.Clear(); listBox3.Items.Clear(); listBox4.Items.Clear(); TicketNo.Clear();
             label7.Text = "0"; CheckStatus.Visible = false; CustomerID = 0;
-
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
+            //To Exit The App
             Application.Exit();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
+            //To Check The Ticket Number To See The Available Discount
             try
             {
                 if (TicketNo.Text.Contains(' ') || TicketNo.Text.Length == 0) {

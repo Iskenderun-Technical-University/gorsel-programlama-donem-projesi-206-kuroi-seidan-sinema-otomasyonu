@@ -18,19 +18,20 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
-        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
         public string MoreDetails;
         string imgloc; bool PicCheck = false;
-        SqlConnection con = new SqlConnection(Sqlcon);
+        SqlConnection con = new SqlConnection(LoginForm.sqlcon);
         SqlCommand cmd;
 
         private void iMDbRatingLabel1_TextChanged(object sender, EventArgs e)
         {
+            //To Show The Rating From The label To The Rationg Star
             guna2RatingStar1.Value = Convert.ToSingle(iMDbRatingLabel1.Text);
         }
 
         private void guna2ToggleSwitch2_CheckedChanged(object sender, EventArgs e)
         {
+            //To Switch Between The Editing Mode And Show Mode For The Workers
             if (guna2ToggleSwitch2.Checked == true)
             {
                 movieNameTextBox.ReadOnly = false; guna2RatingStar1.ReadOnly = false;
@@ -56,6 +57,7 @@ namespace CinemaProject
 
         private void uploadImgBtn_Click(object sender, EventArgs e)
         {
+            //To Upload The Picture
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Filter = "jpg files(*.jpg)|*.jpg|png files(*.png)|*.png|All Files(*.*)|*.*";
             if (dialog.ShowDialog() == DialogResult.OK)
@@ -69,6 +71,7 @@ namespace CinemaProject
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
+            //To Update The Movie Data If All The Data Right!
             try
             {
                 string query= ""; byte[] images = null;
@@ -109,6 +112,7 @@ namespace CinemaProject
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
+            //Delete The Movie
             if(MessageBox.Show("Are You Sure That You Want To Delete This Movie?", "Confirmation!", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
                 MoviesList.current = 0;
@@ -123,11 +127,13 @@ namespace CinemaProject
 
         private void guna2RatingStar1_ValueChanged(object sender, EventArgs e)
         {
+            //To Show The Rating Star Value in The label
             iMDbRatingLabel1.Text = guna2RatingStar1.Value.ToString();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            //To Enter The Link If it Was VAlid
             if (Link.Text.Contains("http")|| Link.Text.Contains("www.")||Link.Text.Contains(".com")|| Link.Text.Contains(".net"))
             {
                 System.Diagnostics.Process.Start(Link.Text);
@@ -139,6 +145,7 @@ namespace CinemaProject
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
+            //To Close This Movie Page
             PicCheck = false;
             guna2ToggleSwitch2.Checked = false;
             this.Hide();

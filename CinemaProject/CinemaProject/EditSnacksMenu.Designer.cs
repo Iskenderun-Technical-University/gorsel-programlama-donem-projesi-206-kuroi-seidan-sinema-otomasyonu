@@ -262,7 +262,6 @@ namespace CinemaProject
             this.AddRBtn.UncheckedState.BorderThickness = 1;
             this.AddRBtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.AddRBtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.AddRBtn.CheckedChanged += new System.EventHandler(this.AddRBtn_CheckedChanged);
             // 
             // EditRBtn
             // 
@@ -283,7 +282,6 @@ namespace CinemaProject
             this.EditRBtn.UncheckedState.BorderThickness = 1;
             this.EditRBtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.EditRBtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.EditRBtn.CheckedChanged += new System.EventHandler(this.EditRBtn_CheckedChanged);
             // 
             // guna2VSeparator1
             // 

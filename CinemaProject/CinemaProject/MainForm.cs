@@ -20,9 +20,8 @@ namespace CinemaProject
             InitializeComponent();
         }
         static int sum;
-        static string sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
-        SqlConnection con = new SqlConnection(sqlcon);
-        
+        SqlConnection con = new SqlConnection(LoginForm.sqlcon);
+
         private void guna2ImageButton5_Click(object sender, EventArgs e)
         {
             // MEVCUT FILIMLERI
@@ -58,6 +57,7 @@ namespace CinemaProject
 
         private void TypeSwitch_CheckedChanged(object sender, EventArgs e)
         {
+            //To Change Between The Customer UI And Worker UI
             if (TypeSwitch.Checked == true){
                 LoginForm.loginForm.username.Clear(); ChangePassBtn.Visible = true;
                 LoginForm.loginForm.ShowPass.Checked = false; this.Hide();
@@ -122,6 +122,7 @@ namespace CinemaProject
 
         private void guna2ToggleSwitch1_CheckedChanged(object sender, EventArgs e)
         {
+            //To Translate Between EN and TR
             if (guna2ToggleSwitch1.Checked == true)
             {
                 //Translate For The Ticket Form
@@ -145,13 +146,6 @@ namespace CinemaProject
                 LoginForm.ticket.label2.Text = "4- VİP Bilet Fiyatı : 45TL.";
                 LoginForm.ticket.guna2GradientCircleButton4.Text = "SİL";
                 LoginForm.ticket.guna2GradientCircleButton2.Text = "Koltuğu Seç";
-
-
-
-
-
-
-
                 /////////////////////////////////////////////////////////////////
                 //Translate For The AddMovies Form
                 LoginForm.addMovies.guna2GradientButton3.Text = "Ana Sayfaya Dön";
@@ -305,8 +299,6 @@ namespace CinemaProject
                 LoginForm.ticket.label7.Text = "2- Student Ticket Price : 26TL.";
                 LoginForm.ticket.label5.Text = "3- Elite Bilet Fiyatı : 45TL.";
                 LoginForm.ticket.guna2GroupBox2.Text = ":";
-
-
                 /////////////////////////////////////////////////////////////////
                 //Translate For The AddMovies Form
                 LoginForm.addMovies.guna2GradientButton3.Text = "Back To Main Menu";
@@ -356,6 +348,8 @@ namespace CinemaProject
                 LoginForm.snacks.guna2GradientButton2.Text = "Finish Order";
                 LoginForm.snacks.guna2GradientButton5.Text = "Add To Order";
                 LoginForm.snacks.guna2GradientButton4.Text = "Delete From Order";
+                LoginForm.snacks.guna2GradientCircleButton2.Text = "Enter";
+
                 /////////////////////////////////////////////////////////////
                 ///Translate For The LoginForm
                 LoginForm.loginForm.Unamelbl.Text = "User Name:";
@@ -436,15 +430,14 @@ namespace CinemaProject
 
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
         {
-           
           // HESAP ŞİFRESİ DEĞŞTİRMEK İÇİN
-
             GroupBox1.Visible = ChangePassBtn.Checked;
             Createcaptcha();
         }
 
         void Createcaptcha()
         {
+            //To Create Captcha Code
             Random r = new Random();
             int temp1 = r.Next(0, 49);
             int temp2 = r.Next(0, 50);
@@ -453,12 +446,14 @@ namespace CinemaProject
         }
         Boolean Checkcaptcha()
         {
+            //To Check If The Captcha Code Is Right Or Wrong
             if (TextBox4.Text == sum.ToString()) return true;
             else return false;
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            //To Change The Password If The Entered Data Is Right
             if (Checkcaptcha())
             {
                 if (TextBox2.Text != TextBox3.Text) { MessageBox.Show("The Entering Password Isn't The Same! Please Try Again"); TextBox2.Clear(); TextBox3.Clear(); TextBox4.Clear(); Createcaptcha(); }
@@ -486,17 +481,14 @@ namespace CinemaProject
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
+            //To Exit The App
             Application.Exit();
         }
 
         private void AdminPageBtn_Click(object sender, EventArgs e)
         {
+            //To Show The Admin Page
             LoginForm.admin.ShowDialog();
-        }
-
-        private void GroupBox1_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }

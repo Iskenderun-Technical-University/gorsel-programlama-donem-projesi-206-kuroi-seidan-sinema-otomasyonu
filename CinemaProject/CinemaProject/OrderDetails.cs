@@ -18,8 +18,7 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
-        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
-        SqlConnection con = new SqlConnection(Sqlcon);
+        SqlConnection con = new SqlConnection(LoginForm.sqlcon);
         SqlCommand cmd;
         SqlDataAdapter sda;
 
@@ -30,7 +29,7 @@ namespace CinemaProject
                 if (guna2RadioButton3.Checked == false && guna2RadioButton4.Checked == false) MessageBox.Show("Please Choose The Payment Method And Try Again !!!");
                 else
                 {
-                    crystalReportViewer1.PrintReport();
+                    crystalReportViewer2.PrintReport();
                         string update = "";
                         if (guna2RadioButton3.Checked == true) update = "update TempOrder set Payment='" + guna2RadioButton3.Text + "' where ID>0";
                         else if (guna2RadioButton4.Checked == true) update = "update TempOrder set Payment='" + guna2RadioButton4.Text + "' where ID>0";
@@ -58,7 +57,7 @@ namespace CinemaProject
             DataSet ds = new DataSet();
             sda.Fill(ds);
             Receipt.SetDataSource(ds.Tables[0]);
-            crystalReportViewer1.ReportSource = Receipt ;
+            crystalReportViewer2.ReportSource = Receipt ;
             con.Close();
         }
 

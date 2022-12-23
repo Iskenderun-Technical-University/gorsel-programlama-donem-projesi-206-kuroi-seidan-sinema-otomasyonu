@@ -19,9 +19,7 @@ namespace CinemaProject
             InitializeComponent();
         }
 
-         static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
-         //static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\asus\OneDrive\Masaüstü\gorsel-programlama-donem-projesi-206-kuroi-seidan-sinema-otomasyonu\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True;Connect Timeout=30";
-        SqlConnection con = new SqlConnection(Sqlcon);
+        SqlConnection con = new SqlConnection(LoginForm.sqlcon);
         public static int current = 0, prev = 0;
 
         private void MoviesList_Load(object sender, EventArgs e)

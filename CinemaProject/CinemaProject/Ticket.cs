@@ -19,13 +19,13 @@ namespace CinemaProject
         }
         public static int CustNo = 0,price;
         string gender;
-        static string Sqlcon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\Kuroi Seidan Project\CinemaProject\CinemaProject\ProjectDB.mdf;Integrated Security=True";
-        SqlConnection con = new SqlConnection(Sqlcon);
+        SqlConnection con = new SqlConnection(LoginForm.sqlcon);
         SqlCommand cmd;
         SqlDataAdapter sda;
 
         private void guna2GradientCircleButton2_Click(object sender, EventArgs e)
         {
+            //To Go To The Choosing Seat Step
             CustNo = listBox1.Items.Count ;
             if (CustNo == 0) MessageBox.Show("Please Add At Least One Customer And Try Again!!");
             else
@@ -47,6 +47,7 @@ namespace CinemaProject
         }
 
         public void ResetPage() {
+            //To Reset Everything in This Form And Clear The Temp Table
             Type.SelectedIndex = -1; CustName.Clear(); PhoneNo.Clear(); radioButton1.Checked = false; radioButton2.Checked = false; listBox1.Items.Clear();listBox2.Items.Clear();
             LoginForm.seat.listBox1.Items.Clear(); ChooseSeat.selectedseats = 0; CustNo = 0; LoginForm.seat.cover.Visible = false;
             LoginForm.seat.guna2ComboBox2.SelectedIndex = -1; LoginForm.seat.ResetChairs(); LoginForm.seat.CustomerCombox.Items.Clear();
@@ -59,14 +60,14 @@ namespace CinemaProject
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
-            
+            //To Clear Everything in This Form And Go To The Main Form
             ResetPage(); this.Hide();
             LoginForm.mainForm.Show();
         }
 
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
-            //BİLET BİLGİLERİNİ KAYDETMEK İÇİM
         {
+            //BİLET BİLGİLERİNİ KAYDETMEK İÇİM
             if (radioButton1.Checked) gender = "Male";
             else if (radioButton2.Checked) gender = "Female";
 
@@ -93,6 +94,7 @@ namespace CinemaProject
         {
             try
             {
+                //To Delete The Entered Customer Details From The List and The Table
                 string query = "delete from TempOrder where CustomerName = '" + listBox1.Text + "'";
                 con.Open();
                 cmd = new SqlCommand(query, con);
@@ -107,6 +109,7 @@ namespace CinemaProject
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //To Select The Other list With This list
             listBox2.SelectedIndex = listBox1.SelectedIndex;
         }
 
@@ -115,33 +118,9 @@ namespace CinemaProject
             Application.Exit();
         }
 
-        private void PhoneNo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CustName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2GroupBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //To Select The Other list With This list
             listBox1.SelectedIndex = listBox2.SelectedIndex;
         }
     }
